@@ -1,0 +1,108 @@
+<#@ include file="T4Model.ttinclude"  once="true"      #>
+<#@ include file="LinqToDB.ttinclude" once="true"      #>
+<#@ import namespace="LinqToDB.DataProvider.SqlServer" #>
+<#
+	***REMOVED***
+		GenerateProcedureDbType = p => p.DataType == "Structured" && p.SchemaType != null;
+
+		var afterGenerateLinqToDBModel = AfterGenerateLinqToDBModel;
+		AfterGenerateLinqToDBModel = () =>
+		***REMOVED***
+			afterGenerateLinqToDBModel();
+			DoGenerateSqlServerFreeText();
+		***REMOVED***;
+
+		var buildColumnComparison = BuildColumnComparison;
+		BuildColumnComparison = (c, padding1, padding2, last) =>
+		***REMOVED***
+			if (c.BuildType() == "SqlHierarchyId")
+				return string.Format("\t(bool)(t.***REMOVED***0***REMOVED******REMOVED***1***REMOVED*** == ***REMOVED***0***REMOVED******REMOVED***3***REMOVED***)***REMOVED***2***REMOVED***", c.MemberName, padding1, last ? ");" : " &&", last ? "" : padding2);
+			else
+				return buildColumnComparison(c, padding1, padding2, last);
+		***REMOVED***;
+	***REMOVED***
+#>
+<#+
+bool GenerateSqlServerFreeText = false; // Defines whether to generate extensions for Free Text search, or not
+
+void DoGenerateSqlServerFreeText()
+***REMOVED***
+	if (!GenerateSqlServerFreeText)
+		return;
+
+	Model.Usings.Add("System.Collections.Generic");
+	Model.Usings.Add("System.Linq.Expressions");
+	Model.Usings.Add("System.Reflection");
+	Model.Usings.Add("LinqToDB");
+	Model.Usings.Add("LinqToDB.DataProvider.SqlServer");
+	Model.Usings.Add("LinqToDB.Extensions");
+
+	DataContextObject.Members.Add(
+		new MemberGroup
+		***REMOVED***
+			Region  = "FreeTextTable",
+			Members =
+			***REMOVED***
+				new Method(() => "IQueryable<SqlServerExtensions.FreeTextKey<TKey>>", "FreeTextTable",
+					new Func<string>[] ***REMOVED*** () => "ITable<TTable> table", () => string.Format("Expression<Func<TTable,***REMOVED***0***REMOVED***>> columns", ModelType.Create<object>(true).ToTypeName()), () => "string search" ***REMOVED***,
+					() => new[]
+					***REMOVED***
+						"return Sql.Ext.SqlServer().FreeTextTable<TTable, TKey>(table, columns, search);"
+					***REMOVED***)
+				***REMOVED***
+					GenericArguments = ***REMOVED*** "TTable", "TKey" ***REMOVED***,
+					AfterSignature   = !EnableNullableReferenceTypes ? new List<string>() : new List<string>() ***REMOVED*** "where TTable : notnull" ***REMOVED***
+				***REMOVED***,
+			***REMOVED***
+		***REMOVED***
+	);
+***REMOVED***
+
+LinqToDB.Data.DataConnection GetSqlServerConnection(
+	string connectionString,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	return LinqToDB.DataProvider.SqlServer.SqlServerTools.CreateDataConnection(connectionString, version, provider);
+***REMOVED***
+
+LinqToDB.Data.DataConnection GetSqlServerConnection(
+	string server,
+	string database,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	return GetSqlServerConnection(string.Format("Data Source=***REMOVED***0***REMOVED***;Database=***REMOVED***1***REMOVED***;Integrated Security=SSPI", server, database), version, provider);
+***REMOVED***
+
+LinqToDB.Data.DataConnection GetSqlServerConnection(string server, string database, string user, string password,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	return GetSqlServerConnection(string.Format("Server=***REMOVED***0***REMOVED***;Database=***REMOVED***1***REMOVED***;User Id=***REMOVED***2***REMOVED***;Password=***REMOVED***3***REMOVED***;", server, database, user, password), version, provider);
+***REMOVED***
+
+public void LoadSqlServerMetadata(string connectionString,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	using (var dataConnection = GetSqlServerConnection(connectionString, version, provider))
+		LoadMetadata(dataConnection);
+***REMOVED***
+
+public void LoadSqlServerMetadata(string server, string database,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	using (var dataConnection = GetSqlServerConnection(server, database, version, provider))
+		LoadMetadata(dataConnection);
+***REMOVED***
+
+public void LoadSqlServerMetadata(string server, string database, string user, string password,
+	SqlServerVersion  version  = SqlServerVersion.v2008,
+	SqlServerProvider provider = SqlServerProvider.SystemDataSqlClient)
+***REMOVED***
+	using (var dataConnection = GetSqlServerConnection(server, database, user, password, version, provider))
+		LoadMetadata(dataConnection);
+***REMOVED***
+#>

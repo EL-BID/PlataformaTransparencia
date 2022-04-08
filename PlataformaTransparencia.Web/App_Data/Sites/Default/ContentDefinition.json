@@ -1,0 +1,3232 @@
+***REMOVED***
+  "ContentTypeDefinitionRecords": [
+    ***REMOVED***
+      "Name": "Menu",
+      "DisplayName": "Menu",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "AliasPartSettings": ***REMOVED***
+              "Pattern": "***REMOVED******REMOVED*** ContentItem | display_text | slugify ***REMOVED******REMOVED***"
+          ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "MenuPart",
+          "Name": "MenuPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "MenuItemsListPart",
+          "Name": "MenuItemsListPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LinkMenuItem",
+      "DisplayName": "Link Menu Item",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "MenuItem"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LinkMenuItem",
+          "Name": "LinkMenuItem",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ContentMenuItem",
+      "DisplayName": "Content Menu Item",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "MenuItem"
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ContentMenuItemPart",
+          "Name": "ContentMenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "ContentMenuItem",
+          "Name": "ContentMenuItem",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ContentSubmenuItem",
+      "DisplayName": "Content Submenu Item",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "SubmenuItem"
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ContentSubmenuItem",
+          "Name": "ContentSubmenuItem",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "ContentSubMenuItemPart",
+          "Name": "ContentSubMenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LinkSubmenuItem",
+      "DisplayName": "Link Submenu Item",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Stereotype": "SubmenuItem"
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "LinkSubmenuItem",
+          "Name": "LinkSubmenuItem",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LinkSubmenuItemPart",
+          "Name": "LinkSubmenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuUser",
+      "DisplayName": "Menu User",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "MenuUser",
+          "Name": "MenuUser",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LiquidPage",
+      "DisplayName": "Liquid Page",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "LiquidPage",
+          "Name": "LiquidPage",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": true
+          ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LiquidPart",
+          "Name": "LiquidPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "HtmlWidget",
+      "DisplayName": "Html",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "HtmlWidget",
+          "Name": "HtmlWidget",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Page",
+      "DisplayName": "Page",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true,
+          "Securable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Page",
+          "Name": "Page",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": true
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FlowPart",
+          "Name": "FlowPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LandingPage",
+      "DisplayName": "Landing Page",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true,
+          "Securable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "LandingPage",
+          "Name": "LandingPage",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "8"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": true
+          ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "Services",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Services",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "3"
+          ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Service"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "Portfolio",
+          "Settings": ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Project"
+              ]
+          ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Portfolio",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "4"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "About",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "About",
+              "Description": "A collection of milestones",
+              "Position": "5"
+          ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Milestone"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "Team",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Team",
+              "Description": "Team members",
+              "Position": "6"
+          ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "TeamMember"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "Clients",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Clients",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "7"
+          ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Client"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Service",
+      "DisplayName": "Service",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Service",
+          "Name": "Service",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Project",
+      "DisplayName": "Project",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Project",
+          "Name": "Project",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Milestone",
+      "DisplayName": "Milestone",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Milestone",
+          "Name": "Milestone",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "TeamMember",
+      "DisplayName": "Team Member",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TeamMember",
+          "Name": "TeamMember",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Client",
+      "DisplayName": "Client",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Client",
+          "Name": "Client",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Container",
+      "DisplayName": "Container",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Container",
+          "Name": "Container",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FlowPart",
+          "Name": "FlowPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Blockquote",
+      "DisplayName": "Blockquote",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Blockquote",
+          "Name": "Blockquote",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ImageWidget",
+      "DisplayName": "Image",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Image",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LiquidWidget",
+      "DisplayName": "Liquid",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget",
+          "Listable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "LiquidPart",
+          "Name": "LiquidPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Image",
+      "DisplayName": "Image",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Image",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Paragraph",
+      "DisplayName": "Paragraph",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Paragraph",
+          "Name": "Paragraph",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Taxonomy",
+      "DisplayName": "Taxonomy",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+          ***REMOVED***
+            "AliasPartSettings": ***REMOVED***
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "AllowRouteContainedItems": true
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TaxonomyPart",
+          "Name": "TaxonomyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "4"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Article",
+      "DisplayName": "Article",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Article",
+          "Name": "Article",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": true
+          ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Editor": "Wysiwyg",
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "BlogPost",
+      "DisplayName": "Blog Post",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | container | display_text | slugify ***REMOVED******REMOVED***/***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BlogPost",
+          "Name": "BlogPost",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "MarkdownBodyPart",
+          "Name": "MarkdownBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2",
+              "Editor": "Wysiwyg"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "MarkdownBodyPartSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormPart",
+          "Name": "FormPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "4"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Blog",
+      "DisplayName": "Blog",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true,
+          "Securable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED***
+              "Included": false,
+              "Stored": false,
+              "Analyzed": false,
+              "Sanitized": false,
+              "Tokenized": false,
+              "Template": null
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ShowHomepageOption": true
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "Blog",
+          "Name": "Blog",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "ListPart",
+          "Name": "ListPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "4"
+          ***REMOVED***
+            "ListPartSettings": ***REMOVED***
+              "PageSize": 10,
+              "ContainedContentTypes": [
+                "BlogPost"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "RawHtml",
+      "DisplayName": "Raw Html",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true,
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "RawHtml",
+          "Name": "RawHtml",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Tag",
+      "DisplayName": "Tag",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED******REMOVED***,
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Tag",
+          "Name": "Tag",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ManageContainedItemRoutes": true
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Category",
+      "DisplayName": "Category",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED******REMOVED***,
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Category",
+          "Name": "Category",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": true,
+              "Pattern": "***REMOVED******REMOVED*** Model.ContentItem | display_text | slugify ***REMOVED******REMOVED***",
+              "ManageContainedItemRoutes": true
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Form",
+      "DisplayName": "Form",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormPart",
+          "Name": "FormPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FlowPart",
+          "Name": "FlowPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Label",
+      "DisplayName": "Label",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LabelPart",
+          "Name": "LabelPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Input",
+      "DisplayName": "Input",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "InputPart",
+          "Name": "InputPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "TextArea",
+      "DisplayName": "Text Area",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TextAreaPart",
+          "Name": "TextAreaPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Select",
+      "DisplayName": "Select",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "SelectPart",
+          "Name": "SelectPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Button",
+      "DisplayName": "Button",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": ***REMOVED******REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "ButtonPart",
+          "Name": "ButtonPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ValidationSummary",
+      "DisplayName": "Validation Summary",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ValidationSummaryPart",
+          "Name": "ValidationSummaryPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Validation",
+      "DisplayName": "Validation",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ValidationPart",
+          "Name": "ValidationPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ReCaptcha",
+      "DisplayName": "Re Captcha",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ReCaptchaPart",
+          "Name": "ReCaptchaPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ComingSoon",
+      "DisplayName": "Coming Soon",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Listable": true,
+          "Securable": true
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "ComingSoon",
+          "Name": "ComingSoon",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "4"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+          ***REMOVED***
+            "AutoroutePartSettings": ***REMOVED***
+              "AllowCustomPath": false,
+              "Pattern": null,
+              "ShowHomepageOption": true
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "SocialIcons",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Social Icons",
+              "Description": "The list of social icons to display in the Coming Soon page",
+              "Position": "5"
+          ***REMOVED***
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "SocialIcon"
+              ]
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FlowPart",
+          "Name": "FlowPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "FormPart",
+          "Name": "FormPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "SocialIcon",
+      "DisplayName": "Social Icon",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "SocialIcon",
+          "Name": "SocialIcon",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Register",
+      "DisplayName": "Register",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Stereotype": "Widget"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Register",
+          "Name": "Register",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0",
+              "Editor": "Wysiwyg"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Anuncio",
+      "DisplayName": "Anuncio",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED******REMOVED***,
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Anuncio",
+          "Name": "Anuncio",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2",
+              "Editor": "Wysiwyg"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "HtmlBodyPartSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Anuncios",
+      "DisplayName": "Anuncios",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Anuncios",
+          "Name": "Anuncios",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "2"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Anuncio"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Banner",
+      "DisplayName": "Banner",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED******REMOVED***,
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Banner",
+          "Name": "Banner",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "LinkMenuItemPart",
+          "Name": "LinkMenuItemPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Banners",
+      "DisplayName": "Banners",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Banners",
+          "Name": "Banners",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "2"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Banner"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Pregunta",
+      "DisplayName": "Pregunta",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Pregunta",
+          "Name": "Pregunta",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1",
+              "Editor": "Trumbowyg"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "HtmlBodyPartSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "HtmlBodyPartTrumbowygEditorSettings": ***REMOVED***
+              "Options": "***REMOVED***\r\n    autogrow: true,\r\n    btns: [\r\n        [\"viewHTML\"],\r\n        [\"undo\", \"redo\"],\r\n        [\"formatting\"],\r\n        [\"strong\", \"em\", \"del\"],\r\n        [\"foreColor\", \"backColor\"],\r\n        [\"superscript\", \"subscript\"],\r\n        [\"link\"],\r\n        [\"image\"],\r\n        [\"align\"],\r\n        [\"unorderedList\", \"orderedList\"],\r\n        [\"horizontalRule\"],\r\n        [\"removeformat\"],\r\n        [\"fullscreen\"]\r\n    ],\r\n    btnsDef: ***REMOVED***\r\n        align: ***REMOVED***\r\n            dropdown: [\"justifyLeft\", \"justifyCenter\", \"justifyRight\", \"justifyFull\"],\r\n            ico: \"justifyLeft\"\r\n      ***REMOVED***\r\n        image: ***REMOVED***\r\n            dropdown: [\"insertImage\", \"base64\", \"noembed\"],\r\n            ico: \"insertImage\"\r\n    ***REMOVED***\r\n***REMOVED***\r\n***REMOVED***",
+              "InsertMediaWithUrl": true
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "PreguntasFrecuentes",
+      "DisplayName": "Preguntas Frecuentes",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "PreguntasFrecuentes",
+          "Name": "PreguntasFrecuentes",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "2"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Pregunta"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Palabra",
+      "DisplayName": "Palabra",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Palabra",
+          "Name": "Palabra",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2",
+              "Editor": "Wysiwyg"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "HtmlBodyPartSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Glosario",
+      "DisplayName": "Glosario",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Glosario",
+          "Name": "Glosario",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "2"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Palabra"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Etiqueta",
+      "DisplayName": "Etiqueta",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Etiqueta",
+          "Name": "Etiqueta",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3",
+              "Editor": "Wysiwyg"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "HtmlBodyPartSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Etiquetas",
+      "DisplayName": "Etiquetas",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Etiquetas",
+          "Name": "Etiquetas",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "1"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "Etiqueta"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Contacto",
+      "DisplayName": "Contacto",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Draftable": true,
+          "Versionable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Contacto",
+          "Name": "Contacto",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Mensajes",
+      "DisplayName": "Mensajes",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "Mensajes",
+          "Name": "Mensajes",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "ListPart",
+          "Name": "ListPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "4"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "ListPartSettings": ***REMOVED***
+              "PageSize": 10,
+              "ContainedContentTypes": [
+                "Contacto"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "DescargaDatosAbiertos",
+      "DisplayName": "Descarga Datos Abiertos",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Listable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "DescargaDatosAbiertos",
+          "Name": "DescargaDatosAbiertos",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "DatosAbiertos",
+      "DisplayName": "Datos Abiertos",
+      "Settings": ***REMOVED***
+        "ContentTypeSettings": ***REMOVED***
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+      ***REMOVED***
+        "FullTextAspectSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentTypePartDefinitionRecords": [
+        ***REMOVED***
+          "PartName": "DatosAbiertos",
+          "Name": "DatosAbiertos",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "2"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "BagPart",
+          "Name": "BagPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "DisplayName": "Bag",
+              "Description": "Provides a collection behavior for your content item.",
+              "Position": "4"
+          ***REMOVED***
+            "GraphQLContentTypePartSettings": ***REMOVED******REMOVED***,
+            "BagPartSettings": ***REMOVED***
+              "ContainedContentTypes": [
+                "DescargaDatosAbiertos"
+              ]
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "3"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": ***REMOVED***
+            "ContentTypePartSettings": ***REMOVED***
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+***REMOVED***
+  ],
+  "ContentPartDefinitionRecords": [
+    ***REMOVED***
+      "Name": "LiquidPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "CommonPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides an editor for the common properties of a content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "AliasPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a way to define custom aliases for content items."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "AutoroutePart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a custom url for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "PreviewPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a way to define the url that is used to render your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "WidgetsListPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a way to add widgets per content items."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "FlowPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a customizable body for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "BagPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Provides a collection behavior for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "HtmlBodyPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides an HTML Body for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ListPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Add a list behavior."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MarkdownBodyPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a Markdown formatted body for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "TitlePart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a Title for your content item.",
+          "DefaultPosition": "0"
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuItemPart",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LinkMenuItemPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a menu link behavior for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ContentMenuItemPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "DisplayName": "Content Menu Item",
+          "Description": "Provides a menu link behavior with the Content Picker for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "ContentPickerField",
+          "Name": "SelectedContentItem",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Selected Content Item",
+              "Position": "0"
+          ***REMOVED***
+            "ContentPickerFieldSettings": ***REMOVED***
+              "Required": true,
+              "DisplayAllContentTypes": true,
+              "DisplayedContentTypes": []
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ContentSubMenuItemPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides a menu link behavior with the Content Picker for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "ContentPickerField",
+          "Name": "SelectedContentItem",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Selected Content Item",
+              "Position": "0"
+          ***REMOVED***
+            "ContentPickerFieldSettings": ***REMOVED***
+              "Required": true,
+              "DisplayAllContentTypes": true,
+              "DisplayedContentTypes": []
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LinkSubmenuItemPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Provides a menu link behavior for your content item."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuUserPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuUserItemPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED******REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "HtmlWidget",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "HtmlField",
+          "Name": "Content",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Content",
+              "Editor": "Multiline",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "MenuItem",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Link",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Link",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Service",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "IconClass",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Icon Class",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "The icon css class from font-awesome. e.g., fa-laptop, fa-shopping-cart, fa-lock"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Project",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Image",
+              "Position": "1"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Required": true,
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Category",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Category",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "The category that is displayed below the title"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Milestone",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Date",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Date",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Image",
+              "Position": "1"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Required": true,
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "TeamMember",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Occupation",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Occupation",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Picture",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Picture",
+              "Position": "1"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Required": true,
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Twitter",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Twitter",
+              "Position": "2"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "Twitter handle, e.g. @BillGates"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Facebook",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Facebook",
+              "Position": "3"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "Facebook handle"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "LinkedIn",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "LinkedIn",
+              "Position": "4"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "LinkedIn handle"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Client",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Logo",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Logo",
+              "Position": "0"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Required": true,
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Url",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Url",
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Blockquote",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Quote",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Quote",
+              "Position": "0",
+              "Editor": "TextArea"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Image",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true
+      ***REMOVED***
+        "Attachable": true
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Media",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Image",
+              "Position": "0"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Required": true,
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Caption",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Caption",
+              "Position": "1"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "A description of the image used as title or alternate text"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Paragraph",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "HtmlField",
+          "Name": "Content",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Content",
+              "Position": "0",
+              "Editor": "Wysiwyg"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Blog",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Banner Image",
+              "Position": "0"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED***
+              "Included": false,
+              "Stored": false,
+              "Analyzed": false,
+              "Sanitized": false,
+              "Tokenized": false,
+              "Template": null
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "BlogPost",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Subtitle",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Subtitle",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Banner Image",
+              "Position": "1"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED***
+              "Included": false,
+              "Stored": false,
+              "Analyzed": false,
+              "Sanitized": false,
+              "Tokenized": false,
+              "Template": null
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TaxonomyField",
+          "Name": "Tags",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Tags",
+              "Editor": "Tags",
+              "DisplayMode": "Tags",
+              "Position": "2"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "TaxonomyFieldSettings": ***REMOVED***
+              "TaxonomyContentItemId": "42kpk0mj4e2s53vwwrs3z6qwxs"
+          ***REMOVED***
+            "TaxonomyFieldTagsEditorSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TaxonomyField",
+          "Name": "Category",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Categoría",
+              "Position": "3"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "TaxonomyFieldSettings": ***REMOVED***
+              "TaxonomyContentItemId": "4y49tvs5hqtbxtksb1y2ng7vcb",
+              "Unique": true,
+              "LeavesOnly": true
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Article",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Subtitle",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Subtitle",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Image",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Banner Image",
+              "Position": "0"
+          ***REMOVED***
+            "MediaFieldSettings": ***REMOVED***
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "RawHtml",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "HtmlField",
+          "Name": "Content",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Content",
+              "Position": "0",
+              "Editor": "Multiline"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Category",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Icon",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Icon",
+              "Editor": "IconPicker",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Required": true
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "FormPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Attachable": true,
+          "Description": "Turns your content item into a form."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "FormElementPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides attributes common to all form elements."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "FormInputElementPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides attributes common to all input form elements."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "LabelPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides label properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "InputPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides input field properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "TextAreaPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides text area properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "SelectPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides select field properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ButtonPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides button properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ValidationSummaryPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Displays a validation summary."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ValidationPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Displays a field validation error."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "ReCaptchaPart",
+      "Settings": ***REMOVED***
+        "ContentPartSettings": ***REMOVED***
+          "Description": "Provides captcha properties."
+    ***REMOVED***
+    ***REMOVED***
+      "ContentPartFieldDefinitionRecords": []
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "SocialIcon",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "IconClass",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Icon Class",
+              "Editor": "IconPicker",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "Select which icon to use for this social site."
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Url",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Social Site Url",
+              "Position": "1"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "The url where the icon will link to.",
+              "Required": true
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Register",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Placeholder",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Placeholder",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "The text to display in the input field"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Button",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Button",
+              "Position": "2"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "Text to display on submit button"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "InputFieldName",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "InputFieldName",
+              "Position": "1"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Hint": "The name of the input field"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Banner",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "MediaField",
+          "Name": "Fondo",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Fondo",
+              "Position": "0"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "MediaFieldSettings": ***REMOVED***
+              "Required": false,
+              "Hint": "imagen de fondo",
+              "Multiple": false
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Pregunta",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TaxonomyField",
+          "Name": "Categoria",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Categoría",
+              "Position": "0"
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***,
+            "TaxonomyFieldSettings": ***REMOVED***
+              "Required": true,
+              "TaxonomyContentItemId": "4jfs8a5ttt8gb19ax9gwsvw0ca"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Etiqueta",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Pagina",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Página",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "Contacto",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Nombre",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Nombre",
+              "Position": "0"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Required": true
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Apellido",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Apellido",
+              "Position": "1"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Required": true
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Email",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Email",
+              "Editor": "Email",
+              "Position": "2"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Required": true
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Telefono",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Teléfono",
+              "Editor": "Tel",
+              "Position": "3"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Asunto",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Asunto",
+              "Position": "4"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED***
+              "Required": true
+          ***REMOVED***
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Mensaje",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Mensaje",
+              "Position": "5"
+          ***REMOVED***
+            "TextFieldSettings": ***REMOVED******REMOVED***,
+            "ContentIndexSettings": ***REMOVED******REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "DescargaDatosAbiertos",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "LinkField",
+          "Name": "UrlBotonDiccionario",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Url Botón Diccionario",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+      ***REMOVED***
+        ***REMOVED***
+          "FieldName": "LinkField",
+          "Name": "UrlBotonCVS",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Url Botón CVS",
+              "Position": "1"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+  ***REMOVED***
+    ***REMOVED***
+      "Name": "DatosAbiertos",
+      "Settings": ***REMOVED******REMOVED***,
+      "ContentPartFieldDefinitionRecords": [
+        ***REMOVED***
+          "FieldName": "TextField",
+          "Name": "Titulo",
+          "Settings": ***REMOVED***
+            "ContentPartFieldSettings": ***REMOVED***
+              "DisplayName": "Título a mostrar",
+              "Position": "0"
+        ***REMOVED***
+      ***REMOVED***
+    ***REMOVED***
+      ]
+***REMOVED***
+  ],
+  "Serial": 681
+***REMOVED***
