@@ -3,24 +3,24 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos.Entidad
-***REMOVED***
+{
     public class infograficoEstrategico
-    ***REMOVED***
-        public string Id ***REMOVED*** get; set; ***REMOVED***
-        public string Nombre ***REMOVED*** get; set; ***REMOVED***
+    {
+        public string Id { get; set; }
+        public string Nombre { get; set; }
 
-        public double presupuesto ***REMOVED*** get; set; ***REMOVED***
+        public double presupuesto { get; set; }
 
-        public List<infograficoEspecifico> Detalles ***REMOVED*** get; set; ***REMOVED***
+        public List<infograficoEspecifico> Detalles { get; set; }
 
 
-        public infograficoEstrategico() ***REMOVED***
+        public infograficoEstrategico() {
             Id = "";
             Nombre = "";
             presupuesto = 0;
             Detalles = new List<infograficoEspecifico>();
 
-    ***REMOVED***
+        }
 
-***REMOVED***
-***REMOVED***
+    }
+}

@@ -1,9 +1,9 @@
 ﻿@model PlataformaTransparencia.Modelos.ModelPresupuestoData
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
-@***REMOVED***
+}
+@{
     var etiquetas = await Orchard.GetContentItemByHandleAsync("alias:Etiquetas");
     var LabelDistPresupuesto = "";
     var TituloDistPresupuesto = "";
@@ -19,44 +19,44 @@
     var TituloDistProgramas = ""; 
     var LabelDistObjetosGasto = "";
     var TituloDistObjetosGasto = "";
-***REMOVED***
+}
 @foreach (var etiqueta in etiquetas.Content.BagPart.ContentItems)
-***REMOVED***
+{
     if (@etiqueta.AliasPart.Alias == "DistribucionPresupuesto")
-    ***REMOVED*** LabelDistPresupuesto = @etiqueta.HtmlBodyPart.Html;
+    { LabelDistPresupuesto = @etiqueta.HtmlBodyPart.Html;
         TituloDistPresupuesto = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "AvanceSectores")
-    ***REMOVED***
+    {
         LabelAvanceSectores = @etiqueta.HtmlBodyPart.Html;
         TituloAvanceSectores = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "GrupoGasto")
-    ***REMOVED***
+    {
         LabelGrupoGasto = @etiqueta.HtmlBodyPart.Html;
         TituloGrupoGasto = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "SolicitadoXAprobado")
-    ***REMOVED***
+    {
         LabelSolicitadoXAprobado = @etiqueta.HtmlBodyPart.Html;
         TituloSolicitadoXAprobado = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "AvancePresupuestal")
-    ***REMOVED***
+    {
         LabelAvancePresupuestal = @etiqueta.HtmlBodyPart.Html;
         TituloAvancePresupuestal = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "DistProgramas")
-    ***REMOVED***
+    {
         LabelDistProgramas = @etiqueta.HtmlBodyPart.Html;
         TituloDistProgramas = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "DistObjetosGasto")
-    ***REMOVED***
+    {
         LabelDistObjetosGasto = @etiqueta.HtmlBodyPart.Html;
         TituloDistObjetosGasto = @etiqueta.TitlePart.Title;
-***REMOVED***
-***REMOVED***
+    }
+}
 
 <section class="banner-main">
 
@@ -105,12 +105,12 @@
                     <label for="input-select">Selecciona un año:</label>
                     <select class="form-select" aria-label="Selecciona un año:" id="annioPresupuesto">
                         @foreach (var item in Model.Presupuesto)
-                        ***REMOVED***
+                        {
                             <text>
                                 <option value="@item.AnioPresupuesto">@item.AnioPresupuesto</option>
                             </text>
 
-                    ***REMOVED***
+                        }
                         @*<option selected>2020</option>
                             <option value="1">2019</option>
                             <option value="2">2018</option>
@@ -486,20 +486,20 @@
 
 
 <script>
-    window.onscroll = function () ***REMOVED*** myFunction() ***REMOVED***;
+    window.onscroll = function () { myFunction() };
 
     var header = document.getElementById("navs-header");
     var sticky = header.offsetTop;
 
-    function myFunction() ***REMOVED***
-        if (window.pageYOffset > sticky) ***REMOVED***
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
             header.classList.add("bg-white");
-    ***REMOVED*** else ***REMOVED***
+        } else {
             header.classList.remove("sticky");
             header.classList.remove("bg-white");
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 </script>
 @*Grafico*@
 @*<script src="https://code.highcharts.com/highcharts.js"></script>
@@ -515,39 +515,39 @@
     <script src="https://cdn.jsdelivr.net/npm/d3plus@2"></script>
 <script src="js/presupuesto_aux.js"></script>
 @*<script>
-    Highcharts.chart('container3', ***REMOVED***
-        title: ***REMOVED***
+    Highcharts.chart('container3', {
+        title: {
             //text: 'Evolución del gasto'
-      ***REMOVED***
-        xAxis: ***REMOVED***
+        },
+        xAxis: {
             categories: ['2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009']
-      ***REMOVED***
-        labels: ***REMOVED***
-            items: [***REMOVED***
+        },
+        labels: {
+            items: [{
                 //html: 'Gasto total',
-                style: ***REMOVED***
+                style: {
                     left: '50px',
                     top: '18px',
                     color: ( // theme
                         Highcharts.defaultOptions.title.style &&
                         Highcharts.defaultOptions.title.style.color
                     ) || 'black'
-            ***REMOVED***
-        ***REMOVED***]
-      ***REMOVED***
-        series: [***REMOVED***
+                }
+            }]
+        },
+        series: [{
             type: 'column',
             name: 'Gasto',
             data: [8, -24, -25, 25, 9, 19, 31, 26, 3, 32]
-      ***REMOVED*** ***REMOVED***
+        }, {
             type: 'spline',
             name: 'Average',
             data: [0, -9, -16, -8, -5, 1, 3, 4, 8, 29],
-            marker: ***REMOVED***
+            marker: {
                 lineWidth: 2,
                 lineColor: Highcharts.getOptions().colors[3],
                 fillColor: 'white'
-        ***REMOVED***
-    ***REMOVED***]
-***REMOVED***);
+            }
+        }]
+    });
 </script>*@

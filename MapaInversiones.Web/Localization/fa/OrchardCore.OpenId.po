@@ -350,16 +350,16 @@ msgctxt "OrchardCore.OpenId.Services.OpenIdValidationService"
 msgid "No appropriate scope was found."
 msgstr "اسکوپ مناسبی پیدا نشد."
 
-#. yield return new ValidationResult(S["***REMOVED***0***REMOVED*** is not wellformed", url], new[] ***REMOVED*** memberName ***REMOVED***);
+#. yield return new ValidationResult(S["{0} is not wellformed", url], new[] { memberName });
 #: OrchardCore.OpenId\ViewModels\CreateOpenIdApplicationViewModel.cs:50
 msgctxt "OrchardCore.OpenId.ViewModels.CreateOpenIdApplicationViewModel"
-msgid "***REMOVED***0***REMOVED*** is not wellformed"
+msgid "{0} is not wellformed"
 msgstr ""
 
-#. yield return new ValidationResult(S["***REMOVED***0***REMOVED*** is not wellformed", url], new[] ***REMOVED*** memberName ***REMOVED***);
+#. yield return new ValidationResult(S["{0} is not wellformed", url], new[] { memberName });
 #: OrchardCore.OpenId\ViewModels\EditOpenIdApplicationViewModel.cs:54
 msgctxt "OrchardCore.OpenId.ViewModels.EditOpenIdApplicationViewModel"
-msgid "***REMOVED***0***REMOVED*** is not wellformed"
+msgid "{0} is not wellformed"
 msgstr ""
 
 #. <span class="icon"><i class="fa fa-openid" aria-hidden="true"></i></span><span class="title">@T["OpenID Connect"]</span>
@@ -814,11 +814,11 @@ msgctxt "OrchardCore.OpenId.Views.Access.Authorize"
 msgid "Authorization"
 msgstr "صدورمجوز"
 
-#. <p class="lead text-left">@T["Do you want to grant <strong>***REMOVED***0***REMOVED***</strong> access to your data? (scopes requested: ***REMOVED***1***REMOVED***)", Model.ApplicationName, Model.Scope]</p>
+#. <p class="lead text-left">@T["Do you want to grant <strong>{0}</strong> access to your data? (scopes requested: {1})", Model.ApplicationName, Model.Scope]</p>
 #: OrchardCore.OpenId\Views\Access\Authorize.cshtml:11
 msgctxt "OrchardCore.OpenId.Views.Access.Authorize"
-msgid "Do you want to grant <strong>***REMOVED***0***REMOVED***</strong> access to your data? (scopes requested: ***REMOVED***1***REMOVED***)"
-msgstr "آیا می‌خواهید دسترسی <strong>***REMOVED***0***REMOVED***</strong> را به داده‌های خود بدهید؟ (اِسکپ‌های درخواست شده: ***REMOVED***1***REMOVED***)"
+msgid "Do you want to grant <strong>{0}</strong> access to your data? (scopes requested: {1})"
+msgstr "آیا می‌خواهید دسترسی <strong>{0}</strong> را به داده‌های خود بدهید؟ (اِسکپ‌های درخواست شده: {1})"
 
 #. <h2>@T["Ooooops, something went really bad! :("]</h2>
 #: OrchardCore.OpenId\Views\Access\Error.cshtml:9

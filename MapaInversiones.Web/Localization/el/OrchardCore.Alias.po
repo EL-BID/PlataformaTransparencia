@@ -10,11 +10,11 @@ msgstr ""
 "Language: el_GR\n"
 "PO-Revision-Date: 2020-06-02 14:15\n"
 
-#. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters.", MaxAliasLength]);
+#. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is too long. The alias can only be up to {0} characters.", MaxAliasLength]);
 #: OrchardCore.Alias\Drivers\AliasPartDisplayDriver.cs:58
 msgctxt "OrchardCore.Alias.Drivers.AliasPartDisplayDriver"
-msgid "Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Το ψευδώνυμό σας είναι πολύ μεγάλο. Το ψευδώνυμο μπορεί να είναι μόνο ***REMOVED***0***REMOVED*** χαρακτήρες."
+msgid "Your alias is too long. The alias can only be up to {0} characters."
+msgstr "Το ψευδώνυμό σας είναι πολύ μεγάλο. Το ψευδώνυμο μπορεί να είναι μόνο {0} χαρακτήρες."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is already in use."]);
 #: OrchardCore.Alias\Drivers\AliasPartDisplayDriver.cs:63
@@ -40,11 +40,11 @@ msgctxt "OrchardCore.Alias.GraphQL.AliasQueryObjectType"
 msgid "Alternative path for the content item"
 msgstr "Εναλλακτική διαδρομή για το στοιχείο περιεχομένου"
 
-#. context.Fail(S["Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters.", AliasPartDisplayDriver.MaxAliasLength]);
+#. context.Fail(S["Your alias is too long. The alias can only be up to {0} characters.", AliasPartDisplayDriver.MaxAliasLength]);
 #: OrchardCore.Alias\Handlers\AliasPartHandler.cs:52
 msgctxt "OrchardCore.Alias.Handlers.AliasPartHandler"
-msgid "Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Το ψευδώνυμό σας είναι πολύ μεγάλο. Το ψευδώνυμο μπορεί να αποτελείται από έως και ***REMOVED***0***REMOVED*** χαρακτήρες."
+msgid "Your alias is too long. The alias can only be up to {0} characters."
+msgstr "Το ψευδώνυμό σας είναι πολύ μεγάλο. Το ψευδώνυμο μπορεί να αποτελείται από έως και {0} χαρακτήρες."
 
 #. context.Fail(S["Your alias is already in use."]);
 #: OrchardCore.Alias\Handlers\AliasPartHandler.cs:57
@@ -52,11 +52,11 @@ msgctxt "OrchardCore.Alias.Handlers.AliasPartHandler"
 msgid "Your alias is already in use."
 msgstr "Το ψευδώνυμό αυτό χρησιμοποιείται ήδη."
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Alias\Settings\AliasPartSettingsDisplayDriver.cs:54
 msgctxt "OrchardCore.Alias.Settings.AliasPartSettingsDisplayDriver"
-msgid "Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
-msgstr "Το μοτίβο δεν περιέχει μια έγκυρη έκφραση Liquid. Λεπτομέρειες: ***REMOVED***0***REMOVED***"
+msgid "Pattern doesn't contain a valid Liquid expression. Details: {0}"
+msgstr "Το μοτίβο δεν περιέχει μια έγκυρη έκφραση Liquid. Λεπτομέρειες: {0}"
 
 #. <label asp-for="Alias">@T["Alias"] </label>
 #: OrchardCore.Alias\Views\AliasPart.Edit.cshtml:11

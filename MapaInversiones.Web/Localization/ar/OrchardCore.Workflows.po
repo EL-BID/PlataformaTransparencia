@@ -286,61 +286,61 @@ msgctxt "OrchardCore.Workflows.Controllers.ActivityController"
 msgid "Activity updated successfully"
 msgstr "تم تحديث النشاط بنجاح"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Recently created"], Value = nameof(WorkflowOrder.CreatedDesc) ***REMOVED***,
+#. new SelectListItem() { Text = S["Recently created"], Value = nameof(WorkflowOrder.CreatedDesc) },
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:141
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "Recently created"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["Least recently created"], Value = nameof(WorkflowOrder.Created) ***REMOVED***
+#. new SelectListItem() { Text = S["Least recently created"], Value = nameof(WorkflowOrder.Created) }
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:142
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "Least recently created"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["All"], Value = nameof(WorkflowFilter.All) ***REMOVED***,
+#. new SelectListItem() { Text = S["All"], Value = nameof(WorkflowFilter.All) },
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:146
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "All"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["Faulted"], Value = nameof(WorkflowFilter.Faulted) ***REMOVED***,
+#. new SelectListItem() { Text = S["Faulted"], Value = nameof(WorkflowFilter.Faulted) },
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:147
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "Faulted"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["Finished"], Value = nameof(WorkflowFilter.Finished) ***REMOVED***
+#. new SelectListItem() { Text = S["Finished"], Value = nameof(WorkflowFilter.Finished) }
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:148
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "Finished"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"], Value = nameof(WorkflowBulkAction.Delete) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(WorkflowBulkAction.Delete) }
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:152
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
 msgid "Delete"
 msgstr ""
 
-#. _notifier.Success(H["Workflow ***REMOVED***0***REMOVED*** has been deleted.", id]);
-#. _notifier.Success(H["Workflow ***REMOVED***0***REMOVED*** has been deleted.", workflow.Id]);
+#. _notifier.Success(H["Workflow {0} has been deleted.", id]);
+#. _notifier.Success(H["Workflow {0} has been deleted.", workflow.Id]);
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:243
 #: OrchardCore.Workflows\Controllers\WorkflowController.cs:272
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowController"
-msgid "Workflow ***REMOVED***0***REMOVED*** has been deleted."
-msgstr "تم حذف المسير ***REMOVED***0***REMOVED*** بنجاح."
+msgid "Workflow {0} has been deleted."
+msgstr "تم حذف المسير {0} بنجاح."
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"].Value, Value = nameof(WorkflowTypeBulkAction.Delete) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"].Value, Value = nameof(WorkflowTypeBulkAction.Delete) }
 #: OrchardCore.Workflows\Controllers\WorkflowTypeController.cs:157
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowTypeController"
 msgid "Delete"
 msgstr ""
 
-#. _notifier.Success(H["Workflow ***REMOVED***0***REMOVED*** has been deleted.", workflowType.Name]);
+#. _notifier.Success(H["Workflow {0} has been deleted.", workflowType.Name]);
 #: OrchardCore.Workflows\Controllers\WorkflowTypeController.cs:197
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowTypeController"
-msgid "Workflow ***REMOVED***0***REMOVED*** has been deleted."
-msgstr "تم حذف المسير ***REMOVED***0***REMOVED*** بنجاح."
+msgid "Workflow {0} has been deleted."
+msgstr "تم حذف المسير {0} بنجاح."
 
 #. _notifier.Success(H["Workflow type has been saved."]);
 #: OrchardCore.Workflows\Controllers\WorkflowTypeController.cs:457
@@ -348,11 +348,11 @@ msgctxt "OrchardCore.Workflows.Controllers.WorkflowTypeController"
 msgid "Workflow type has been saved."
 msgstr "تم حفظ نوع المسير."
 
-#. _notifier.Success(H["Workflow type ***REMOVED***0***REMOVED*** deleted", workflowType.Name]);
+#. _notifier.Success(H["Workflow type {0} deleted", workflowType.Name]);
 #: OrchardCore.Workflows\Controllers\WorkflowTypeController.cs:477
 msgctxt "OrchardCore.Workflows.Controllers.WorkflowTypeController"
-msgid "Workflow type ***REMOVED***0***REMOVED*** deleted"
-msgstr "تم حذف نوع المسير ***REMOVED***0***REMOVED***"
+msgid "Workflow type {0} deleted"
+msgstr "تم حذف نوع المسير {0}"
 
 #. public override LocalizedString DisplayText => S["Timer Event"];
 #: OrchardCore.Workflows\Timers\TimerEvent.cs:26
@@ -492,11 +492,11 @@ msgctxt "OrchardCore.Workflows.UserTasks.Activities.UserTaskEvent"
 msgid "Content"
 msgstr "محتوى"
 
-#. _notifier.Error(H["Not authorized to trigger '***REMOVED***0***REMOVED***'", action]);
+#. _notifier.Error(H["Not authorized to trigger '{0}'", action]);
 #: OrchardCore.Workflows\UserTasks\Drivers\UserTaskEventContentDriver.cs:71
 msgctxt "OrchardCore.Workflows.UserTasks.Drivers.UserTaskEventContentDriver"
-msgid "Not authorized to trigger '***REMOVED***0***REMOVED***'"
-msgstr "غير مصرح له بتشغيل ***REMOVED***0***REMOVED***"
+msgid "Not authorized to trigger '{0}'"
+msgstr "غير مصرح له بتشغيل {0}"
 
 #. <a class="btn btn-outline-secondary activity-start-action" href="#" data-toggle="button" title="@T["Startup task"]"><i class="fa fa-power-off"></i></a>
 #: OrchardCore.Workflows\Views\Activity.Design.cshtml:25
@@ -546,11 +546,11 @@ msgctxt "OrchardCore.Workflows.Views.NavigationItemText-workflows.Id"
 msgid "Workflows"
 msgstr "مسيرات عمل"
 
-#. <h1>@RenderTitleSegments(T["Add ***REMOVED***0***REMOVED***", Model.Activity.DisplayText.Value])</h1>
+#. <h1>@RenderTitleSegments(T["Add {0}", Model.Activity.DisplayText.Value])</h1>
 #: OrchardCore.Workflows\Views\Activity\Create.cshtml:4
 msgctxt "OrchardCore.Workflows.Views.Activity.Create"
-msgid "Add ***REMOVED***0***REMOVED***"
-msgstr "إضافة ***REMOVED***0***REMOVED***"
+msgid "Add {0}"
+msgstr "إضافة {0}"
 
 #. <button class="btn btn-primary" type="submit">@T["Save"]</button>
 #: OrchardCore.Workflows\Views\Activity\Create.cshtml:12
@@ -564,11 +564,11 @@ msgctxt "OrchardCore.Workflows.Views.Activity.Create"
 msgid "Cancel"
 msgstr "إلغاء"
 
-#. <h1>@RenderTitleSegments(T["Edit ***REMOVED***0***REMOVED***", Model.Activity.DisplayText.Value])</h1>
+#. <h1>@RenderTitleSegments(T["Edit {0}", Model.Activity.DisplayText.Value])</h1>
 #: OrchardCore.Workflows\Views\Activity\EditActivity.cshtml:4
 msgctxt "OrchardCore.Workflows.Views.Activity.EditActivity"
-msgid "Edit ***REMOVED***0***REMOVED***"
-msgstr "تحرير ***REMOVED***0***REMOVED***"
+msgid "Edit {0}"
+msgstr "تحرير {0}"
 
 #. <button class="btn btn-primary" type="submit">@T["Save"]</button>
 #: OrchardCore.Workflows\Views\Activity\EditActivity.cshtml:12
@@ -666,11 +666,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.ForEachTask.Fields.Design"
 msgid "For Each"
 msgstr "لكل"
 
-#. <span>@T["Iterate <em>***REMOVED***0***REMOVED***</em> over <em>***REMOVED***1***REMOVED***</em>", Model.Activity.LoopVariableName, Model.Activity.Enumerable]</span>
+#. <span>@T["Iterate <em>{0}</em> over <em>{1}</em>", Model.Activity.LoopVariableName, Model.Activity.Enumerable]</span>
 #: OrchardCore.Workflows\Views\Items\ForEachTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.ForEachTask.Fields.Design"
-msgid "Iterate <em>***REMOVED***0***REMOVED***</em> over <em>***REMOVED***1***REMOVED***</em>"
-msgstr "التكرار <em>***REMOVED***0***REMOVED***</em> على <em>***REMOVED***1***REMOVED***</em>"
+msgid "Iterate <em>{0}</em> over <em>{1}</em>"
+msgstr "التكرار <em>{0}</em> على <em>{1}</em>"
 
 #. <label asp-for="EnumerableExpression">@T["Enumerable Expression"]</label>
 #: OrchardCore.Workflows\Views\Items\ForEachTask.Fields.Edit.cshtml:5
@@ -714,11 +714,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.ForkTask.Fields.Design"
 msgid "Fork"
 msgstr "تفرع"
 
-#. <span>@T["Fork execution into <em>***REMOVED***0***REMOVED***</em>", string.Join(", ", Model.Activity.Forks)]</span>
+#. <span>@T["Fork execution into <em>{0}</em>", string.Join(", ", Model.Activity.Forks)]</span>
 #: OrchardCore.Workflows\Views\Items\ForkTask.Fields.Design.cshtml:9
 msgctxt "OrchardCore.Workflows.Views.Items.ForkTask.Fields.Design"
-msgid "Fork execution into <em>***REMOVED***0***REMOVED***</em>"
-msgstr "تنفيذ تفرع إلى <em>***REMOVED***0***REMOVED***</em>"
+msgid "Fork execution into <em>{0}</em>"
+msgstr "تنفيذ تفرع إلى <em>{0}</em>"
 
 #. <span>@T["No forks"]</span>
 #: OrchardCore.Workflows\Views\Items\ForkTask.Fields.Design.cshtml:13
@@ -756,11 +756,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.ForLoopTask.Fields.Design"
 msgid "For Loop"
 msgstr "التكرار For"
 
-#. <span>@T["Iterate <em>***REMOVED***0***REMOVED***</em> from <em>***REMOVED***1***REMOVED***</em> to <em>***REMOVED***2***REMOVED***</em>", Model.Activity.LoopVariableName, Model.Activity.From, Model.Activity.To]</span>
+#. <span>@T["Iterate <em>{0}</em> from <em>{1}</em> to <em>{2}</em>", Model.Activity.LoopVariableName, Model.Activity.From, Model.Activity.To]</span>
 #: OrchardCore.Workflows\Views\Items\ForLoopTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.ForLoopTask.Fields.Design"
-msgid "Iterate <em>***REMOVED***0***REMOVED***</em> from <em>***REMOVED***1***REMOVED***</em> to <em>***REMOVED***2***REMOVED***</em>"
-msgstr "كرر <em>***REMOVED***0***REMOVED***</em> من <em>***REMOVED***1***REMOVED***</em> إلى <em>***REMOVED***2***REMOVED***</em>"
+msgid "Iterate <em>{0}</em> from <em>{1}</em> to <em>{2}</em>"
+msgstr "كرر <em>{0}</em> من <em>{1}</em> إلى <em>{2}</em>"
 
 #. <label asp-for="FromExpression">@T["From Expression"]</label>
 #: OrchardCore.Workflows\Views\Items\ForLoopTask.Fields.Edit.cshtml:5
@@ -1020,11 +1020,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.HttpRequestTask.Fields.Design"
 msgid "HTTP Request"
 msgstr "طلب HTTP"
 
-#. <span>@T["<em>***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***</em>", Model.Activity.HttpMethod, Model.Activity.Url]</span>
+#. <span>@T["<em>{0} {1}</em>", Model.Activity.HttpMethod, Model.Activity.Url]</span>
 #: OrchardCore.Workflows\Views\Items\HttpRequestTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.HttpRequestTask.Fields.Design"
-msgid "<em>***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***</em>"
-msgstr "<em>***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***</em>"
+msgid "<em>{0} {1}</em>"
+msgstr "<em>{0} {1}</em>"
 
 #. <label asp-for="Url">@T["URL"]</label>
 #: OrchardCore.Workflows\Views\Items\HttpRequestTask.Fields.Edit.cshtml:5
@@ -1182,11 +1182,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.IfElseTask.Fields.Design"
 msgid "If/Else"
 msgstr "إذا كان/إلا"
 
-#. <span>@T["Evaluate <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Condition]</span>
+#. <span>@T["Evaluate <em>{0}</em>", Model.Activity.Condition]</span>
 #: OrchardCore.Workflows\Views\Items\IfElseTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.IfElseTask.Fields.Design"
-msgid "Evaluate <em>***REMOVED***0***REMOVED***</em>"
-msgstr "حساب <em>***REMOVED***0***REMOVED***</em>"
+msgid "Evaluate <em>{0}</em>"
+msgstr "حساب <em>{0}</em>"
 
 #. <label asp-for="ConditionExpression">@T["Condition Expression"]</label>
 #: OrchardCore.Workflows\Views\Items\IfElseTask.Fields.Edit.cshtml:5
@@ -1302,17 +1302,17 @@ msgctxt "OrchardCore.Workflows.Views.Items.MissingActivity.Fields.Design"
 msgid "Missing Activity"
 msgstr "نشاط مفقود"
 
-#. <span>@T["<em>***REMOVED***0***REMOVED***</em> is no longer available.", Model.Activity.MissingActivityRecord.Name]</span>
+#. <span>@T["<em>{0}</em> is no longer available.", Model.Activity.MissingActivityRecord.Name]</span>
 #: OrchardCore.Workflows\Views\Items\MissingActivity.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.MissingActivity.Fields.Design"
-msgid "<em>***REMOVED***0***REMOVED***</em> is no longer available."
-msgstr "<em>***REMOVED***0***REMOVED***</em> لم يعد متوفر."
+msgid "<em>{0}</em> is no longer available."
+msgstr "<em>{0}</em> لم يعد متوفر."
 
-#. <h4><i class="fa fa-@className"></i>@Model.Activity.GetTitleOrDefault(() => T["***REMOVED***0***REMOVED*** Notification", Model.Activity.NotificationType])</h4>
+#. <h4><i class="fa fa-@className"></i>@Model.Activity.GetTitleOrDefault(() => T["{0} Notification", Model.Activity.NotificationType])</h4>
 #: OrchardCore.Workflows\Views\Items\NotifyTask.Fields.Design.cshtml:20
 msgctxt "OrchardCore.Workflows.Views.Items.NotifyTask.Fields.Design"
-msgid "***REMOVED***0***REMOVED*** Notification"
-msgstr "***REMOVED***0***REMOVED*** إشعارات"
+msgid "{0} Notification"
+msgstr "{0} إشعارات"
 
 #. <label asp-for="NotificationType">@T["Notification Type"]</label>
 #: OrchardCore.Workflows\Views\Items\NotifyTask.Fields.Edit.cshtml:6
@@ -1392,11 +1392,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.ScriptTask.Fields.Thumbnail"
 msgid "Execute script and continue execution based on the returned outcome."
 msgstr "نفذ السكريبت واستمر في التنفيذ بناءاً على المخرج الذي تم إرجاعه."
 
-#. <h4><i class="fa fa-plug"></i>@Model.Activity.GetTitleOrDefault(() => T["Output via ***REMOVED***0***REMOVED***", Model.Activity.OutputName])</h4>
+#. <h4><i class="fa fa-plug"></i>@Model.Activity.GetTitleOrDefault(() => T["Output via {0}", Model.Activity.OutputName])</h4>
 #: OrchardCore.Workflows\Views\Items\SetOutputTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Workflows.Views.Items.SetOutputTask.Fields.Design"
-msgid "Output via ***REMOVED***0***REMOVED***"
-msgstr "الإخراج عن طريق ***REMOVED***0***REMOVED***"
+msgid "Output via {0}"
+msgstr "الإخراج عن طريق {0}"
 
 #. <label asp-for="OutputName">@T["Name"]</label>
 #: OrchardCore.Workflows\Views\Items\SetOutputTask.Fields.Edit.cshtml:5
@@ -1434,11 +1434,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.SetOutputTask.Fields.Thumbnail"
 msgid "Evaluate a script expression and store the result into the workflow's output."
 msgstr "حساب تعبير جافا سكربت وخزن النتيجة في تدفق عمل الإخراج."
 
-#. <h4><i class="fa fa-pencil"></i>@Model.Activity.GetTitleOrDefault(() => T["Set ***REMOVED***0***REMOVED*** Property", Model.Activity.PropertyName])</h4>
+#. <h4><i class="fa fa-pencil"></i>@Model.Activity.GetTitleOrDefault(() => T["Set {0} Property", Model.Activity.PropertyName])</h4>
 #: OrchardCore.Workflows\Views\Items\SetPropertyTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Workflows.Views.Items.SetPropertyTask.Fields.Design"
-msgid "Set ***REMOVED***0***REMOVED*** Property"
-msgstr "ضبط الخاصية ***REMOVED***0***REMOVED***"
+msgid "Set {0} Property"
+msgstr "ضبط الخاصية {0}"
 
 #. <label asp-for="PropertyName">@T["Name"]</label>
 #: OrchardCore.Workflows\Views\Items\SetPropertyTask.Fields.Edit.cshtml:5
@@ -1482,11 +1482,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.SignalEvent.Fields.Design"
 msgid "Signal"
 msgstr "إشارة"
 
-#. <span>@T["When <em>***REMOVED***0***REMOVED***</em> is triggered", Model.Activity.SignalName]</span>
+#. <span>@T["When <em>{0}</em> is triggered", Model.Activity.SignalName]</span>
 #: OrchardCore.Workflows\Views\Items\SignalEvent.Fields.Design.cshtml:7
 msgctxt "OrchardCore.Workflows.Views.Items.SignalEvent.Fields.Design"
-msgid "When <em>***REMOVED***0***REMOVED***</em> is triggered"
-msgstr "عندما يتم تشغيل <em>***REMOVED***0***REMOVED***</em>"
+msgid "When <em>{0}</em> is triggered"
+msgstr "عندما يتم تشغيل <em>{0}</em>"
 
 #. <label asp-for="SignalNameExpression">@T["Name"]</label>
 #: OrchardCore.Workflows\Views\Items\SignalEvent.Fields.Edit.cshtml:5
@@ -1518,11 +1518,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.TimerEvent.Fields.Design"
 msgid "Timer"
 msgstr "مؤقت"
 
-#. <span>@T["<em>***REMOVED***0***REMOVED***</em>", Model.Activity.CronExpression]</span>
+#. <span>@T["<em>{0}</em>", Model.Activity.CronExpression]</span>
 #: OrchardCore.Workflows\Views\Items\TimerEvent.Fields.Design.cshtml:7
 msgctxt "OrchardCore.Workflows.Views.Items.TimerEvent.Fields.Design"
-msgid "<em>***REMOVED***0***REMOVED***</em>"
-msgstr "<em>***REMOVED***0***REMOVED***</em>"
+msgid "<em>{0}</em>"
+msgstr "<em>{0}</em>"
 
 #. <label asp-for="CronExpression">@T["CRON Expression"]</label>
 #: OrchardCore.Workflows\Views\Items\TimerEvent.Fields.Edit.cshtml:5
@@ -1554,23 +1554,23 @@ msgctxt "OrchardCore.Workflows.Views.Items.UserTaskEvent.Fields.Design"
 msgid "User Task"
 msgstr "مهمة مستخدم"
 
-#. <span>@T["Request any user action of <em>***REMOVED***0***REMOVED***</em>", string.Join(", ", Model.Activity.Actions)]</span><br />
+#. <span>@T["Request any user action of <em>{0}</em>", string.Join(", ", Model.Activity.Actions)]</span><br />
 #: OrchardCore.Workflows\Views\Items\UserTaskEvent.Fields.Design.cshtml:10
 msgctxt "OrchardCore.Workflows.Views.Items.UserTaskEvent.Fields.Design"
-msgid "Request any user action of <em>***REMOVED***0***REMOVED***</em>"
-msgstr "طلب أي إجراء للمستخدم من <em>***REMOVED***0***REMOVED***</em>"
+msgid "Request any user action of <em>{0}</em>"
+msgstr "طلب أي إجراء للمستخدم من <em>{0}</em>"
 
-#. <span>@T["Required roles: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Roles.Any() ? new LocalizedHtmlString("RequiredRoles", string.Join(", ", Model.Activity.Roles)) : T["Any"]]</span>
+#. <span>@T["Required roles: <em>{0}</em>", Model.Activity.Roles.Any() ? new LocalizedHtmlString("RequiredRoles", string.Join(", ", Model.Activity.Roles)) : T["Any"]]</span>
 #: OrchardCore.Workflows\Views\Items\UserTaskEvent.Fields.Design.cshtml:11
 msgctxt "OrchardCore.Workflows.Views.Items.UserTaskEvent.Fields.Design"
 msgid "Any"
 msgstr "أيّما"
 
-#. <span>@T["Required roles: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Roles.Any() ? new LocalizedHtmlString("RequiredRoles", string.Join(", ", Model.Activity.Roles)) : T["Any"]]</span>
+#. <span>@T["Required roles: <em>{0}</em>", Model.Activity.Roles.Any() ? new LocalizedHtmlString("RequiredRoles", string.Join(", ", Model.Activity.Roles)) : T["Any"]]</span>
 #: OrchardCore.Workflows\Views\Items\UserTaskEvent.Fields.Design.cshtml:11
 msgctxt "OrchardCore.Workflows.Views.Items.UserTaskEvent.Fields.Design"
-msgid "Required roles: <em>***REMOVED***0***REMOVED***</em>"
-msgstr "الأدوار المطلوبة: <em>***REMOVED***0***REMOVED***</em>"
+msgid "Required roles: <em>{0}</em>"
+msgstr "الأدوار المطلوبة: <em>{0}</em>"
 
 #. <span>@T["No user actions specified"]</span>
 #: OrchardCore.Workflows\Views\Items\UserTaskEvent.Fields.Design.cshtml:15
@@ -1620,11 +1620,11 @@ msgctxt "OrchardCore.Workflows.Views.Items.WhileLoopTask.Fields.Design"
 msgid "While Loop"
 msgstr "التكرار While"
 
-#. <span>@T["Loop while <em>***REMOVED***0***REMOVED***</em> is true", Model.Activity.Condition]</span>
+#. <span>@T["Loop while <em>{0}</em> is true", Model.Activity.Condition]</span>
 #: OrchardCore.Workflows\Views\Items\WhileLoopTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Workflows.Views.Items.WhileLoopTask.Fields.Design"
-msgid "Loop while <em>***REMOVED***0***REMOVED***</em> is true"
-msgstr "كرر بينما <em>***REMOVED***0***REMOVED***</em> صحيح"
+msgid "Loop while <em>{0}</em> is true"
+msgstr "كرر بينما <em>{0}</em> صحيح"
 
 #. <label asp-for="ConditionExpression">@T["Condition Expression"]</label>
 #: OrchardCore.Workflows\Views\Items\WhileLoopTask.Fields.Edit.cshtml:5
@@ -1716,11 +1716,11 @@ msgctxt "OrchardCore.Workflows.Views.Workflow.Details"
 msgid "Delete"
 msgstr "حذف"
 
-#. <h1>@RenderTitleSegments(T["***REMOVED***0***REMOVED*** Workflows", Model.WorkflowType.Name])</h1>
+#. <h1>@RenderTitleSegments(T["{0} Workflows", Model.WorkflowType.Name])</h1>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:12
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
-msgid "***REMOVED***0***REMOVED*** Workflows"
-msgstr "***REMOVED***0***REMOVED*** تدفقات عمل"
+msgid "{0} Workflows"
+msgstr "{0} تدفقات عمل"
 
 #. <li class="breadcrumb-item"><a asp-action="Index" asp-controller="WorkflowType">@T["Workflow Types"]</a></li>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:16
@@ -1740,11 +1740,11 @@ msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
 msgid "Select All"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:36
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -1752,17 +1752,17 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:36
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Workflows.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:36
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -1776,16 +1776,16 @@ msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
 msgid "Actions"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:48
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
 msgid "Bulk Action"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:48
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** these items?"
+msgid "Are you sure you want to {0} these items?"
 msgstr ""
 
 #. <select asp-for="Options.Filter" asp-items="Model.Options.WorkflowsStatuses" class="selectpicker show-tick mr-2" data-header="@T["Filter by status"]" data-live-search="true" data-selected-text-format="static" data-dropdown-align-right="true" data-width="fit" title="@T["Status"]" data-style="btn-sm">
@@ -1818,11 +1818,11 @@ msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
 msgid "Delete"
 msgstr "حذف"
 
-#. <span class="hint">@T["Created ***REMOVED***0***REMOVED***", (object)(await DisplayAsync(await New.TimeSpan(Utc: entry.Workflow.CreatedUtc)))]</span>
+#. <span class="hint">@T["Created {0}", (object)(await DisplayAsync(await New.TimeSpan(Utc: entry.Workflow.CreatedUtc)))]</span>
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:104
 msgctxt "OrchardCore.Workflows.Views.Workflow.Index"
-msgid "Created ***REMOVED***0***REMOVED***"
-msgstr "إنشاء ***REMOVED***0***REMOVED***"
+msgid "Created {0}"
+msgstr "إنشاء {0}"
 
 #. @T["<strong>Nothing here!</strong> There are no halted workflows at the moment."]
 #: OrchardCore.Workflows\Views\Workflow\Index.cshtml:119
@@ -2076,11 +2076,11 @@ msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "Select All"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:38
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2088,17 +2088,17 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:38
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.WorkflowTypes.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:38
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -2112,16 +2112,16 @@ msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "Actions"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:50
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "Bulk Action"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:50
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** these items?"
+msgid "Are you sure you want to {0} these items?"
 msgstr ""
 
 #. <a asp-action="Edit" asp-route-id="@entry.WorkflowType.Id" asp-route-returnUrl="@FullRequestPath" class="btn btn-primary btn-sm">@T["Edit"]</a>
@@ -2154,17 +2154,17 @@ msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "Disabled"
 msgstr "معطل"
 
-#. <a asp-action="Index" asp-controller="Workflow" asp-route-workflowtypeid="@entry.WorkflowType.Id" class="badge badge-info">@T.Plural(entry.WorkflowCount, "1 instance", "***REMOVED***0***REMOVED*** instances")</a>
+#. <a asp-action="Index" asp-controller="Workflow" asp-route-workflowtypeid="@entry.WorkflowType.Id" class="badge badge-info">@T.Plural(entry.WorkflowCount, "1 instance", "{0} instances")</a>
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:84
 msgctxt "OrchardCore.Workflows.Views.WorkflowType.Index"
 msgid "1 instance"
-msgid_plural "***REMOVED***0***REMOVED*** instances"
+msgid_plural "{0} instances"
 msgstr[0] "لا توجد كائنات"
 msgstr[1] "كائن"
 msgstr[2] "كائنين"
 msgstr[3] "بعض الكائنات"
 msgstr[4] "مجموعة كائنات"
-msgstr[5] "***REMOVED***0***REMOVED*** كائنات"
+msgstr[5] "{0} كائنات"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
 #: OrchardCore.Workflows\Views\WorkflowType\Index.cshtml:95

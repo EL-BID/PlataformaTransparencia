@@ -72,11 +72,11 @@ msgctxt "OrchardCore.Lists.Views.ListPart.DetailAdmin"
 msgid "Please specify at least one contained content type."
 msgstr "لطفا حداقل یک نوع از محتوای موجود را انتخاب کنید."
 
-#. @T["Create ***REMOVED***0***REMOVED***", contentTypeDefinition.DisplayName]
+#. @T["Create {0}", contentTypeDefinition.DisplayName]
 #: OrchardCore.Lists\Views\ListPart.DetailAdmin.cshtml:28
 msgctxt "OrchardCore.Lists.Views.ListPart.DetailAdmin"
-msgid "Create ***REMOVED***0***REMOVED***"
-msgstr "ایجاد ***REMOVED***0***REMOVED***"
+msgid "Create {0}"
+msgstr "ایجاد {0}"
 
 #. @T["Create"]
 #: OrchardCore.Lists\Views\ListPart.DetailAdmin.cshtml:39
@@ -114,11 +114,11 @@ msgctxt "OrchardCore.Lists.Views.ListPartFeed.Edit"
 msgid "Provide a custom public url which will be used to proxy the local rss feed."
 msgstr "یک آدرس دلخواه که RSS Feed محلی را در دسترس عموم قرار می‌دهد."
 
-#. <span class="hint">@T["The current feed is available at <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a>.", Url.Action("Index", "Feed", new ***REMOVED*** area = "OrchardCore.Feeds", ContentItemId = Model.ContentItem.ContentItemId ***REMOVED***, Context.Request.Scheme)]</span>
+#. <span class="hint">@T["The current feed is available at <a href=\"{0}\">{0}</a>.", Url.Action("Index", "Feed", new { area = "OrchardCore.Feeds", ContentItemId = Model.ContentItem.ContentItemId }, Context.Request.Scheme)]</span>
 #: OrchardCore.Lists\Views\ListPartFeed.Edit.cshtml:8
 msgctxt "OrchardCore.Lists.Views.ListPartFeed.Edit"
-msgid "The current feed is available at <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a>."
-msgstr "Feed فعلی توسط این آدرس <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a> در دسترس است."
+msgid "The current feed is available at <a href=\"{0}\">{0}</a>."
+msgstr "Feed فعلی توسط این آدرس <a href=\"{0}\">{0}</a> در دسترس است."
 
 #. <label asp-for="FeedItemsCount">@T["Feed items count"]</label>
 #: OrchardCore.Lists\Views\ListPartFeed.Edit.cshtml:12

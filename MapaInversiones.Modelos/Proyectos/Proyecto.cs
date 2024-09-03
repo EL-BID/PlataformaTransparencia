@@ -4,26 +4,26 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos.Proyectos
-***REMOVED***
+{
     public class Proyecto
-    ***REMOVED***
+    {
         [SolrUniqueKey("id")]
-        public int Id ***REMOVED*** get; set; ***REMOVED***
+        public int Id { get; set; }
         [SolrField("CodigoBPIN")]
-        public List<string> CodigoBPIN ***REMOVED*** get; set; ***REMOVED***
+        public List<string> CodigoBPIN { get; set; }
         [SolrField("NombreProyecto")]
-        public string NombreProyecto ***REMOVED*** get; set; ***REMOVED***
+        public string NombreProyecto { get; set; }
         [SolrField("FechaInicioProyecto")]
-        public DateTime FechaInicioProyecto ***REMOVED*** get; set; ***REMOVED***
+        public DateTime FechaInicioProyecto { get; set; }
         [SolrField("FechaFinProyecto")]
-        public DateTime FechaFinProyecto ***REMOVED*** get; set; ***REMOVED***
+        public DateTime FechaFinProyecto { get; set; }
         [SolrField("ObjetivoGeneral")]
-        public string ObjetivoGeneral ***REMOVED*** get; set; ***REMOVED***
+        public string ObjetivoGeneral { get; set; }
         [SolrField("IdSector")]
-        public int IdSector ***REMOVED*** get; set; ***REMOVED***
+        public int IdSector { get; set; }
         [SolrField("Sector")]
-        public string Sector ***REMOVED*** get; set; ***REMOVED***
+        public string Sector { get; set; }
         [SolrField("TipoDeProyecto")]
-        public string TipoDeProyecto ***REMOVED*** get; set; ***REMOVED***
-***REMOVED***
-***REMOVED***
+        public string TipoDeProyecto { get; set; }
+    }
+}

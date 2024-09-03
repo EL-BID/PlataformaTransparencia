@@ -138,23 +138,23 @@ msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink can't be set to the homepage"
 msgstr "Seu link permanente não pode ser definido para a página inicial"
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:45
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces are allowed (please use dashes or underscores instead)."
-msgstr "Por favor, não use nenhum dos seguintes caracteres no seu link permanente: ***REMOVED***0***REMOVED***. Não são permitidos espaços ou barras consecutivas (use traços ou sublinhados)."
+msgid "Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead)."
+msgstr "Por favor, não use nenhum dos seguintes caracteres no seu link permanente: {0}. Não são permitidos espaços ou barras consecutivas (use traços ou sublinhados)."
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink must end with ***REMOVED***0***REMOVED***.", SitemapPathExtension]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink must end with {0}.", SitemapPathExtension]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:51
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Your permalink must end with ***REMOVED***0***REMOVED***."
-msgstr "Seu link permanente deve terminar com ***REMOVED***0***REMOVED***."
+msgid "Your permalink must end with {0}."
+msgstr "Seu link permanente deve terminar com {0}."
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters.", MaxPathLength]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is too long. The permalink can only be up to {0} characters.", MaxPathLength]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:56
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Seu link permanente é muito comprido. O link permanente pode ter até ***REMOVED***0***REMOVED*** caracteres."
+msgid "Your permalink is too long. The permalink can only be up to {0} characters."
+msgstr "Seu link permanente é muito comprido. O link permanente pode ter até {0} caracteres."
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is already in use."]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:73

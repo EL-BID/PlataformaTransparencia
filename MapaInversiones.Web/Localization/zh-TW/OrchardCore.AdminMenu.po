@@ -113,10 +113,10 @@ msgctxt "OrchardCore.AdminMenu.Views.MenuItem.TreeSummary"
 msgid "Delete"
 msgstr "删除"
 
-#. <span class="text-warning">@T["Can't show the item of type: ***REMOVED***0***REMOVED***. Maybe a required module has been disabled?", menuType]</span>
+#. <span class="text-warning">@T["Can't show the item of type: {0}. Maybe a required module has been disabled?", menuType]</span>
 #: OrchardCore.AdminMenu\Views\MenuItem.TreeSummary.cshtml:35
 msgctxt "OrchardCore.AdminMenu.Views.MenuItem.TreeSummary"
-msgid "Can't show the item of type: ***REMOVED***0***REMOVED***. Maybe a required module has been disabled?"
+msgid "Can't show the item of type: {0}. Maybe a required module has been disabled?"
 msgstr ""
 
 #. class="btn btn-primary btn-sm">@T["Edit"]</a>
@@ -299,10 +299,10 @@ msgctxt "OrchardCore.AdminMenu.Views.Items.PlaceholderAdminNode.Fields.TreeThumb
 msgid "Adds a menu item that acts as a container for others."
 msgstr ""
 
-#. <h1>@RenderTitleSegments(T["Create Admin Menu ***REMOVED***0***REMOVED***", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Create Admin Menu {0}", Model.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Menu\Create.cshtml:3
 msgctxt "OrchardCore.AdminMenu.Views.Menu.Create"
-msgid "Create Admin Menu ***REMOVED***0***REMOVED***"
+msgid "Create Admin Menu {0}"
 msgstr ""
 
 #. <label asp-for="Name">@T["Name"]</label>
@@ -329,10 +329,10 @@ msgctxt "OrchardCore.AdminMenu.Views.Menu.Create"
 msgid "Cancel"
 msgstr ""
 
-#. <h1>@RenderTitleSegments(T["Edit Admin Menu: ***REMOVED***0***REMOVED***", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Admin Menu: {0}", Model.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Menu\Edit.cshtml:4
 msgctxt "OrchardCore.AdminMenu.Views.Menu.Edit"
-msgid "Edit Admin Menu: ***REMOVED***0***REMOVED***"
+msgid "Edit Admin Menu: {0}"
 msgstr ""
 
 #. <label asp-for="Name">@T["Name"]</label>
@@ -499,10 +499,10 @@ msgctxt "OrchardCore.AdminMenu.Views.Node.Edit"
 msgid "Cancel"
 msgstr ""
 
-#. <h1>@RenderTitleSegments(T["Edit Nodes for '***REMOVED***0***REMOVED***'", Model.AdminMenu.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Nodes for '{0}'", Model.AdminMenu.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Node\List.cshtml:12
 msgctxt "OrchardCore.AdminMenu.Views.Node.List"
-msgid "Edit Nodes for '***REMOVED***0***REMOVED***'"
+msgid "Edit Nodes for '{0}'"
 msgstr ""
 
 #. @T["Add Node"]

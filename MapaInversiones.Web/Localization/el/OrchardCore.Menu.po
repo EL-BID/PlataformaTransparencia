@@ -106,15 +106,15 @@ msgctxt "OrchardCore.Menu.Views.MenuPart.Edit"
 msgid "You have reordered the navigation."
 msgstr "Έχετε αναδιατάξει την πλοήγηση."
 
-#. <h1>@RenderTitleSegments(T["New ***REMOVED***0***REMOVED***", typeDisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["New {0}", typeDisplayName])</h1>
 #: OrchardCore.Menu\Views\Admin\Create.cshtml:13
 msgctxt "OrchardCore.Menu.Views.Admin.Create"
-msgid "New ***REMOVED***0***REMOVED***"
-msgstr "Νέο ***REMOVED***0***REMOVED***"
+msgid "New {0}"
+msgstr "Νέο {0}"
 
-#. <h1>@RenderTitleSegments(T["Edit ***REMOVED***0***REMOVED***", typeDisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["Edit {0}", typeDisplayName])</h1>
 #: OrchardCore.Menu\Views\Admin\Edit.cshtml:13
 msgctxt "OrchardCore.Menu.Views.Admin.Edit"
-msgid "Edit ***REMOVED***0***REMOVED***"
-msgstr "Επεξεργασία ***REMOVED***0***REMOVED***"
+msgid "Edit {0}"
+msgstr "Επεξεργασία {0}"
 

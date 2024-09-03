@@ -2,66 +2,66 @@
 @*PlataformaTransparencia.Modulo.Principal.Views.Entidad.perfilEntidadModel*@
 
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
   Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 
-@***REMOVED***
+@{
   var etiquetas = await Orchard.GetContentItemByHandleAsync("alias:Etiquetas");
   var LabelViculacionObjetivos = "";
   var TituloViculacionObjetivos = "";
   var LabelProgramasEntidades = "";
   var TituloProgramasEntidades = "";
 
-***REMOVED***
+}
 @foreach (var etiqueta in etiquetas.Content.BagPart.ContentItems)
-***REMOVED***
+{
   if (@etiqueta.AliasPart.Alias == "ViculacionObjetivos")
-  ***REMOVED***
+  {
     LabelViculacionObjetivos = @etiqueta.HtmlBodyPart.Html;
     TituloViculacionObjetivos = @etiqueta.TitlePart.Title;
-  ***REMOVED***
+  }
   else if (@etiqueta.AliasPart.Alias == "ProgramasEntidades")
-  ***REMOVED***
+  {
     LabelProgramasEntidades = @etiqueta.HtmlBodyPart.Html;
     TituloProgramasEntidades = @etiqueta.TitlePart.Title;
-  ***REMOVED***
-***REMOVED***
+  }
+}
 <head>
     <style>
 
-        .node rect ***REMOVED***
+        .node rect {
             cursor: move;
             fill-opacity: .8;
             shape-rendering: crispEdges;
-    ***REMOVED***
+        }
 
-        .node text ***REMOVED***
+        .node text {
             pointer-events: none;
             /*text-shadow: 0 1px 0 #fff;*/
-    ***REMOVED***
+        }
 
-        .link ***REMOVED***
+        .link {
             fill: none;
             stroke: #000;
             stroke-opacity: .1;
-    ***REMOVED***
+        }
 
-            .link:hover ***REMOVED***
+            .link:hover {
                 stroke-opacity: .2;
-        ***REMOVED***
+            }
 
-        .arc text ***REMOVED***
+        .arc text {
             font: 12px sans-serif;
             text-anchor: middle;
             font-weight: bold;
-    ***REMOVED***
+        }
 
-        .arc path ***REMOVED***
+        .arc path {
             stroke: #fff;
-    ***REMOVED***
+        }
 
-        .toolTip ***REMOVED***
+        .toolTip {
             position: absolute;
             display: none;
             width: auto;
@@ -74,7 +74,7 @@
             font: 12px sans-serif;
             padding: 5px;
             text-align: center;
-    ***REMOVED***
+        }
     </style>
 </head>
 <body>
@@ -504,9 +504,9 @@
                     <p>Programas institucionales</p>
                     <ul class="list-group list-group-flush">
                         @foreach (var itemEntidad in @Model.EntidadModel.Entidades)
-                        ***REMOVED***
+                        {
                             <li class="list-group-item"><a href=@("/PerfilEntidad?codEntidad=" + @itemEntidad.CodEntidad)><span> @itemEntidad.Nombre</span><i class="material-icons md-18">chevron_right</i></a></li>
-                    ***REMOVED***
+                        }
                         <li class='list-group-item'><a href='/BusquedaResultados?Type=Entidad'><span>Ver todos</span><i class='material-icons md-18'>chevron_right</i></a></li>
                     </ul>
                 </div>
@@ -540,20 +540,20 @@
 
     <script>
 
-        window.onscroll = function () ***REMOVED*** myFunction() ***REMOVED***;
+        window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("navs-header");
         var sticky = header.offsetTop;
 
-        function myFunction() ***REMOVED***
-            if (window.pageYOffset > sticky) ***REMOVED***
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
                 header.classList.add("sticky");
                 header.classList.add("bg-white");
-        ***REMOVED*** else ***REMOVED***
+            } else {
                 header.classList.remove("sticky");
                 header.classList.remove("bg-white");
-        ***REMOVED***
-    ***REMOVED***
+            }
+        }
     </script>
 
 </body>

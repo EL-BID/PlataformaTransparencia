@@ -113,11 +113,11 @@ msgctxt "OrchardCore.AdminMenu.Views.MenuItem.TreeSummary"
 msgid "Delete"
 msgstr "Ta bort"
 
-#. <span class="text-warning">@T["Can't show the item of type: ***REMOVED***0***REMOVED***. Maybe a required module has been disabled?", menuType]</span>
+#. <span class="text-warning">@T["Can't show the item of type: {0}. Maybe a required module has been disabled?", menuType]</span>
 #: OrchardCore.AdminMenu\Views\MenuItem.TreeSummary.cshtml:35
 msgctxt "OrchardCore.AdminMenu.Views.MenuItem.TreeSummary"
-msgid "Can't show the item of type: ***REMOVED***0***REMOVED***. Maybe a required module has been disabled?"
-msgstr "Kan inte visa objektet av typ: ***REMOVED***0***REMOVED***. Kanske har en nödvändig modul inaktiverats?"
+msgid "Can't show the item of type: {0}. Maybe a required module has been disabled?"
+msgstr "Kan inte visa objektet av typ: {0}. Kanske har en nödvändig modul inaktiverats?"
 
 #. class="btn btn-primary btn-sm">@T["Edit"]</a>
 #: OrchardCore.AdminMenu\Views\MenuItem.TreeSummary.cshtml:45
@@ -299,11 +299,11 @@ msgctxt "OrchardCore.AdminMenu.Views.Items.PlaceholderAdminNode.Fields.TreeThumb
 msgid "Adds a menu item that acts as a container for others."
 msgstr "Lägger till ett meny-objekt som agerar behållare för andra."
 
-#. <h1>@RenderTitleSegments(T["Create Admin Menu ***REMOVED***0***REMOVED***", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Create Admin Menu {0}", Model.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Menu\Create.cshtml:3
 msgctxt "OrchardCore.AdminMenu.Views.Menu.Create"
-msgid "Create Admin Menu ***REMOVED***0***REMOVED***"
-msgstr "Skapa admin-meny ***REMOVED***0***REMOVED***"
+msgid "Create Admin Menu {0}"
+msgstr "Skapa admin-meny {0}"
 
 #. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.AdminMenu\Views\Menu\Create.cshtml:9
@@ -329,11 +329,11 @@ msgctxt "OrchardCore.AdminMenu.Views.Menu.Create"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#. <h1>@RenderTitleSegments(T["Edit Admin Menu: ***REMOVED***0***REMOVED***", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Admin Menu: {0}", Model.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Menu\Edit.cshtml:4
 msgctxt "OrchardCore.AdminMenu.Views.Menu.Edit"
-msgid "Edit Admin Menu: ***REMOVED***0***REMOVED***"
-msgstr "Redigera administratörsmenyn: ***REMOVED***0***REMOVED***"
+msgid "Edit Admin Menu: {0}"
+msgstr "Redigera administratörsmenyn: {0}"
 
 #. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.AdminMenu\Views\Menu\Edit.cshtml:9
@@ -499,11 +499,11 @@ msgctxt "OrchardCore.AdminMenu.Views.Node.Edit"
 msgid "Cancel"
 msgstr "Avbryt"
 
-#. <h1>@RenderTitleSegments(T["Edit Nodes for '***REMOVED***0***REMOVED***'", Model.AdminMenu.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Nodes for '{0}'", Model.AdminMenu.Name])</h1>
 #: OrchardCore.AdminMenu\Views\Node\List.cshtml:12
 msgctxt "OrchardCore.AdminMenu.Views.Node.List"
-msgid "Edit Nodes for '***REMOVED***0***REMOVED***'"
-msgstr "Redigera noder för '***REMOVED***0***REMOVED***'"
+msgid "Edit Nodes for '{0}'"
+msgstr "Redigera noder för '{0}'"
 
 #. @T["Add Node"]
 #: OrchardCore.AdminMenu\Views\Node\List.cshtml:19

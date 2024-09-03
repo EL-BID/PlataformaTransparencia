@@ -25,7 +25,7 @@
                                 </a>
                             </li>
                             @*@if (User.Identity.IsAuthenticated)
-            ***REMOVED***<text>
+            {<text>
                     <li>
                         <form method="post" class="form-inline" action="/Users/LogOff">
                             <button type="submit" class="btn-sesionHome" role="button">Cerrar sesión</button>
@@ -39,9 +39,9 @@
                         </a>
                     </li>
             </text>
-    ***REMOVED***
+        }
         else
-        ***REMOVED***
+        {
             <li>
                 <a href="/Login" title="Inicie sesión">
                     Inicie sesión
@@ -52,7 +52,7 @@
                     ¿Nuevo usuario?
                 </a>
             </li>
-    ***REMOVED****@
+        }*@
                         </ul>
                     </div>
                 </div>
@@ -100,71 +100,71 @@
                         <div class="col-auto header-fixed-col d-none d-lg-block col-static">
                             <!-- Begin main menu -->
                             <nav class="main-mnu">
-                                @***REMOVED***
+                                @{
                                     var menu = await Orchard.GetContentItemByHandleAsync("alias:second-menu");
                                                               <ul class="main-mnu-list">
                                                                 @foreach (var menuitem in menu.Content.MenuItemsListPart.MenuItems)
-                                                                ***REMOVED***
+                                                                {
                                                                   @if (@menuitem.LinkMenuItemPart.Name != null)
-                                                                  ***REMOVED***
+                                                                  {
                                                                     var enlace = @menuitem.LinkMenuItemPart.Url;
                                                                     var nameEnlace = @menuitem.LinkMenuItemPart.Name.Value;
                                                                     var enlace_aux = "#!";
                                                                     if (enlace != "")
-                                                                    ***REMOVED***
+                                                                    {
                                                                       enlace_aux = enlace;
-                                                                ***REMOVED***
+                                                                    }
                                                                     var claseLi = "main-mnu-item-has-child";
                                                                     @if (ViewBag != null && ViewBag.ruta != null && ViewBag.ruta == @nameEnlace)
-                                                                    ***REMOVED***
+                                                                    {
                                                                       claseLi= "main-mnu-item-has-child-activeTab";
-                                                                ***REMOVED***
+                                                                    }
 
                                                                       <li class=@claseLi>
 
                                                                         @if (menuitem.MenuItemsListPart != null)
-                                                                        ***REMOVED***
+                                                                        {
                                                                           <a href="@enlace_aux" data-title="@menuitem.LinkMenuItemPart.Name">
                                                                             <span>@menuitem.LinkMenuItemPart.Name</span>
                                                                             <i class="material-icons">expand_more</i>
                                                                           </a>
                                                                           var cant = @menuitem.MenuItemsListPart.MenuItems.Count;
                                                                           if (@cant > 0)
-                                                                          ***REMOVED***
+                                                                          {
                                                                             <ul>
                                                                               @foreach (var submenu in menuitem.MenuItemsListPart.MenuItems)
-                                                                              ***REMOVED***
+                                                                              {
                                                                                 @if (@submenu.LinkMenuItemPart.Name != null)
-                                                                                ***REMOVED***
+                                                                                {
                                                                                   var enlace_sub = @submenu.LinkMenuItemPart.Url;
                                                                                   var enlace_sub_aux = "#!";
                                                                                   if (enlace_sub != "")
-                                                                                  ***REMOVED***
+                                                                                  {
                                                                                     enlace_sub_aux = enlace_sub;
-                                                                              ***REMOVED***
+                                                                                  }
                                                                                   <li>
                                                                                     <a href="@enlace_sub_aux" data-title="@submenu.LinkMenuItemPart.Name">
                                                                                       <span>@submenu.LinkMenuItemPart.Name</span>
                                                                                     </a>
                                                                                   </li>
-                                                                            ***REMOVED***
-                                                                          ***REMOVED***
+                                                                                }
+                                                                              }
                                                                             </ul>
-                                                                      ***REMOVED***
+                                                                          }
 
-                                                                    ***REMOVED***
+                                                                        }
                                                                         else
-                                                                        ***REMOVED***
+                                                                        {
                                                                           <a href="@enlace_aux" data-title="@menuitem.LinkMenuItemPart.Name">
                                                                             <span>@menuitem.LinkMenuItemPart.Name</span>
                                                                           </a>
 
-                                                                    ***REMOVED***
+                                                                        }
                                                                       </li>
-                                                                  ***REMOVED***
-                                                                  ***REMOVED***
+                                                                      }
+                                                                      }
                                                                     </ul>
-                            ***REMOVED***
+                                }
                             </nav><!-- End main menu -->
                         </div>
                         <div class="col-auto header-fixed-col col-static">
@@ -211,7 +211,7 @@
                                                 </a>
                                             </li>
                                             @if (User.Identity.IsAuthenticated)
-                                            ***REMOVED***<text>
+                                            {<text>
                                                     <li>
                                                         <a href="/Users/LogOff" title="Cerrar sesión">
                                                             Cerrar sesión
@@ -223,9 +223,9 @@
                                                         </a>
                                                     </li>
                                             </text>
-                                    ***REMOVED***
+                                        }
                                         else
-                                        ***REMOVED***
+                                        {
                                             <li>
                                                 <a href="/Login" title="Inicie sesión">
                                                     Inicie sesión
@@ -236,7 +236,7 @@
                                                     ¿Nuevo usuario?
                                                 </a>
                                             </li>
-                                    ***REMOVED***
+                                        }
 
                                         </ul>
                                     </div>
@@ -255,7 +255,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y2P29FNQKB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag()***REMOVED***dataLayer.push(arguments);***REMOVED***
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-Y2P29FNQKB');

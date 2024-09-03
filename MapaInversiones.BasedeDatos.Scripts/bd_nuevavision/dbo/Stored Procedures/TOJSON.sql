@@ -32,9 +32,9 @@ Declare @JSON  varchar(max) = ''
      ,cteBld as (
       Select *
 	  
-            ,NewRow = IIF(Lag(Entity,1)  over (Partition By RowN Order By (Select NULL))=Entity,'',',***REMOVED***')
-            ,EndRow = (CASE WHEN Attribute='Nombre' THEN IIF(Lead(Entity,1) over (Partition By RowN Order By (Select NULL))=Entity,'','***REMOVED***') 
-			ELSE IIF(Lead(Entity,1) over (Partition By RowN Order By (Select NULL))=Entity,',','***REMOVED***')
+            ,NewRow = IIF(Lag(Entity,1)  over (Partition By RowN Order By (Select NULL))=Entity,'',',{')
+            ,EndRow = (CASE WHEN Attribute='Nombre' THEN IIF(Lead(Entity,1) over (Partition By RowN Order By (Select NULL))=Entity,'','}') 
+			ELSE IIF(Lead(Entity,1) over (Partition By RowN Order By (Select NULL))=Entity,',','}')
 			 END)
 		 -- , cteEAV.Entity
 		     ,JSON=(CASE WHEN Attribute='RowNo' THEN ''

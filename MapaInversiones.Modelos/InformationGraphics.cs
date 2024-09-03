@@ -3,70 +3,70 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
     public class InformationGraphics
-    ***REMOVED***
+    {
         /// <summary>
         /// Descripcion del item que se va a sacar
         /// </summary>
         ///<remarks>Por ejemplo Nombre sector, Nombre recurso</remarks>
         ///
-        public string labelGroup ***REMOVED*** get; set; ***REMOVED***
-        public string label ***REMOVED*** get; set; ***REMOVED***
-        public string label_inf ***REMOVED*** get; set; ***REMOVED***
-        public string label_nivel4 ***REMOVED*** get; set; ***REMOVED***
+        public string labelGroup { get; set; }
+        public string label { get; set; }
+        public string label_inf { get; set; }
+        public string label_nivel4 { get; set; }
         /// <summary>
         /// Porcentaje del item.
         /// </summary>
-        public string value ***REMOVED*** get; set; ***REMOVED***
+        public string value { get; set; }
         /// <summary>
         /// Número de registros del item que se va a sacar
         /// </summary>
-        public decimal rawValue ***REMOVED*** get; set; ***REMOVED***
-        public decimal rawValue_asoc ***REMOVED*** get; set; ***REMOVED***
-        public double rawValueDouble ***REMOVED*** get; set; ***REMOVED***
-        public int rawValueInt ***REMOVED*** get; set; ***REMOVED***
-        public decimal porcentaje ***REMOVED*** get; set; ***REMOVED***
-***REMOVED***
+        public decimal rawValue { get; set; }
+        public decimal rawValue_asoc { get; set; }
+        public double rawValueDouble { get; set; }
+        public int rawValueInt { get; set; }
+        public decimal porcentaje { get; set; }
+    }
 
     public class InfoRecursosEmergenciaPerObjeto : InformationGraphics
-    ***REMOVED***
+    {
 
-***REMOVED***
+    }
 
     public class InfoPresupuesto : InformationGraphics
-    ***REMOVED***
-        public decimal? totalGasto ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalPresupuesto ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalMH ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalClasificacion ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalClasePrograma ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalEntidad ***REMOVED*** get; set; ***REMOVED***
-        public decimal? totalProyectoActividad ***REMOVED*** get; set; ***REMOVED***
-        public int annio ***REMOVED*** get; set; ***REMOVED***
-        public string trimestre ***REMOVED*** get; set; ***REMOVED***
-        public string clasificacion ***REMOVED*** get; set; ***REMOVED***
-        public string entidad ***REMOVED*** get; set; ***REMOVED***
-        public string clasePrograma ***REMOVED*** get; set; ***REMOVED***
-        public string proyectoActividad ***REMOVED*** get; set; ***REMOVED***
-        public int version ***REMOVED*** get; set; ***REMOVED***
-        public string nombreVersion ***REMOVED*** get; set; ***REMOVED***
+    {
+        public decimal? totalGasto { get; set; }
+        public decimal? totalPresupuesto { get; set; }
+        public decimal? totalMH { get; set; }
+        public decimal? totalClasificacion { get; set; }
+        public decimal? totalClasePrograma { get; set; }
+        public decimal? totalEntidad { get; set; }
+        public decimal? totalProyectoActividad { get; set; }
+        public int annio { get; set; }
+        public string trimestre { get; set; }
+        public string clasificacion { get; set; }
+        public string entidad { get; set; }
+        public string clasePrograma { get; set; }
+        public string proyectoActividad { get; set; }
+        public int version { get; set; }
+        public string nombreVersion { get; set; }
 
 
-***REMOVED***
+    }
 
-    public class InfoRecAsignadosPlan : InformationGraphics ***REMOVED*** 
-       public int? periodo ***REMOVED*** get; set; ***REMOVED***
-***REMOVED***
+    public class InfoRecAsignadosPlan : InformationGraphics { 
+       public int? periodo { get; set; }
+    }
 
     public class InfoEntidadesConsolida : InformationGraphics
-    ***REMOVED***
-        public string id ***REMOVED*** get; set; ***REMOVED***
+    {
+        public string id { get; set; }
 
-        public decimal asignado ***REMOVED*** get; set; ***REMOVED***
+        public decimal asignado { get; set; }
 
-        public decimal avance ***REMOVED*** get; set; ***REMOVED***
+        public decimal avance { get; set; }
 
-        public double aporteObjetivo ***REMOVED*** get; set; ***REMOVED***
-***REMOVED***
-***REMOVED***
+        public double aporteObjetivo { get; set; }
+    }
+}

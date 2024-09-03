@@ -14,13 +14,13 @@ msgstr ""
 #: OrchardCore.Title\Drivers\TitlePartDisplay.cs:52
 msgctxt "OrchardCore.Title.Drivers.TitlePartDisplay"
 msgid "A value is required for Title."
-msgstr "Une valeur est requise pour '***REMOVED***0***REMOVED***'."
+msgstr "Une valeur est requise pour '{0}'."
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Title\Settings\TitlePartSettingsDisplayDriver.cs:57
 msgctxt "OrchardCore.Title.Settings.TitlePartSettingsDisplayDriver"
-msgid "Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
-msgstr "Le modèle ne contient pas une expression Liquid valide. Détails: ***REMOVED***0***REMOVED***"
+msgid "Pattern doesn't contain a valid Liquid expression. Details: {0}"
+msgstr "Le modèle ne contient pas une expression Liquid valide. Détails: {0}"
 
 #. <option value="" selected="@String.IsNullOrEmpty(currentDisplayMode)">@T["Standard"]</option>
 #: OrchardCore.Title\Views\TitlePart.DisplayOption.cshtml:4

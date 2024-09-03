@@ -138,23 +138,23 @@ msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink can't be set to the homepage"
 msgstr "Ihr Permalink kann nicht auf die Startseite gesetzt werden"
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:45
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces are allowed (please use dashes or underscores instead)."
-msgstr "Bitte verwenden Sie keine der folgenden Zeichen in Ihrem Permalink: ***REMOVED***0***REMOVED***. Es sind keine Leerzeichen erlaubt (bitte verwenden Sie stattdessen Bindestriche oder Unterstriche)."
+msgid "Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead)."
+msgstr "Bitte verwenden Sie keine der folgenden Zeichen in Ihrem Permalink: {0}. Es sind keine Leerzeichen erlaubt (bitte verwenden Sie stattdessen Bindestriche oder Unterstriche)."
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink must end with ***REMOVED***0***REMOVED***.", SitemapPathExtension]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink must end with {0}.", SitemapPathExtension]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:51
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Your permalink must end with ***REMOVED***0***REMOVED***."
-msgstr "Dein Permalink muss mit ***REMOVED***0***REMOVED*** enden."
+msgid "Your permalink must end with {0}."
+msgstr "Dein Permalink muss mit {0} enden."
 
-#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters.", MaxPathLength]);
+#. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is too long. The permalink can only be up to {0} characters.", MaxPathLength]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:56
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
-msgid "Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Dein Permalink ist zu lang. Der Permalink kann nur bis zu ***REMOVED***0***REMOVED*** Zeichen lang sein."
+msgid "Your permalink is too long. The permalink can only be up to {0} characters."
+msgstr "Dein Permalink ist zu lang. Der Permalink kann nur bis zu {0} Zeichen lang sein."
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is already in use."]);
 #: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:73

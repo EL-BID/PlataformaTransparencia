@@ -110,9 +110,9 @@ msgctxt "OrchardCore.Demo.Views.UserProfile.Edit"
 msgid "Age"
 msgstr "Věk"
 
-#. <h1>@RenderTitleSegments(T["Edit ***REMOVED***0***REMOVED***", (string)Model.ContentItem.ContentType])</h1>
+#. <h1>@RenderTitleSegments(T["Edit {0}", (string)Model.ContentItem.ContentType])</h1>
 #: OrchardCore.Demo\Views\Content\Edit.cshtml:2
 msgctxt "OrchardCore.Demo.Views.Content.Edit"
-msgid "Edit ***REMOVED***0***REMOVED***"
-msgstr "Upravit ***REMOVED***0***REMOVED***"
+msgid "Edit {0}"
+msgstr "Upravit {0}"
 

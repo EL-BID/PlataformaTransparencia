@@ -146,11 +146,11 @@ msgctxt "OrchardCore.Layers.Views.Admin.Create"
 msgid "Create"
 msgstr "创建"
 
-#. <h1>@RenderTitleSegments(T["Edit Layer - ***REMOVED***0***REMOVED***", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Layer - {0}", Model.Name])</h1>
 #: OrchardCore.Layers\Views\Admin\Edit.cshtml:3
 msgctxt "OrchardCore.Layers.Views.Admin.Edit"
-msgid "Edit Layer - ***REMOVED***0***REMOVED***"
-msgstr "编辑层- ***REMOVED***0***REMOVED***"
+msgid "Edit Layer - {0}"
+msgstr "编辑层- {0}"
 
 #. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Layers\Views\Admin\Edit.cshtml:7
@@ -194,11 +194,11 @@ msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Zones"
 msgstr "州/省/地区"
 
-#. <p class="alert alert-warning">@T["Please <a href=\"***REMOVED***0***REMOVED***\">define the available zones</a> before adding Widgets", Url.Action("Index", "Admin", new ***REMOVED*** area = "OrchardCore.Settings", groupId = LayerSiteSettingsDisplayDriver.GroupId ***REMOVED***)]</p>
+#. <p class="alert alert-warning">@T["Please <a href=\"{0}\">define the available zones</a> before adding Widgets", Url.Action("Index", "Admin", new { area = "OrchardCore.Settings", groupId = LayerSiteSettingsDisplayDriver.GroupId })]</p>
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:35
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
-msgid "Please <a href=\"***REMOVED***0***REMOVED***\">define the available zones</a> before adding Widgets"
-msgstr "请在添加部件前 <a href=\"***REMOVED***0***REMOVED***\">定义可用区域</a>"
+msgid "Please <a href=\"{0}\">define the available zones</a> before adding Widgets"
+msgstr "请在添加部件前 <a href=\"{0}\">定义可用区域</a>"
 
 #. @T["Add Widget"]
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:74
@@ -218,25 +218,25 @@ msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Select a layer to reveal its associated widgets."
 msgstr "选择一个图层以显示其关联的小部件。"
 
-#. <a class="btn btn-primary btn-sm" href="@Url.Action("Edit", "Admin", new ***REMOVED*** area = "OrchardCore.Layers", name = layer.Name ***REMOVED***)">@T["Edit"]</a>
+#. <a class="btn btn-primary btn-sm" href="@Url.Action("Edit", "Admin", new { area = "OrchardCore.Layers", name = layer.Name })">@T["Edit"]</a>
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:114
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Edit"
 msgstr "编辑"
 
-#. <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Admin", new ***REMOVED*** area = "OrchardCore.Layers", name = layer.Name ***REMOVED***)" itemprop="RemoveUrl UnsafeUrl">@T["Delete"]</a>
+#. <a class="btn btn-danger btn-sm" href="@Url.Action("Delete", "Admin", new { area = "OrchardCore.Layers", name = layer.Name })" itemprop="RemoveUrl UnsafeUrl">@T["Delete"]</a>
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:115
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Delete"
 msgstr "删除"
 
-#. <p class="alert alert-warning">@T["Please <a href=\"***REMOVED***0***REMOVED***\">create a layer</a> before adding Widgets", Url.Action("Create", "Admin", new ***REMOVED*** area = "OrchardCore.Layers" ***REMOVED***)]</p>
+#. <p class="alert alert-warning">@T["Please <a href=\"{0}\">create a layer</a> before adding Widgets", Url.Action("Create", "Admin", new { area = "OrchardCore.Layers" })]</p>
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:128
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
-msgid "Please <a href=\"***REMOVED***0***REMOVED***\">create a layer</a> before adding Widgets"
-msgstr "请 <a href=\"***REMOVED***0***REMOVED***\">在添加小部件之前创建一个层</a>"
+msgid "Please <a href=\"{0}\">create a layer</a> before adding Widgets"
+msgstr "请 <a href=\"{0}\">在添加小部件之前创建一个层</a>"
 
-#. <a class="button btn-sm" href="@Url.Action("Create", "Admin", new ***REMOVED*** area = "OrchardCore.Layers" ***REMOVED***)">@T["Add"]</a>
+#. <a class="button btn-sm" href="@Url.Action("Create", "Admin", new { area = "OrchardCore.Layers" })">@T["Add"]</a>
 #: OrchardCore.Layers\Views\Admin\Index.cshtml:131
 msgctxt "OrchardCore.Layers.Views.Admin.Index"
 msgid "Add"

@@ -22,9 +22,9 @@ msgctxt "OrchardCore.ReCaptcha.Services.ReCaptchaService"
 msgid "Failed to validate captcha"
 msgstr "اعتبارسنجی captcha انجام نشد"
 
-#. _logger.LogWarning(S["Language with name ***REMOVED***0***REMOVED*** not found", language]);
+#. _logger.LogWarning(S["Language with name {0} not found", language]);
 #: OrchardCore.ReCaptcha.Core\TagHelpers\ReCaptchaTagHelper.cs:99
 msgctxt "OrchardCore.ReCaptcha.TagHelpers.ReCaptchaTagHelper"
-msgid "Language with name ***REMOVED***0***REMOVED*** not found"
-msgstr "زبانی به نام ***REMOVED***0***REMOVED*** پیدا نشد"
+msgid "Language with name {0} not found"
+msgstr "زبانی به نام {0} پیدا نشد"
 

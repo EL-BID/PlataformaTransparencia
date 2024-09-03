@@ -1,24 +1,24 @@
 ﻿@inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 @model PlataformaTransparencia.Modelos.ResultadoBusquedaViewModel
 
 @section scripts
-***REMOVED***
+{
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="~/js/search_aux.js"></script>
-***REMOVED***
+}
 <style>
-    .pagination-list li.active ***REMOVED***
+    .pagination-list li.active {
         color: var(--main-color);
         border-color: var(--main-color);
         
-***REMOVED***
+    }
 
-    .pagination-list li ***REMOVED***
+    .pagination-list li {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,16 +29,16 @@
         border: 1px solid var(--border-color);
         border-radius: var(--el-border-radius-min);
         
-***REMOVED***
+    }
 
-        .pagination-list li.pagination-item-enabled ***REMOVED***
+        .pagination-list li.pagination-item-enabled {
             color: var(--main-color);
             cursor: pointer;
-    ***REMOVED***
+        }
 
-        .pagination-list li.paginacion ***REMOVED***
+        .pagination-list li.paginacion {
             cursor: pointer;
-    ***REMOVED***
+        }
     
 </style>
 <!--MAIN BANNER-->
@@ -76,15 +76,15 @@
     </div>-->
                     <!--SEARCH-->
                     <div class="search-page-container">
-                        @using (Html.BeginForm("BusquedaResultados", "Home", FormMethod.Get, new ***REMOVED*** @class = "search-page-form" ***REMOVED***))
-                        ***REMOVED***
+                        @using (Html.BeginForm("BusquedaResultados", "Home", FormMethod.Get, new { @class = "search-page-form" }))
+                        {
                             <div class="form-field">
                                 <label for="page-field-search" class="form-field-label">Buscar...</label>
                                 <input type="search" class="form-field-input" name="SearchString" value="@Model.CadenaBusqueda" autocomplete="off" required="required" id="page-field-search">
                                 <input type="hidden" name="Type" value="@Model.Type" id="page-field-type">
                                 <button type="submit" class="search-btn"><i class="material-icons md-22">search</i></button>
                             </div>
-                    ***REMOVED***
+                        }
                         <p class="search-page-results-text">
                             Se encontró <b> @Model.TotalResultados </b> resultado(s) que coniciden
 
@@ -135,7 +135,7 @@
                             <ul class="sidebar-cat hl-list sidebar-cat-tree">
 
                                 @foreach (var Jerarquia in Model.ListaJerarquia)
-                                ***REMOVED***
+                                {
                                     <li class="sidebar-cat-item sidebar-cat-item-has-child">
                                         <a href="#!" id="HierarchySearch" class="sidebar-cat-link hover-link" data-title="@Jerarquia.Hierarchy">
                                             <span>@Jerarquia.Hierarchy</span>
@@ -143,12 +143,12 @@
                                         </a>
                                         <ul style="display: block;">
                                             @foreach (var type in @Jerarquia.ListaTipos)
-                                            ***REMOVED***
+                                            {
                                                 <li><a href="#!" id="TypeSearch" class="hover-link" data-title="@type.Type"><span>@type.Type</span></a></li>
-                                        ***REMOVED***
+                                            }
                                         </ul>
                                     </li>
-                            ***REMOVED***
+                                }
                             </ul>
                         </div>
 
@@ -176,7 +176,7 @@
                     </div>
                     <div id="SearchResults">
                         @foreach (var item in Model.ListaResultados)
-                        ***REMOVED***
+                        {
                             <!-- Begin card -->
                             <div class="card card-info-wide">
                                 <div class="card-body">
@@ -188,11 +188,11 @@
                                 </div>
 
                             </div>
-                    ***REMOVED***
+                        }
                     </div><!-- End card -->
                 </div>
                 <!-- Begin pagination -->
-                @***REMOVED***
+                @{
                     int paginasimp = 10; //cantidad de paginas a imprimir por fila de paginacion
                     int rows = 10;
 
@@ -205,21 +205,21 @@
                     int siguienteb = 0;
 
                     if (paginas < 10)
-                    ***REMOVED***
+                    {
                         deshabilitado = "pagination-item-disabled";
                         paginasfor = paginas;
-                ***REMOVED***
+                    }
                     else
-                    ***REMOVED***
+                    {
 
                         siguiente = 1;
                         siguienteb = 10;
                         //pagina en la que inicia el conteo al darle en el next
-                ***REMOVED***
+                    }
 
                     int activo = 0;
 
-            ***REMOVED***
+                }
                 <nav class="pagination">
                     <ul id="ulPaginacion" class="pagination-list" refine="@Model.Type" actual="0" anterior="0" anteriorb="0" inicial="0" siguiente="@siguiente" siguienteb="@siguienteb" final="@final" rows="@rows" paginasimp="@paginasimp">
 
@@ -227,17 +227,17 @@
                         <li class="pagination-item-arrow pagination-item-arrow-first pagination-item-disabled material-icons md-24" pagina="fp">first_page</li>
                         <li class="pagination-item-arrow pagination-item-arrow-prev pagination-item-disabled material-icons md-24" pagina="bp">chevron_left</li>
                         @for (var g = 1; g <= paginasfor; g++)
-                        ***REMOVED***
+                        {
                             var pag = @g - 1;
                             if (activo == 0)
-                            ***REMOVED***
+                            {
                                 <li pagina="@pag" class="paginacion active">@g</li>
                                 activo = activo + 1;
-                        ***REMOVED***
+                            }
                             else
-                            ***REMOVED***
+                            {
                                 <li class="paginacion" pagina="@pag">@g</li>
-                        ***REMOVED***
+                            }
                             @*<li class="active"><a href="#!">1</a></li>
                     <li><a href="#!">2</a></li>
                     <li><a href="#!">3</a></li>
@@ -246,7 +246,7 @@
                     <li><a href="#!">12</a></li>
                     <li><a href="#!">13</a></li>
                     <li><a href="#!">14</a></li>*@
-                    ***REMOVED***
+                        }
                         <li class="pagination-item-arrow pagination-item-arrow-next material-icons md-24 @deshabilitado" pagina="ap">chevron_right</li>
                         <li class="pagination-item-arrow pagination-item-arrow-last material-icons md-24 @deshabilitado" pagina="lp">last_page</li>
                     </ul><!-- End pagination -->

@@ -7,17 +7,17 @@
 @inject SignInManager<IUser> SignInManager
 @inject ISiteService SiteService
 @inject UserManager<IUser> UserManager;
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
-@***REMOVED***
+}
+@{
 
     //ViewLayout  = "Layout__Login";
     var userCanRegister = (await SiteService.GetSiteSettingsAsync()).As<RegistrationSettings>().UsersCanRegister == UserRegistrationType.AllowRegistration;
     var allowResetPassword = (await SiteService.GetSiteSettingsAsync()).As<ResetPasswordSettings>().AllowResetPassword;
     var loginProviders = (await SignInManager.GetExternalAuthenticationSchemesAsync()).ToList();
     var disableLocalLogin = (await SiteService.GetSiteSettingsAsync()).As<LoginSettings>().DisableLocalLogin;
-***REMOVED***
+}
 
 
 
@@ -29,7 +29,7 @@
                 <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>-->
             </div>
             @if (!disableLocalLogin)
-            ***REMOVED***
+            {
                 <div class="col-md-4 card-login shadow border-0 @(loginProviders.Count == 0 ? "offset-md-3" : String.Empty)">
 
                     <div class="card-body">
@@ -46,9 +46,9 @@
                                 <label asp-for="Password">
                                     Password
                                     @if (allowResetPassword)
-                                    ***REMOVED***
+                                    {
                                         <a asp-controller="ResetPassword" asp-action="ForgotPassword" class="label-link">[¿Olvido su password?</a>
-                                ***REMOVED***
+                                    }
                                 </label>
                                 <div class="input-group">
                                     <input asp-for="Password" class="form-control" tabindex="2" />
@@ -65,21 +65,21 @@
                             <div></div>
                             <button type="submit" class="btn btn-cards" tabindex="4">Ingresar</button>
                             @if (userCanRegister)
-                            ***REMOVED***
+                            {
                                 <div class="mt-4">
                                     <a asp-controller="Registration" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Registrar como nuevo usuario</a>
                                 </div>
-                        ***REMOVED***
+                            }
                         </form>
                     </div>
 
                    
                 </div>
-        ***REMOVED***
+            }
         </div>
         <div class="row">
             @if (loginProviders.Count > 0)
-            ***REMOVED***
+            {
                 <div class="col-md-4 offset-8 @(disableLocalLogin ? "offset-md-3" : String.Empty)">
                     <div class="card-body">
                         <h4 class="text-center">o ingresa con </h4>
@@ -89,13 +89,13 @@
                                 <div>
                                     <p>
                                         @foreach (var provider in loginProviders)
-                                        ***REMOVED***
-                                            <button type="submit" class="btn btn-light shadow @(disableLocalLogin ? "w-100" : String.Empty)" name="provider" value="@provider.Name" title="[" Log in using your ***REMOVED***0***REMOVED*** account", provider.DisplayName]">@provider.DisplayName</button>
+                                        {
+                                            <button type="submit" class="btn btn-light shadow @(disableLocalLogin ? "w-100" : String.Empty)" name="provider" value="@provider.Name" title="[" Log in using your {0} account", provider.DisplayName]">@provider.DisplayName</button>
                                             @if (disableLocalLogin)
-                                            ***REMOVED***
+                                            {
                                                 <br />
-                                        ***REMOVED***
-                                    ***REMOVED***
+                                            }
+                                        }
                                     </p>
                                 </div>
                             </form>
@@ -105,7 +105,7 @@
                     </div>
 
                 </div>
-        ***REMOVED***
+            }
         </div>
     </div>
 </section>
@@ -114,19 +114,19 @@
     <script at="Foot">
     togglePassword = document.querySelector('#togglePassword');
     password = document.querySelector('#Password');
-    togglePassword.addEventListener('click', function (e) ***REMOVED***
+    togglePassword.addEventListener('click', function (e) {
         @* toggle the type attribute *@
         type = password.getAttribute('type') === 'password' ? 'text' : 'password';
         password.setAttribute('type', type);
         @* toggle the eye slash icon *@
         icon = this.getElementsByClassName('icon')[0];
-        if (icon.getAttribute('data-icon'))***REMOVED*** @* if the icon is rendered as a svg *@
+        if (icon.getAttribute('data-icon')){ @* if the icon is rendered as a svg *@
             type === 'password' ? icon.setAttribute('data-icon', 'eye') : icon.setAttribute('data-icon', 'eye-slash');
-    ***REMOVED***
-        else***REMOVED*** @* if the icon is still a <i> element *@
+        }
+        else{ @* if the icon is still a <i> element *@
             type === 'password' ? icon.classList.remove('fa-eye-slash') : icon.classList.remove('fa-eye');
             type === 'password' ? icon.classList.add('fa-eye') : icon.classList.add('fa-eye-slash');
-    ***REMOVED***
-***REMOVED***);
+        }
+    });
     </script>
 

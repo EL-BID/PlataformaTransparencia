@@ -24,13 +24,13 @@ msgctxt "OrchardCore.Github.AdminMenuGithubLogin"
 msgid "Github Authentication"
 msgstr "احرازهویت گیت‌هاب"
 
-#. yield return new ValidationResult(T["ClientID is required"], new string[] ***REMOVED*** nameof(settings.ClientID) ***REMOVED***);
+#. yield return new ValidationResult(T["ClientID is required"], new string[] { nameof(settings.ClientID) });
 #: OrchardCore.Github\Services\GithubAuthenticationService.cs:63
 msgctxt "OrchardCore.Github.Services.GithubAuthenticationService"
 msgid "ClientID is required"
 msgstr "ClientID ضروری است"
 
-#. yield return new ValidationResult(T["ClientSecret is required"], new string[] ***REMOVED*** nameof(settings.ClientSecret) ***REMOVED***);
+#. yield return new ValidationResult(T["ClientSecret is required"], new string[] { nameof(settings.ClientSecret) });
 #: OrchardCore.Github\Services\GithubAuthenticationService.cs:68
 msgctxt "OrchardCore.Github.Services.GithubAuthenticationService"
 msgid "ClientSecret is required"

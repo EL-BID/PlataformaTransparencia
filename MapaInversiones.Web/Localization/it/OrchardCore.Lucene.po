@@ -46,43 +46,43 @@ msgctxt "OrchardCore.Lucene.AdminMenu"
 msgid "Settings"
 msgstr "Impostazioni"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Reset"], Value = nameof(ContentsBulkAction.Reset) ***REMOVED***,
+#. new SelectListItem() { Text = S["Reset"], Value = nameof(ContentsBulkAction.Reset) },
 #: OrchardCore.Lucene\Controllers\AdminController.cs:109
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Reset"
 msgstr "Reimposta"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Rebuild"], Value = nameof(ContentsBulkAction.Rebuild) ***REMOVED***,
+#. new SelectListItem() { Text = S["Rebuild"], Value = nameof(ContentsBulkAction.Rebuild) },
 #: OrchardCore.Lucene\Controllers\AdminController.cs:110
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Rebuild"
 msgstr "Ricostruisci"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
 #: OrchardCore.Lucene\Controllers\AdminController.cs:111
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Delete"
 msgstr "Elimina"
 
-#. .Select(x => new SelectListItem ***REMOVED*** Text = x.Name + " (" + x.DisplayName + ")", Value = x.Name ***REMOVED***).Prepend(new SelectListItem ***REMOVED*** Text = S["Any culture"], Value = "any" ***REMOVED***),
-#. .Select(x => new SelectListItem ***REMOVED*** Text = x.Name + " (" + x.DisplayName + ")", Value = x.Name ***REMOVED***).Prepend(new SelectListItem ***REMOVED*** Text = S["Any culture"], Value = "any" ***REMOVED***);
+#. .Select(x => new SelectListItem { Text = x.Name + " (" + x.DisplayName + ")", Value = x.Name }).Prepend(new SelectListItem { Text = S["Any culture"], Value = "any" }),
+#. .Select(x => new SelectListItem { Text = x.Name + " (" + x.DisplayName + ")", Value = x.Name }).Prepend(new SelectListItem { Text = S["Any culture"], Value = "any" });
 #: OrchardCore.Lucene\Controllers\AdminController.cs:145
 #: OrchardCore.Lucene\Controllers\AdminController.cs:183
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "Any culture"
 msgstr "Qualsiasi lingua"
 
-#. ModelState.AddModelError(nameof(LuceneIndexSettingsViewModel.IndexName), S["An index named ***REMOVED***0***REMOVED*** already exists.", model.IndexName]);
+#. ModelState.AddModelError(nameof(LuceneIndexSettingsViewModel.IndexName), S["An index named {0} already exists.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:169
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "An index named ***REMOVED***0***REMOVED*** already exists."
-msgstr "Un indice chiamato ***REMOVED***0***REMOVED*** esiste già."
+msgid "An index named {0} already exists."
+msgstr "Un indice chiamato {0} esiste già."
 
-#. ModelState.AddModelError(nameof(LuceneIndexSettingsViewModel.IndexName), S["An index named ***REMOVED***0***REMOVED*** doesn't exists.", model.IndexName]);
+#. ModelState.AddModelError(nameof(LuceneIndexSettingsViewModel.IndexName), S["An index named {0} doesn't exists.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:176
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "An index named ***REMOVED***0***REMOVED*** doesn't exists."
-msgstr "Un indice chiamato ***REMOVED***0***REMOVED*** non esiste."
+msgid "An index named {0} doesn't exists."
+msgstr "Un indice chiamato {0} non esiste."
 
 #. _notifier.Error(H["An error occurred while creating the index"]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:201
@@ -90,11 +90,11 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while creating the index"
 msgstr "Si è verificato un errore durante la creazione dell'indice"
 
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> created successfully.", model.IndexName]);
+#. _notifier.Success(H["Index <em>{0}</em> created successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:206
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Index <em>***REMOVED***0***REMOVED***</em> created successfully."
-msgstr "Indice <em>***REMOVED***0***REMOVED***</em> creato con successo."
+msgid "Index <em>{0}</em> created successfully."
+msgstr "Indice <em>{0}</em> creato con successo."
 
 #. _notifier.Error(H["An error occurred while editing the index"]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:218
@@ -102,33 +102,33 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while editing the index"
 msgstr "Si è verificato un errore durante la modifica dell'indice"
 
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
+#. _notifier.Success(H["Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:223
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Index <em>***REMOVED***0***REMOVED***</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>"
-msgstr "Indice <em>***REMOVED***0***REMOVED***</em> modificato con successo, <strong>si prega di eseguire una ricostruzione dell'indice.</strong>"
+msgid "Index <em>{0}</em> modified successfully, <strong>please consider doing a rebuild on the index.</strong>"
+msgstr "Indice <em>{0}</em> modificato con successo, <strong>si prega di eseguire una ricostruzione dell'indice.</strong>"
 
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> reset successfully.", id]);
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> reset successfully.", item.IndexName]);
+#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", id]);
+#. _notifier.Success(H["Index <em>{0}</em> reset successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:245
 #: OrchardCore.Lucene\Controllers\AdminController.cs:421
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Index <em>***REMOVED***0***REMOVED***</em> reset successfully."
-msgstr "Indice <em>***REMOVED***0***REMOVED***</em> resettato con successo."
+msgid "Index <em>{0}</em> reset successfully."
+msgstr "Indice <em>{0}</em> resettato con successo."
 
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> rebuilt successfully.", id]);
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> rebuilt successfully.", item.IndexName]);
+#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", id]);
+#. _notifier.Success(H["Index <em>{0}</em> rebuilt successfully.", item.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:266
 #: OrchardCore.Lucene\Controllers\AdminController.cs:440
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Index <em>***REMOVED***0***REMOVED***</em> rebuilt successfully."
-msgstr "Indice <em>***REMOVED***0***REMOVED***</em> ricostruito con successo."
+msgid "Index <em>{0}</em> rebuilt successfully."
+msgstr "Indice <em>{0}</em> ricostruito con successo."
 
-#. _notifier.Success(H["Index <em>***REMOVED***0***REMOVED***</em> deleted successfully.", model.IndexName]);
+#. _notifier.Success(H["Index <em>{0}</em> deleted successfully.", model.IndexName]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:288
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Index <em>***REMOVED***0***REMOVED***</em> deleted successfully."
-msgstr "Indice <em>***REMOVED***0***REMOVED***</em> eliminato con successo."
+msgid "Index <em>{0}</em> deleted successfully."
+msgstr "Indice <em>{0}</em> eliminato con successo."
 
 #. _notifier.Error(H["An error occurred while deleting the index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:292
@@ -136,11 +136,11 @@ msgctxt "OrchardCore.Lucene.Controllers.AdminController"
 msgid "An error occurred while deleting the index."
 msgstr "Errore durante l'eliminazione dell'indice."
 
-#. ModelState.AddModelError(nameof(model.DecodedQuery), S["Invalid query : ***REMOVED***0***REMOVED***", e.Message]);
+#. ModelState.AddModelError(nameof(model.DecodedQuery), S["Invalid query : {0}", e.Message]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:369
 msgctxt "OrchardCore.Lucene.Controllers.AdminController"
-msgid "Invalid query : ***REMOVED***0***REMOVED***"
-msgstr "Query non valida : ***REMOVED***0***REMOVED***"
+msgid "Invalid query : {0}"
+msgstr "Query non valida : {0}"
 
 #. _notifier.Warning(H["Couldn't remove selected index."]);
 #: OrchardCore.Lucene\Controllers\AdminController.cs:396
@@ -184,8 +184,8 @@ msgctxt "OrchardCore.Lucene.Drivers.LuceneQueryDisplayDriver"
 msgid "The index field is required"
 msgstr "Il campo indice è obbligatorio"
 
-#. return new HtmlString($"<option value=\"Lucene\" selected=\"selected\">***REMOVED***S["Lucene"]***REMOVED***</option>");
-#. return new HtmlString($"<option value=\"Lucene\">***REMOVED***S["Lucene"]***REMOVED***</option>");
+#. return new HtmlString($"<option value=\"Lucene\" selected=\"selected\">{S["Lucene"]}</option>");
+#. return new HtmlString($"<option value=\"Lucene\">{S["Lucene"]}</option>");
 #: OrchardCore.Lucene\Shapes\LuceneContentPickerShapeProvider.cs:26
 #: OrchardCore.Lucene\Shapes\LuceneContentPickerShapeProvider.cs:28
 msgctxt "OrchardCore.Lucene.LuceneContentPickerShapeProvider"
@@ -494,27 +494,27 @@ msgctxt "OrchardCore.Lucene.Views.Admin.Index"
 msgid "Select All"
 msgstr "Seleziona tutto"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:28
 msgctxt "OrchardCore.Lucene.Views.Admin.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] "1 elemento"
-msgstr[1] "***REMOVED***0***REMOVED*** elementi"
+msgstr[1] "{0} elementi"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:28
 msgctxt "OrchardCore.Lucene.Views.Admin.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
-msgstr "Elementi da ***REMOVED***0***REMOVED*** a ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
+msgstr "Elementi da {0} a {1}"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Indexes.Count(), "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:28
 msgctxt "OrchardCore.Lucene.Views.Admin.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
-msgstr[0] " ***REMOVED***0***REMOVED*** elemento in totale"
-msgstr[1] " ***REMOVED***0***REMOVED*** elementi in totale"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
+msgstr[0] " {0} elemento in totale"
+msgstr[1] " {0} elementi in totale"
 
 #. @T["Actions"]
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:35
@@ -522,17 +522,17 @@ msgctxt "OrchardCore.Lucene.Views.Admin.Index"
 msgid "Actions"
 msgstr "Azioni"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:40
 msgctxt "OrchardCore.Lucene.Views.Admin.Index"
 msgid "Bulk Action"
 msgstr "Azione di massa"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:40
 msgctxt "OrchardCore.Lucene.Views.Admin.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?"
-msgstr "Sei sicuro di voler applicare l'azione '***REMOVED***0***REMOVED***' a questo(i) elemento(i)?"
+msgid "Are you sure you want to {0} this/these item(s)?"
+msgstr "Sei sicuro di voler applicare l'azione '{0}' a questo(i) elemento(i)?"
 
 #. <a asp-action="Query" asp-route-IndexName="@entry.Name" class="btn btn-success btn-sm">@T["Query"]</a>
 #: OrchardCore.Lucene\Views\Admin\Index.cshtml:60
@@ -642,11 +642,11 @@ msgctxt "OrchardCore.Lucene.Views.Admin.Query"
 msgid "Template"
 msgstr "Template"
 
-#. <span class="hint">@T["You can use the <a href=\"***REMOVED***0***REMOVED***\">Match All query</a> to search all documents.", Html.Raw(Url.Action("Query", "Admin", new ***REMOVED*** area = "OrchardCore.Lucene", Query = matchAllQuery, IndexName = Model.IndexName ***REMOVED***))]</span>
+#. <span class="hint">@T["You can use the <a href=\"{0}\">Match All query</a> to search all documents.", Html.Raw(Url.Action("Query", "Admin", new { area = "OrchardCore.Lucene", Query = matchAllQuery, IndexName = Model.IndexName }))]</span>
 #: OrchardCore.Lucene\Views\Admin\Query.cshtml:35
 msgctxt "OrchardCore.Lucene.Views.Admin.Query"
-msgid "You can use the <a href=\"***REMOVED***0***REMOVED***\">Match All query</a> to search all documents."
-msgstr "Puoi utilizzare <a href=\"***REMOVED***0***REMOVED***\">la query priva di filtri</a> per selezionare tutti i documenti."
+msgid "You can use the <a href=\"{0}\">Match All query</a> to search all documents."
+msgstr "Puoi utilizzare <a href=\"{0}\">la query priva di filtri</a> per selezionare tutti i documenti."
 
 #. <span class="hint">@T["The search query uses the Elasticsearch format. Some documentation can be found here <a target=\"_blank\" href=\"https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html\">https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html</a>"]</span>
 #: OrchardCore.Lucene\Views\Admin\Query.cshtml:36
@@ -672,13 +672,13 @@ msgctxt "OrchardCore.Lucene.Views.Admin.Query"
 msgid "Query"
 msgstr "Query"
 
-#. <p><span class="text-muted">@T["Found ***REMOVED***0***REMOVED*** result(s) in ***REMOVED***1***REMOVED*** ms", Model.Count.ToString(), Model.Elapsed.TotalMilliseconds.ToString()]</span></p>
+#. <p><span class="text-muted">@T["Found {0} result(s) in {1} ms", Model.Count.ToString(), Model.Elapsed.TotalMilliseconds.ToString()]</span></p>
 #: OrchardCore.Lucene\Views\Admin\Query.cshtml:53
 msgctxt "OrchardCore.Lucene.Views.Admin.Query"
-msgid "Found ***REMOVED***0***REMOVED*** result(s) in ***REMOVED***1***REMOVED*** ms"
-msgstr "Trovato ***REMOVED***0***REMOVED*** risultato(i) in ***REMOVED***1***REMOVED*** ms"
+msgid "Found {0} result(s) in {1} ms"
+msgstr "Trovato {0} risultato(i) in {1} ms"
 
-#. <a href="@Url.Action("Create", "Admin", new ***REMOVED*** area = "OrchardCore.Queries", id = "Lucene", query = Model.DecodedQuery ***REMOVED***)" class="btn btn-success">@T["Create"]</a>
+#. <a href="@Url.Action("Create", "Admin", new { area = "OrchardCore.Queries", id = "Lucene", query = Model.DecodedQuery })" class="btn btn-success">@T["Create"]</a>
 #: OrchardCore.Lucene\Views\Admin\Query.cshtml:61
 msgctxt "OrchardCore.Lucene.Views.Admin.Query"
 msgid "Create"

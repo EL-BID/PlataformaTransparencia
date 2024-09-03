@@ -29,8 +29,8 @@ Declare @JSON  varchar(max) = ''
        Cross Apply A.xRow.nodes('./@*') As B(xAtt) )
      ,cteBld as (
       Select *
-            ,NewRow = IIF(Lag(Entity,1)  over (Partition By Entity Order By (Select NULL))=Entity,'',',***REMOVED***')
-            ,EndRow = IIF(Lead(Entity,1) over (Partition By Entity Order By (Select NULL))=Entity,',','***REMOVED***')
+            ,NewRow = IIF(Lag(Entity,1)  over (Partition By Entity Order By (Select NULL))=Entity,'',',{')
+            ,EndRow = IIF(Lead(Entity,1) over (Partition By Entity Order By (Select NULL))=Entity,',','}')
             ,JSON   = Concat('"',Attribute,'":','"',Value,'"')
        From  cteEAV )
 Select @JSON = @JSON+NewRow+JSON+EndRow

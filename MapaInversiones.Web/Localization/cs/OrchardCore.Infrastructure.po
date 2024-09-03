@@ -10,17 +10,17 @@ msgstr ""
 "Language: cs_CZ\n"
 "PO-Revision-Date: 2020-05-09 20:02\n"
 
-#. await OutputExceptionAsync(output, S["Error executing command \"***REMOVED***0***REMOVED***\"", string.Join(" ", args)], ex);
+#. await OutputExceptionAsync(output, S["Error executing command \"{0}\"", string.Join(" ", args)], ex);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:72
 msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
-msgid "Error executing command \"***REMOVED***0***REMOVED***\""
-msgstr "Chyba při provádění příkazu \"***REMOVED***0***REMOVED***\""
+msgid "Error executing command \"{0}\""
+msgstr "Chyba při provádění příkazu \"{0}\""
 
-#. await output.WriteLineAsync(S["Exception Details: ***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***", exception.GetType().FullName, exception.Message]);
+#. await output.WriteLineAsync(S["Exception Details: {0}: {1}", exception.GetType().FullName, exception.Message]);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:99
 msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
-msgid "Exception Details: ***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***"
-msgstr "Podrobnosti o výjimce: ***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***"
+msgid "Exception Details: {0}: {1}"
+msgstr "Podrobnosti o výjimce: {0}: {1}"
 
 #. await output.WriteLineAsync(S["Stack Trace:"]);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:101
@@ -28,65 +28,65 @@ msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
 msgid "Stack Trace:"
 msgstr "Stack trace:"
 
-#. await output.WriteLineAsync(S["[***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***]", error.GetType().Name, error.Message]);
+#. await output.WriteLineAsync(S["[{0}: {1}]", error.GetType().Name, error.Message]);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:107
 msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
-msgid "[***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***]"
-msgstr "[***REMOVED***0***REMOVED***: ***REMOVED***1***REMOVED***]"
+msgid "[{0}: {1}]"
+msgstr "[{0}: {1}]"
 
-#. await output.WriteLineAsync(S["***REMOVED***0***REMOVED***", error.StackTrace]);
+#. await output.WriteLineAsync(S["{0}", error.StackTrace]);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:108
 msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
-msgid "***REMOVED***0***REMOVED***"
-msgstr "***REMOVED***0***REMOVED***"
+msgid "{0}"
+msgstr "{0}"
 
-#. throw new Exception(S["Tenant ***REMOVED***0***REMOVED*** does not exist", tenant]);
+#. throw new Exception(S["Tenant {0} does not exist", tenant]);
 #: OrchardCore.Infrastructure\Commands\CommandHostAgent.cs:127
 msgctxt "OrchardCore.Environment.Commands.CommandHostAgent"
-msgid "Tenant ***REMOVED***0***REMOVED*** does not exist"
-msgstr "Web ***REMOVED***0***REMOVED*** neexistuje"
+msgid "Tenant {0} does not exist"
+msgstr "Web {0} neexistuje"
 
-#. throw new InvalidOperationException(S["Switch \"***REMOVED***0***REMOVED***\" was not found", commandSwitch.Key]);
+#. throw new InvalidOperationException(S["Switch \"{0}\" was not found", commandSwitch.Key]);
 #: OrchardCore.Infrastructure\Commands\DefaultCommandHandler.cs:45
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandHandler"
-msgid "Switch \"***REMOVED***0***REMOVED***\" was not found"
-msgstr "Přepínač \"***REMOVED***0***REMOVED***\" nebyl nalezen"
+msgid "Switch \"{0}\" was not found"
+msgstr "Přepínač \"{0}\" nebyl nalezen"
 
-#. throw new InvalidOperationException(S["A property \"***REMOVED***0***REMOVED***\" exists but is not decorated with \"***REMOVED***1***REMOVED***\"", commandSwitch.Key, typeof(OrchardSwitchAttribute).Name]);
+#. throw new InvalidOperationException(S["A property \"{0}\" exists but is not decorated with \"{1}\"", commandSwitch.Key, typeof(OrchardSwitchAttribute).Name]);
 #: OrchardCore.Infrastructure\Commands\DefaultCommandHandler.cs:49
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandHandler"
-msgid "A property \"***REMOVED***0***REMOVED***\" exists but is not decorated with \"***REMOVED***1***REMOVED***\""
-msgstr "Vlastnost \"***REMOVED***0***REMOVED***\" existuje, ale nemá anotaci \"***REMOVED***1***REMOVED***\""
+msgid "A property \"{0}\" exists but is not decorated with \"{1}\""
+msgstr "Vlastnost \"{0}\" existuje, ale nemá anotaci \"{1}\""
 
-#. string message = S["Error converting value \"***REMOVED***0***REMOVED***\" to \"***REMOVED***1***REMOVED***\" for switch \"***REMOVED***2***REMOVED***\"",
+#. string message = S["Error converting value \"{0}\" to \"{1}\" for switch \"{2}\"",
 #: OrchardCore.Infrastructure\Commands\DefaultCommandHandler.cs:66
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandHandler"
-msgid "Error converting value \"***REMOVED***0***REMOVED***\" to \"***REMOVED***1***REMOVED***\" for switch \"***REMOVED***2***REMOVED***\""
-msgstr "Chyba při převodu hodnoty \"***REMOVED***0***REMOVED***\" na \"***REMOVED***1***REMOVED***\" pro přepínač \"***REMOVED***2***REMOVED***\""
+msgid "Error converting value \"{0}\" to \"{1}\" for switch \"{2}\""
+msgstr "Chyba při převodu hodnoty \"{0}\" na \"{1}\" pro přepínač \"{2}\""
 
-#. throw new InvalidOperationException(S["Command arguments \"***REMOVED***0***REMOVED***\" don't match command definition", string.Join(" ", arguments)]);
+#. throw new InvalidOperationException(S["Command arguments \"{0}\" don't match command definition", string.Join(" ", arguments)]);
 #: OrchardCore.Infrastructure\Commands\DefaultCommandHandler.cs:82
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandHandler"
-msgid "Command arguments \"***REMOVED***0***REMOVED***\" don't match command definition"
-msgstr "Argumenty příkazu \"***REMOVED***0***REMOVED***\" se neshodují s definicí příkazu"
+msgid "Command arguments \"{0}\" don't match command definition"
+msgstr "Argumenty příkazu \"{0}\" se neshodují s definicí příkazu"
 
-#. throw new InvalidOperationException(S["Method \"***REMOVED***0***REMOVED***\" does not support switch \"***REMOVED***1***REMOVED***\".", methodInfo.Name, commandSwitch]);
+#. throw new InvalidOperationException(S["Method \"{0}\" does not support switch \"{1}\".", methodInfo.Name, commandSwitch]);
 #: OrchardCore.Infrastructure\Commands\DefaultCommandHandler.cs:173
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandHandler"
-msgid "Method \"***REMOVED***0***REMOVED***\" does not support switch \"***REMOVED***1***REMOVED***\"."
-msgstr "Metoda \"***REMOVED***0***REMOVED***\" nepodporuje přepínač \"***REMOVED***1***REMOVED***\"."
+msgid "Method \"{0}\" does not support switch \"{1}\"."
+msgstr "Metoda \"{0}\" nepodporuje přepínač \"{1}\"."
 
-#. throw new Exception(S["Multiple commands found matching arguments \"***REMOVED***0***REMOVED***\". Commands available: ***REMOVED***1***REMOVED***.",
+#. throw new Exception(S["Multiple commands found matching arguments \"{0}\". Commands available: {1}.",
 #: OrchardCore.Infrastructure\Commands\DefaultCommandManager.cs:38
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandManager"
-msgid "Multiple commands found matching arguments \"***REMOVED***0***REMOVED***\". Commands available: ***REMOVED***1***REMOVED***."
-msgstr "Nalezeno více příkazů s kompatibilními argumenty \"***REMOVED***0***REMOVED***\". Dostupné příkazy: ***REMOVED***1***REMOVED***."
+msgid "Multiple commands found matching arguments \"{0}\". Commands available: {1}."
+msgstr "Nalezeno více příkazů s kompatibilními argumenty \"{0}\". Dostupné příkazy: {1}."
 
-#. throw new Exception(S["No command found matching arguments \"***REMOVED***0***REMOVED***\". Commands available: ***REMOVED***1***REMOVED***.",
+#. throw new Exception(S["No command found matching arguments \"{0}\". Commands available: {1}.",
 #: OrchardCore.Infrastructure\Commands\DefaultCommandManager.cs:41
 msgctxt "OrchardCore.Environment.Commands.DefaultCommandManager"
-msgid "No command found matching arguments \"***REMOVED***0***REMOVED***\". Commands available: ***REMOVED***1***REMOVED***."
-msgstr "Nebyly nalezeny žádné příkazy s kompatibilními argumenty \"***REMOVED***0***REMOVED***\". Dostupné příkazy: ***REMOVED***1***REMOVED***."
+msgid "No command found matching arguments \"{0}\". Commands available: {1}."
+msgstr "Nebyly nalezeny žádné příkazy s kompatibilními argumenty \"{0}\". Dostupné příkazy: {1}."
 
 #. await Context.Output.WriteLineAsync(S["List of available commands:"]);
 #: OrchardCore.Infrastructure\Commands\Builtin\HelpCommand.cs:25
@@ -94,15 +94,15 @@ msgctxt "OrchardCore.Environment.Commands.Builtin.HelpCommand"
 msgid "List of available commands:"
 msgstr "Seznam dostupných příkazů:"
 
-#. await Context.Output.WriteLineAsync(S["Command ***REMOVED***0***REMOVED*** doesn't exist", command]);
+#. await Context.Output.WriteLineAsync(S["Command {0} doesn't exist", command]);
 #: OrchardCore.Infrastructure\Commands\Builtin\HelpCommand.cs:49
 msgctxt "OrchardCore.Environment.Commands.Builtin.HelpCommand"
-msgid "Command ***REMOVED***0***REMOVED*** doesn't exist"
-msgstr "Příkaz ***REMOVED***0***REMOVED*** neexistuje"
+msgid "Command {0} doesn't exist"
+msgstr "Příkaz {0} neexistuje"
 
-#. return S["***REMOVED***0***REMOVED***.***REMOVED***1***REMOVED***: no help text", descriptor.MethodInfo.DeclaringType?.FullName, descriptor.MethodInfo.Name];
+#. return S["{0}.{1}: no help text", descriptor.MethodInfo.DeclaringType?.FullName, descriptor.MethodInfo.Name];
 #: OrchardCore.Infrastructure\Commands\Builtin\HelpCommand.cs:70
 msgctxt "OrchardCore.Environment.Commands.Builtin.HelpCommand"
-msgid "***REMOVED***0***REMOVED***.***REMOVED***1***REMOVED***: no help text"
-msgstr "***REMOVED***0***REMOVED***.***REMOVED***1***REMOVED***: nemá text nápovědy"
+msgid "{0}.{1}: no help text"
+msgstr "{0}.{1}: nemá text nápovědy"
 

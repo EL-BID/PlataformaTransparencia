@@ -1,10 +1,10 @@
 ﻿@inject OrchardCore.IOrchardHelper Orchard
 @model PlataformaTransparencia.Modelos.NoticiaModel
 
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     var blogPost = await Orchard.GetContentItemByIdAsync(Model.Id);
-***REMOVED***
+}
 <!--MAIN BANNER-->
 <section class="banner-main-asc">
 
@@ -57,18 +57,18 @@
                         <h1>@blogPost.DisplayText</h1>
                     </div>
                     <div class="image-Container">
-                        @***REMOVED***
+                        @{
                             var imgpath = "img/Pic001.jpg";
                             if (@blogPost.Content.BlogPost.Image.Paths.Count != 0)
-                            ***REMOVED***
+                            {
                                 imgpath = @blogPost.Content.BlogPost.Image.Paths[0];
                                 <img class="img-fluid-news" src=@Orchard.AssetUrl((string)imgpath) alt="...">
-                        ***REMOVED***
+                            }
                             else
-                            ***REMOVED***
+                            {
                                 <img class="img-fluid-news" src=@imgpath alt="...">
-                        ***REMOVED***
-                    ***REMOVED***
+                            }
+                        }
 
                     </div>
                     <div class="row justify-content-center" style="text-align:justify">

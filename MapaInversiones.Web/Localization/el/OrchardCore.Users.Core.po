@@ -80,17 +80,17 @@ msgctxt "OrchardCore.Users.Services.UserService"
 msgid "Passwords must have at least one non letter or digit character."
 msgstr "Οι κωδικοί πρόσβασης πρέπει να έχουν τουλάχιστον ένα χαρακτήρα που να μην είναι γράμμα ή ψηφίο."
 
-#. reportError("Password", S["Passwords must be at least ***REMOVED***0***REMOVED*** characters.", _identityOptions.Value.Password.RequiredLength]);
+#. reportError("Password", S["Passwords must be at least {0} characters.", _identityOptions.Value.Password.RequiredLength]);
 #: OrchardCore.Users.Core\Services\UserService.cs:234
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Passwords must be at least ***REMOVED***0***REMOVED*** characters."
-msgstr "Οι κωδικοί πρόσβασης πρέπει να είναι τουλάχιστον ***REMOVED***0***REMOVED*** χαρακτήρες."
+msgid "Passwords must be at least {0} characters."
+msgstr "Οι κωδικοί πρόσβασης πρέπει να είναι τουλάχιστον {0} χαρακτήρες."
 
-#. reportError("Password", S["Passwords must contain at least ***REMOVED***0***REMOVED*** unique characters.", _identityOptions.Value.Password.RequiredUniqueChars]);
+#. reportError("Password", S["Passwords must contain at least {0} unique characters.", _identityOptions.Value.Password.RequiredUniqueChars]);
 #: OrchardCore.Users.Core\Services\UserService.cs:237
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Passwords must contain at least ***REMOVED***0***REMOVED*** unique characters."
-msgstr "Οι κωδικοί πρόσβασης πρέπει να περιέχουν τουλάχιστον ***REMOVED***0***REMOVED*** μοναδικούς χαρακτήρες."
+msgid "Passwords must contain at least {0} unique characters."
+msgstr "Οι κωδικοί πρόσβασης πρέπει να περιέχουν τουλάχιστον {0} μοναδικούς χαρακτήρες."
 
 #. reportError("CurrentPassword", S["Incorrect password."]);
 #: OrchardCore.Users.Core\Services\UserService.cs:242
@@ -98,33 +98,33 @@ msgctxt "OrchardCore.Users.Services.UserService"
 msgid "Incorrect password."
 msgstr "Λανθασμένος κωδικός πρόσβασης."
 
-#. reportError("UserName", S["User name '***REMOVED***0***REMOVED***' is invalid, can only contain letters or digits.", user.UserName]);
+#. reportError("UserName", S["User name '{0}' is invalid, can only contain letters or digits.", user.UserName]);
 #: OrchardCore.Users.Core\Services\UserService.cs:247
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "User name '***REMOVED***0***REMOVED***' is invalid, can only contain letters or digits."
-msgstr "Το όνομα χρήστη \"***REMOVED***0***REMOVED***\" δεν είναι έγκυρο, μπορεί να περιέχει μόνο γράμματα ή ψηφία."
+msgid "User name '{0}' is invalid, can only contain letters or digits."
+msgstr "Το όνομα χρήστη \"{0}\" δεν είναι έγκυρο, μπορεί να περιέχει μόνο γράμματα ή ψηφία."
 
-#. reportError("UserName", S["User name '***REMOVED***0***REMOVED***' is already used.", user.UserName]);
+#. reportError("UserName", S["User name '{0}' is already used.", user.UserName]);
 #: OrchardCore.Users.Core\Services\UserService.cs:250
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "User name '***REMOVED***0***REMOVED***' is already used."
-msgstr "Το όνομα χρήστη \"***REMOVED***0***REMOVED***\" χρησιμοποιείται ήδη."
+msgid "User name '{0}' is already used."
+msgstr "Το όνομα χρήστη \"{0}\" χρησιμοποιείται ήδη."
 
-#. reportError("Email", S["Email '***REMOVED***0***REMOVED***' is already used.", user.Email]);
+#. reportError("Email", S["Email '{0}' is already used.", user.Email]);
 #: OrchardCore.Users.Core\Services\UserService.cs:255
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Email '***REMOVED***0***REMOVED***' is already used."
+msgid "Email '{0}' is already used."
 msgstr ""
 
-#. reportError("Email", S["Email '***REMOVED***0***REMOVED***' is invalid.", user.Email]);
+#. reportError("Email", S["Email '{0}' is invalid.", user.Email]);
 #: OrchardCore.Users.Core\Services\UserService.cs:258
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Email '***REMOVED***0***REMOVED***' is invalid."
-msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου '***REMOVED***0***REMOVED***' δεν είναι έγκυρη."
+msgid "Email '{0}' is invalid."
+msgstr "Η διεύθυνση ηλεκτρονικού ταχυδρομείου '{0}' δεν είναι έγκυρη."
 
-#. reportError(string.Empty, S["Unexpected error: '***REMOVED***0***REMOVED***'.", error.Code]);
+#. reportError(string.Empty, S["Unexpected error: '{0}'.", error.Code]);
 #: OrchardCore.Users.Core\Services\UserService.cs:261
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Unexpected error: '***REMOVED***0***REMOVED***'."
-msgstr "Μη αναμενόμενο σφάλμα: '***REMOVED***0***REMOVED***'."
+msgid "Unexpected error: '{0}'."
+msgstr "Μη αναμενόμενο σφάλμα: '{0}'."
 

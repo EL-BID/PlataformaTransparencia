@@ -1,8 +1,8 @@
 ﻿@inject OrchardCore.IOrchardHelper Orchard
 
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 <!--MAIN BANNER-->
 <section class="banner-main-asc mb-0">
 
@@ -50,9 +50,9 @@
 <section class="section main-Content">
     <div class="container">
         <div class="row justify-content-center">
-            @***REMOVED***
+            @{
                 var datosplanificacion = await Orchard.GetContentItemByHandleAsync("alias:DatosAbiertosPlanificacion");
-        ***REMOVED***
+            }
             <div class="section-heading heading-left">
                 <h2>@datosplanificacion.Content.DatosAbiertos.Titulo.Text</h2>
                 <p>@Html.Raw(datosplanificacion.Content.HtmlBodyPart.Html)</p>
@@ -60,7 +60,7 @@
         </div>
         <div class="row justify-content-center items">
             @foreach (var caja in datosplanificacion.Content.BagPart.ContentItems)
-            ***REMOVED***
+            {
                 <div class="col-xl-6 col-md-6 col-12 item">
                     <!-- Begin OpenData item -->
                     <div class="services-item services-item-row item-style">
@@ -83,7 +83,7 @@
                     
                     <!-- End open data item -->
                 </div>
-        ***REMOVED***
+            }
 
         </div>
     </div>
@@ -94,9 +94,9 @@
 <section class="section main-Content section-bg2">
     <div class="container">
         <div class="row justify-content-center">
-            @***REMOVED***
+            @{
                 var datospresupuesto = await Orchard.GetContentItemByHandleAsync("alias:DatosAbiertosPresupuesto");
-        ***REMOVED***
+            }
             <div class="section-heading heading-left">
                 <h2>@datospresupuesto.Content.DatosAbiertos.Titulo.Text</h2>
                 <p>@Html.Raw(datospresupuesto.Content.HtmlBodyPart.Html)</p>
@@ -104,7 +104,7 @@
         </div>
         <div class="row justify-content-center items">
             @foreach (var caja in datospresupuesto.Content.BagPart.ContentItems)
-            ***REMOVED***
+            {
                 <div class="col-xl-6 col-md-6 col-12 item">
                     <!-- Begin OpenData item -->
                     <div class="services-item services-item-row item-style">
@@ -127,7 +127,7 @@
 
                     <!-- End open data item -->
                 </div>
-        ***REMOVED***
+            }
 
         </div>
     </div>

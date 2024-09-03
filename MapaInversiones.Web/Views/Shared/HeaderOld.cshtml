@@ -19,7 +19,7 @@
                                 </a>
                             </li>
                             @if (User.Identity.IsAuthenticated)
-                            ***REMOVED***<text>
+                            {<text>
                                     <li>
                                             <form method="post" class="form-inline" action="/Users/LogOff">
                                                 <button type="submit" class="btn-sesionHome" role="button">Cerrar sesión</button>
@@ -33,9 +33,9 @@
                                         </a>
                                     </li>
                             </text>
-                    ***REMOVED***
+                        }
                         else
-                        ***REMOVED***
+                        {
                             <li>
                                 <a href="/Login" title="Inicie sesión">
                                     Inicie sesión
@@ -46,7 +46,7 @@
                                     ¿Nuevo usuario?
                                 </a>
                             </li>
-                    ***REMOVED***
+                        }
                         </ul>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
                                                 </a>
                                             </li>
                                             @if (User.Identity.IsAuthenticated)
-                                            ***REMOVED***<text>
+                                            {<text>
                                                     <li>
                                                         <a href="/Users/LogOff" title="Cerrar sesión">
                                                             Cerrar sesión
@@ -176,9 +176,9 @@
                                                         </a>
                                                     </li>
                                             </text>
-                                    ***REMOVED***
+                                        }
                                         else
-                                        ***REMOVED***
+                                        {
                                             <li>
                                                 <a href="/Login" title="Inicie sesión">
                                                     Inicie sesión
@@ -189,7 +189,7 @@
                                                     ¿Nuevo usuario?
                                                 </a>
                                             </li>
-                                    ***REMOVED***
+                                        }
 
                                         </ul>
                                     </div>

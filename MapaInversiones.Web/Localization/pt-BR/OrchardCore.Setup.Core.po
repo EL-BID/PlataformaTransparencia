@@ -10,9 +10,9 @@ msgstr ""
 "Language: pt_BR\n"
 "PO-Revision-Date: 2020-06-09 11:56\n"
 
-#. context.Errors.Add("DatabaseProvider", S["An error occurred while initializing the datastore: ***REMOVED***0***REMOVED***", e.Message]);
+#. context.Errors.Add("DatabaseProvider", S["An error occurred while initializing the datastore: {0}", e.Message]);
 #: OrchardCore.Setup.Core\SetupService.cs:168
 msgctxt "OrchardCore.Setup.Services.SetupService"
-msgid "An error occurred while initializing the datastore: ***REMOVED***0***REMOVED***"
-msgstr "Ocorreu um erro ao inicializar o banco de dados: ***REMOVED***0***REMOVED***"
+msgid "An error occurred while initializing the datastore: {0}"
+msgstr "Ocorreu um erro ao inicializar o banco de dados: {0}"
 

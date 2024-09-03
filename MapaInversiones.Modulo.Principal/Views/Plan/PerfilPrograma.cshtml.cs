@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace PlataformaTransparencia.Modulo.Principal.Views.Plan
-***REMOVED***
+{
     public class PerfilProgramaModel : PageModel
-    ***REMOVED***
+    {
         public void OnGet()
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        {
+        }
+    }
+}

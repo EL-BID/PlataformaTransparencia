@@ -350,17 +350,17 @@ msgctxt "OrchardCore.OpenId.Services.OpenIdValidationService"
 msgid "No appropriate scope was found."
 msgstr "Aucune portée appropriée n'a été trouvée."
 
-#. yield return new ValidationResult(S["***REMOVED***0***REMOVED*** is not wellformed", url], new[] ***REMOVED*** memberName ***REMOVED***);
+#. yield return new ValidationResult(S["{0} is not wellformed", url], new[] { memberName });
 #: OrchardCore.OpenId\ViewModels\CreateOpenIdApplicationViewModel.cs:50
 msgctxt "OrchardCore.OpenId.ViewModels.CreateOpenIdApplicationViewModel"
-msgid "***REMOVED***0***REMOVED*** is not wellformed"
-msgstr "***REMOVED***0***REMOVED*** n'est pas bien formé"
+msgid "{0} is not wellformed"
+msgstr "{0} n'est pas bien formé"
 
-#. yield return new ValidationResult(S["***REMOVED***0***REMOVED*** is not wellformed", url], new[] ***REMOVED*** memberName ***REMOVED***);
+#. yield return new ValidationResult(S["{0} is not wellformed", url], new[] { memberName });
 #: OrchardCore.OpenId\ViewModels\EditOpenIdApplicationViewModel.cs:54
 msgctxt "OrchardCore.OpenId.ViewModels.EditOpenIdApplicationViewModel"
-msgid "***REMOVED***0***REMOVED*** is not wellformed"
-msgstr "***REMOVED***0***REMOVED*** n'est pas bien formé"
+msgid "{0} is not wellformed"
+msgstr "{0} n'est pas bien formé"
 
 #. <span class="icon"><i class="fa fa-openid" aria-hidden="true"></i></span><span class="title">@T["OpenID Connect"]</span>
 #: OrchardCore.OpenId\Views\NavigationItemText-openid.Id.cshtml:1
@@ -814,11 +814,11 @@ msgctxt "OrchardCore.OpenId.Views.Access.Authorize"
 msgid "Authorization"
 msgstr "Autorisation"
 
-#. <p class="lead text-left">@T["Do you want to grant <strong>***REMOVED***0***REMOVED***</strong> access to your data? (scopes requested: ***REMOVED***1***REMOVED***)", Model.ApplicationName, Model.Scope]</p>
+#. <p class="lead text-left">@T["Do you want to grant <strong>{0}</strong> access to your data? (scopes requested: {1})", Model.ApplicationName, Model.Scope]</p>
 #: OrchardCore.OpenId\Views\Access\Authorize.cshtml:11
 msgctxt "OrchardCore.OpenId.Views.Access.Authorize"
-msgid "Do you want to grant <strong>***REMOVED***0***REMOVED***</strong> access to your data? (scopes requested: ***REMOVED***1***REMOVED***)"
-msgstr "Vous voulez accorder à <strong>***REMOVED***0***REMOVED***</strong> l'accès à vos données ? (portées demandées : ***REMOVED***1***REMOVED***)"
+msgid "Do you want to grant <strong>{0}</strong> access to your data? (scopes requested: {1})"
+msgstr "Vous voulez accorder à <strong>{0}</strong> l'accès à vos données ? (portées demandées : {1})"
 
 #. <h2>@T["Ooooops, something went really bad! :("]</h2>
 #: OrchardCore.OpenId\Views\Access\Error.cshtml:9

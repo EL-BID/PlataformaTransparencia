@@ -24,14 +24,14 @@
 		4. To access your database use the following code:
 
 			using (var db = new MyDatabaseDB())
-			***REMOVED***
+			{
 				var q =
 					from c in db.Customers
 					select c;
 
 				foreach (var c in q)
 					Console.WriteLine(c.ContactName);
-			***REMOVED***
+			}
 
 		5. See more at https://linq2db.github.io/articles/T4.html
 

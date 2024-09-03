@@ -36,41 +36,41 @@ msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
 msgid "List of available recipes"
 msgstr "利用可能なサイト種別の一覧"
 
-#. await Context.Output.WriteLineAsync(S["Recipe: ***REMOVED***0***REMOVED***", recipe.Name]);
+#. await Context.Output.WriteLineAsync(S["Recipe: {0}", recipe.Name]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:40
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "Recipe: ***REMOVED***0***REMOVED***"
-msgstr "サイト種別: ***REMOVED***0***REMOVED***"
+msgid "Recipe: {0}"
+msgstr "サイト種別: {0}"
 
-#. await Context.Output.WriteLineAsync(S["  Version:     ***REMOVED***0***REMOVED***", recipe.Version]);
+#. await Context.Output.WriteLineAsync(S["  Version:     {0}", recipe.Version]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:41
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "  Version:     ***REMOVED***0***REMOVED***"
-msgstr "  バージョン:     ***REMOVED***0***REMOVED***"
+msgid "  Version:     {0}"
+msgstr "  バージョン:     {0}"
 
-#. await Context.Output.WriteLineAsync(S["  Tags:        ***REMOVED***0***REMOVED***", string.Join(",", recipe.Tags)]);
+#. await Context.Output.WriteLineAsync(S["  Tags:        {0}", string.Join(",", recipe.Tags)]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:42
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "  Tags:        ***REMOVED***0***REMOVED***"
-msgstr "  タグ:        ***REMOVED***0***REMOVED***"
+msgid "  Tags:        {0}"
+msgstr "  タグ:        {0}"
 
-#. await Context.Output.WriteLineAsync(S["  Description: ***REMOVED***0***REMOVED***", recipe.Description]);
+#. await Context.Output.WriteLineAsync(S["  Description: {0}", recipe.Description]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:43
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "  Description: ***REMOVED***0***REMOVED***"
-msgstr "  説明: ***REMOVED***0***REMOVED***"
+msgid "  Description: {0}"
+msgstr "  説明: {0}"
 
-#. await Context.Output.WriteLineAsync(S["  Author:      ***REMOVED***0***REMOVED***", recipe.Author]);
+#. await Context.Output.WriteLineAsync(S["  Author:      {0}", recipe.Author]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:44
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "  Author:      ***REMOVED***0***REMOVED***"
-msgstr "  作成者:      ***REMOVED***0***REMOVED***"
+msgid "  Author:      {0}"
+msgstr "  作成者:      {0}"
 
-#. await Context.Output.WriteLineAsync(S["  Website:     ***REMOVED***0***REMOVED***", recipe.WebSite]);
+#. await Context.Output.WriteLineAsync(S["  Website:     {0}", recipe.WebSite]);
 #: OrchardCore.Recipes\Commands\RecipesCommands.cs:45
 msgctxt "OrchardCore.Recipes.Commands.RecipesCommands"
-msgid "  Website:     ***REMOVED***0***REMOVED***"
-msgstr "  Webサイト:     ***REMOVED***0***REMOVED***"
+msgid "  Website:     {0}"
+msgstr "  Webサイト:     {0}"
 
 #. _notifier.Error(H["Recipe was not found"]);
 #: OrchardCore.Recipes\Controllers\AdminController.cs:94
@@ -78,11 +78,11 @@ msgctxt "OrchardCore.Recipes.Controllers.AdminController"
 msgid "Recipe was not found"
 msgstr "サイト種別は見つかりませんでした"
 
-#. _notifier.Success(H["The recipe '***REMOVED***0***REMOVED***' has been run successfully", recipe.Name]);
+#. _notifier.Success(H["The recipe '{0}' has been run successfully", recipe.Name]);
 #: OrchardCore.Recipes\Controllers\AdminController.cs:120
 msgctxt "OrchardCore.Recipes.Controllers.AdminController"
-msgid "The recipe '***REMOVED***0***REMOVED***' has been run successfully"
-msgstr "サイト種別 ***REMOVED***0***REMOVED*** は正常に実行されました"
+msgid "The recipe '{0}' has been run successfully"
+msgstr "サイト種別 {0} は正常に実行されました"
 
 #. <h1>@RenderTitleSegments(T["Recipes"])</h1>
 #. <a asp-action="Execute" asp-route-basePath="@recipe.BasePath" asp-route-fileName="@recipe.FileName" role="button" class="btn btn-primary btn-sm" data-title="@T["Recipes"]" data-message="@T["Are you sure you want to run the recipe?"]" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-ok-class="btn-primary" itemprop="RemoveUrl UnsafeUrl">@T["Run"]</a>

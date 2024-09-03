@@ -2,19 +2,19 @@
 
 //alert("holaaaa");
 
-function GetProyectoById() ***REMOVED***
-    $.ajax(***REMOVED***
+function GetProyectoById() {
+    $.ajax({
         url: "/api/servicioshome/GetAllAsync",
         type: "GET",
         data: null,
 
-***REMOVED***).done(function (data) ***REMOVED***
+    }).done(function (data) {
         // Some function
         alert("hecho");
-***REMOVED***).fail(function (handleError) ***REMOVED***
+    }).fail(function (handleError) {
         // Some function
         alert("fail");
-***REMOVED***);
-***REMOVED***
+    });
+}
 
 

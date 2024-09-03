@@ -22,9 +22,9 @@ msgctxt "OrchardCore.ReCaptcha.Services.ReCaptchaService"
 msgid "Failed to validate captcha"
 msgstr "验证验证验证验证码失败"
 
-#. _logger.LogWarning(S["Language with name ***REMOVED***0***REMOVED*** not found", language]);
+#. _logger.LogWarning(S["Language with name {0} not found", language]);
 #: OrchardCore.ReCaptcha.Core\TagHelpers\ReCaptchaTagHelper.cs:99
 msgctxt "OrchardCore.ReCaptcha.TagHelpers.ReCaptchaTagHelper"
-msgid "Language with name ***REMOVED***0***REMOVED*** not found"
-msgstr "未找到名字为 ***REMOVED***0***REMOVED*** 的语言"
+msgid "Language with name {0} not found"
+msgstr "未找到名字为 {0} 的语言"
 

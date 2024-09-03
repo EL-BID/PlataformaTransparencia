@@ -6,7 +6,7 @@
     <Name>bd_nuevavision</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>***REMOVED***53bd7bd8-3254-45cc-9612-45e6e4b085f4***REMOVED***</ProjectGuid>
+    <ProjectGuid>{53bd7bd8-3254-45cc-9612-45e6e4b085f4}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>

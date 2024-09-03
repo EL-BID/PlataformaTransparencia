@@ -24,49 +24,49 @@ msgctxt "OrchardCore.Tenants.AdminMenu"
 msgid "Tenants"
 msgstr "Thuê dịch vụ"
 
-#. new SelectListItem() ***REMOVED*** Text = S["All states"], Value = nameof(TenantsFilter.All) ***REMOVED***,
+#. new SelectListItem() { Text = S["All states"], Value = nameof(TenantsFilter.All) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:173
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "All states"
 msgstr "Tất cả trạng thái"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Running"], Value = nameof(TenantsFilter.Running) ***REMOVED***,
+#. new SelectListItem() { Text = S["Running"], Value = nameof(TenantsFilter.Running) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:174
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Running"
 msgstr "Ðang chạy"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Disabled"], Value = nameof(TenantsFilter.Disabled) ***REMOVED***,
+#. new SelectListItem() { Text = S["Disabled"], Value = nameof(TenantsFilter.Disabled) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:175
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Disabled"
 msgstr "Vô hiệu hóa"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Uninitialized"], Value = nameof(TenantsFilter.Uninitialized) ***REMOVED***
+#. new SelectListItem() { Text = S["Uninitialized"], Value = nameof(TenantsFilter.Uninitialized) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:176
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Uninitialized"
 msgstr "Chưa hoàn thành"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Name"], Value = nameof(TenantsOrder.Name) ***REMOVED***,
+#. new SelectListItem() { Text = S["Name"], Value = nameof(TenantsOrder.Name) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:180
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Name"
 msgstr "Tên"
 
-#. new SelectListItem() ***REMOVED*** Text = S["State"], Value = nameof(TenantsOrder.State) ***REMOVED***
+#. new SelectListItem() { Text = S["State"], Value = nameof(TenantsOrder.State) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:181
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "State"
 msgstr "Trạng thái"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Disable"], Value = nameof(TenantsBulkAction.Disable) ***REMOVED***,
+#. new SelectListItem() { Text = S["Disable"], Value = nameof(TenantsBulkAction.Disable) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:185
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Disable"
 msgstr "Vô hiệu hóa"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Enable"], Value = nameof(TenantsBulkAction.Enable) ***REMOVED***
+#. new SelectListItem() { Text = S["Enable"], Value = nameof(TenantsBulkAction.Enable) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:186
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Enable"
@@ -80,17 +80,17 @@ msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "You cannot disable the default tenant."
 msgstr "Bạn không thể vô hiệu hóa bản thuê dịch vụ mặc định."
 
-#. _notifier.Warning(H["The tenant '***REMOVED***0***REMOVED***' is already disabled.", shellSettings.Name]);
+#. _notifier.Warning(H["The tenant '{0}' is already disabled.", shellSettings.Name]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:240
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
-msgid "The tenant '***REMOVED***0***REMOVED***' is already disabled."
-msgstr "Khách hàng '***REMOVED***0***REMOVED***' đã bị vô hiệu hoá."
+msgid "The tenant '{0}' is already disabled."
+msgstr "Khách hàng '{0}' đã bị vô hiệu hoá."
 
-#. _notifier.Warning(H["The tenant '***REMOVED***0***REMOVED***' is already enabled.", shellSettings.Name]);
+#. _notifier.Warning(H["The tenant '{0}' is already enabled.", shellSettings.Name]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:253
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
-msgid "The tenant '***REMOVED***0***REMOVED***' is already enabled."
-msgstr "Khách hàng '***REMOVED***0***REMOVED***' đã được kích hoạt."
+msgid "The tenant '{0}' is already enabled."
+msgstr "Khách hàng '{0}' đã được kích hoạt."
 
 #. _notifier.Error(H["You can only disable an Enabled tenant."]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:498
@@ -170,11 +170,11 @@ msgctxt "OrchardCore.Tenants.Controllers.ApiController"
 msgid "Invalid email."
 msgstr ""
 
-#. ModelState.AddModelError(nameof(SetupApiViewModel.Name), S["Tenant not found: '***REMOVED***0***REMOVED***'", model.Name]);
+#. ModelState.AddModelError(nameof(SetupApiViewModel.Name), S["Tenant not found: '{0}'", model.Name]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:172
 msgctxt "OrchardCore.Tenants.Controllers.ApiController"
-msgid "Tenant not found: '***REMOVED***0***REMOVED***'"
-msgstr "Không thấy khách hàng: '***REMOVED***0***REMOVED***'"
+msgid "Tenant not found: '{0}'"
+msgstr "Không thấy khách hàng: '{0}'"
 
 #. return BadRequest(S["The tenant can't be setup."]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:182
@@ -200,11 +200,11 @@ msgctxt "OrchardCore.Tenants.Controllers.ApiController"
 msgid "Either 'Recipe' or 'RecipeName' is required."
 msgstr "Yêu cầu 'Recipe' hoặc 'RecipeName'."
 
-#. return BadRequest(S["Recipe '***REMOVED***0***REMOVED***' not found.", recipeName]);
+#. return BadRequest(S["Recipe '{0}' not found.", recipeName]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:257
 msgctxt "OrchardCore.Tenants.Controllers.ApiController"
-msgid "Recipe '***REMOVED***0***REMOVED***' not found."
-msgstr "Công thức '***REMOVED***0***REMOVED***' không tìm thấy."
+msgid "Recipe '{0}' not found."
+msgstr "Công thức '{0}' không tìm thấy."
 
 #. public override LocalizedString Category => S["Tenant"];
 #: OrchardCore.Tenants\Workflows\Activities\CreateTenantTask.cs:24
@@ -412,11 +412,11 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Create"
 msgid "None"
 msgstr "Không có"
 
-#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString.ToString().ToLower()" data-table-prefix="@provider.HasTablePrefix.ToString().ToLower()" data-connection-string-sample="@T["The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***", provider.SampleConnectionString]">@provider.Name</option>
+#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString.ToString().ToLower()" data-table-prefix="@provider.HasTablePrefix.ToString().ToLower()" data-connection-string-sample="@T["The connection string to your database instance. e.g., {0}", provider.SampleConnectionString]">@provider.Name</option>
 #: OrchardCore.Tenants\Views\Admin\Create.cshtml:69
 msgctxt "OrchardCore.Tenants.Views.Admin.Create"
-msgid "The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***"
-msgstr "Chuỗi kết nối đến cơ sở dữ liệu của bạn. ví dụ., ***REMOVED***0***REMOVED***"
+msgid "The connection string to your database instance. e.g., {0}"
+msgstr "Chuỗi kết nối đến cơ sở dữ liệu của bạn. ví dụ., {0}"
 
 #. <label asp-for="TablePrefix">@T["Table Prefix"]</label>
 #: OrchardCore.Tenants\Views\Admin\Create.cshtml:74
@@ -612,25 +612,25 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Select All"
 msgstr "Chọn Tất cả"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
-msgstr[0] "***REMOVED***0***REMOVED*** mục"
+msgid_plural "{0} items"
+msgstr[0] "{0} mục"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
-msgstr "Mục ***REMOVED***0***REMOVED*** đến ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
+msgstr "Mục {0} đến {1}"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
-msgstr[0] " / ***REMOVED***0***REMOVED*** mục trong tổng số"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
+msgstr[0] " / {0} mục trong tổng số"
 
 #. @T["Actions"]
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:118
@@ -638,17 +638,17 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Actions"
 msgstr "Hành động"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:123
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Bulk Action"
 msgstr "Hành động Hàng loạt"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:123
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?"
-msgstr "Bạn chắc chắn muốn ***REMOVED***0***REMOVED*** mục này?"
+msgid "Are you sure you want to {0} this/these item(s)?"
+msgstr "Bạn chắc chắn muốn {0} mục này?"
 
 #. <select asp-for="Options.Filter" asp-items="@Model.Options.TenantsStates" class="selectpicker show-tick mr-2" data-header="@T["Filter by state"]" data-width="fit" data-selected-text-format="static" data-dropdown-align-right="true" title="@T["State"]" data-style="btn-sm"></select>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:130

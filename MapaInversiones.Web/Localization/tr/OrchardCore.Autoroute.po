@@ -17,17 +17,17 @@ msgid "Your permalink can't be set to the homepage, please use the homepage opti
 msgstr "Your permalink can't be set to the homepage, please use the homepage option instead.\n"
 "Geçici link anasayfaya ayarlnamaz, bunun için anasayfa seçeneğini kullanınız."
 
-#. updater.ModelState.AddModelError(Prefix, nameof(autoroute.Path), S["Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
+#. updater.ModelState.AddModelError(Prefix, nameof(autoroute.Path), S["Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
 #: OrchardCore.Autoroute\Drivers\AutoroutePartDisplay.cs:132
 msgctxt "OrchardCore.Autoroute.Drivers.AutoroutePartDisplay"
-msgid "Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead)."
+msgid "Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead)."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, nameof(autoroute.Path), S["Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters.", MaxPathLength]);
+#. updater.ModelState.AddModelError(Prefix, nameof(autoroute.Path), S["Your permalink is too long. The permalink can only be up to {0} characters.", MaxPathLength]);
 #: OrchardCore.Autoroute\Drivers\AutoroutePartDisplay.cs:137
 msgctxt "OrchardCore.Autoroute.Drivers.AutoroutePartDisplay"
-msgid "Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Kalıcı bağlantın çok uzun. Kalıcı link sadece ***REMOVED***0***REMOVED*** karaktere kadar olabilir."
+msgid "Your permalink is too long. The permalink can only be up to {0} characters."
+msgstr "Kalıcı bağlantın çok uzun. Kalıcı link sadece {0} karaktere kadar olabilir."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(autoroute.Path), S["Your permalink is already in use."]);
 #: OrchardCore.Autoroute\Drivers\AutoroutePartDisplay.cs:154
@@ -65,16 +65,16 @@ msgctxt "OrchardCore.Autoroute.Handlers.AutoroutePartHandler"
 msgid "Your permalink can't be set to the homepage, please use the homepage option instead."
 msgstr ""
 
-#. context.Fail(S["Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
+#. context.Fail(S["Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
 #: OrchardCore.Autoroute\Handlers\AutoroutePartHandler.cs:166
 msgctxt "OrchardCore.Autoroute.Handlers.AutoroutePartHandler"
-msgid "Please do not use any of the following characters in your permalink: ***REMOVED***0***REMOVED***. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead)."
+msgid "Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead)."
 msgstr ""
 
-#. context.Fail(S["Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters.", AutoroutePartDisplay.MaxPathLength]);
+#. context.Fail(S["Your permalink is too long. The permalink can only be up to {0} characters.", AutoroutePartDisplay.MaxPathLength]);
 #: OrchardCore.Autoroute\Handlers\AutoroutePartHandler.cs:171
 msgctxt "OrchardCore.Autoroute.Handlers.AutoroutePartHandler"
-msgid "Your permalink is too long. The permalink can only be up to ***REMOVED***0***REMOVED*** characters."
+msgid "Your permalink is too long. The permalink can only be up to {0} characters."
 msgstr ""
 
 #. context.Fail(S["Your permalink is already in use."]);
@@ -83,11 +83,11 @@ msgctxt "OrchardCore.Autoroute.Handlers.AutoroutePartHandler"
 msgid "Your permalink is already in use."
 msgstr ""
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Autoroute\Settings\AutoroutePartSettingsDisplayDriver.cs:69
 msgctxt "OrchardCore.Autoroute.Settings.AutoroutePartSettingsDisplayDriver"
-msgid "Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
-msgstr "Desen geçerli bir Liquid ifadesi içermiyor. Ayrıntılar: ***REMOVED***0***REMOVED***"
+msgid "Pattern doesn't contain a valid Liquid expression. Details: {0}"
+msgstr "Desen geçerli bir Liquid ifadesi içermiyor. Ayrıntılar: {0}"
 
 #. <label class="custom-control-label" asp-for="Disabled">@T["Disabled"]</label>
 #: OrchardCore.Autoroute\Views\AutoroutePart.Edit.cshtml:18

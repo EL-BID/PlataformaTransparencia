@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace PlataformaTransparencia.Modulo.Principal.Views.Home
-***REMOVED***
+{
     public class PEIModel : PageModel
-    ***REMOVED***
+    {
         public void OnGet()
-        ***REMOVED***
-    ***REMOVED***
-***REMOVED***
-***REMOVED***
+        {
+        }
+    }
+}

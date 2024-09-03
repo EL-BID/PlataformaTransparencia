@@ -2,43 +2,43 @@
 @model PlataformaTransparencia.Modelos.ModelHomeData
 
 @section scripts
-***REMOVED***
+{
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/search_aux.js"></script>
-***REMOVED***
+}
 <style>
 
-    .autocomplete-suggestions ***REMOVED***
+    .autocomplete-suggestions {
         border: 1px solid #999;
         background: #FFF;
         overflow: auto;
-***REMOVED***
+    }
 
-    .autocomplete-suggestion ***REMOVED***
+    .autocomplete-suggestion {
         padding: 2px 5px;
         white-space: nowrap;
         overflow: hidden;
-***REMOVED***
+    }
 
-    .autocomplete-selected ***REMOVED***
+    .autocomplete-selected {
         background: #F0F0F0;
-***REMOVED***
+    }
 
-    .autocomplete-suggestions strong ***REMOVED***
+    .autocomplete-suggestions strong {
         font-weight: normal;
         color: #3399FF;
-***REMOVED***
+    }
 
-    .autocomplete-group ***REMOVED***
+    .autocomplete-group {
         padding: 2px 5px;
-***REMOVED***
+    }
 
-        .autocomplete-group strong ***REMOVED***
+        .autocomplete-group strong {
             display: block;
             border-bottom: 1px solid #000;
-    ***REMOVED***
+        }
 </style>
 
 <main>
@@ -50,8 +50,8 @@
                 <div class="Tagline text-center">Los recursos p&uacute;blicos son del <span>pueblo paraguayo</span></div>
                 <div class="Tagline2 text-center">Use esta plataforma para informarse, participar y controlar</div>
 
-                @using (Html.BeginForm("BusquedaResultados", "Home", FormMethod.Get, new ***REMOVED*** @class = "search-page-form" ***REMOVED***))
-                ***REMOVED***
+                @using (Html.BeginForm("BusquedaResultados", "Home", FormMethod.Get, new { @class = "search-page-form" }))
+                {
                     <div class="form-field">
                         <label for="SearchString" class="form-field-label">Entidades, Planes y programas, por ejemplo: Plan nacional de Desarrollo.</label>
                         <input type="search" class="form-field-input" name="SearchString" id="SearchString" value="" autocomplete="on" required="required">
@@ -59,7 +59,7 @@
                         <!--<button type="submit" class="search-btn">Buscar</button>-->
                     </div>
 
-            ***REMOVED***
+                }
                 <!--<div class="form-recommendations">
                     <div class="row">
                         <div class="searchtxt col-lg-3">B&uacute;squedas m&aacute;s populares</div>
@@ -81,18 +81,18 @@
     </section>
     <!-- SLIDESHOW -->
     <div class="section-bg intro">
-        <div class="intro-slider flickity-dots-absolute" data-flickity='***REMOVED*** "autoPlay": true, "bgLazyLoad": 1, "bgLazyLoad": true, "fade": true, "prevNextButtons": false ***REMOVED***'>
-            @***REMOVED***
+        <div class="intro-slider flickity-dots-absolute" data-flickity='{ "autoPlay": true, "bgLazyLoad": 1, "bgLazyLoad": true, "fade": true, "prevNextButtons": false }'>
+            @{
                 var banners = await Orchard.GetContentItemByHandleAsync("alias:bannerhome");
-        ***REMOVED***
+            }
             @foreach (var item in banners.Content.BagPart.ContentItems)
-            ***REMOVED***
+            {
 
                 var ruta_aux = "";
                 if (@item.Banner.Fondo.Paths.Count > 0)
-                ***REMOVED***
+                {
                     ruta_aux = @item.Banner.Fondo.Paths[0];
-            ***REMOVED***
+                }
 
                 <div class="intro-item" data-flickity-bg-lazyload="@Orchard.AssetUrl((string)ruta_aux,200,200,OrchardCore.Media.Processing.ResizeMode.Crop)">
                     <div class="container">
@@ -116,33 +116,33 @@
                         </div>
                     </div>
                 </div>
-        ***REMOVED***
+            }
         </div>
     </div><!-- End SLIDESHOW -->
     <!-- MAIN QUESTIONS -->
     <section class="section-questions">
         <div class="container">
             <div class="card-group negative-margin">
-                @***REMOVED***
+                @{
                     var anuncios = await Orchard.GetContentItemByHandleAsync("alias:anuncios");
-            ***REMOVED***
+                }
                 @foreach (var anuncio in anuncios.Content.BagPart.ContentItems)
-                ***REMOVED***
+                {
                     <div class="card no-rounded">
                         <a href="@anuncio.LinkMenuItemPart.Url" class="services-item item-style">
                             <h4 class="services-item-heading">@anuncio.DisplayText</h4>
 
                             <div class="services-item-desc mb-4">@Html.Raw(anuncio.HtmlBodyPart.Html)</div>
                             @if (anuncio.LinkMenuItemPart.Name != null)
-                            ***REMOVED***
+                            {
                                 <div class="btn btn-cards">
                                     <span>@anuncio.LinkMenuItemPart.Name</span>
                                     <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="img/sprite.svg#arrow-right"></use></svg>
                                 </div>
-                        ***REMOVED***
+                            }
                         </a>
                     </div>
-            ***REMOVED***
+                }
 
             </div>
 
@@ -166,7 +166,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="content-infogram p-3">
-                        <div class="infogram-slider flickity-dots-absolute" data-flickity='***REMOVED*** "bgLazyLoad": 1, "bgLazyLoad": true, "fade": true, "prevNextButtons": false ***REMOVED***'>
+                        <div class="infogram-slider flickity-dots-absolute" data-flickity='{ "bgLazyLoad": 1, "bgLazyLoad": true, "fade": true, "prevNextButtons": false }'>
                             <div class="intro-item" data-flickity-bg-lazyload="">
                                 <div class="col">
                                     <div class="intro-content">
@@ -253,9 +253,9 @@
             </div>
             <div class="row">
                 @if (Model.Entidades != null)
-                ***REMOVED***
+                {
                     @foreach (var item in Model.Entidades)
-                    ***REMOVED***
+                    {
                         var porcentaje = "0%";
                         var href_aux = "/PerfilEntidad?codEntidad=" + @item.id;
                         porcentaje = @item.porcentaje.ToString().Replace(',', '.') + "%";
@@ -274,7 +274,7 @@
                                                 <div class="progress">
                                                     <div class="progress-bar" role="progressbar" style="width:@porcentaje" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                                 </div>
-                                                <div class="executeN text-center">₲ @String.Format("***REMOVED***0:n0***REMOVED***", item.avance / 1000000000)</div>
+                                                <div class="executeN text-center">₲ @String.Format("{0:n0}", item.avance / 1000000000)</div>
                                                 <div class="executeV text-center">Miles de Millones de Guaran&iacute;es</div>
                                             </div>
                                         </div>
@@ -283,8 +283,8 @@
                             </div>
                         </text>
 
-                ***REMOVED***
-            ***REMOVED***
+                    }
+                }
             </div>
             <div class="section-btns justify-content-center py-5">
                 <a href="/BusquedaResultados?Type=Entidad" class="btn btn-cards">
@@ -307,24 +307,24 @@
                     </div>
                     <div class="cards-News-container">
                         @foreach (var noticia in await Orchard.GetRecentContentItemsByContentTypeAsync("BlogPost", 4))
-                        ***REMOVED***
+                        {
 
                             <!--NOTICIA 3-->
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4 col-lg-3">
-                                        @***REMOVED***
+                                        @{
                                             var imgpath = "img/Pic001.jpg";
                                             if (noticia.Content.BlogPost.Image.Paths.Count != 0)
-                                            ***REMOVED***
+                                            {
                                                 imgpath = noticia.Content.BlogPost.Image.Paths[0];
                                                 <img class="img-fluid" src=@Orchard.AssetUrl((string)imgpath) alt="...">
-                                        ***REMOVED***
+                                            }
                                             else
-                                            ***REMOVED***
+                                            {
                                                 <img class="img-fluid" src=@imgpath alt="...">
-                                        ***REMOVED***
-                                    ***REMOVED***
+                                            }
+                                        }
 
                                     </div>
                                     <div class="col-md-8 col-lg-9">
@@ -336,7 +336,7 @@
                                     </div>
                                 </div>
                             </div>
-                    ***REMOVED***
+                        }
                     </div>
                 </div>
                 <div class="col-lg-4">

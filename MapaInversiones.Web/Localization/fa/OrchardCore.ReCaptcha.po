@@ -110,13 +110,13 @@ msgstr "تنظیمات reCaptcha پیکربندی نشده‌اند."
 
 #: OrchardCore.ReCaptcha\Views\Items\ReCaptchaPart.Fields.Edit.cshtml:0
 msgctxt "OrchardCore.ReCaptcha.Views.Items.ReCaptchaPart.Fields.Edit"
-msgid "<a ***REMOVED***0***REMOVED***>ReCaptcha settings</a> are configured."
-msgstr "<a ***REMOVED***0***REMOVED***>ReCaptcha تنظیمات</a> پیکربندی شده‌اند."
+msgid "<a {0}>ReCaptcha settings</a> are configured."
+msgstr "<a {0}>ReCaptcha تنظیمات</a> پیکربندی شده‌اند."
 
 #: OrchardCore.ReCaptcha\Views\Items\ReCaptchaPart.Fields.Edit.cshtml:0
 msgctxt "OrchardCore.ReCaptcha.Views.Items.ReCaptchaPart.Fields.Edit"
-msgid "<a ***REMOVED***0***REMOVED***>ReCaptcha settings</a> are not configured. The captcha will not be displayed."
-msgstr "<a ***REMOVED***0***REMOVED***>ReCaptcha تنظیمات</a> پیکربندی نشده‌اند. Captcha نمایش داده نخواهد شد."
+msgid "<a {0}>ReCaptcha settings</a> are not configured. The captcha will not be displayed."
+msgstr "<a {0}>ReCaptcha تنظیمات</a> پیکربندی نشده‌اند. Captcha نمایش داده نخواهد شد."
 
 #. <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate ReCaptcha"])</h4>
 #: OrchardCore.ReCaptcha\Views\Items\ValidateReCaptchaTask.Fields.Design.cshtml:4

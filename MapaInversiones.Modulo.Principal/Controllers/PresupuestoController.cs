@@ -8,9 +8,9 @@ using PlataformaTransparencia.Infrastructura.DataModels;
 using PlataformaTransparencia.Modelos;
 
 namespace PlataformaTransparencia.Modulo.Principal.Controllers
-***REMOVED***
+{
   public class PresupuestoController : Controller
-  ***REMOVED***
+  {
 
     private readonly ILogger<PlanController> _logger;
     private readonly TransparenciaDB _connection;
@@ -18,35 +18,35 @@ namespace PlataformaTransparencia.Modulo.Principal.Controllers
 
 
     public PresupuestoController(ILogger<PlanController> logger, TransparenciaDB connection)
-    ***REMOVED***
+    {
       _logger = logger;
       _connection = connection;
 
-***REMOVED***
+    }
 
     public IActionResult Index()
-    ***REMOVED***
+    {
       return View();
-***REMOVED***
+    }
     public IActionResult PresupuestoGeneral()
-    ***REMOVED***
+    {
       ModelPresupuestoData modelo = new ModelPresupuestoData();
       modelo.Presupuesto = (from pre in _connection.PresupuestoVigenteXSectorMinHaciendas
                             orderby pre.AnioPresupuesto descending
-                            select new PresupuestoXSectorMinHacienda ***REMOVED***
+                            select new PresupuestoXSectorMinHacienda {
                               AnioPresupuesto = pre.AnioPresupuesto
-                        ***REMOVED***).Distinct().ToList();
+                            }).Distinct().ToList();
       ViewData["ruta"] = "Presupuesto";
       return View(modelo);
-***REMOVED***
+    }
 
 
     public ActionResult ProcesoPresupuesto()
-    ***REMOVED***
+    {
       ViewData["ruta"] = "Presupuesto";
       return View();
-***REMOVED***
+    }
 
 
-  ***REMOVED***
-***REMOVED***
+  }
+}

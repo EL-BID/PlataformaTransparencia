@@ -4,28 +4,28 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
     public class SolrResponse
-    ***REMOVED***
+    {
         [SolrUniqueKey("id")]
-        public string Id ***REMOVED*** get; set; ***REMOVED***
+        public string Id { get; set; }
         [SolrField("principal")]
-        public string Principal ***REMOVED*** get; set; ***REMOVED***
+        public string Principal { get; set; }
         [SolrField("metadata")]
-        public string Metadata ***REMOVED*** get; set; ***REMOVED***
+        public string Metadata { get; set; }
         [SolrField("descripcion")]
-        public string Descripcion ***REMOVED*** get; set; ***REMOVED***
+        public string Descripcion { get; set; }
         [SolrField("IdSector")]
-        public int IdSector ***REMOVED*** get; set; ***REMOVED***
+        public int IdSector { get; set; }
         [SolrField("hierarchy")]
-        public string Hierarchy ***REMOVED*** get; set; ***REMOVED***
+        public string Hierarchy { get; set; }
         [SolrField("type")]
-        public string Type ***REMOVED*** get; set; ***REMOVED***
+        public string Type { get; set; }
         [SolrField("url")]
-        public string Url ***REMOVED*** get; set; ***REMOVED***
+        public string Url { get; set; }
         [SolrField("numFound")]
-        public int numFound ***REMOVED*** get; set; ***REMOVED***
+        public int numFound { get; set; }
 
 
-***REMOVED***
-***REMOVED***
+    }
+}

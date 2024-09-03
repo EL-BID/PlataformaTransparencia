@@ -72,11 +72,11 @@ msgctxt "OrchardCore.Lists.Views.ListPart.DetailAdmin"
 msgid "Please specify at least one contained content type."
 msgstr "Por favor, especifique al menos un tipo de contenido."
 
-#. @T["Create ***REMOVED***0***REMOVED***", contentTypeDefinition.DisplayName]
+#. @T["Create {0}", contentTypeDefinition.DisplayName]
 #: OrchardCore.Lists\Views\ListPart.DetailAdmin.cshtml:28
 msgctxt "OrchardCore.Lists.Views.ListPart.DetailAdmin"
-msgid "Create ***REMOVED***0***REMOVED***"
-msgstr "Crear ***REMOVED***0***REMOVED***"
+msgid "Create {0}"
+msgstr "Crear {0}"
 
 #. @T["Create"]
 #: OrchardCore.Lists\Views\ListPart.DetailAdmin.cshtml:39
@@ -114,11 +114,11 @@ msgctxt "OrchardCore.Lists.Views.ListPartFeed.Edit"
 msgid "Provide a custom public url which will be used to proxy the local rss feed."
 msgstr "Proporciona una url pública personalizada que se utilizará para el proxy del rss feed local."
 
-#. <span class="hint">@T["The current feed is available at <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a>.", Url.Action("Index", "Feed", new ***REMOVED*** area = "OrchardCore.Feeds", ContentItemId = Model.ContentItem.ContentItemId ***REMOVED***, Context.Request.Scheme)]</span>
+#. <span class="hint">@T["The current feed is available at <a href=\"{0}\">{0}</a>.", Url.Action("Index", "Feed", new { area = "OrchardCore.Feeds", ContentItemId = Model.ContentItem.ContentItemId }, Context.Request.Scheme)]</span>
 #: OrchardCore.Lists\Views\ListPartFeed.Edit.cshtml:8
 msgctxt "OrchardCore.Lists.Views.ListPartFeed.Edit"
-msgid "The current feed is available at <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a>."
-msgstr "El feed actual está disponible en <a href=\"***REMOVED***0***REMOVED***\">***REMOVED***0***REMOVED***</a>."
+msgid "The current feed is available at <a href=\"{0}\">{0}</a>."
+msgstr "El feed actual está disponible en <a href=\"{0}\">{0}</a>."
 
 #. <label asp-for="FeedItemsCount">@T["Feed items count"]</label>
 #: OrchardCore.Lists\Views\ListPartFeed.Edit.cshtml:12

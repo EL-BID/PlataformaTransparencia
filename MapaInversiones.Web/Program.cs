@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
 namespace PlataformaTransparencia.Web
-***REMOVED***
+{
     public class Program
-    ***REMOVED***
+    {
         public static Task Main(string[] args)
             => BuildHost(args).RunAsync();
 
@@ -14,5 +14,5 @@ namespace PlataformaTransparencia.Web
                 .ConfigureWebHostDefaults(webBuilder =>
                     webBuilder.UseStartup<Startup>())
                 .Build();
-***REMOVED***
-***REMOVED***
+    }
+}

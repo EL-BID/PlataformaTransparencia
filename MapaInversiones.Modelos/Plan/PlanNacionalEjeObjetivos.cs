@@ -1,22 +1,22 @@
 ﻿namespace PlataformaTransparencia.Modelos.Plan
-***REMOVED***
+{
   public class PlanNacionalEjeObjetivos
-  ***REMOVED***
-    public int IdEje ***REMOVED*** get; set; ***REMOVED***
-    public int CodEje ***REMOVED*** get; set; ***REMOVED***
-    public string NombreEje ***REMOVED*** get; set; ***REMOVED***
+  {
+    public int IdEje { get; set; }
+    public int CodEje { get; set; }
+    public string NombreEje { get; set; }
 
-    public int IdLinea ***REMOVED*** get; set; ***REMOVED***
-    public int CodLinea ***REMOVED*** get; set; ***REMOVED***
-    public string NombreLinea ***REMOVED*** get; set; ***REMOVED***
+    public int IdLinea { get; set; }
+    public int CodLinea { get; set; }
+    public string NombreLinea { get; set; }
 
-    public int IdObjetivo ***REMOVED*** get; set; ***REMOVED***
-    public int CodObjetivo ***REMOVED*** get; set; ***REMOVED***
-    public string NombreObjetivo ***REMOVED*** get; set; ***REMOVED***
+    public int IdObjetivo { get; set; }
+    public int CodObjetivo { get; set; }
+    public string NombreObjetivo { get; set; }
 
-    public int IdObjetivoEspecifico ***REMOVED*** get; set; ***REMOVED***
-    public int CodObjetivoEspecifico ***REMOVED*** get; set; ***REMOVED***
-    public string NombreObjetivoEspecifico ***REMOVED*** get; set; ***REMOVED***
+    public int IdObjetivoEspecifico { get; set; }
+    public int CodObjetivoEspecifico { get; set; }
+    public string NombreObjetivoEspecifico { get; set; }
 
-  ***REMOVED***
-***REMOVED***
+  }
+}

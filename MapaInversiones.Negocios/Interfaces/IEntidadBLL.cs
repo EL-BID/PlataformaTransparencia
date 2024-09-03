@@ -6,9 +6,9 @@ using PlataformaTransparencia.Modelos.Entidad;
 
 
 namespace PlataformaTransparencia.Negocios.Entidad
-***REMOVED***
+{
     public interface IEntidadBLL
-    ***REMOVED***
+    {
         public List<infograficoEje> GetGraficaSankey(string codEntidad);
 
         public List<ProyectosPerfilEntidad> GetActividadesClasePrograma(string clasePrograma, int anio, string codEntidad);
@@ -16,5 +16,5 @@ namespace PlataformaTransparencia.Negocios.Entidad
 
         List<TableIndicadorGraphics> GetGraficaIndicadores(int codigoIndicador, int anio, string codEntidad);
 
-***REMOVED***
-***REMOVED***
+    }
+}

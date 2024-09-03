@@ -70,9 +70,9 @@ msgctxt "OrchardCore.ReverseProxy.Views.ReverseProxySettings.Edit"
 msgid "Enables the forwarding of the HTTP header X-Forwarded-Host"
 msgstr "Cho phép chuyển tiếp tiêu đề HTTP X-Forwarded-Host"
 
-#. @T["Documentation available at: ***REMOVED***0***REMOVED***", "https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-3.0"]
+#. @T["Documentation available at: {0}", "https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-3.0"]
 #: OrchardCore.ReverseProxy\Views\ReverseProxySettings.Edit.cshtml:41
 msgctxt "OrchardCore.ReverseProxy.Views.ReverseProxySettings.Edit"
-msgid "Documentation available at: ***REMOVED***0***REMOVED***"
-msgstr "Tài liệu có sẵn tại: ***REMOVED***0***REMOVED***"
+msgid "Documentation available at: {0}"
+msgstr "Tài liệu có sẵn tại: {0}"
 

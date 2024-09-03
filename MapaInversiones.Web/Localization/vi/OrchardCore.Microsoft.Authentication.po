@@ -46,31 +46,31 @@ msgctxt "OrchardCore.Microsoft.Authentication.AdminMenuAAD"
 msgid "Azure Active Directory"
 msgstr "Azure Active Directory"
 
-#. yield return new ValidationResult(S["DisplayName is required"], new string[] ***REMOVED*** nameof(settings.DisplayName) ***REMOVED***);
+#. yield return new ValidationResult(S["DisplayName is required"], new string[] { nameof(settings.DisplayName) });
 #: OrchardCore.Microsoft.Authentication\Services\AzureADService.cs:58
 msgctxt "OrchardCore.Microsoft.Authentication.Services.AzureADService"
 msgid "DisplayName is required"
 msgstr "DisplayName là bắt buộc"
 
-#. yield return new ValidationResult(S["AppId is required"], new string[] ***REMOVED*** nameof(settings.AppId) ***REMOVED***);
+#. yield return new ValidationResult(S["AppId is required"], new string[] { nameof(settings.AppId) });
 #: OrchardCore.Microsoft.Authentication\Services\AzureADService.cs:63
 msgctxt "OrchardCore.Microsoft.Authentication.Services.AzureADService"
 msgid "AppId is required"
 msgstr "AppId là bắt buộc"
 
-#. yield return new ValidationResult(S["TenantId is required"], new string[] ***REMOVED*** nameof(settings.TenantId) ***REMOVED***);
+#. yield return new ValidationResult(S["TenantId is required"], new string[] { nameof(settings.TenantId) });
 #: OrchardCore.Microsoft.Authentication\Services\AzureADService.cs:68
 msgctxt "OrchardCore.Microsoft.Authentication.Services.AzureADService"
 msgid "TenantId is required"
 msgstr "TenantId là bắt buộc"
 
-#. yield return new ValidationResult(S["AppId is required"], new string[] ***REMOVED*** nameof(settings.AppId) ***REMOVED***);
+#. yield return new ValidationResult(S["AppId is required"], new string[] { nameof(settings.AppId) });
 #: OrchardCore.Microsoft.Authentication\Services\MicrosoftAccountService.cs:56
 msgctxt "OrchardCore.Microsoft.Authentication.Services.MicrosoftAccountService"
 msgid "AppId is required"
 msgstr "AppId là bắt buộc"
 
-#. yield return new ValidationResult(S["AppSecret is required"], new string[] ***REMOVED*** nameof(settings.AppSecret) ***REMOVED***);
+#. yield return new ValidationResult(S["AppSecret is required"], new string[] { nameof(settings.AppSecret) });
 #: OrchardCore.Microsoft.Authentication\Services\MicrosoftAccountService.cs:61
 msgctxt "OrchardCore.Microsoft.Authentication.Services.MicrosoftAccountService"
 msgid "AppSecret is required"

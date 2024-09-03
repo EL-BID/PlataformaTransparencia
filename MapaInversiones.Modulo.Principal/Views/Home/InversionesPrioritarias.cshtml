@@ -1,8 +1,8 @@
 ﻿@page
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 <head>
     
 </head>
@@ -195,24 +195,24 @@
 <div id="helpCenter"></div>
 <script src="js/comunes_infografias.js"></script>
 <script>
-    $(document).ready(function () ***REMOVED***
+    $(document).ready(function () {
         obtListadoEntidades();
-***REMOVED***);
+    });
 
-    window.onscroll = function () ***REMOVED*** myFunction() ***REMOVED***;
+    window.onscroll = function () { myFunction() };
 
     var header = document.getElementById("navs-header");
     var sticky = header.offsetTop;
 
-    function myFunction() ***REMOVED***
-        if (window.pageYOffset > sticky) ***REMOVED***
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
             header.classList.add("bg-white");
-    ***REMOVED*** else ***REMOVED***
+        } else {
             header.classList.remove("sticky");
             header.classList.remove("bg-white");
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 </script>
 
 

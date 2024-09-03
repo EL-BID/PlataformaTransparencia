@@ -162,10 +162,10 @@ msgctxt "OrchardCore.Queries.Views.Query.Fields.Edit"
 msgid "The schema the api will use to return results."
 msgstr ""
 
-#. <h1>@T["If you see this message you need to create a custom shape template for ***REMOVED***0***REMOVED***", "Query-" + Model.Name + ".Link"]</h1>
+#. <h1>@T["If you see this message you need to create a custom shape template for {0}", "Query-" + Model.Name + ".Link"]</h1>
 #: OrchardCore.Queries\Views\Query.Link.cshtml:1
 msgctxt "OrchardCore.Queries.Views.Query.Link"
-msgid "If you see this message you need to create a custom shape template for ***REMOVED***0***REMOVED***"
+msgid "If you see this message you need to create a custom shape template for {0}"
 msgstr ""
 
 #. class="btn btn-success btn-sm">@T["Run"]</a>
@@ -210,16 +210,16 @@ msgctxt "OrchardCore.Queries.Views.SqlQuery.SummaryAdmin"
 msgid "SQL query"
 msgstr ""
 
-#. <h1>@RenderTitleSegments(T["New ***REMOVED***0***REMOVED*** query", Model.SourceName])</h1>
+#. <h1>@RenderTitleSegments(T["New {0} query", Model.SourceName])</h1>
 #: OrchardCore.Queries\Views\Admin\Create.cshtml:3
 msgctxt "OrchardCore.Queries.Views.Admin.Create"
-msgid "New ***REMOVED***0***REMOVED*** query"
+msgid "New {0} query"
 msgstr ""
 
-#. <h1>@RenderTitleSegments(T["Edit '***REMOVED***0***REMOVED***' query", Model.Name])</h1>
+#. <h1>@RenderTitleSegments(T["Edit '{0}' query", Model.Name])</h1>
 #: OrchardCore.Queries\Views\Admin\Edit.cshtml:3
 msgctxt "OrchardCore.Queries.Views.Admin.Edit"
-msgid "Edit '***REMOVED***0***REMOVED***' query"
+msgid "Edit '{0}' query"
 msgstr ""
 
 #. <h1>@RenderTitleSegments(T["Queries"])</h1>
@@ -240,25 +240,25 @@ msgctxt "OrchardCore.Queries.Views.Admin.Index"
 msgid "Add Query"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Queries\Views\Admin\Index.cshtml:26
 msgctxt "OrchardCore.Queries.Views.Admin.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] ""
 msgstr[1] ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Queries\Views\Admin\Index.cshtml:26
 msgctxt "OrchardCore.Queries.Views.Admin.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Queries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Queries\Views\Admin\Index.cshtml:26
 msgctxt "OrchardCore.Queries.Views.Admin.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -304,10 +304,10 @@ msgctxt "OrchardCore.Queries.Views.Admin.Query"
 msgid "Template"
 msgstr ""
 
-#. <span class="hint">@T["You can <a href=\"***REMOVED***0***REMOVED***\">click here</a> to query all content items.", Html.Raw(Url.Action("Query", "Admin", new ***REMOVED*** area = "OrchardCore.Queries", Query = matchAllQuery ***REMOVED***))]</span>
+#. <span class="hint">@T["You can <a href=\"{0}\">click here</a> to query all content items.", Html.Raw(Url.Action("Query", "Admin", new { area = "OrchardCore.Queries", Query = matchAllQuery }))]</span>
 #: OrchardCore.Queries\Views\Admin\Query.cshtml:24
 msgctxt "OrchardCore.Queries.Views.Admin.Query"
-msgid "You can <a href=\"***REMOVED***0***REMOVED***\">click here</a> to query all content items."
+msgid "You can <a href=\"{0}\">click here</a> to query all content items."
 msgstr ""
 
 #. <span class="hint">@T["The SQL query uses standard SQL92 syntax and is converted based on the actual database. Tables will be prefixed automatically."]</span>
@@ -346,16 +346,16 @@ msgctxt "OrchardCore.Queries.Views.Admin.Query"
 msgid "The query as it will be executed by the SQL database."
 msgstr ""
 
-#. <a href="@Url.Action("Create", "Admin", new ***REMOVED*** area = "OrchardCore.Queries", id = "Sql", query = Model.DecodedQuery ***REMOVED***)" class="btn btn-success">@T["Create"]</a>
+#. <a href="@Url.Action("Create", "Admin", new { area = "OrchardCore.Queries", id = "Sql", query = Model.DecodedQuery })" class="btn btn-success">@T["Create"]</a>
 #: OrchardCore.Queries\Views\Admin\Query.cshtml:57
 msgctxt "OrchardCore.Queries.Views.Admin.Query"
 msgid "Create"
 msgstr ""
 
-#. <span class="text-muted">@T["Query executed in ***REMOVED***0***REMOVED*** ms", Model.Elapsed.TotalMilliseconds]</span>
+#. <span class="text-muted">@T["Query executed in {0} ms", Model.Elapsed.TotalMilliseconds]</span>
 #: OrchardCore.Queries\Views\Admin\Query.cshtml:65
 msgctxt "OrchardCore.Queries.Views.Admin.Query"
-msgid "Query executed in ***REMOVED***0***REMOVED*** ms"
+msgid "Query executed in {0} ms"
 msgstr ""
 
 #. <h5>@T["All Queries"]</h5>

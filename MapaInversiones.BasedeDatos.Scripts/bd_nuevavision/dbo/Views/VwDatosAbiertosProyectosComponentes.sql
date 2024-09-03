@@ -1,6 +1,6 @@
 ﻿CREATE VIEW dbo.VwDatosAbiertosProyectosComponentes
 AS
-SELECT proy.CodigoBPIN AS CodigoSNIP, producto.UnidadProducto AS codigoComponente, producto.NombreProducto AS descripcionComponente, Actividades.CodigoActividad AS codigoActividad, Actividades.DescripcionActividad AS descripcionActividad, dbo.FuenteDeLosRecursos.FechaActualizacionFuente AS FechaCargueArchivo, ***REMOVED*** fn CONCAT(dbo.FuenteDeLosRecursos.Descripcion, ' - Ministerio de Hacienda') ***REMOVED*** AS FuenteDatos
+SELECT proy.CodigoBPIN AS CodigoSNIP, producto.UnidadProducto AS codigoComponente, producto.NombreProducto AS descripcionComponente, Actividades.CodigoActividad AS codigoActividad, Actividades.DescripcionActividad AS descripcionActividad, dbo.FuenteDeLosRecursos.FechaActualizacionFuente AS FechaCargueArchivo, { fn CONCAT(dbo.FuenteDeLosRecursos.Descripcion, ' - Ministerio de Hacienda') } AS FuenteDatos
 FROM  dbo.Proyecto AS proy WITH (nolock) INNER JOIN
          dbo.ObjetivoEspecifico AS objetivo ON objetivo.IdProyecto = proy.IdProyecto INNER JOIN
          dbo.Producto AS producto ON producto.IdObjetivoEspecifico = objetivo.IdObjetivoEspecifico INNER JOIN

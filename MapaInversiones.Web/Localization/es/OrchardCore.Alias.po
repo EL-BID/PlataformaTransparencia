@@ -10,11 +10,11 @@ msgstr ""
 "Language: es_ES\n"
 "PO-Revision-Date: 2020-05-10 20:36\n"
 
-#. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters.", MaxAliasLength]);
+#. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is too long. The alias can only be up to {0} characters.", MaxAliasLength]);
 #: OrchardCore.Alias\Drivers\AliasPartDisplayDriver.cs:58
 msgctxt "OrchardCore.Alias.Drivers.AliasPartDisplayDriver"
-msgid "Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters."
-msgstr "Tu alias es demasiado largo. El alias solo puede ser de ***REMOVED***0***REMOVED*** caracteres."
+msgid "Your alias is too long. The alias can only be up to {0} characters."
+msgstr "Tu alias es demasiado largo. El alias solo puede ser de {0} caracteres."
 
 #. updater.ModelState.AddModelError(Prefix, nameof(alias.Alias), S["Your alias is already in use."]);
 #: OrchardCore.Alias\Drivers\AliasPartDisplayDriver.cs:63
@@ -40,10 +40,10 @@ msgctxt "OrchardCore.Alias.GraphQL.AliasQueryObjectType"
 msgid "Alternative path for the content item"
 msgstr "Ruta alternativa para el elemento de contenido"
 
-#. context.Fail(S["Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters.", AliasPartDisplayDriver.MaxAliasLength]);
+#. context.Fail(S["Your alias is too long. The alias can only be up to {0} characters.", AliasPartDisplayDriver.MaxAliasLength]);
 #: OrchardCore.Alias\Handlers\AliasPartHandler.cs:52
 msgctxt "OrchardCore.Alias.Handlers.AliasPartHandler"
-msgid "Your alias is too long. The alias can only be up to ***REMOVED***0***REMOVED*** characters."
+msgid "Your alias is too long. The alias can only be up to {0} characters."
 msgstr ""
 
 #. context.Fail(S["Your alias is already in use."]);
@@ -52,11 +52,11 @@ msgctxt "OrchardCore.Alias.Handlers.AliasPartHandler"
 msgid "Your alias is already in use."
 msgstr ""
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.Pattern), S["Pattern doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Alias\Settings\AliasPartSettingsDisplayDriver.cs:54
 msgctxt "OrchardCore.Alias.Settings.AliasPartSettingsDisplayDriver"
-msgid "Pattern doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
-msgstr "El Patrón no contiene una expresión Liquid válida. Detalles: ***REMOVED***0***REMOVED***"
+msgid "Pattern doesn't contain a valid Liquid expression. Details: {0}"
+msgstr "El Patrón no contiene una expresión Liquid válida. Detalles: {0}"
 
 #. <label asp-for="Alias">@T["Alias"] </label>
 #: OrchardCore.Alias\Views\AliasPart.Edit.cshtml:11

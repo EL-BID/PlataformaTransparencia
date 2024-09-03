@@ -86,18 +86,18 @@ msgstr "  ve  "
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "***REMOVED***0***REMOVED*** characters in total"
-msgstr "Toplamda ***REMOVED***0***REMOVED*** karakter"
+msgid "{0} characters in total"
+msgstr "Toplamda {0} karakter"
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid ", with ***REMOVED***0***REMOVED*** unique characters"
-msgstr ", ***REMOVED***0***REMOVED*** benzersiz karakter"
+msgid ", with {0} unique characters"
+msgstr ", {0} benzersiz karakter"
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "Password must have at least ***REMOVED***0***REMOVED***."
-msgstr "Şifre en az ***REMOVED***0***REMOVED*** olmalı."
+msgid "Password must have at least {0}."
+msgstr "Şifre en az {0} olmalı."
 
 #. <h1>@T["Setup"]</h1>
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:68
@@ -191,10 +191,10 @@ msgctxt "OrchardCore.Setup.Views.Setup.Index"
 msgid "What type of database to use?"
 msgstr "Ne tür bir veritabanı kullanılacak?"
 
-#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString" data-table-prefix="@provider.HasTablePrefix" data-connection-string-sample="@T["The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***", provider.SampleConnectionString]">@provider.Name</option>
+#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString" data-table-prefix="@provider.HasTablePrefix" data-connection-string-sample="@T["The connection string to your database instance. e.g., {0}", provider.SampleConnectionString]">@provider.Name</option>
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:149
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***"
+msgid "The connection string to your database instance. e.g., {0}"
 msgstr ""
 
 #. <label asp-for="TablePrefix">@T["Table Prefix"]</label>

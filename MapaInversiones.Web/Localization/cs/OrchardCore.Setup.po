@@ -86,18 +86,18 @@ msgstr " a "
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "***REMOVED***0***REMOVED*** characters in total"
-msgstr "***REMOVED***0***REMOVED*** znaků celkem"
+msgid "{0} characters in total"
+msgstr "{0} znaků celkem"
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid ", with ***REMOVED***0***REMOVED*** unique characters"
-msgstr ", s ***REMOVED***0***REMOVED*** unikátními znaky"
+msgid ", with {0} unique characters"
+msgstr ", s {0} unikátními znaky"
 
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:0
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "Password must have at least ***REMOVED***0***REMOVED***."
-msgstr "Heslo musí obsahovat alespoň ***REMOVED***0***REMOVED***."
+msgid "Password must have at least {0}."
+msgstr "Heslo musí obsahovat alespoň {0}."
 
 #. <h1>@T["Setup"]</h1>
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:68
@@ -191,11 +191,11 @@ msgctxt "OrchardCore.Setup.Views.Setup.Index"
 msgid "What type of database to use?"
 msgstr "Jaký typ databáze má být použit?"
 
-#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString" data-table-prefix="@provider.HasTablePrefix" data-connection-string-sample="@T["The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***", provider.SampleConnectionString]">@provider.Name</option>
+#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString" data-table-prefix="@provider.HasTablePrefix" data-connection-string-sample="@T["The connection string to your database instance. e.g., {0}", provider.SampleConnectionString]">@provider.Name</option>
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:149
 msgctxt "OrchardCore.Setup.Views.Setup.Index"
-msgid "The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***"
-msgstr "Connection string k instanci databáze. např.: ***REMOVED***0***REMOVED***"
+msgid "The connection string to your database instance. e.g., {0}"
+msgstr "Connection string k instanci databáze. např.: {0}"
 
 #. <label asp-for="TablePrefix">@T["Table Prefix"]</label>
 #: OrchardCore.Setup\Views\Setup\Index.cshtml:156

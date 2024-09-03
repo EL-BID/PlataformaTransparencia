@@ -34,13 +34,13 @@ msgctxt "OrchardCore.Media.MediaCacheAdminMenu"
 msgid "Media Cache"
 msgstr "媒体缓存"
 
-#. error = S["This file extension is not allowed: ***REMOVED***0***REMOVED***", Path.GetExtension(file.FileName)].ToString()
-#. return StatusCode(StatusCodes.Status403Forbidden, S["This file extension is not allowed: ***REMOVED***0***REMOVED***", Path.GetExtension(newPath)]);
+#. error = S["This file extension is not allowed: {0}", Path.GetExtension(file.FileName)].ToString()
+#. return StatusCode(StatusCodes.Status403Forbidden, S["This file extension is not allowed: {0}", Path.GetExtension(newPath)]);
 #: OrchardCore.Media\Controllers\AdminController.cs:171
 #: OrchardCore.Media\Controllers\AdminController.cs:280
 msgctxt "OrchardCore.Media.Controllers.AdminController"
-msgid "This file extension is not allowed: ***REMOVED***0***REMOVED***"
-msgstr "不允许此文件扩展名: ***REMOVED***0***REMOVED***"
+msgid "This file extension is not allowed: {0}"
+msgstr "不允许此文件扩展名: {0}"
 
 #. return StatusCode(StatusCodes.Status403Forbidden, S["Cannot delete root media folder"]);
 #: OrchardCore.Media\Controllers\AdminController.cs:222
@@ -60,11 +60,11 @@ msgctxt "OrchardCore.Media.Controllers.AdminController"
 msgid "Cannot move media because a file already exists with the same name"
 msgstr "无法移动媒体，因为已存在具有相同名称的文件"
 
-#. return BadRequest(S["Error when moving files. Maybe they already exist on the target folder? Files on error: ***REMOVED***0***REMOVED***", string.Join(",", filesOnError)].ToString());
+#. return BadRequest(S["Error when moving files. Maybe they already exist on the target folder? Files on error: {0}", string.Join(",", filesOnError)].ToString());
 #: OrchardCore.Media\Controllers\AdminController.cs:361
 msgctxt "OrchardCore.Media.Controllers.AdminController"
-msgid "Error when moving files. Maybe they already exist on the target folder? Files on error: ***REMOVED***0***REMOVED***"
-msgstr "移动文件时出错。也许它们已经存在于目标文件夹中？出错的文件：***REMOVED***0***REMOVED***"
+msgid "Error when moving files. Maybe they already exist on the target folder? Files on error: {0}"
+msgstr "移动文件时出错。也许它们已经存在于目标文件夹中？出错的文件：{0}"
 
 #. return StatusCode(StatusCodes.Status403Forbidden, S["Cannot create folder because a folder already exists with the same name"]);
 #: OrchardCore.Media\Controllers\AdminController.cs:390
@@ -96,23 +96,23 @@ msgctxt "OrchardCore.Media.Controllers.MediaCacheController"
 msgid "Asset cache purged."
 msgstr "资产缓存已清除。"
 
-#. updater.ModelState.AddModelError(Prefix, S["***REMOVED***0***REMOVED***: There was an error handling the files.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["{0}: There was an error handling the files.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.Media\Drivers\MediaFieldDriver.cs:81
 msgctxt "OrchardCore.Media.Drivers.MediaFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED***: There was an error handling the files."
-msgstr "***REMOVED***0***REMOVED***：文件处理时出错。"
+msgid "{0}: There was an error handling the files."
+msgstr "{0}：文件处理时出错。"
 
-#. updater.ModelState.AddModelError(Prefix, S["***REMOVED***0***REMOVED***: A media is required.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["{0}: A media is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.Media\Drivers\MediaFieldDriver.cs:92
 msgctxt "OrchardCore.Media.Drivers.MediaFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED***: A media is required."
-msgstr "***REMOVED***0***REMOVED***: 需要一个媒体。"
+msgid "{0}: A media is required."
+msgstr "{0}: 需要一个媒体。"
 
-#. updater.ModelState.AddModelError(Prefix, S["***REMOVED***0***REMOVED***: Selecting multiple media is forbidden.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["{0}: Selecting multiple media is forbidden.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.Media\Drivers\MediaFieldDriver.cs:97
 msgctxt "OrchardCore.Media.Drivers.MediaFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED***: Selecting multiple media is forbidden."
-msgstr "***REMOVED***0***REMOVED***：禁止选择多个媒体。"
+msgid "{0}: Selecting multiple media is forbidden."
+msgstr "{0}：禁止选择多个媒体。"
 
 #. Description = S["Media assets are items that are part of your media library."],
 #: OrchardCore.Media\GraphQL\MediaAssetQuery.cs:28
@@ -144,11 +144,11 @@ msgctxt "OrchardCore.Media.Views.MediaField-Attached.Edit"
 msgid "Large Thumbs"
 msgstr "大缩略图"
 
-#. <code class="text-right" v-if="selectedMedia">@T["***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"]</code>
+#. <code class="text-right" v-if="selectedMedia">@T["{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"]</code>
 #: OrchardCore.Media\Views\MediaField-Attached.Edit.cshtml:46
 msgctxt "OrchardCore.Media.Views.MediaField-Attached.Edit"
-msgid "***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"
-msgstr "***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"
+msgid "{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"
+msgstr "{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"
 
 #. <option value="Attached" selected="@(currentEditor == "Attached")">@T["Attached"]</option>
 #: OrchardCore.Media\Views\MediaField-Attached.Option.cshtml:4
@@ -174,11 +174,11 @@ msgctxt "OrchardCore.Media.Views.MediaField.Edit"
 msgid "Large Thumbs"
 msgstr "大拇指"
 
-#. <code class="text-right" v-if="selectedMedia">@T["***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"]</code>
+#. <code class="text-right" v-if="selectedMedia">@T["{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"]</code>
 #: OrchardCore.Media\Views\MediaField.Edit.cshtml:42
 msgctxt "OrchardCore.Media.Views.MediaField.Edit"
-msgid "***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"
-msgstr "***REMOVED******REMOVED******REMOVED******REMOVED*** selectedMedia.name ***REMOVED******REMOVED******REMOVED******REMOVED*** (***REMOVED******REMOVED******REMOVED******REMOVED*** isNaN(fileSize)? 0 : fileSize ***REMOVED******REMOVED******REMOVED******REMOVED*** KB)"
+msgid "{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"
+msgstr "{{{{ selectedMedia.name }}}} ({{{{ isNaN(fileSize)? 0 : fileSize }}}} KB)"
 
 #. <h5 class="modal-title">@T["Select Media"]</h5>
 #: OrchardCore.Media\Views\MediaField.Edit.cshtml:59
@@ -282,7 +282,7 @@ msgctxt "OrchardCore.Media.Views.Admin.MediaApplication"
 msgid "Invert"
 msgstr "反向选择"
 
-#. @T["Delete"] <span class="badge badge-pill badge-light" v-show="selectedMedias.length > 0">***REMOVED******REMOVED*** selectedMedias.length***REMOVED******REMOVED***</span>
+#. @T["Delete"] <span class="badge badge-pill badge-light" v-show="selectedMedias.length > 0">{{ selectedMedias.length}}</span>
 #. <input type="hidden" id="t-delete-button" value="@T["Delete"]" />
 #: OrchardCore.Media\Views\Admin\MediaApplication.cshtml:37
 #: OrchardCore.Media\Views\Admin\MediaApplication.cshtml:131
@@ -304,7 +304,7 @@ msgctxt "OrchardCore.Media.Views.Admin.MediaApplication"
 msgid "Upload"
 msgstr "上传"
 
-#. <span class="breadcrumb-item" :class="***REMOVED*** active: isHome ***REMOVED***"><a :href="isHome ? null : '#'" v-on:click="selectRoot">@T["Media Library"]</a></span>
+#. <span class="breadcrumb-item" :class="{ active: isHome }"><a :href="isHome ? null : '#'" v-on:click="selectRoot">@T["Media Library"]</a></span>
 #: OrchardCore.Media\Views\Admin\MediaApplication.cshtml:65
 msgctxt "OrchardCore.Media.Views.Admin.MediaApplication"
 msgid "Media Library"

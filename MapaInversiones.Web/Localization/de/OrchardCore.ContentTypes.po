@@ -102,33 +102,33 @@ msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A type with the same Technical Name already exists."
 msgstr "Ein Typ mit dem gleichen Namen existiert bereits."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" content type has been created.", typeViewModel.DisplayName]);
+#. _notifier.Success(H["The \"{0}\" content type has been created.", typeViewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:139
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" content type has been created."
-msgstr "Der \"***REMOVED***0***REMOVED***\" Inhaltstyp wurde erstellt."
+msgid "The \"{0}\" content type has been created."
+msgstr "Der \"{0}\" Inhaltstyp wurde erstellt."
 
-#. _notifier.Success(H["\"***REMOVED***0***REMOVED***\" settings have been saved.", contentTypeDefinition.Name]);
+#. _notifier.Success(H["\"{0}\" settings have been saved.", contentTypeDefinition.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:198
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "\"***REMOVED***0***REMOVED***\" settings have been saved."
-msgstr "\"***REMOVED***0***REMOVED***\" Einstellungen wurden gespeichert."
+msgid "\"{0}\" settings have been saved."
+msgstr "\"{0}\" Einstellungen wurden gespeichert."
 
-#. _notifier.Success(H["\"***REMOVED***0***REMOVED***\" has been removed.", typeViewModel.DisplayName]);
-#. _notifier.Information(H["\"***REMOVED***0***REMOVED***\" has been removed.", partViewModel.DisplayName]);
+#. _notifier.Success(H["\"{0}\" has been removed.", typeViewModel.DisplayName]);
+#. _notifier.Information(H["\"{0}\" has been removed.", partViewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:222
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:561
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "\"***REMOVED***0***REMOVED***\" has been removed."
-msgstr "\"***REMOVED***0***REMOVED*** wurde entfernt."
+msgid "\"{0}\" has been removed."
+msgstr "\"{0} wurde entfernt."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" part has been added.", partToAdd]);
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" part has been added.", partToAdd]);
+#. _notifier.Success(H["The \"{0}\" part has been added.", partToAdd]);
+#. _notifier.Success(H["The \"{0}\" part has been added.", partToAdd]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:311
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:387
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" part has been added."
-msgstr "Der Teil \"***REMOVED***0***REMOVED***\" wurde hinzugefügt."
+msgid "The \"{0}\" part has been added."
+msgstr "Der Teil \"{0}\" wurde hinzugefügt."
 
 #. ModelState.AddModelError("DisplayName", S["A part with the same Display Name already exists."]);
 #. ModelState.AddModelError("DisplayName", S["A part with the same Display Name already exists."]);
@@ -146,11 +146,11 @@ msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A part with the same Technical Name already exists."
 msgstr "Ein Typ mit dem gleichen technischen Namen existiert bereits."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" part has been removed.", name]);
+#. _notifier.Success(H["The \"{0}\" part has been removed.", name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:409
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" part has been removed."
-msgstr "Der Teil \"***REMOVED***0***REMOVED***\" wurde entfernt."
+msgid "The \"{0}\" part has been removed."
+msgstr "Der Teil \"{0}\" wurde entfernt."
 
 #. _notifier.Information(H["The content part could not be created."]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:481
@@ -158,17 +158,17 @@ msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "The content part could not be created."
 msgstr "Der Inhaltsteil konnte nicht erstellt werden."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" content part has been created.", partViewModel.Name]);
+#. _notifier.Success(H["The \"{0}\" content part has been created.", partViewModel.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:485
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" content part has been created."
-msgstr "Der Inhaltsteil \"***REMOVED***0***REMOVED***\" wurde erstellt."
+msgid "The \"{0}\" content part has been created."
+msgstr "Der Inhaltsteil \"{0}\" wurde erstellt."
 
-#. _notifier.Success(H["The settings of \"***REMOVED***0***REMOVED***\" have been saved.", contentPartDefinition.Name]);
+#. _notifier.Success(H["The settings of \"{0}\" have been saved.", contentPartDefinition.Name]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:537
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The settings of \"***REMOVED***0***REMOVED***\" have been saved."
-msgstr "Die Einstellungen von \"***REMOVED***0***REMOVED***\" wurden gespeichert."
+msgid "The settings of \"{0}\" have been saved."
+msgstr "Die Einstellungen von \"{0}\" wurden gespeichert."
 
 #. ModelState.AddModelError("DisplayName", S["A field with the same Display Name already exists."]);
 #. ModelState.AddModelError("DisplayName", S["A field with the same Display Name already exists."]);
@@ -184,35 +184,35 @@ msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
 msgid "A field with the same Technical Name already exists."
 msgstr "Ein Typ mit dem gleichen Namen existiert bereits."
 
-#. _notifier.Success(H["The field \"***REMOVED***0***REMOVED***\" has been added.", viewModel.DisplayName]);
+#. _notifier.Success(H["The field \"{0}\" has been added.", viewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:653
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The field \"***REMOVED***0***REMOVED***\" has been added."
-msgstr "Das Feld \"***REMOVED***0***REMOVED***\" wurde hinzugefügt."
+msgid "The field \"{0}\" has been added."
+msgstr "Das Feld \"{0}\" wurde hinzugefügt."
 
-#. _notifier.Information(H["Display name changed to ***REMOVED***0***REMOVED***.", viewModel.DisplayName]);
+#. _notifier.Information(H["Display name changed to {0}.", viewModel.DisplayName]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:755
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "Display name changed to ***REMOVED***0***REMOVED***."
-msgstr "Anzeigename geändert zu ***REMOVED***0***REMOVED***."
+msgid "Display name changed to {0}."
+msgstr "Anzeigename geändert zu {0}."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" field settings have been saved.", field.DisplayName()]);
+#. _notifier.Success(H["The \"{0}\" field settings have been saved.", field.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:774
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" field settings have been saved."
-msgstr "Die \"***REMOVED***0***REMOVED***\" Feldeinstellungen wurden gespeichert."
+msgid "The \"{0}\" field settings have been saved."
+msgstr "Die \"{0}\" Feldeinstellungen wurden gespeichert."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" field has been removed.", field.DisplayName()]);
+#. _notifier.Success(H["The \"{0}\" field has been removed.", field.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:818
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" field has been removed."
-msgstr "Das Feld \"***REMOVED***0***REMOVED***\" wurde entfernt."
+msgid "The \"{0}\" field has been removed."
+msgstr "Das Feld \"{0}\" wurde entfernt."
 
-#. _notifier.Success(H["The \"***REMOVED***0***REMOVED***\" part settings have been saved.", part.DisplayName()]);
+#. _notifier.Success(H["The \"{0}\" part settings have been saved.", part.DisplayName()]);
 #: OrchardCore.ContentTypes\Controllers\AdminController.cs:937
 msgctxt "OrchardCore.ContentTypes.Controllers.AdminController"
-msgid "The \"***REMOVED***0***REMOVED***\" part settings have been saved."
-msgstr "Die \"***REMOVED***0***REMOVED***\" Teileinstellungen wurden gespeichert."
+msgid "The \"{0}\" part settings have been saved."
+msgstr "Die \"{0}\" Teileinstellungen wurden gespeichert."
 
 #. context.Updater.ModelState.AddModelError(nameof(ContentTypeSettingsViewModel.Stereotype), S["The stereotype should be alphanumeric."]);
 #: OrchardCore.ContentTypes\Editors\ContentTypeSettingsDisplayDriver.cs:52
@@ -226,11 +226,11 @@ msgctxt "OrchardCore.ContentTypes.Editors.DefaultContentTypeDisplayDriver"
 msgid "The Content Type name can't be empty."
 msgstr "Der Name des Inhaltstyps darf nicht leer sein."
 
-#. throw new Exception(S["Cannot add part named '***REMOVED***0***REMOVED***'. It already exists.", name]);
+#. throw new Exception(S["Cannot add part named '{0}'. It already exists.", name]);
 #: OrchardCore.ContentTypes\Services\ContentDefinitionService.cs:286
 msgctxt "OrchardCore.ContentTypes.Services.ContentDefinitionService"
-msgid "Cannot add part named '***REMOVED***0***REMOVED***'. It already exists."
-msgstr "Teil '***REMOVED***0***REMOVED***' kann nicht hinzugefügt werden. Es existiert bereits."
+msgid "Cannot add part named '{0}'. It already exists."
+msgstr "Teil '{0}' kann nicht hinzugefügt werden. Es existiert bereits."
 
 #. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\ContentPartSettings.Edit.cshtml:6
@@ -402,11 +402,11 @@ msgctxt "OrchardCore.ContentTypes.Views.NavigationItemText-contentdefinition.Id"
 msgid "Content Definition"
 msgstr "Inhaltsdefinition"
 
-#. <h1>@RenderTitleSegments(T["Add New Field To \"***REMOVED***0***REMOVED***\"", Model.Part.DisplayName()])</h1>
+#. <h1>@RenderTitleSegments(T["Add New Field To \"{0}\"", Model.Part.DisplayName()])</h1>
 #: OrchardCore.ContentTypes\Views\Admin\AddFieldTo.cshtml:10
 msgctxt "OrchardCore.ContentTypes.Views.Admin.AddFieldTo"
-msgid "Add New Field To \"***REMOVED***0***REMOVED***\""
-msgstr "Neues Feld zu \"***REMOVED***0***REMOVED***\" hinzufügen"
+msgid "Add New Field To \"{0}\""
+msgstr "Neues Feld zu \"{0}\" hinzufügen"
 
 #. <label for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\Admin\AddFieldTo.cshtml:16
@@ -450,11 +450,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.AddFieldTo"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#. <h1>@T["Add Parts To \"***REMOVED***0***REMOVED***\"", Model.Type.DisplayName]</h1>
+#. <h1>@T["Add Parts To \"{0}\"", Model.Type.DisplayName]</h1>
 #: OrchardCore.ContentTypes\Views\Admin\AddPartsTo.cshtml:5
 msgctxt "OrchardCore.ContentTypes.Views.Admin.AddPartsTo"
-msgid "Add Parts To \"***REMOVED***0***REMOVED***\""
-msgstr "Teile zu \"***REMOVED***0***REMOVED***\" hinzufügen"
+msgid "Add Parts To \"{0}\""
+msgstr "Teile zu \"{0}\" hinzufügen"
 
 #. @T["Choose the Parts to add to this Content Type."]
 #: OrchardCore.ContentTypes\Views\Admin\AddPartsTo.cshtml:7
@@ -474,11 +474,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.AddPartsTo"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#. <h1>@T["Add Named Part To \"***REMOVED***0***REMOVED***\"", Model.Type.DisplayName]</h1>
+#. <h1>@T["Add Named Part To \"{0}\"", Model.Type.DisplayName]</h1>
 #: OrchardCore.ContentTypes\Views\Admin\AddReusablePartTo.cshtml:5
 msgctxt "OrchardCore.ContentTypes.Views.Admin.AddReusablePartTo"
-msgid "Add Named Part To \"***REMOVED***0***REMOVED***\""
-msgstr "Benannten Teil zu \"***REMOVED***0***REMOVED***\" hinzufügen"
+msgid "Add Named Part To \"{0}\""
+msgstr "Benannten Teil zu \"{0}\" hinzufügen"
 
 #. <label for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\Admin\AddReusablePartTo.cshtml:14
@@ -594,11 +594,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.CreatePart"
 msgid "Create"
 msgstr "Erstellen"
 
-#. <h1>@RenderTitleSegments(T["Edit Content Type - ***REMOVED***0***REMOVED***", Model.TypeDefinition.DisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Content Type - {0}", Model.TypeDefinition.DisplayName])</h1>
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:25
 msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
-msgid "Edit Content Type - ***REMOVED***0***REMOVED***"
-msgstr "Inhaltstyp bearbeiten - ***REMOVED***0***REMOVED***"
+msgid "Edit Content Type - {0}"
+msgstr "Inhaltstyp bearbeiten - {0}"
 
 #. <h3>@T["Fields"]</h3>
 #: OrchardCore.ContentTypes\Views\Admin\Edit.cshtml:35
@@ -664,11 +664,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.Edit"
 msgid "Delete"
 msgstr "Löschen"
 
-#. <h1>@RenderTitleSegments(T["\"***REMOVED***0***REMOVED***\" settings for \"***REMOVED***1***REMOVED***\"", Model.DisplayName, Model.PartFieldDefinition.PartDefinition.DisplayName()])</h1>
+#. <h1>@RenderTitleSegments(T["\"{0}\" settings for \"{1}\"", Model.DisplayName, Model.PartFieldDefinition.PartDefinition.DisplayName()])</h1>
 #: OrchardCore.ContentTypes\Views\Admin\EditField.cshtml:19
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditField"
-msgid "\"***REMOVED***0***REMOVED***\" settings for \"***REMOVED***1***REMOVED***\""
-msgstr "\"***REMOVED***0***REMOVED***\" Einstellungen für \"***REMOVED***1***REMOVED***\""
+msgid "\"{0}\" settings for \"{1}\""
+msgstr "\"{0}\" Einstellungen für \"{1}\""
 
 #. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\Admin\EditField.cshtml:25
@@ -718,11 +718,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.EditField"
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#. <h1>@RenderTitleSegments(T["Edit Content Part - ***REMOVED***0***REMOVED***", Model.DisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Content Part - {0}", Model.DisplayName])</h1>
 #: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:12
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
-msgid "Edit Content Part - ***REMOVED***0***REMOVED***"
-msgstr "Inhaltsteil bearbeiten - ***REMOVED***0***REMOVED***"
+msgid "Edit Content Part - {0}"
+msgstr "Inhaltsteil bearbeiten - {0}"
 
 #. <label asp-for="Name">@T["Technical Name"]</label>
 #: OrchardCore.ContentTypes\Views\Admin\EditPart.cshtml:19
@@ -772,17 +772,17 @@ msgctxt "OrchardCore.ContentTypes.Views.Admin.EditPart"
 msgid "Delete"
 msgstr "Löschen"
 
-#. <h1>@RenderTitleSegments(T["Edit Part - ***REMOVED***0***REMOVED***", Model.DisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["Edit Part - {0}", Model.DisplayName])</h1>
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:16
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditTypePart"
-msgid "Edit Part - ***REMOVED***0***REMOVED***"
-msgstr "Part bearbeiten - ***REMOVED***0***REMOVED***"
+msgid "Edit Part - {0}"
+msgstr "Part bearbeiten - {0}"
 
-#. @T["Some part settings common to all types can also be defined at the <a href=\"***REMOVED***0***REMOVED***\">Part Definition</a> level.", Url.Action("EditPart", new ***REMOVED*** id = typePart.PartDefinition.Name ***REMOVED***)]
+#. @T["Some part settings common to all types can also be defined at the <a href=\"{0}\">Part Definition</a> level.", Url.Action("EditPart", new { id = typePart.PartDefinition.Name })]
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:19
 msgctxt "OrchardCore.ContentTypes.Views.Admin.EditTypePart"
-msgid "Some part settings common to all types can also be defined at the <a href=\"***REMOVED***0***REMOVED***\">Part Definition</a> level."
-msgstr "Einige Part-Einstellungen für alle Typen können auch auf der Ebene <a href=\"***REMOVED***0***REMOVED***\">Part-Definitionen</a> definiert werden."
+msgid "Some part settings common to all types can also be defined at the <a href=\"{0}\">Part Definition</a> level."
+msgstr "Einige Part-Einstellungen für alle Typen können auch auf der Ebene <a href=\"{0}\">Part-Definitionen</a> definiert werden."
 
 #. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.ContentTypes\Views\Admin\EditTypePart.cshtml:29
@@ -940,11 +940,11 @@ msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditPartViewMode
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#. <a asp-route-area="OrchardCore.Contents" asp-route-action="Create" asp-route-id="@Model.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-success btn-sm" role="button">@T["Create New ***REMOVED***0***REMOVED***", Model.DisplayName]</a>
+#. <a asp-route-area="OrchardCore.Contents" asp-route-action="Create" asp-route-id="@Model.Name" asp-route-returnUrl="@FullRequestPath" class="btn btn-success btn-sm" role="button">@T["Create New {0}", Model.DisplayName]</a>
 #: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:11
 msgctxt "OrchardCore.ContentTypes.Views.Shared.DisplayTemplates.EditTypeViewModel"
-msgid "Create New ***REMOVED***0***REMOVED***"
-msgstr "***REMOVED***0***REMOVED*** erstellen"
+msgid "Create New {0}"
+msgstr "{0} erstellen"
 
 #. <a asp-route-action="List" asp-route-area="OrchardCore.Contents" asp-route-contentTypeId="@Model.Name" class="btn btn-secondary btn-sm" role="button">@T["List Items"]</a>
 #: OrchardCore.ContentTypes\Views\Shared\DisplayTemplates\EditTypeViewModel.cshtml:13

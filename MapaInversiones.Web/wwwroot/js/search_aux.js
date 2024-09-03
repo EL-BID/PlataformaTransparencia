@@ -1,81 +1,81 @@
-﻿$( function() ***REMOVED***
+﻿$( function() {
  
-  $("#SearchString").autocomplete(***REMOVED***
-      source: function (request, response) ***REMOVED***
+  $("#SearchString").autocomplete({
+      source: function (request, response) {
           
-          $.ajax(***REMOVED***
+          $.ajax({
               type: 'GET',
               contentType: "application/json; charset=utf-8",
               dataType: "json",
               url: "AutocompleteSearch/" + request.term,
                 cache: false,
-                /*ta: '***REMOVED***"keywords":"' + request.term + '"***REMOVED***',*/
-                success: function (data) ***REMOVED***
+                /*ta: '{"keywords":"' + request.term + '"}',*/
+                success: function (data) {
                     var datos = data;
-                        response($.map(datos, function (item) ***REMOVED***
+                        response($.map(datos, function (item) {
                             return item.principal;
-                    ***REMOVED***
+                        }
                       ));
-              ***REMOVED***
-              error: function (response) ***REMOVED***
+                },
+              error: function (response) {
                   alert(response.responseText);
-             ***REMOVED***
-                failure: function (response) ***REMOVED***
+               },
+                failure: function (response) {
                   alert(response.responseText);
-          ***REMOVED***
-        ***REMOVED***);
-      ***REMOVED***
+              }
+            });
+        },
         delay: 300,
         minLength: 5
-  ***REMOVED***);
+  });
 
-    //$('#HierarchySearch').click(function () ***REMOVED***
+    //$('#HierarchySearch').click(function () {
     //    var val_sel = $(this).attr("data-title");
     //    $("#ulPaginacion").attr("refine", val_sel);
     //   // alert(val_sel);
-    //    if (val_sel + "" != "") ***REMOVED***
-    //        $.ajax(***REMOVED***
+    //    if (val_sel + "" != "") {
+    //        $.ajax({
     //            type: 'GET',
     //            contentType: "application/json; charset=utf-8",
     //            dataType: "json",
     //            url: "BusquedaResultados/?SearchString=" + val_sel,
     //            cache: false,
-    //            /*ta: '***REMOVED***"keywords":"' + request.term + '"***REMOVED***',*/
-    //            success: function (data) ***REMOVED***
+    //            /*ta: '{"keywords":"' + request.term + '"}',*/
+    //            success: function (data) {
     //                console.log(data.result);   
-    //          ***REMOVED***
-    //            error: function (response) ***REMOVED***
+    //            },
+    //            error: function (response) {
     //                alert(response.responseText);
-    //          ***REMOVED***
-    //            failure: function (response) ***REMOVED***
+    //            },
+    //            failure: function (response) {
     //                alert(response.responseText);
-    //        ***REMOVED***
-    //    ***REMOVED***);
-    //***REMOVED***
+    //            }
+    //        });
+    //    }
 
-    //***REMOVED***);
+    //});
 
-    $('.hover-link').click(function () ***REMOVED***
+    $('.hover-link').click(function () {
         var val_sel = $(this).attr("data-title");
         //var val_input = document.getElementById('page-field-search').value;
         $("#tipoRefine").html('"' + val_sel+'"');
         $("#ulPaginacion").attr("refine", val_sel);
         getListResult(0, true);
         //alert(val_sel);
-        //if (val_sel + "" != "") ***REMOVED***
-        //    $.ajax(***REMOVED***
+        //if (val_sel + "" != "") {
+        //    $.ajax({
         //        type: 'GET',
         //        contentType: "application/json; charset=utf-8",
         //        dataType: "json",
         //        url: "/BusquedaAsync/?SearchString=" + val_input + "&type=" + val_sel,
         //        cache: false,
-        //        /*ta: '***REMOVED***"keywords":"' + request.term + '"***REMOVED***',*/
-        //        success: function (data) ***REMOVED***
+        //        /*ta: '{"keywords":"' + request.term + '"}',*/
+        //        success: function (data) {
         //            var Resultados = document.getElementById("SearchResults");
         //            Resultados.innerHTML = "";
         //            var htmlResultados = "";
-        //            if (data != null && data.length > 0) ***REMOVED***
-        //                for (var i = 0; i < data.length; i++) ***REMOVED***
+        //            if (data != null && data.length > 0) {
+        //                for (var i = 0; i < data.length; i++) {
         //                    htmlResultados += "<div class='card card-info-wide'>" +
         //                        "<div class='card-body'>" +
         //                        "<a href='" + data[i].url + "' class='h5' title='" + data[i].nombreProyecto + "'>" + data[i].nombreProyecto + "</a>" +
@@ -85,24 +85,24 @@
         //                        "</div>" +
         //                        "</div>" +
         //                        "</div>" 
-        //            ***REMOVED***
+        //                }
 
-        //        ***REMOVED***
+        //            }
         //            Resultados.innerHTML = htmlResultados;
-        //      ***REMOVED***
-        //        error: function (response) ***REMOVED***
+        //        },
+        //        error: function (response) {
         //            alert(response.responseText);
-        //      ***REMOVED***
-        //        failure: function (response) ***REMOVED***
+        //        },
+        //        failure: function (response) {
         //            alert(response.responseText);
-        //    ***REMOVED***
-        //***REMOVED***);
-        //***REMOVED***
+        //        }
+        //    });
+        //}
 
 
-***REMOVED***);
+    });
 
-    $("#ulPaginacion").on("click", "li", function (e) ***REMOVED***
+    $("#ulPaginacion").on("click", "li", function (e) {
        // alert(getEventTarget(e).getAttribute("id"));
         var $target = $(e.target);
         var index = $target.attr("pagina");
@@ -110,40 +110,40 @@
        // alert(index);
       
 
-        if (!isNaN(index)) ***REMOVED***
+        if (!isNaN(index)) {
             $target.siblings().removeClass("active");
             $target.addClass("active");
             getListResult(index*1);
             $("#ulPaginacion").attr("actual", ((index <0)? 0:index));
-    ***REMOVED*** else ***REMOVED***
-            if (index === "ap" && !$target.hasClass("pagination-item-disabled")) ***REMOVED***
+        } else {
+            if (index === "ap" && !$target.hasClass("pagination-item-disabled")) {
                 getListResult(1 * $("#ulPaginacion").attr("siguiente"), true); // se envia la pagina a la que se quiere ir, booleano para indicar que se debe volver a paginar, cual boton fue el que se seleccionó
-        ***REMOVED***
-            if (index === "bp" && !$target.hasClass("pagination-item-disabled") ) ***REMOVED***
+            }
+            if (index === "bp" && !$target.hasClass("pagination-item-disabled") ) {
                 getListResult(1 * $("#ulPaginacion").attr("anterior"), true); // se envia la pagina a la que se quiere ir, booleano para indicar que se debe volver a paginar, cual boton fue el que se seleccionó
-        ***REMOVED***
+            }
 
-            if (index === "fp" && !$target.hasClass("pagination-item-disabled")) ***REMOVED***
+            if (index === "fp" && !$target.hasClass("pagination-item-disabled")) {
                 getListResult(1 * $("#ulPaginacion").attr("inicial"), true); // se envia la pagina a la que se quiere ir, booleano para indicar que se debe volver a paginar, cual boton fue el que se seleccionó
-        ***REMOVED***
-            if (index === "lp" && !$target.hasClass("pagination-item-disabled")) ***REMOVED***
+            }
+            if (index === "lp" && !$target.hasClass("pagination-item-disabled")) {
                 getListResult(1 * $("#ulPaginacion").attr("final"), true); // se envia la pagina a la que se quiere ir, booleano para indicar que se debe volver a paginar, cual boton fue el que se seleccionó
-        ***REMOVED***
+            }
                
-    ***REMOVED***
+        }
 
 
         
-***REMOVED***);
-***REMOVED***);
+    });
+});
 
-function getEventTarget(e) ***REMOVED***
+function getEventTarget(e) {
     e = e || window.event;
     return e.target || e.srcElement;
-***REMOVED***
+}
 
 
-function pintarPaginacion(totalResultados, pagina) ***REMOVED*** //total de resultados y pagina en la que inicia la fila a mostrar en la paginacion
+function pintarPaginacion(totalResultados, pagina) { //total de resultados y pagina en la que inicia la fila a mostrar en la paginacion
     var totalR = totalResultados * 1;
     //var val_sel = $("#ulPaginacion").attr("refine");
 
@@ -163,10 +163,10 @@ function pintarPaginacion(totalResultados, pagina) ***REMOVED*** //total de resu
     var siguienteb = $("#ulPaginacion").attr("siguienteb") * 1;
     var anteriorb = $("#ulPaginacion").attr("anteriorb") * 1;
 
-    if (siguienteb < pagina + 1 && final <= pagina + 1) ***REMOVED*** siguienteb = final + paginasimp; ***REMOVED***
-    else if (siguienteb < pagina + 1 && final > pagina + 1) ***REMOVED*** siguienteb = siguienteb + paginasimp; ***REMOVED***
-    else if (pagina > 0 && pagina < siguienteb - paginasimp) ***REMOVED*** siguienteb = siguienteb - paginasimp; ***REMOVED***
-    else if (pagina == 0) ***REMOVED*** siguienteb = paginasimp; ***REMOVED***
+    if (siguienteb < pagina + 1 && final <= pagina + 1) { siguienteb = final + paginasimp; }
+    else if (siguienteb < pagina + 1 && final > pagina + 1) { siguienteb = siguienteb + paginasimp; }
+    else if (pagina > 0 && pagina < siguienteb - paginasimp) { siguienteb = siguienteb - paginasimp; }
+    else if (pagina == 0) { siguienteb = paginasimp; }
     anteriorb = siguienteb - paginasimp;
 
 
@@ -184,25 +184,25 @@ function pintarPaginacion(totalResultados, pagina) ***REMOVED*** //total de resu
     var htmlPaginacion = " <li class='pagination-item-arrow pagination-item-arrow-first " + (pagina < paginasimp ? "pagination-item-disabled" : "pagination-item-enabled") + "  material-icons md-24' pagina='fp'>first_page</li>" +
         "<li class='pagination-item-arrow pagination-item-arrow-prev " + ((anterior < 0) ? "pagination-item-disabled" : "pagination-item-enabled") + " material-icons md-24' pagina = 'bp' > chevron_left</li >";
 
-    for (var g = (siguienteb - paginasimp); g < (hasta); g++) ***REMOVED***
-        if (g == pagina) ***REMOVED*** activo = true; ***REMOVED*** else ***REMOVED*** activo = false; ***REMOVED***
-        if (activo) ***REMOVED***
+    for (var g = (siguienteb - paginasimp); g < (hasta); g++) {
+        if (g == pagina) { activo = true; } else { activo = false; }
+        if (activo) {
             htmlPaginacion += " <li pagina='" + g + "' class='paginacion active'>" + (g * 1 + 1) + "</li>";
 
-    ***REMOVED***
-        else ***REMOVED***
+        }
+        else {
             htmlPaginacion += " <li pagina='" + g + "' class='paginacion'>" + (g * 1 + 1) + "</li>";
             activo = 0;
-    ***REMOVED***
+        }
 
-***REMOVED***
+    }
     htmlPaginacion += " <li class='pagination-item-arrow pagination-item-arrow-next material-icons md-24 " + ((siguiente >= paginas) ? "pagination-item-disabled" : "pagination-item-enabled") + " ' pagina='ap'>chevron_right</li>" +
         " <li class='pagination-item-arrow pagination-item-arrow-last material-icons md-24 " + ((siguienteb >= paginas) ? "pagination-item-disabled" : "pagination-item-enabled") + " ' pagina='lp'>last_page</li>";
 
     $("#ulPaginacion").html(htmlPaginacion);
-***REMOVED***
+}
 
-function getListResult(pagina, repaginar=false ) ***REMOVED***
+function getListResult(pagina, repaginar=false ) {
    // alert(start);
     var val_sel = $("#ulPaginacion").attr("refine");
     var val_input = document.getElementById('page-field-search').value;
@@ -212,19 +212,19 @@ function getListResult(pagina, repaginar=false ) ***REMOVED***
     var totalResultados = 0;
     
     //alert(val_sel);
-        $.ajax(***REMOVED***
+        $.ajax({
             type: 'GET',
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             url: "/BusquedaAsync/?SearchString=" + val_input + "&type=" + val_sel + "&start=" + val_start + "&sort=" + val_sort,
             cache: false,
-            /*ta: '***REMOVED***"keywords":"' + request.term + '"***REMOVED***',*/
-            success: function (data) ***REMOVED***
+            /*ta: '{"keywords":"' + request.term + '"}',*/
+            success: function (data) {
                 var Resultados = document.getElementById("SearchResults");
                 Resultados.innerHTML = "";
                 var htmlResultados = "";
-                if (data != null && data.length > 0) ***REMOVED***
-                    for (var i = 0; i < data.length; i++) ***REMOVED***
+                if (data != null && data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
                         htmlResultados += "<div class='card card-info-wide'>" +
                             "<div class='card-body'>" +
                             "<a href='" + data[i].url + "' class='h5' title='" + data[i].nombreProyecto + "'>" + data[i].nombreProyecto + "</a>" +
@@ -234,26 +234,26 @@ function getListResult(pagina, repaginar=false ) ***REMOVED***
                             "</div>" +
                             "</div>" +
                             "</div>"
-                ***REMOVED***
+                    }
 
-            ***REMOVED***
+                }
                 Resultados.innerHTML = htmlResultados;
-                if (repaginar) ***REMOVED***
+                if (repaginar) {
                     totalResultados = ((data.length > 0) ? data[0].numFound : data.length);
                     pintarPaginacion(totalResultados, pagina);
-            ***REMOVED***
-          ***REMOVED***
-            error: function (response) ***REMOVED***
+                }
+            },
+            error: function (response) {
                 alert(response.responseText);
-          ***REMOVED***
-            failure: function (response) ***REMOVED***
+            },
+            failure: function (response) {
                 alert(response.responseText);
-        ***REMOVED***
-    ***REMOVED***);
+            }
+        });
     
 
-***REMOVED***
+}
 
-$("#selectOrden").on("change", function (event) ***REMOVED***
+$("#selectOrden").on("change", function (event) {
     getListResult(0,true);
-***REMOVED***);
+});

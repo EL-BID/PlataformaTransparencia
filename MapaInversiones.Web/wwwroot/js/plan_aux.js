@@ -9,7 +9,7 @@ GetEntidadesPlanNacional();
 
 var dataEjesEstrategicos;
 var objetivos;
-function inicializaDatos() ***REMOVED***
+function inicializaDatos() {
   $("#NombreEje").text("Eje 1:" + $(".btn-section").attr('nomb'));
   $("#DescripcionEje").text($(".btn-section").attr('desc'));
   valores = [6, 6, 4, 3, 2, 2, 1];
@@ -17,7 +17,7 @@ function inicializaDatos() ***REMOVED***
   serie1 = [36.1, 37.3, 36.8, 49.7, 44.0, 41.3, 38.6, 43.7, 41.2, 37.9, 35.1, 34.7, 32.4, 26.9, 23.9, 24.5, 28.6];
   serie2 = [18.8, 17.7, 16.7, 24.4, 21.2, 18.3, 16.5, 23.7, 23.2, 19.0, 18.8, 19.4, 18.0, 13.8, 10.2, 10.1, 9.3];
   Evolution(serie1, serie2);
-  $(".btn-section").click(function () ***REMOVED***
+  $(".btn-section").click(function () {
     $("#NombreEje").text("Eje " + $(this).attr('eje') + ": " + $(this).attr('nomb'));
     $("#DescripcionEje").text($(this).attr('desc'));
     valores = [Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1, Math.random() * (8 - 1) + 1];
@@ -25,54 +25,54 @@ function inicializaDatos() ***REMOVED***
     serie1 = [Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50), Math.random() * (50)];
     serie2 = [Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25), Math.random() * (25)];
     Evolution(serie1, serie2);
-  ***REMOVED***);
-***REMOVED***
-function GetEntidadesPlanNacional() ***REMOVED***
-  $.ajax(***REMOVED***
+  });
+}
+function GetEntidadesPlanNacional() {
+  $.ajax({
     url: "api/serviciosplan/GetEntidadesPlanNacional",
     type: "GET",
     data: null,
 
-  ***REMOVED***).done(function (data) ***REMOVED***
+  }).done(function (data) {
     var entidadPlanNacional = document.getElementById("entidadesPlanNacional");
     var htmlList = '';
-    for (var i = 0; i < data.length; i++) ***REMOVED***
+    for (var i = 0; i < data.length; i++) {
       htmlList = htmlList + "<li class='list-group-item'><a href=" + '/PerfilEntidad?codEntidad=' + data[i].codEntidad + ">" + "<span>" + data[i].nombre + "</span><i class='material-icons md-18'>chevron_right</i></a></li>";
-***REMOVED***
+    }
     if (data.length > 0)
       htmlList = htmlList + "<li class='list-group-item'><a href='/BusquedaResultados?Type=Entidad'>" + "<span>Ver todos</span><i class='material-icons md-18'>chevron_right</i></a></li>";
     entidadPlanNacional.innerHTML = htmlList;
-  ***REMOVED***).fail(function (handleError) ***REMOVED***
+  }).fail(function (handleError) {
   
-  ***REMOVED***);
-***REMOVED***
+  });
+}
 
-function GenerarNombreEntidad(nombreEntidad) ***REMOVED***
+function GenerarNombreEntidad(nombreEntidad) {
   var nombresEntidad = nombreEntidad.split(' ');
   var rta = "";
-  for (var j = 0; j < nombresEntidad.length; j++) ***REMOVED***
+  for (var j = 0; j < nombresEntidad.length; j++) {
     if (j == 0) rta = nombresEntidad[j];
     else rta = rta + "+" + nombresEntidad[j];
-  ***REMOVED***
+  }
   return rta;
-***REMOVED***
+}
 
-function GetEjesEstrategicos() ***REMOVED***
-  $.ajax(***REMOVED***
+function GetEjesEstrategicos() {
+  $.ajax({
     url: "api/serviciosplan/GetEjesEstrategicos",
     type: "GET",
     data: null,
 
-  ***REMOVED***).done(function (data) ***REMOVED***
+  }).done(function (data) {
     dataEjesEstrategicos = data;
-    if (dataEjesEstrategicos.ejesEstrategicos.length > 0) ***REMOVED***
+    if (dataEjesEstrategicos.ejesEstrategicos.length > 0) {
       var select = document.getElementsByName("ejesEstrategicos")[0];
-      for (var i = 0; i < dataEjesEstrategicos.ejesEstrategicos.length; i++) ***REMOVED***
+      for (var i = 0; i < dataEjesEstrategicos.ejesEstrategicos.length; i++) {
         var option = document.createElement("option");
         option.text = dataEjesEstrategicos.ejesEstrategicos[i].nombre;
         option.value = dataEjesEstrategicos.ejesEstrategicos[i].id
         select.add(option);
-  ***REMOVED***
+      }
 
       var tituloEje = document.getElementById("tituloEje");
       tituloEje.innerHTML = dataEjesEstrategicos.ejesEstrategicos[0].nombre;
@@ -82,71 +82,71 @@ function GetEjesEstrategicos() ***REMOVED***
 
       GetImagenEje(1);
       GetObjetivosPorEjeEstrategico(dataEjesEstrategicos.ejesEstrategicos[0].id);
-***REMOVED***
-  ***REMOVED***).fail(function (handleError) ***REMOVED***
+    }
+  }).fail(function (handleError) {
     // Some function
 
-  ***REMOVED***);
-***REMOVED***
+  });
+}
 
-function seleccionoEje(sel) ***REMOVED***
+function seleccionoEje(sel) {
   //console.log("Entré al select");
   var idEje = sel.options[sel.selectedIndex].value;
   var tituloEje = document.getElementById("tituloEje");
   tituloEje.innerHTML = sel.options[sel.selectedIndex].text;
   GetImagenEje(idEje);
-  if (dataEjesEstrategicos != undefined) ***REMOVED***
-    for (var i = 0; i < dataEjesEstrategicos.ejesEstrategicos.length; i++) ***REMOVED***
-      if (dataEjesEstrategicos.ejesEstrategicos[i].nombre == tituloEje.innerHTML) ***REMOVED***
+  if (dataEjesEstrategicos != undefined) {
+    for (var i = 0; i < dataEjesEstrategicos.ejesEstrategicos.length; i++) {
+      if (dataEjesEstrategicos.ejesEstrategicos[i].nombre == tituloEje.innerHTML) {
         var descripcionEje = document.getElementById("descripcionEje");
         descripcionEje.innerHTML = dataEjesEstrategicos.ejesEstrategicos[i].descripcion;
-  ***REMOVED***
-***REMOVED***
-  ***REMOVED***
+      }
+    }
+  }
   GetObjetivosPorEjeEstrategico(idEje);
-***REMOVED***
-function GetImagenEje(idEje) ***REMOVED***
+}
+function GetImagenEje(idEje) {
   var recuadroImagenEje = document.getElementById("recuadroImagenEje");
   var rutaImagenEje = document.getElementById("imagenEje");
-  if (idEje == 1) ***REMOVED***
+  if (idEje == 1) {
     rutaImagenEje.src = "../img/ax-1_white.svg";
     recuadroImagenEje.setAttribute("class", "icon-eje ax1 h-100");
-  ***REMOVED***
-  else if (idEje == 2) ***REMOVED***
+  }
+  else if (idEje == 2) {
     rutaImagenEje.src = "../img/ax-2_white.svg";
    
     recuadroImagenEje.setAttribute("class", "icon-eje ax2 h-100");
-  ***REMOVED***
-  else if (idEje == 3) ***REMOVED***
+  }
+  else if (idEje == 3) {
     rutaImagenEje.src = "../img/ax-3_white.svg";
     recuadroImagenEje.setAttribute("class", "icon-eje ax3 h-100");
-  ***REMOVED***
-  else ***REMOVED***
+  }
+  else {
     rutaImagenEje.src = "../img/ax-4_white.svg";
     recuadroImagenEje.setAttribute("class", "icon-eje ax4 h-100");
-  ***REMOVED***
+  }
   rutaImagenEje.setAttribute("class", "h-75");
   rutaImagenEje.setAttribute("alt", "Eje " + idEje);
 
-***REMOVED***
-function GetObjetivosPorEjeEstrategico(idEje) ***REMOVED***
+}
+function GetObjetivosPorEjeEstrategico(idEje) {
   var param = "idEje=" + idEje;
-  $.ajax(***REMOVED***
+  $.ajax({
     url: "api/serviciosplan/GetObjetivosGeneralesXEjeEstrategico/",
     type: "GET",
     data: param,
 
-  ***REMOVED***).done(function (data) ***REMOVED***
+  }).done(function (data) {
     objetivos = data;
-    if (data != undefined && data.objetivosPorEjeEstrategico != undefined && data.objetivosPorEjeEstrategico.length > 0) ***REMOVED***
+    if (data != undefined && data.objetivosPorEjeEstrategico != undefined && data.objetivosPorEjeEstrategico.length > 0) {
       var totalObjetivosEstrategicosPorEje = document.getElementById("totalObjEstrategicosPorEje");
       totalObjetivosEstrategicosPorEje.innerHTML = data.objetivosPorEjeEstrategico.length;
 
       var tabObjetivosEstrategicosPorEje = document.getElementById("tabObjetivos");
       tabObjetivosEstrategicosPorEje.innerHTML = "";
-      for (var i = 0; i < data.objetivosPorEjeEstrategico.length; i++) ***REMOVED***
+      for (var i = 0; i < data.objetivosPorEjeEstrategico.length; i++) {
         var idTabObjetivo = "liobjetivo" + (i + 1);
-        if (i == 0) ***REMOVED***
+        if (i == 0) {
           tabObjetivosEstrategicosPorEje.innerHTML =
             '<li class="active" ' + 'id=' + idTabObjetivo + ' onclick=ObtenerObjetivosEspecificos(' + (i + 1) + ',' + idEje + ')>' +
             '<div class="goal-number">' + '</div>' +
@@ -154,8 +154,8 @@ function GetObjetivosPorEjeEstrategico(idEje) ***REMOVED***
             '<div class="h4">' + data.objetivosPorEjeEstrategico[i].nombre + '</div>' +
             '</div>' +
             '</li>';
-    ***REMOVED***
-        else ***REMOVED***
+        }
+        else {
           tabObjetivosEstrategicosPorEje.innerHTML = tabObjetivosEstrategicosPorEje.innerHTML +
             '<li' + ' id=' + idTabObjetivo + ' onclick=ObtenerObjetivosEspecificos(' + (i + 1) + ',' + idEje + ')>' +
             '<div class="goal-number">' + '</div>' +
@@ -163,31 +163,31 @@ function GetObjetivosPorEjeEstrategico(idEje) ***REMOVED***
             '<div class="h4">' + data.objetivosPorEjeEstrategico[i].nombre + '</div>' +
             '</div>' +
             '</li>';
-    ***REMOVED***
-  ***REMOVED***
+        }
+      }
 
       GetContenidoPestania(1, idEje);
-***REMOVED***
-  ***REMOVED***).fail(function (handleError) ***REMOVED***
+    }
+  }).fail(function (handleError) {
     // Some function
-  ***REMOVED***);
-***REMOVED***
+  });
+}
 
-function ActivarPestania(w) ***REMOVED***
-  if (objetivos !== undefined && objetivos !== null) ***REMOVED***
-    for (var i = 0; i < objetivos.objetivosPorEjeEstrategico.length; i++) ***REMOVED***
+function ActivarPestania(w) {
+  if (objetivos !== undefined && objetivos !== null) {
+    for (var i = 0; i < objetivos.objetivosPorEjeEstrategico.length; i++) {
       let liObjetivo = "liobjetivo" + (i + 1);
       var tabObjetivos = document.getElementById(liObjetivo);
-      if ((i + 1) == w) ***REMOVED***
+      if ((i + 1) == w) {
         tabObjetivos.classList.add("active");
-  ***REMOVED***
+      }
       else
         tabObjetivos.classList.remove("active");
-***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}
 
-function GetContenidoPestania(w, idEje) ***REMOVED***
+function GetContenidoPestania(w, idEje) {
   var contenttabObjetivosEstrategicosPorEje = document.getElementById("contentTabObjetivos");
   contenttabObjetivosEstrategicosPorEje.innerHTML = "";
   contenttabObjetivosEstrategicosPorEje.innerHTML =
@@ -219,9 +219,9 @@ function GetContenidoPestania(w, idEje) ***REMOVED***
     '</div>' +
     '</section>';
   //var liOdsAlineado = document.getElementById("liAlineadosOds");
-  //for (var i = 0; i < objetivos.objetivosPorEjeEstrategico[w - 1].ods.length; i++) ***REMOVED***
+  //for (var i = 0; i < objetivos.objetivosPorEjeEstrategico[w - 1].ods.length; i++) {
   //  liOdsAlineado.innerHTML = liOdsAlineado.innerHTML + '<span class="badge rounded-pill Outlinetag text-dark">' + objetivos.objetivosPorEjeEstrategico[w - 1].ods[i].codOds + '.' + objetivos.objetivosPorEjeEstrategico[w - 1].ods[i].nombre + '</span>';
-  //***REMOVED***
+  //}
 
   var listaObjEspecificos = document.getElementById("listadoObjetivos");
   listaObjEspecificos.innerHTML = "";
@@ -229,8 +229,8 @@ function GetContenidoPestania(w, idEje) ***REMOVED***
   var piePaginaObjetivo = '</ul>';
   var cuerpoObjetivo = '';
  
-  if (objetivos.objetivosPorEjeEstrategico !== undefined && objetivos.objetivosPorEjeEstrategico !== null && objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico.length > 0) ***REMOVED***
-    for (var i = 0; i < objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico.length; i++) ***REMOVED***
+  if (objetivos.objetivosPorEjeEstrategico !== undefined && objetivos.objetivosPorEjeEstrategico !== null && objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico.length > 0) {
+    for (var i = 0; i < objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico.length; i++) {
           var liObjEspecifico = 'liobjEspecificosPorObjGeneral' + idEje + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].id + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico[i].id;
           var idObjEspecifico = 'objEspecificosPorObjGeneral' + idEje + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].id + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico[i].id ;
           var idCuerpoObjetivoEspecifico = 'bodyobjEspecificoPorObjGeneral' + idEje + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].id + '_' + objetivos.objetivosPorEjeEstrategico[w - 1].objetivoEspecifico[i].id;
@@ -243,41 +243,41 @@ function GetContenidoPestania(w, idEje) ***REMOVED***
               "<div id=" + idCuerpoObjetivoEspecifico + " class='accordion-content content'>" +
               "</div>" +
             "</li>";
-***REMOVED***
+    }
     listaObjEspecificos.innerHTML = encabezadoObjetivo + cuerpoObjetivo + piePaginaObjetivo;
-  ***REMOVED***
+  }
 
   
-***REMOVED***
+}
 
 
-function ObtenerObjetivosEspecificos(w, idEje) ***REMOVED***
+function ObtenerObjetivosEspecificos(w, idEje) {
   ActivarPestania(w);
   GetContenidoPestania(w, idEje);
-***REMOVED***
+}
 
 
 
-function GetIndicadoresXIdObjetivoEspecifico(idEje, idObjetivoEstrategico, idObjetivoEspecifico) ***REMOVED***
-  $.ajax(***REMOVED***
+function GetIndicadoresXIdObjetivoEspecifico(idEje, idObjetivoEstrategico, idObjetivoEspecifico) {
+  $.ajax({
     url: "api/serviciosplan/GetIndicadoresXIdObjetivoEspecifico/",
     type: "GET",
-    data: ***REMOVED***
+    data: {
       idEje: idEje,
       idObjetivoEstrategico: idObjetivoEstrategico,
       idObjetivoEspecifico: idObjetivoEspecifico
-  ***REMOVED***
+    },
 
-  ***REMOVED***).done(function (data) ***REMOVED***
+  }).done(function (data) {
     var indicadoresXObjEspecifico = document.getElementById('bodyobjEspecificoPorObjGeneral' + idEje + '_' + idObjetivoEstrategico + '_' + idObjetivoEspecifico);
     indicadoresXObjEspecifico.innerHTML = "";
 
-    if (data != null && data.length > 0) ***REMOVED***
+    if (data != null && data.length > 0) {
       var nuevoIndicador = '';
       
       var cabeceraNuevoIndicador = '<div class="card card-indicator">';
       var piePaginaNuevoIndicador = '</div>';
-      for (var j = 0; j < data.length; j++) ***REMOVED***
+      for (var j = 0; j < data.length; j++) {
         var cuerpoNuevoIndicador = '';
         var avance = "";
         var meta2023 = "";
@@ -346,37 +346,37 @@ function GetIndicadoresXIdObjetivoEspecifico(idEje, idObjetivoEstrategico, idObj
                             
 
         nuevoIndicador = nuevoIndicador + cabeceraNuevoIndicador + cuerpoNuevoIndicador + piePaginaNuevoIndicador;
-  ***REMOVED***
+      }
       indicadoresXObjEspecifico.innerHTML = nuevoIndicador;
-        for (var j = 0; j < data.length; j++) ***REMOVED***
+        for (var j = 0; j < data.length; j++) {
             $("#" + "ocultarGraph_" + data[j].idIndicador).hide();
-    ***REMOVED***
-***REMOVED***
-    else ***REMOVED***
+        }
+    }
+    else {
       indicadoresXObjEspecifico.innerHTML = "No hay indicadores para mostrar.";
-***REMOVED***
+    }
 
     
     var liObjEspecifico = document.getElementById('liobjEspecificosPorObjGeneral' + idEje + '_' + idObjetivoEstrategico + '_' + idObjetivoEspecifico);
-    if (liObjEspecifico.getAttribute("class") == "accordion-item") ***REMOVED***
+    if (liObjEspecifico.getAttribute("class") == "accordion-item") {
       liObjEspecifico.setAttribute("class", "accordion-item active");
       indicadoresXObjEspecifico.style.display = "block";
-***REMOVED***
-    else ***REMOVED***
+    }
+    else {
       liObjEspecifico.setAttribute("class", "accordion-item");
       indicadoresXObjEspecifico.style.display = "none";
-***REMOVED***
+    }
 
 
    
 
-  ***REMOVED***).fail(function (handleError) ***REMOVED***
+  }).fail(function (handleError) {
     // Some function
 
-  ***REMOVED***);
-***REMOVED***
+  });
+}
 
-function ObtenerCodigoUnidadGrafica(unidadEscalaGrafica) ***REMOVED***
+function ObtenerCodigoUnidadGrafica(unidadEscalaGrafica) {
   if (unidadEscalaGrafica == "%") return "00";
   else if (unidadEscalaGrafica == "Índice") return "01";
   else if (unidadEscalaGrafica == "Q") return "02";
@@ -386,9 +386,9 @@ function ObtenerCodigoUnidadGrafica(unidadEscalaGrafica) ***REMOVED***
   else if (unidadEscalaGrafica == "Horas") return "06";
   else if (unidadEscalaGrafica == "Años") return "07";
   else return "";
-***REMOVED***
+}
 
-function ObtenerUnidadGrafica(codigoEscalaGrafica) ***REMOVED***
+function ObtenerUnidadGrafica(codigoEscalaGrafica) {
   if (codigoEscalaGrafica == "00") return "%";
   else if (codigoEscalaGrafica == "01") return "Índice";
   else if (codigoEscalaGrafica == "02") return "Q";
@@ -398,151 +398,151 @@ function ObtenerUnidadGrafica(codigoEscalaGrafica) ***REMOVED***
   else if (codigoEscalaGrafica == "06") return "Horas";
   else if (codigoEscalaGrafica == "07") return "Años";
   else return "";
-***REMOVED***
+}
 
-function ObtenerGraficaAvance(idIndicador, unidadEscalamedicion) ***REMOVED***
+function ObtenerGraficaAvance(idIndicador, unidadEscalamedicion) {
   unidadEscalamedicion = ObtenerUnidadGrafica(unidadEscalamedicion);
   //if (unidadEscalamedicion == "00") unidadEscalamedicion = "%";
   //if (unidadEscalamedicion == "Índice") unidadEscalamedicion = "";
   //if (unidadEscalamedicion == "Q") unidadEscalamedicion = "";
   //if (unidadEscalamedicion == "Tasa") unidadEscalamedicion = "";
   //if (unidadEscalamedicion == "Razón") unidadEscalamedicion = "";
-  $.ajax(***REMOVED***
+  $.ajax({
     contentType: "application/json; charset=utf-8",
     type: "GET",
     url: "api/servicioshome/GetHistoricoAvanceIndicador",
-    data: ***REMOVED***
+    data: {
       idIndicador: idIndicador,
-***REMOVED***
-  ***REMOVED***).done(function (data) ***REMOVED***
+    }
+  }).done(function (data) {
 
     //console.log(data);
 
-      if (data.avancesIndicador != null) ***REMOVED***
+      if (data.avancesIndicador != null) {
           $("#" + "verGraph_" + idIndicador).hide();
         $("#" + "ocultarGraph_" + idIndicador).show();
         loadLinePlotAvanceAnio(data.avancesIndicador, "divGraphAvance_" + idIndicador, unidadEscalamedicion);
-***REMOVED***
+    }
 
-  ***REMOVED***).fail(function (handleError) ***REMOVED***
+  }).fail(function (handleError) {
     // Some function
 
-  ***REMOVED***);
-***REMOVED***
+  });
+}
 
-function OcultarGraficaAvance(idIndicador) ***REMOVED***
+function OcultarGraficaAvance(idIndicador) {
     $("#" + "divGraphAvance_" + idIndicador).empty();
     $("#" + "verGraph_" + idIndicador).show();
     $("#" + "ocultarGraph_" + idIndicador).hide();
-***REMOVED***
+}
 
-function loadLinePlotAvanceAnio(objData, divContenedor, unidadMedida) ***REMOVED***
+function loadLinePlotAvanceAnio(objData, divContenedor, unidadMedida) {
   $("#" + divContenedor).empty();
-  if (objData != undefined && objData != null) ***REMOVED***
+  if (objData != undefined && objData != null) {
     new d3plus.LinePlot()
       .select("#" + divContenedor)
-      .shapeConfig(***REMOVED***
-        Line: ***REMOVED***
+      .shapeConfig({
+        Line: {
           strokeWidth: 3,
           curve: "catmullRom"
-    ***REMOVED***
-  ***REMOVED***)
-      .config(***REMOVED***
+        }
+      })
+      .config({
 
         data: objData,
         groupBy: "labelGroup",
         x: "label",
         y: "rawValueDouble",
-        tooltipConfig: ***REMOVED***
-          title: function (d) ***REMOVED***
+        tooltipConfig: {
+          title: function (d) {
             return d["labelGroup"];
-        ***REMOVED***
+          },
           tbody: [
-            ["Avance [" + unidadMedida + "]", function (d) ***REMOVED*** return ConvertirNumeroNotacionPais('es-PY', d["rawValueDouble"], 2) ***REMOVED***] //d["rawValueDouble"].formatMoney(2, '.', ',').toString()
+            ["Avance [" + unidadMedida + "]", function (d) { return ConvertirNumeroNotacionPais('es-PY', d["rawValueDouble"], 2) }] //d["rawValueDouble"].formatMoney(2, '.', ',').toString()
           ]
-      ***REMOVED***
+        },
         lineMarkers: true,
-        lineMarkerConfig: ***REMOVED***
+        lineMarkerConfig: {
           r: 3
-      ***REMOVED***
-        yConfig: ***REMOVED***
+        },
+        yConfig: {
           title: "Avance [" + unidadMedida+"]",
           //scale: "sqrt"
-          tickFormat: function (d) ***REMOVED***
+          tickFormat: function (d) {
             return ConvertirNumeroNotacionPais('es-PY', d, 2);
-      ***REMOVED***
-      ***REMOVED***
+          }
+        },
         // lineLabels: true
         legend: false
-  ***REMOVED***)
+      })
       //.height(400)
       .render();
-  ***REMOVED***
-***REMOVED***
+  }
+}
 
 //listado entidades que aportan al objetivo
-function getEntidadesXIdObjetivoEspecifico(idEje, idObjetivoEspecifico) ***REMOVED***
+function getEntidadesXIdObjetivoEspecifico(idEje, idObjetivoEspecifico) {
     var id = 0;
     var id_eje = 0;
-    if (idObjetivoEspecifico != undefined && idObjetivoEspecifico != "") ***REMOVED***
+    if (idObjetivoEspecifico != undefined && idObjetivoEspecifico != "") {
         id = parseInt(idObjetivoEspecifico);
-***REMOVED***
-    if (idEje != undefined && idEje != "") ***REMOVED***
+    }
+    if (idEje != undefined && idEje != "") {
         id_eje = parseInt(idEje);
-***REMOVED***
+    }
     $("#divRecAporteByEntidad").empty();
-    $.ajax(***REMOVED***
+    $.ajax({
         contentType: "application/json; charset=utf-8",
         type: "GET",
         url: "api/servicioshome/GetConsolidadoEntidadesByObjEspecifico",
-        data: ***REMOVED***
+        data: {
 
             id_eje: id_eje,
             id: id,
-    ***REMOVED***
-***REMOVED***).done(function (data) ***REMOVED***
+        }
+    }).done(function (data) {
 
-        if (data.entidades != null) ***REMOVED***
+        if (data.entidades != null) {
             var str_entidad = "";
-            for (var i = 0; i < data.entidades.length; i++) ***REMOVED***
+            for (var i = 0; i < data.entidades.length; i++) {
                 str_entidad += '<span class="lblEntidadesAportantes">' + data.entidades[i].labelGroup + '</span></br>';
-        ***REMOVED***
+            }
             $("#divRecAporteByEntidad").html(str_entidad);
-    ***REMOVED***
+        }
 
-***REMOVED***).fail(function (handleError) ***REMOVED***
+    }).fail(function (handleError) {
         // Some function
 
-***REMOVED***);
+    });
 
-***REMOVED***	 
+}	 
 
 //-------------------------------------
 //graficoTreemapRecursosxNiveles
-function assignColor(idEje) ***REMOVED***
+function assignColor(idEje) {
     var colores_default = ["#b1861b", "#24539f", "#c8703c", "#429670"];
-    var colores = [***REMOVED*** id: 1, color: "#b1861b" ***REMOVED***, ***REMOVED*** id: 2, color: "#24539f" ***REMOVED***, ***REMOVED*** id: 3, color: "#c8703c" ***REMOVED***, ***REMOVED*** id: 4, color: "#429670" ***REMOVED***];
-    var filtered = colores.filter(function (elem) ***REMOVED***
+    var colores = [{ id: 1, color: "#b1861b" }, { id: 2, color: "#24539f" }, { id: 3, color: "#c8703c" }, { id: 4, color: "#429670" }];
+    var filtered = colores.filter(function (elem) {
         //return false for the element that matches both the name and the id
         return (elem.id == idEje)
-***REMOVED***);
-    if (filtered.length > 0) ***REMOVED***
+    });
+    if (filtered.length > 0) {
         return filtered[0].color;
-***REMOVED*** else ***REMOVED***
+    } else {
         return "#d6d6d6";
-***REMOVED*** 
+    } 
 
-***REMOVED***
+}
 
 
-function GetRecursosPorObjeto() ***REMOVED***
-    $.ajax(***REMOVED***
+function GetRecursosPorObjeto() {
+    $.ajax({
         contentType: "application/json; charset=utf-8",
         url: "api/servicioshome/GetRecursosPerPlan",
         type: "GET"
 
-***REMOVED***).done(function (data) ***REMOVED***
-        if (data.recursosPerObjeto != null) ***REMOVED***
+    }).done(function (data) {
+        if (data.recursosPerObjeto != null) {
             globales = data.recursosPerObjeto;
 
             //filtro ejes-----
@@ -552,22 +552,22 @@ function GetRecursosPorObjeto() ***REMOVED***
             $("#divGraphRecursosObj").empty();
             loadRecursosPorObjeto(data.recursosPerObjeto,1);
            
-    ***REMOVED***
+        }
 
 
-***REMOVED***).fail(function (handleError) ***REMOVED***
+    }).fail(function (handleError) {
         // Some function
 
-***REMOVED***);
-***REMOVED***
+    });
+}
 
 
-$('#btnLimpiar').click(function () ***REMOVED***
+$('#btnLimpiar').click(function () {
 
     limpiarFiltrosGrafico();
-***REMOVED***);
+});
 
-function limpiarFiltrosGrafico() ***REMOVED***
+function limpiarFiltrosGrafico() {
     $("#filter_ejes").val("");
 
     $("#filter_obj_estrateg").val("");
@@ -592,23 +592,23 @@ function limpiarFiltrosGrafico() ***REMOVED***
     $("#divGraphRecursosObj").empty();
     loadRecursosPorObjeto(data, 1);
 
-***REMOVED***
+}
 
-function createFiltersEjes(data) ***REMOVED***
+function createFiltersEjes(data) {
     var select = "";
     select = select + '<option value="">Todos los ejes</option>';
-    for (var i = 0; i < data.length; i++) ***REMOVED***
+    for (var i = 0; i < data.length; i++) {
         select = select + '<option value="' + data[i] + '">' + data[i] + '</option>';
-***REMOVED***
+    }
     $('#filter_ejes').html(select).fadeIn();
     $("#filter_ejes").prop("disabled", false);
     $("#filter_obj_estrateg").prop("disabled", true);
     $("#filter_obj_especific").prop("disabled", true);
     $("#filter_entidades").prop("disabled", true);
 
-***REMOVED***
+}
 
-function filtrarEstrategByNull() ***REMOVED***
+function filtrarEstrategByNull() {
     var eje = $("#filter_ejes").val();
 
     $("#filter_obj_especific").val("");
@@ -622,21 +622,21 @@ function filtrarEstrategByNull() ***REMOVED***
     $("#selectEntidades").prop("class", "selectDis");
 
 
-    if (eje == "") ***REMOVED***
+    if (eje == "") {
         var data = globales;
         $("#divGraphRecursosObj").empty();
         loadRecursosPorObjeto(data, 1);
 
-***REMOVED*** else ***REMOVED***
+    } else {
         var data = filtrarByNivel1(globales, eje);
         $("#divGraphRecursosObj").empty();
         loadRecursosPorObjeto(data, 2);
 
-***REMOVED***
+    }
 
 
-***REMOVED***
-function filtrarEspecificoByNull() ***REMOVED***
+}
+function filtrarEspecificoByNull() {
     var eje = $("#filter_ejes").val();
     var obj_estrateg = $("#filter_obj_estrateg").val();
 
@@ -646,67 +646,67 @@ function filtrarEspecificoByNull() ***REMOVED***
 
     $("#selectEntidades").prop("class", "selectDis");
 
-    if (obj_estrateg == "") ***REMOVED***
-        if (eje == "") ***REMOVED***
+    if (obj_estrateg == "") {
+        if (eje == "") {
             var data = globales;
             $("#divGraphRecursosObj").empty();
             loadRecursosPorObjeto(data, 1);
 
-    ***REMOVED*** else ***REMOVED***
+        } else {
             var data = filtrarByNivel1(globales, eje);
             $("#divGraphRecursosObj").empty();
             loadRecursosPorObjeto(data, 2);
 
-    ***REMOVED***
+        }
 
 
 
-***REMOVED*** else ***REMOVED***
+    } else {
         var data = filtrarByNivel2(globales, eje, obj_estrateg);
         $("#divGraphRecursosObj").empty();
         loadRecursosPorObjeto(data, 3);
 
-***REMOVED***
+    }
 
-***REMOVED***
+}
 
-function filtrarEntidadesByNull() ***REMOVED***
+function filtrarEntidadesByNull() {
     var eje = $("#filter_ejes").val();
     var obj_estrateg = $("#filter_obj_estrateg").val();
     var obj_especific = $("#filter_obj_especific").val();
 
-    if (obj_especific != "") ***REMOVED***
+    if (obj_especific != "") {
         var data = filtrarByNivel3(globales, eje, obj_estrateg, obj_especific);
         $("#divGraphRecursosObj").empty();
         loadRecursosPorObjeto(data, 4);
-***REMOVED*** else ***REMOVED***
+    } else {
         //filtrar x obj estrategico
-        if (obj_estrateg == "") ***REMOVED***
-            if (eje == "") ***REMOVED***
+        if (obj_estrateg == "") {
+            if (eje == "") {
                 var data = globales;
                 $("#divGraphRecursosObj").empty();
                 loadRecursosPorObjeto(data, 1);
 
-        ***REMOVED*** else ***REMOVED***
+            } else {
                 var data = filtrarByNivel1(globales, eje);
                 $("#divGraphRecursosObj").empty();
                 loadRecursosPorObjeto(data, 2);
 
-        ***REMOVED***
-    ***REMOVED*** else ***REMOVED***
+            }
+        } else {
             var data = filtrarByNivel2(globales, eje, obj_estrateg);
             $("#divGraphRecursosObj").empty();
             loadRecursosPorObjeto(data, 3);
 
-    ***REMOVED***
+        }
 
-***REMOVED***
+    }
 
-***REMOVED***
+}
 
-$("#filter_ejes").on("change", function (event) ***REMOVED***
+$("#filter_ejes").on("change", function (event) {
     var selected = $(this).val();
-    if (selected == "") ***REMOVED***
+    if (selected == "") {
         $("#filter_obj_estrateg").val("");
         $("#filter_obj_estrateg").prop("disabled", true);
 
@@ -728,8 +728,8 @@ $("#filter_ejes").on("change", function (event) ***REMOVED***
         loadRecursosPorObjeto(data, 1);
 
         $("#btnback").hide();
-***REMOVED***
-    else ***REMOVED***
+    }
+    else {
         var data = filtrarByNivel1(globales, selected);
         $("#divGraphRecursosObj").empty();
         //loadRecursosPorObjetoByNivel1(data);
@@ -741,45 +741,45 @@ $("#filter_ejes").on("change", function (event) ***REMOVED***
         $(".d3plus-viz-back").hide();
         
 
-***REMOVED***
-***REMOVED***);
+    }
+});
 
 
-$('#btnback').click(function () ***REMOVED***
+$('#btnback').click(function () {
     $(".d3plus-viz-back").hide();
     var eje = $("#filter_ejes").val();
     var obj_estrateg = $("#filter_obj_estrateg").val();
     var obj_especifico = $("#filter_obj_especific").val();
     var entidades = $("#filter_entidades").val();
-    if (obj_estrateg == "" && obj_especifico == "" && entidades == "") ***REMOVED***
+    if (obj_estrateg == "" && obj_especifico == "" && entidades == "") {
         limpiarFiltrosGrafico();
-***REMOVED***
+    }
 
-    if (eje != "" && obj_estrateg != "" && obj_especifico == "" && entidades == "") ***REMOVED***
+    if (eje != "" && obj_estrateg != "" && obj_especifico == "" && entidades == "") {
         filtrarEstrategByNull();
         $("#filter_obj_estrateg").val("");
-***REMOVED***
+    }
 
-    if (eje != "" && obj_estrateg != "" && obj_especifico != "" && entidades == "") ***REMOVED***
+    if (eje != "" && obj_estrateg != "" && obj_especifico != "" && entidades == "") {
         filtrarEspecificoByNull();
         $("#filter_obj_especific").val("");
-***REMOVED***
+    }
 
-    if (eje != "" && obj_estrateg != "" && obj_especifico != "" && entidades != "") ***REMOVED***
+    if (eje != "" && obj_estrateg != "" && obj_especifico != "" && entidades != "") {
         filtrarEntidadesByNull();
         $("#filter_entidades").val("");
-***REMOVED***
+    }
 
-***REMOVED***);
+});
 
 
-$("#filter_obj_estrateg").on("change", function (event) ***REMOVED***
+$("#filter_obj_estrateg").on("change", function (event) {
     var selected = $(this).val();
     var eje = $("#filter_ejes").val();
-    if (selected == "") ***REMOVED***
+    if (selected == "") {
         filtrarEstrategByNull();
-***REMOVED***
-    else ***REMOVED***
+    }
+    else {
         //filtrar data
         var data = filtrarByNivel2(globales, eje, selected);
 
@@ -791,19 +791,19 @@ $("#filter_obj_estrateg").on("change", function (event) ***REMOVED***
         $("#btnback").show();
         $(".d3plus-viz-back").hide();
 
-***REMOVED***
-***REMOVED***);
+    }
+});
 
-$("#filter_obj_especific").on("change", function (event) ***REMOVED***
+$("#filter_obj_especific").on("change", function (event) {
     var selected = $(this).val();
     var eje = $("#filter_ejes").val();
     var obj_estrateg = $("#filter_obj_estrateg").val();
 
 
-    if (selected == "") ***REMOVED***
+    if (selected == "") {
         filtrarEspecificoByNull();
-***REMOVED***
-    else ***REMOVED***
+    }
+    else {
         var data = filtrarByNivel3(globales, eje, obj_estrateg, selected);
 
         $("#divGraphRecursosObj").empty();
@@ -813,19 +813,19 @@ $("#filter_obj_especific").on("change", function (event) ***REMOVED***
 
         $("#btnback").show();
         $(".d3plus-viz-back").hide();
-***REMOVED***
-***REMOVED***);
+    }
+});
 
-$("#filter_entidades").on("change", function (event) ***REMOVED***
+$("#filter_entidades").on("change", function (event) {
     var selected = $(this).val();
     var eje = $("#filter_ejes").val();
     var obj_estrateg = $("#filter_obj_estrateg").val();
     var obj_especific = $("#filter_obj_especific").val();
 
-    if (selected == "") ***REMOVED***
+    if (selected == "") {
         filtrarEntidadesByNull();
-***REMOVED***
-    else ***REMOVED***
+    }
+    else {
 
         var data = filtrarByNivel4(globales,eje, obj_estrateg, obj_especific, selected);
         $("#divGraphRecursosObj").empty();
@@ -833,134 +833,134 @@ $("#filter_entidades").on("change", function (event) ***REMOVED***
 
         $("#btnback").show();
         $(".d3plus-viz-back").hide();
-***REMOVED***
-***REMOVED***);
+    }
+});
 
-function createFiltroEstrategico(data) ***REMOVED***
+function createFiltroEstrategico(data) {
 
     var obj_estrategicos = getFiltrosPerObjeto(data, "estrategicos");
 
     var select = "";
     select = select + '<option value="">Todos los objetivos</option>';
-    for (var i = 0; i < obj_estrategicos.length; i++) ***REMOVED***
+    for (var i = 0; i < obj_estrategicos.length; i++) {
         select = select + '<option value="' + obj_estrategicos[i] + '">' + obj_estrategicos[i] + '</option>';
-***REMOVED***
+    }
     $('#filter_obj_estrateg').html(select).fadeIn();
     $("#selectEstrategicos").prop("class", "selectBlue");
     $("#filter_obj_estrateg").prop("disabled", false);
 
-***REMOVED***
+}
 
-function createFiltroEspecifico(data) ***REMOVED***
+function createFiltroEspecifico(data) {
     $("#filter_obj_estrateg").prop("disabled", false);
     $("#selectEstrategicos").prop("class", "selectBlue");
     var objetivos = getFiltrosPerObjeto(data, "especificos");
 
     var select = "";
     select = select + '<option value="">Todos los objetivos</option>';
-    for (var i = 0; i < objetivos.length; i++) ***REMOVED***
+    for (var i = 0; i < objetivos.length; i++) {
         select = select + '<option value="' + objetivos[i] + '">' + objetivos[i] + '</option>';
-***REMOVED***
+    }
     $('#filter_obj_especific').html(select).fadeIn();
     $("#selectEspecificos").prop("class", "selectBlue");
     $("#filter_obj_especific").prop("disabled", false);
 
-***REMOVED***
+}
 
-function createFiltroEntidad(data) ***REMOVED***
+function createFiltroEntidad(data) {
     $("#filter_entidades").prop("disabled", false);
     $("#selectEntidades").prop("class", "selectBlue");
     var entidades = getFiltrosPerObjeto(data, "entidades");
 
     var select = "";
     select = select + '<option value="">Todas las entidades</option>';
-    for (var i = 0; i < entidades.length; i++) ***REMOVED***
+    for (var i = 0; i < entidades.length; i++) {
         select = select + '<option value="' + entidades[i] + '">' + entidades[i] + '</option>';
-***REMOVED***
+    }
     $('#filter_entidades').html(select).fadeIn();
     $("#filter_entidades").prop("disabled", false);
 
-***REMOVED***
+}
 
-function filtrarByNivel1(data, eje) ***REMOVED***
-    var filtrados = jQuery.grep(data, function (n, i) ***REMOVED***
+function filtrarByNivel1(data, eje) {
+    var filtrados = jQuery.grep(data, function (n, i) {
         return (n.labelGroup.toUpperCase() == eje.toString().toUpperCase());
-***REMOVED***);
+    });
     return filtrados;
-***REMOVED***
+}
 
-function filtrarByNivel2(data, eje, estrategico) ***REMOVED***
-    var filtrados = jQuery.grep(data, function (n, i) ***REMOVED***
+function filtrarByNivel2(data, eje, estrategico) {
+    var filtrados = jQuery.grep(data, function (n, i) {
         return (n.labelGroup.toUpperCase() == eje.toString().toUpperCase() && n.label.toUpperCase() == estrategico.toString().toUpperCase());
-***REMOVED***);
+    });
     return filtrados;
-***REMOVED***
+}
 
-function filtrarByNivel3(data, eje, estrategico,especifico) ***REMOVED***
-    var filtrados = jQuery.grep(data, function (n, i) ***REMOVED***
+function filtrarByNivel3(data, eje, estrategico,especifico) {
+    var filtrados = jQuery.grep(data, function (n, i) {
         return (n.labelGroup.toUpperCase() == eje.toString().toUpperCase()
             && n.label.toUpperCase() == estrategico.toString().toUpperCase()
             && n.label_inf.toUpperCase() == especifico.toString().toUpperCase()
         );
-***REMOVED***);
+    });
     return filtrados;
 
-***REMOVED***
+}
 
-function filtrarByNivel4(data, eje, estrategico, especifico,entidad) ***REMOVED***
-    var filtrados = jQuery.grep(data, function (n, i) ***REMOVED***
+function filtrarByNivel4(data, eje, estrategico, especifico,entidad) {
+    var filtrados = jQuery.grep(data, function (n, i) {
         return (n.labelGroup.toUpperCase() == eje.toString().toUpperCase()
             && n.label.toUpperCase() == estrategico.toString().toUpperCase()
             && n.label_inf.toUpperCase() == especifico.toString().toUpperCase()
             && n.label_nivel4.toUpperCase() == entidad.toString().toUpperCase()
         );
-***REMOVED***);
+    });
     return filtrados;
 
-***REMOVED***
+}
 
 
-function getFiltrosPerObjeto(data, variable) ***REMOVED***
+function getFiltrosPerObjeto(data, variable) {
     var filtrados = data;
-    switch (variable) ***REMOVED***
+    switch (variable) {
         case "ejes":
-            filtrados = $.unique(data.map(function (d) ***REMOVED*** return d.labelGroup; ***REMOVED***));
+            filtrados = $.unique(data.map(function (d) { return d.labelGroup; }));
             break;
         case "estrategicos":
-            filtrados = $.unique(data.map(function (d) ***REMOVED*** return d.label; ***REMOVED***));
+            filtrados = $.unique(data.map(function (d) { return d.label; }));
             break;
         case "especificos":
-            filtrados = $.unique(data.map(function (d) ***REMOVED*** return d.label_inf; ***REMOVED***));
+            filtrados = $.unique(data.map(function (d) { return d.label_inf; }));
             break;
         case "entidades":
-            filtrados = $.unique(data.map(function (d) ***REMOVED*** return d.label_nivel4; ***REMOVED***));
+            filtrados = $.unique(data.map(function (d) { return d.label_nivel4; }));
             break;
         default:
-            filtrados = $.unique(data.map(function (d) ***REMOVED*** return d.labelGroup; ***REMOVED***));
+            filtrados = $.unique(data.map(function (d) { return d.labelGroup; }));
             break;
-***REMOVED***
+    }
     
     return filtrados;
-***REMOVED***
+}
 
-function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
-    if (objData != undefined && objData != null) ***REMOVED***
+function loadRecursosPorObjeto(objData,nivel) {
+    if (objData != undefined && objData != null) {
         var grafica = new d3plus.Treemap()
             .select("#divGraphRecursosObj")
             .data(objData)
             .groupBy(["rawValue_asoc", "labelGroup", "label", "label_inf", "label_nivel4"])
-            .shapeConfig(***REMOVED***
-                labelConfig: ***REMOVED***
+            .shapeConfig({
+                labelConfig: {
                     fontFamily: "'Montserrat', sans-serif",
                     align: "center",
                     size: 6,
                     transform: "capitalize"
-            ***REMOVED***
-                ,fill: function (d, index) ***REMOVED***
+                }
+                ,fill: function (d, index) {
                     return assignColor(d.rawValue_asoc);
-            ***REMOVED***
-        ***REMOVED***)
-            .on("click", function (d) ***REMOVED***
+                }
+            })
+            .on("click", function (d) {
                 $("#btnback").hide();
                 $(".d3plus-viz-back").hide();
                 var current = grafica.depth();
@@ -969,7 +969,7 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
                 console.log("nivel " + nivel + " || depth" + current);
                 
 
-                if (current == 2) ***REMOVED***
+                if (current == 2) {
                     selected = d.labelGroup;
                     $("#filter_ejes").val(selected);
 
@@ -978,7 +978,7 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
                   
                      $("#btnback").show();
 
-            ***REMOVED*** else if (current == 3) ***REMOVED***
+                } else if (current == 3) {
                     selected = d.label;
                     $("#filter_obj_estrateg").val(selected);
                     var eje = $("#filter_ejes").val();
@@ -988,19 +988,19 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
                     
                     $("#btnback").show();
                     
-            ***REMOVED*** else if (current == 4) ***REMOVED***
+                } else if (current == 4) {
                     
                     var eje = $("#filter_ejes").val();
                     var obj_estrateg = $("#filter_obj_estrateg").val();
                     var obj_especific = $("#filter_obj_especific").val();
 
-                    if (obj_especific == "") ***REMOVED***
+                    if (obj_especific == "") {
                         //clic sobre obj especifico
                         selected = d.label_inf;
                         $("#filter_obj_especific").val(selected);
                         var data = filtrarByNivel3(globales, eje, obj_estrateg, selected);
                         createFiltroEntidad(data);
-                ***REMOVED*** else ***REMOVED***
+                    } else {
                         //clic sobre entidad
                         selected = d.label_nivel4;
                         var data = filtrarByNivel3(globales, eje, obj_estrateg, obj_especific);
@@ -1012,15 +1012,15 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
 
                        
  
-                ***REMOVED***
+                    }
 
                     $("#btnback").show();
 
-            ***REMOVED***else ***REMOVED***
+                }else {
                     selected = "";
-            ***REMOVED***
+                }
 
-                $(".d3plus-viz-back").click(function () ***REMOVED***
+                $(".d3plus-viz-back").click(function () {
                     
                     var depth_aux = grafica.depth();
                     console.log("btn_atras|| nivel " + nivel + " || depth" + depth_aux);
@@ -1030,49 +1030,49 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
                     var val_obj_especificos = $("#filter_obj_especific").val();
 
 
-                    if (depth_aux == nivel) ***REMOVED***
+                    if (depth_aux == nivel) {
                         $("#divGraphRecursosObj").empty();
-                        if (val_ejes != "") ***REMOVED***
+                        if (val_ejes != "") {
                             limpiarFiltrosGrafico();
-                    ***REMOVED***
-                        else ***REMOVED***
+                        }
+                        else {
                             loadRecursosPorObjeto(globales, 1);
-                    ***REMOVED***
-                ***REMOVED*** 
-                    if (depth_aux == 2) ***REMOVED***
+                        }
+                    } 
+                    if (depth_aux == 2) {
                         $("#filter_obj_estrateg").val("");
                         filtrarEstrategByNull();
                         $("#btnback").show();
-                ***REMOVED***
-                    if (depth_aux == 3) ***REMOVED***
+                    }
+                    if (depth_aux == 3) {
                         $("#filter_obj_especific").val("");
                         filtrarEspecificoByNull();
                         $("#btnback").show();
-                ***REMOVED***
-            ***REMOVED***);
+                    }
+                });
 
 
 
 
-        ***REMOVED***)
-            .translate(function (d) ***REMOVED***
+            })
+            .translate(function (d) {
                 var traduc_aux = d;
-                if (d === "Back" || d === "back") ***REMOVED***
+                if (d === "Back" || d === "back") {
                     traduc_aux = "Atrás";
-            ***REMOVED*** else if (d === "Click to Expand") ***REMOVED***
+                } else if (d === "Click to Expand") {
                     traduc_aux = "Clic para Expandir";
-            ***REMOVED*** else ***REMOVED***
+                } else {
                     traduc_aux = d;
-            ***REMOVED***
+                }
                 return traduc_aux;
-        ***REMOVED***)
-            .config(***REMOVED***
-                tooltipConfig: ***REMOVED***
-                    title: function (d) ***REMOVED***
+            })
+            .config({
+                tooltipConfig: {
+                    title: function (d) {
                         var depth_aux = grafica.depth();
                         var longitud = 80;
                         var cad = d.labelGroup;
-                        switch (depth_aux) ***REMOVED***
+                        switch (depth_aux) {
                             case 1:
                                 cad = "Eje " + " " + d.labelGroup;
                                 break;
@@ -1087,58 +1087,58 @@ function loadRecursosPorObjeto(objData,nivel) ***REMOVED***
                                 break;
                             default:
                                 cad = d.labelGroup;
-                    ***REMOVED***
+                        }
 
                         return cad;
-                  ***REMOVED***
+                    },
                     tbody: [
-                        [function (d) ***REMOVED***
+                        [function (d) {
                             var valor = d["rawValueDouble"] / 1000000;
                             var cad = "";
-                            if (Array.isArray(d.label)) ***REMOVED***
+                            if (Array.isArray(d.label)) {
                                 cad += "<span>Objetivos Estratégicos (" + d.label.length + ")</span></br>";
-                        ***REMOVED***
-                            if (Array.isArray(d.label_inf)) ***REMOVED***
+                            }
+                            if (Array.isArray(d.label_inf)) {
                                 cad += "<span>Objetivos Específicos (" + d.label_inf.length + ")</span></br>";
-                        ***REMOVED***
-                            if (Array.isArray(d.label_nivel4)) ***REMOVED***
+                            }
+                            if (Array.isArray(d.label_nivel4)) {
                                 cad += "<span>Entidades que aportan (" + d.label_nivel4.length + ")</span></br>";
-                        ***REMOVED***
+                            }
                             cad += "<span>Recursos asignados PGN 2022 " + "₲ " + valor.formatMoney(0, ',', '.').toString() + " Millones" + "</span></br>";
                             cad += "<span>Recursos ejecutados 0%</span>";
                             return cad;
-                    ***REMOVED***]
+                        }]
                     ]
-              ***REMOVED***
-                yConfig: ***REMOVED***
+                },
+                yConfig: {
                     title: "",
-            ***REMOVED***
-        ***REMOVED***)
+                }
+            })
             .sum("rawValueDouble")
             .depth(nivel)
             .legend(false)
             .render();
        
-***REMOVED***
+    }
     
-***REMOVED***
+}
 
 
 
 
 
-function recortarNombre(nombre, longitud) ***REMOVED***
+function recortarNombre(nombre, longitud) {
     var aux = nombre;
-    if (nombre != undefined && nombre != null) ***REMOVED***
-        if (nombre.length > longitud) ***REMOVED***
+    if (nombre != undefined && nombre != null) {
+        if (nombre.length > longitud) {
             aux = nombre.substr(0, longitud) + "...";
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
     return aux;
-***REMOVED***
+}
 //-------------------------------------------------
-Number.prototype.formatMoney = function (c, d, t) ***REMOVED***
+Number.prototype.formatMoney = function (c, d, t) {
   var n = this,
     c = isNaN(c = Math.abs(c)) ? 2 : c,
     d = d == undefined ? "." : d,
@@ -1146,10 +1146,10 @@ Number.prototype.formatMoney = function (c, d, t) ***REMOVED***
     s = n < 0 ? "-" : "",
     i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
     j = (j = i.length) > 3 ? j % 3 : 0;
-  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d***REMOVED***3***REMOVED***)(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
-***REMOVED***;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
 
-Number.prototype.formatDecimal = function (c, d, t) ***REMOVED***
+Number.prototype.formatDecimal = function (c, d, t) {
   var n = this,
     c = isNaN(c = Math.abs(c)) ? 2 : c,
     d = d == undefined ? "." : d,
@@ -1157,14 +1157,14 @@ Number.prototype.formatDecimal = function (c, d, t) ***REMOVED***
     s = n < 0 ? "-" : "",
     i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
     j = (j = i.length) > 3 ? j % 3 : 0;
-  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d***REMOVED***3***REMOVED***)(?=\d)/g, "1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
-***REMOVED***;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
 
-function ConvertirNumeroNotacionPais (localCulture, n, d) ***REMOVED***
+function ConvertirNumeroNotacionPais (localCulture, n, d) {
   //  var locales = [
   //  'es-PY',	  // Paraguay
   //   //undefined, // Your own browser
   //];
-  var opts = ***REMOVED*** minimumFractionDigits: d ***REMOVED***;
+  var opts = { minimumFractionDigits: d };
   return n.toLocaleString(localCulture, opts);
-***REMOVED***;
+};

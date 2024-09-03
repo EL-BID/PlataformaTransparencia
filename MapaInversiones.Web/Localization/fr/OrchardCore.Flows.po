@@ -58,11 +58,11 @@ msgctxt "OrchardCore.Flows.Views.BagPartSettings.Edit"
 msgid "The display type to use when rendering the content items. Default is Summary."
 msgstr "Le type d'affichage à utiliser lors de l'affichage des éléments du contenu. Par défaut, Summary."
 
-#. @T["***REMOVED***0***REMOVED*** — <span class=\"hint\">***REMOVED***1***REMOVED***</span>", contentItem.DisplayText, contentType]
+#. @T["{0} — <span class=\"hint\">{1}</span>", contentItem.DisplayText, contentType]
 #: OrchardCore.Flows\Views\ContentCard-BagPart.Edit.cshtml:16
 msgctxt "OrchardCore.Flows.Views.ContentCard-BagPart.Edit"
-msgid "***REMOVED***0***REMOVED*** — <span class=\"hint\">***REMOVED***1***REMOVED***</span>"
-msgstr "***REMOVED***0***REMOVED*** — <span class=\"hint\">***REMOVED***1***REMOVED***</span>"
+msgid "{0} — <span class=\"hint\">{1}</span>"
+msgstr "{0} — <span class=\"hint\">{1}</span>"
 
 #. <button type="button" class="btn btn-danger widget-delete" data-title="@T["Delete"]" data-message="@T["Are you sure you want to remove this item?"]"><i class="fa fa-trash" aria-hidden="true"></i></button>
 #: OrchardCore.Flows\Views\ContentCard-BagPart.Edit.cshtml:21
@@ -76,11 +76,11 @@ msgctxt "OrchardCore.Flows.Views.ContentCard-BagPart.Edit"
 msgid "Are you sure you want to remove this item?"
 msgstr "Êtes-vous sûr de vouloir supprimer cet élément ?"
 
-#. <span data-content-type-display-text="@contentTypeDisplayText" class="widget-editor-header-text">@T["***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***", contentItemDisplayText, contentTypeDisplayText]</span>
+#. <span data-content-type-display-text="@contentTypeDisplayText" class="widget-editor-header-text">@T["{0} {1}", contentItemDisplayText, contentTypeDisplayText]</span>
 #: OrchardCore.Flows\Views\ContentCard-FlowPart.Edit.cshtml:21
 msgctxt "OrchardCore.Flows.Views.ContentCard-FlowPart.Edit"
-msgid "***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***"
-msgstr "***REMOVED***0***REMOVED*** ***REMOVED***1***REMOVED***"
+msgid "{0} {1}"
+msgstr "{0} {1}"
 
 #. <button class="toggleAll btn btn-secondary btn-sm" onclick="toggleWidgets(); return false;" title="@T["Toggle all widgets"]">
 #: OrchardCore.Flows\Views\ContentCard-FlowPart.Edit.cshtml:31

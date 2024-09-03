@@ -22,9 +22,9 @@ msgctxt "OrchardCore.PublishLater.Views.PublishLaterPart.Edit"
 msgid "Cancel Publish Later"
 msgstr "Ακύρωση Δημοσίευσης Αργότερα"
 
-#. <span class="hint">@T["Scheduled to be published on ***REMOVED***0***REMOVED***", (object)(await DisplayAsync(await New.DateTime(Utc: Model.ScheduledPublishUtc)))]</span>
+#. <span class="hint">@T["Scheduled to be published on {0}", (object)(await DisplayAsync(await New.DateTime(Utc: Model.ScheduledPublishUtc)))]</span>
 #: OrchardCore.PublishLater\Views\PublishLaterPart.SummaryAdmin.cshtml:6
 msgctxt "OrchardCore.PublishLater.Views.PublishLaterPart.SummaryAdmin"
-msgid "Scheduled to be published on ***REMOVED***0***REMOVED***"
-msgstr "Προγραμματίστηκε να δημοσιευτεί στις ***REMOVED***0***REMOVED***"
+msgid "Scheduled to be published on {0}"
+msgstr "Προγραμματίστηκε να δημοσιευτεί στις {0}"
 

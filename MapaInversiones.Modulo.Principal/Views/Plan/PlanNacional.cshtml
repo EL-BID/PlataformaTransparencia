@@ -2,11 +2,11 @@
 
 @model PlataformaTransparencia.Modelos.ModelPlanData
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 
-@***REMOVED***
+@{
     var etiquetas = await Orchard.GetContentItemByHandleAsync("alias:Etiquetas");
     var LabelRecursosAsignados = "";
     var TituloRecursosAsignados = "";
@@ -15,25 +15,25 @@
     var LabelNotasAlPie = "";
     var TituloNotasAlPie = "";
 
-***REMOVED***
+}
 @foreach (var etiqueta in etiquetas.Content.BagPart.ContentItems)
-***REMOVED***
+{
     if (@etiqueta.AliasPart.Alias == "RecursosAsignados")
-    ***REMOVED***
+    {
         LabelRecursosAsignados = @etiqueta.HtmlBodyPart.Html;
         TituloRecursosAsignados = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "EntidadesAportan")
-    ***REMOVED***
+    {
         LabelEntidadesAportan = @etiqueta.HtmlBodyPart.Html;
         TituloEntidadesAportan = @etiqueta.TitlePart.Title;
-***REMOVED***
+    }
     else if (@etiqueta.AliasPart.Alias == "NotasAlPie")
-    ***REMOVED***
+    {
         LabelNotasAlPie = @etiqueta.HtmlBodyPart.Html;
         TituloNotasAlPie = @etiqueta.TitlePart.Title;
-***REMOVED***
-***REMOVED***
+    }
+}
 <head>
 
 </head>
@@ -521,20 +521,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script>
-    window.onscroll = function () ***REMOVED*** myFunction() ***REMOVED***;
+    window.onscroll = function () { myFunction() };
 
     var header = document.getElementById("navs-header");
     var sticky = header.offsetTop;
 
-    function myFunction() ***REMOVED***
-        if (window.pageYOffset > sticky) ***REMOVED***
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
             header.classList.add("bg-white");
-    ***REMOVED*** else ***REMOVED***
+        } else {
             header.classList.remove("sticky");
             header.classList.remove("bg-white");
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 </script>
 
 

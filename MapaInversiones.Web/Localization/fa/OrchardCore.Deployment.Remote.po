@@ -44,11 +44,11 @@ msgctxt "OrchardCore.Deployment.Remote.Controllers.ExportRemoteInstanceControlle
 msgid "Deployment executed successfully."
 msgstr "برنامه استقرار با موفقیت اجرا شد."
 
-#. _notifier.Error(H["An error occurred while sending the deployment to the remote instance: \"***REMOVED***0***REMOVED*** (***REMOVED***1***REMOVED***)\"", response.ReasonPhrase, (int)response.StatusCode]);
+#. _notifier.Error(H["An error occurred while sending the deployment to the remote instance: \"{0} ({1})\"", response.ReasonPhrase, (int)response.StatusCode]);
 #: OrchardCore.Deployment.Remote\Controllers\ExportRemoteInstanceController.cs:111
 msgctxt "OrchardCore.Deployment.Remote.Controllers.ExportRemoteInstanceController"
-msgid "An error occurred while sending the deployment to the remote instance: \"***REMOVED***0***REMOVED*** (***REMOVED***1***REMOVED***)\""
-msgstr "در هنگام فرستادن برنامه استقرار به یکی از موارد ریموت، خطایی رخ داده است: \"***REMOVED***0***REMOVED*** (***REMOVED***1***REMOVED***)\""
+msgid "An error occurred while sending the deployment to the remote instance: \"{0} ({1})\""
+msgstr "در هنگام فرستادن برنامه استقرار به یکی از موارد ریموت، خطایی رخ داده است: \"{0} ({1})\""
 
 #. _notifier.Success(H["Remote client created successfully"]);
 #: OrchardCore.Deployment.Remote\Controllers\RemoteClientController.cs:89
@@ -218,11 +218,11 @@ msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
 msgid "Remote Clients"
 msgstr "سرویس‌گیرنده‌های ریموت"
 
-#. @T["Url to use from client instances: <b>***REMOVED***0***REMOVED***</b>", Url.Action("Import", "ImportRemoteInstance", null, Context.Request.Scheme)]
+#. @T["Url to use from client instances: <b>{0}</b>", Url.Action("Import", "ImportRemoteInstance", null, Context.Request.Scheme)]
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:6
 msgctxt "OrchardCore.Deployment.Remote.Views.RemoteClient.Index"
-msgid "Url to use from client instances: <b>***REMOVED***0***REMOVED***</b>"
-msgstr "آدرسی که سرویس‌گیرنده‌ها از آن استفاده می‌کنند: <b>***REMOVED***0***REMOVED***</b>"
+msgid "Url to use from client instances: <b>{0}</b>"
+msgstr "آدرسی که سرویس‌گیرنده‌ها از آن استفاده می‌کنند: <b>{0}</b>"
 
 #. <a asp-route-action="Create" class="btn btn-primary" role="button">@T["Add Remote Client"]</a>
 #: OrchardCore.Deployment.Remote\Views\RemoteClient\Index.cshtml:12

@@ -10,11 +10,11 @@ msgstr ""
 "Language: de_DE\n"
 "PO-Revision-Date: 2020-06-04 18:33\n"
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Html), S["***REMOVED***0***REMOVED*** doesn't contain a valid Liquid expression. Details: ***REMOVED***1***REMOVED***", partName, string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}", partName, string.Join(" ", errors)]);
 #: OrchardCore.Html\Drivers\HtmlBodyPartDisplayDriver.cs:68
 msgctxt "OrchardCore.Html.Drivers.HtmlBodyPartDisplayDriver"
-msgid "***REMOVED***0***REMOVED*** doesn't contain a valid Liquid expression. Details: ***REMOVED***1***REMOVED***"
-msgstr "***REMOVED***0***REMOVED*** enthält keinen gültigen Liquid-Ausdruck. Siehe Details: ***REMOVED***1***REMOVED***"
+msgid "{0} doesn't contain a valid Liquid expression. Details: {1}"
+msgstr "{0} enthält keinen gültigen Liquid-Ausdruck. Siehe Details: {1}"
 
 #. Description = S["Content stored as HTML."];
 #: OrchardCore.Html\GraphQL\HtmlBodyQueryObjectType.cs:22

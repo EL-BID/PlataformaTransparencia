@@ -30,79 +30,79 @@ msgctxt "OrchardCore.Contents.AdminMenu"
 msgid "New"
 msgstr "Создать"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Latest"], Value = nameof(ContentsStatus.Latest) ***REMOVED***,
+#. new SelectListItem() { Text = S["Latest"], Value = nameof(ContentsStatus.Latest) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:212
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Latest"
 msgstr "Последние"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Owned by me"], Value = nameof(ContentsStatus.Owner) ***REMOVED***,
+#. new SelectListItem() { Text = S["Owned by me"], Value = nameof(ContentsStatus.Owner) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:213
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Owned by me"
 msgstr ""
 
-#. new SelectListItem() ***REMOVED*** Text = S["Published"], Value = nameof(ContentsStatus.Published) ***REMOVED***,
+#. new SelectListItem() { Text = S["Published"], Value = nameof(ContentsStatus.Published) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:214
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Published"
 msgstr "Опубликовано"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Unpublished"], Value = nameof(ContentsStatus.Draft) ***REMOVED***,
+#. new SelectListItem() { Text = S["Unpublished"], Value = nameof(ContentsStatus.Draft) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:215
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Unpublished"
 msgstr "Не опубликовано"
 
-#. new SelectListItem() ***REMOVED*** Text = S["All versions"], Value = nameof(ContentsStatus.AllVersions) ***REMOVED***
+#. new SelectListItem() { Text = S["All versions"], Value = nameof(ContentsStatus.AllVersions) }
 #: OrchardCore.Contents\Controllers\AdminController.cs:216
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "All versions"
 msgstr "Все версии"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Recently created"], Value = nameof(ContentsOrder.Created) ***REMOVED***,
+#. new SelectListItem() { Text = S["Recently created"], Value = nameof(ContentsOrder.Created) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:220
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently created"
 msgstr "Недавно создано"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Recently modified"], Value = nameof(ContentsOrder.Modified) ***REMOVED***,
+#. new SelectListItem() { Text = S["Recently modified"], Value = nameof(ContentsOrder.Modified) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:221
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently modified"
 msgstr "Недавно изменено"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Recently published"], Value = nameof(ContentsOrder.Published) ***REMOVED***,
+#. new SelectListItem() { Text = S["Recently published"], Value = nameof(ContentsOrder.Published) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:222
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently published"
 msgstr "Недавно опубликовано"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Title"], Value = nameof(ContentsOrder.Title) ***REMOVED***
+#. new SelectListItem() { Text = S["Title"], Value = nameof(ContentsOrder.Title) }
 #: OrchardCore.Contents\Controllers\AdminController.cs:223
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Title"
 msgstr "Название"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Publish Now"], Value = nameof(ContentsBulkAction.PublishNow) ***REMOVED***,
+#. new SelectListItem() { Text = S["Publish Now"], Value = nameof(ContentsBulkAction.PublishNow) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:227
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Publish Now"
 msgstr "Опубликовать сейчас"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Unpublish"], Value = nameof(ContentsBulkAction.Unpublish) ***REMOVED***,
+#. new SelectListItem() { Text = S["Unpublish"], Value = nameof(ContentsBulkAction.Unpublish) },
 #: OrchardCore.Contents\Controllers\AdminController.cs:228
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Unpublish"
 msgstr "Снять с публикации"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
 #: OrchardCore.Contents\Controllers\AdminController.cs:229
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Delete"
 msgstr "Удалить"
 
-#. model.Options.ContentTypeOptions.Add(new SelectListItem() ***REMOVED*** Text = S["All content types"], Value = "" ***REMOVED***);
+#. model.Options.ContentTypeOptions.Add(new SelectListItem() { Text = S["All content types"], Value = "" });
 #: OrchardCore.Contents\Controllers\AdminController.cs:237
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "All content types"
@@ -152,13 +152,13 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your content draft has been saved."
 msgstr "Ваш черновик содержимого был сохранен."
 
-#. : H["Your ***REMOVED***0***REMOVED*** draft has been saved.", typeDefinition.DisplayName]);
-#. : H["Your ***REMOVED***0***REMOVED*** draft has been saved.", typeDefinition.DisplayName]);
+#. : H["Your {0} draft has been saved.", typeDefinition.DisplayName]);
+#. : H["Your {0} draft has been saved.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:359
 #: OrchardCore.Contents\Controllers\AdminController.cs:481
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "Your ***REMOVED***0***REMOVED*** draft has been saved."
-msgstr "Ваш черновик ***REMOVED***0***REMOVED*** был сохранен."
+msgid "Your {0} draft has been saved."
+msgstr "Ваш черновик {0} был сохранен."
 
 #. ? H["Your content has been published."]
 #. ? H["Your content has been published."]
@@ -168,13 +168,13 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your content has been published."
 msgstr "Ваш контент опубликован."
 
-#. : H["Your ***REMOVED***0***REMOVED*** has been published.", typeDefinition.DisplayName]);
-#. : H["Your ***REMOVED***0***REMOVED*** has been published.", typeDefinition.DisplayName]);
+#. : H["Your {0} has been published.", typeDefinition.DisplayName]);
+#. : H["Your {0} has been published.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:389
 #: OrchardCore.Contents\Controllers\AdminController.cs:512
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "Your ***REMOVED***0***REMOVED*** has been published."
-msgstr "Ваш ***REMOVED***0***REMOVED*** опубликован."
+msgid "Your {0} has been published."
+msgstr "Ваш {0} опубликован."
 
 #. _notifier.Warning(H["Could not clone the content item."]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:574
@@ -194,11 +194,11 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The draft has been removed."
 msgstr "Черновик был удален."
 
-#. : H["The ***REMOVED***0***REMOVED*** draft has been removed.", typeDefinition.DisplayName]);
+#. : H["The {0} draft has been removed.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:606
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "The ***REMOVED***0***REMOVED*** draft has been removed."
-msgstr "Черновик ***REMOVED***0***REMOVED*** был удален."
+msgid "The {0} draft has been removed."
+msgstr "Черновик {0} был удален."
 
 #. ? H["That content has been removed."]
 #: OrchardCore.Contents\Controllers\AdminController.cs:629
@@ -206,11 +206,11 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That content has been removed."
 msgstr "Содержимое было удалено."
 
-#. : H["That ***REMOVED***0***REMOVED*** has been removed.", typeDefinition.DisplayName]);
+#. : H["That {0} has been removed.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:630
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "That ***REMOVED***0***REMOVED*** has been removed."
-msgstr "Этот ***REMOVED***0***REMOVED*** был удален."
+msgid "That {0} has been removed."
+msgstr "Этот {0} был удален."
 
 #. _notifier.Success(H["That content has been published."]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:656
@@ -218,11 +218,11 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That content has been published."
 msgstr "Ваш контент опубликован."
 
-#. _notifier.Success(H["That ***REMOVED***0***REMOVED*** has been published.", typeDefinition.DisplayName]);
+#. _notifier.Success(H["That {0} has been published.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:660
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "That ***REMOVED***0***REMOVED*** has been published."
-msgstr "Ваш ***REMOVED***0***REMOVED*** опубликован."
+msgid "That {0} has been published."
+msgstr "Ваш {0} опубликован."
 
 #. _notifier.Success(H["The content has been unpublished."]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:686
@@ -230,11 +230,11 @@ msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The content has been unpublished."
 msgstr "Ваш контент снят с публикации."
 
-#. _notifier.Success(H["The ***REMOVED***0***REMOVED*** has been unpublished.", typeDefinition.DisplayName]);
+#. _notifier.Success(H["The {0} has been unpublished.", typeDefinition.DisplayName]);
 #: OrchardCore.Contents\Controllers\AdminController.cs:690
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
-msgid "The ***REMOVED***0***REMOVED*** has been unpublished."
-msgstr "Ваш ***REMOVED***0***REMOVED*** снят с публикации."
+msgid "The {0} has been unpublished."
+msgstr "Ваш {0} снят с публикации."
 
 #. title: S["One or more validation errors occurred."],
 #. title: S["One or more validation errors occurred."],
@@ -250,10 +250,10 @@ msgctxt "OrchardCore.Contents.Drivers.OwnerEditorDriver"
 msgid "Invalid user name"
 msgstr "Неверное имя пользователя"
 
-#. context.Updater.ModelState.AddModelError(nameof(model.FullTextTemplate), S["Full-text doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(model.FullTextTemplate), S["Full-text doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Contents\Settings\FullTextAspectSettingsDisplayDriver.cs:50
 msgctxt "OrchardCore.Contents.Settings.FullTextAspectSettingsDisplayDriver"
-msgid "Full-text doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
+msgid "Full-text doesn't contain a valid Liquid expression. Details: {0}"
 msgstr ""
 
 #. public override LocalizedString Category => S["Content"];
@@ -316,7 +316,7 @@ msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Create Content Task"
 msgstr ""
 
-#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new ***REMOVED*** DisplayText = S["Enter a title"].Value ***REMOVED***, Formatting.Indented)));
+#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value }, Formatting.Indented)));
 #: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:46
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Enter a title"
@@ -418,7 +418,7 @@ msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Update Content Task"
 msgstr ""
 
-#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new ***REMOVED*** DisplayText = S["Enter a title"].Value ***REMOVED***, Formatting.Indented)));
+#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value }, Formatting.Indented)));
 #: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:46
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Enter a title"
@@ -624,11 +624,11 @@ msgctxt "OrchardCore.Contents.Views.Contents-Button-Edit.SummaryAdmin"
 msgid "View"
 msgstr "Просмотр"
 
-#. <span class="hint">@T["Last modified ***REMOVED***0***REMOVED*** by ***REMOVED***1***REMOVED***", (object)(await DisplayAsync(await New.TimeSpan(Utc: contentItem.ModifiedUtc))), contentItem.Author]</span>
+#. <span class="hint">@T["Last modified {0} by {1}", (object)(await DisplayAsync(await New.TimeSpan(Utc: contentItem.ModifiedUtc))), contentItem.Author]</span>
 #: OrchardCore.Contents\Views\Contents-Meta.SummaryAdmin.cshtml:10
 msgctxt "OrchardCore.Contents.Views.Contents-Meta.SummaryAdmin"
-msgid "Last modified ***REMOVED***0***REMOVED*** by ***REMOVED***1***REMOVED***"
-msgstr "Последние изменения от ***REMOVED***0***REMOVED***, ***REMOVED***1***REMOVED***"
+msgid "Last modified {0} by {1}"
+msgstr "Последние изменения от {0}, {1}"
 
 #. <span class="badge badge-success" title="@T["Published"]">
 #. <i class="fa fa-check" aria-hidden="true"></i> @T["Published"]
@@ -694,10 +694,10 @@ msgctxt "OrchardCore.Contents.Views.FullTextAspectSettings.Edit"
 msgid "Check to define a custom Liquid template generating some text to include in the full-text content."
 msgstr ""
 
-#. <span class="hint">@T["Tip: Include custom fields like <code>***REMOVED******REMOVED******REMOVED******REMOVED*** Model.Content.Article.Summary.Text ***REMOVED******REMOVED******REMOVED******REMOVED***</code>."]</span>
+#. <span class="hint">@T["Tip: Include custom fields like <code>{{{{ Model.Content.Article.Summary.Text }}}}</code>."]</span>
 #: OrchardCore.Contents\Views\FullTextAspectSettings.Edit.cshtml:38
 msgctxt "OrchardCore.Contents.Views.FullTextAspectSettings.Edit"
-msgid "Tip: Include custom fields like <code>***REMOVED******REMOVED******REMOVED******REMOVED*** Model.Content.Article.Summary.Text ***REMOVED******REMOVED******REMOVED******REMOVED***</code>."
+msgid "Tip: Include custom fields like <code>{{{{ Model.Content.Article.Summary.Text }}}}</code>."
 msgstr ""
 
 #. <span class="icon"><i class="fa fa-edit" aria-hidden="true"></i></span><span class="title">@T["Content"]</span>
@@ -712,17 +712,17 @@ msgctxt "OrchardCore.Contents.Views.NavigationItemText-new.Id"
 msgid "New"
 msgstr "Создать"
 
-#. <h1>@RenderTitleSegments(T["New ***REMOVED***0***REMOVED***", Html.Raw(typeDisplayName)])</h1>
+#. <h1>@RenderTitleSegments(T["New {0}", Html.Raw(typeDisplayName)])</h1>
 #: OrchardCore.Contents\Views\Admin\Create.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Admin.Create"
-msgid "New ***REMOVED***0***REMOVED***"
-msgstr "Новый ***REMOVED***0***REMOVED***"
+msgid "New {0}"
+msgstr "Новый {0}"
 
-#. <h1>@RenderTitleSegments(T["Edit ***REMOVED***0***REMOVED***", Html.Raw(typeDisplayName)])</h1>
+#. <h1>@RenderTitleSegments(T["Edit {0}", Html.Raw(typeDisplayName)])</h1>
 #: OrchardCore.Contents\Views\Admin\Edit.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Admin.Edit"
-msgid "Edit ***REMOVED***0***REMOVED***"
-msgstr "Редактировать ***REMOVED***0***REMOVED***"
+msgid "Edit {0}"
+msgstr "Редактировать {0}"
 
 #: OrchardCore.Contents\Views\Admin\List.cshtml:0
 msgctxt "OrchardCore.Contents.Views.Admin.List"
@@ -736,13 +736,13 @@ msgstr "Создать новый контент"
 
 #: OrchardCore.Contents\Views\Admin\List.cshtml:0
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid "Manage ***REMOVED***0***REMOVED*** Content"
-msgstr "Управление контентом ***REMOVED***0***REMOVED***"
+msgid "Manage {0} Content"
+msgstr "Управление контентом {0}"
 
 #: OrchardCore.Contents\Views\Admin\List.cshtml:0
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid "Create New ***REMOVED***0***REMOVED***"
-msgstr "Создать объект \"***REMOVED***0***REMOVED***\""
+msgid "Create New {0}"
+msgstr "Создать объект \"{0}\""
 
 #. @T["Filters"]
 #: OrchardCore.Contents\Views\Admin\List.cshtml:35
@@ -774,10 +774,10 @@ msgctxt "OrchardCore.Contents.Views.Admin.List"
 msgid "Search all content items"
 msgstr ""
 
-#. <a class="btn btn-sm btn-success" href="@Url.RouteUrl(new ***REMOVED*** area = "OrchardCore.Contents", controller = "Admin", action = "Create", id = @Model.Options.CreatableTypes.First().Value ***REMOVED***)">@T["New ***REMOVED***0***REMOVED***", Model.Options.CreatableTypes.First().Text]</a>
+#. <a class="btn btn-sm btn-success" href="@Url.RouteUrl(new { area = "OrchardCore.Contents", controller = "Admin", action = "Create", id = @Model.Options.CreatableTypes.First().Value })">@T["New {0}", Model.Options.CreatableTypes.First().Text]</a>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:52
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid "New ***REMOVED***0***REMOVED***"
+msgid "New {0}"
 msgstr ""
 
 #. <button class="btn btn-sm btn-success dropdown-toggle" data-toggle="dropdown" id="new-dropdown" type="button" aria-haspopup="true" aria-expanded="false">@T["New"]</button>
@@ -792,27 +792,27 @@ msgctxt "OrchardCore.Contents.Views.Admin.List"
 msgid "Select All"
 msgstr "Выбрать все"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:75
 msgctxt "OrchardCore.Contents.Views.Admin.List"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:75
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ContentItems.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:75
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -824,16 +824,16 @@ msgctxt "OrchardCore.Contents.Views.Admin.List"
 msgid "Actions"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:87
 msgctxt "OrchardCore.Contents.Views.Admin.List"
 msgid "Bulk Action"
 msgstr "Массовое действие"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Contents\Views\Admin\List.cshtml:87
 msgctxt "OrchardCore.Contents.Views.Admin.List"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** these items?"
+msgid "Are you sure you want to {0} these items?"
 msgstr ""
 
 #. <select asp-for="Options.SelectedContentType" asp-items="Model.Options.ContentTypeOptions" class="selectpicker show-tick mr-2" data-header="@T["Filter by content type"]" data-live-search="true" data-selected-text-format="static" data-width="fit" title="@T["Content Type"]" data-style="btn-sm">
@@ -1560,11 +1560,11 @@ msgctxt "OrchardCore.Contents.Views.Items.DeleteContentTask.Fields.Design"
 msgid "Delete content provided via the <em>ContentItem</em> input argument"
 msgstr ""
 
-#. <span>@T["Delete content using expression: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Content.Expression]</span>
+#. <span>@T["Delete content using expression: <em>{0}</em>", Model.Activity.Content.Expression]</span>
 #: OrchardCore.Contents\Views\Items\DeleteContentTask.Fields.Design.cshtml:12
 msgctxt "OrchardCore.Contents.Views.Items.DeleteContentTask.Fields.Design"
-msgid "Delete content using expression: <em>***REMOVED***0***REMOVED***</em>"
-msgstr "Удалить содержимое с помощью выражения: <em>***REMOVED***0***REMOVED***</em>"
+msgid "Delete content using expression: <em>{0}</em>"
+msgstr "Удалить содержимое с помощью выражения: <em>{0}</em>"
 
 #. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\DeleteContentTask.Fields.Edit.cshtml:5
@@ -1602,11 +1602,11 @@ msgctxt "OrchardCore.Contents.Views.Items.PublishContentTask.Fields.Design"
 msgid "Publish content provided via the <em>ContentItem</em> input argument"
 msgstr ""
 
-#. <span>@T["Publish content using expression: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Content.Expression]</span>
+#. <span>@T["Publish content using expression: <em>{0}</em>", Model.Activity.Content.Expression]</span>
 #: OrchardCore.Contents\Views\Items\PublishContentTask.Fields.Design.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Items.PublishContentTask.Fields.Design"
-msgid "Publish content using expression: <em>***REMOVED***0***REMOVED***</em>"
-msgstr "Опубликовать содержимое с помощью выражения: <em>***REMOVED***0***REMOVED***</em>"
+msgid "Publish content using expression: <em>{0}</em>"
+msgstr "Опубликовать содержимое с помощью выражения: <em>{0}</em>"
 
 #. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\PublishContentTask.Fields.Edit.cshtml:5
@@ -1644,10 +1644,10 @@ msgctxt "OrchardCore.Contents.Views.Items.RetrieveContentTask.Fields.Design"
 msgid "Retrieve content provided via the <em>ContentItemId</em> input argument"
 msgstr ""
 
-#. <span>@T["Retrieve content using expression: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Content.Expression]</span>
+#. <span>@T["Retrieve content using expression: <em>{0}</em>", Model.Activity.Content.Expression]</span>
 #: OrchardCore.Contents\Views\Items\RetrieveContentTask.Fields.Design.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Items.RetrieveContentTask.Fields.Design"
-msgid "Retrieve content using expression: <em>***REMOVED***0***REMOVED***</em>"
+msgid "Retrieve content using expression: <em>{0}</em>"
 msgstr ""
 
 #. <label asp-for="ContentItemId">@T["Content Item ID"]</label>
@@ -1686,11 +1686,11 @@ msgctxt "OrchardCore.Contents.Views.Items.UnpublishContentTask.Fields.Design"
 msgid "Unpublish content provided via the <em>ContentItem</em> input argument"
 msgstr ""
 
-#. <span>@T["Unpublish content using expression: <em>***REMOVED***0***REMOVED***</em>", Model.Activity.Content.Expression]</span>
+#. <span>@T["Unpublish content using expression: <em>{0}</em>", Model.Activity.Content.Expression]</span>
 #: OrchardCore.Contents\Views\Items\UnpublishContentTask.Fields.Design.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Items.UnpublishContentTask.Fields.Design"
-msgid "Unpublish content using expression: <em>***REMOVED***0***REMOVED***</em>"
-msgstr "Снять публикацию контента с помощью выражения: <em>***REMOVED***0***REMOVED***</em>"
+msgid "Unpublish content using expression: <em>{0}</em>"
+msgstr "Снять публикацию контента с помощью выражения: <em>{0}</em>"
 
 #. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\UnpublishContentTask.Fields.Edit.cshtml:5

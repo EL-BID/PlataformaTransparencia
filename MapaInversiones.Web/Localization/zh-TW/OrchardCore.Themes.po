@@ -22,18 +22,18 @@ msgctxt "OrchardCore.Themes.AdminMenu"
 msgid "Themes"
 msgstr "主题"
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was enabled", feature.Name ?? feature.Id]);
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was enabled", feature.Name ?? feature.Id]);
+#. _notifier.Success(H["{0} was enabled", feature.Name ?? feature.Id]);
+#. _notifier.Success(H["{0} was enabled", feature.Name ?? feature.Id]);
 #: OrchardCore.Themes\Controllers\AdminController.cs:154
 #: OrchardCore.Themes\Controllers\AdminController.cs:233
 msgctxt "OrchardCore.Themes.Controllers.AdminController"
-msgid "***REMOVED***0***REMOVED*** was enabled"
-msgstr "已启用 ***REMOVED***0***REMOVED***"
+msgid "{0} was enabled"
+msgstr "已启用 {0}"
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was set as the default ***REMOVED***1***REMOVED*** theme", feature.Name ?? feature.Id, isAdmin ? "Admin" : "Site"]);
+#. _notifier.Success(H["{0} was set as the default {1} theme", feature.Name ?? feature.Id, isAdmin ? "Admin" : "Site"]);
 #: OrchardCore.Themes\Controllers\AdminController.cs:157
 msgctxt "OrchardCore.Themes.Controllers.AdminController"
-msgid "***REMOVED***0***REMOVED*** was set as the default ***REMOVED***1***REMOVED*** theme"
+msgid "{0} was set as the default {1} theme"
 msgstr "设置作为默认的主题"
 
 #. _notifier.Success(H["The Site theme was reset."]);
@@ -48,35 +48,35 @@ msgctxt "OrchardCore.Themes.Controllers.AdminController"
 msgid "The Admin theme was reset."
 msgstr "管理主题已重置。"
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was disabled", feature.Name ?? feature.Id]);
+#. _notifier.Success(H["{0} was disabled", feature.Name ?? feature.Id]);
 #: OrchardCore.Themes\Controllers\AdminController.cs:211
 msgctxt "OrchardCore.Themes.Controllers.AdminController"
-msgid "***REMOVED***0***REMOVED*** was disabled"
-msgstr "***REMOVED***0***REMOVED*** 已禁用"
+msgid "{0} was disabled"
+msgstr "{0} 已禁用"
 
-#. throw new InvalidOperationException(H["The theme \"***REMOVED***0***REMOVED***\" is already in the stack of themes that need features disabled.", themeName].ToString());
+#. throw new InvalidOperationException(H["The theme \"{0}\" is already in the stack of themes that need features disabled.", themeName].ToString());
 #: OrchardCore.Themes\Services\ThemeService.cs:42
 msgctxt "OrchardCore.Themes.Services.ThemeService"
-msgid "The theme \"***REMOVED***0***REMOVED***\" is already in the stack of themes that need features disabled."
-msgstr "主题 \"***REMOVED***0***REMOVED***\" 已在需要禁用功能的主题堆栈中。"
+msgid "The theme \"{0}\" is already in the stack of themes that need features disabled."
+msgstr "主题 \"{0}\" 已在需要禁用功能的主题堆栈中。"
 
-#. throw new InvalidOperationException(H["The theme \"***REMOVED***0***REMOVED***\" is already in the stack of themes that need features enabled.", themeName].ToString());
+#. throw new InvalidOperationException(H["The theme \"{0}\" is already in the stack of themes that need features enabled.", themeName].ToString());
 #: OrchardCore.Themes\Services\ThemeService.cs:73
 msgctxt "OrchardCore.Themes.Services.ThemeService"
-msgid "The theme \"***REMOVED***0***REMOVED***\" is already in the stack of themes that need features enabled."
-msgstr "主题 \"***REMOVED***0***REMOVED***\" 已在需要启用功能的主题堆栈中。"
+msgid "The theme \"{0}\" is already in the stack of themes that need features enabled."
+msgstr "主题 \"{0}\" 已在需要启用功能的主题堆栈中。"
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was enabled.", enabledFeature.Name]);
+#. _notifier.Success(H["{0} was enabled.", enabledFeature.Name]);
 #: OrchardCore.Themes\Services\ThemeService.cs:114
 msgctxt "OrchardCore.Themes.Services.ThemeService"
-msgid "***REMOVED***0***REMOVED*** was enabled."
-msgstr "已启用 ***REMOVED***0***REMOVED***."
+msgid "{0} was enabled."
+msgstr "已启用 {0}."
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was disabled.", feature.Name]);
+#. _notifier.Success(H["{0} was disabled.", feature.Name]);
 #: OrchardCore.Themes\Services\ThemeService.cs:141
 msgctxt "OrchardCore.Themes.Services.ThemeService"
-msgid "***REMOVED***0***REMOVED*** was disabled."
-msgstr "***REMOVED***0***REMOVED*** 已禁用."
+msgid "{0} was disabled."
+msgstr "{0} 已禁用."
 
 #. <span class="icon"><i class="fas fa-desktop" aria-hidden="true"></i></span><span class="title">@T["Design"]</span>
 #: OrchardCore.Themes\Views\NavigationItemText-themes.Id.cshtml:1
@@ -96,23 +96,23 @@ msgctxt "OrchardCore.Themes.Views.Admin.Index"
 msgid "There are no themes installed."
 msgstr "没有安装主题。"
 
-#. <small>@T["By: ***REMOVED***0***REMOVED***", themeEntry.Extension.Manifest.Author]</small><br />
+#. <small>@T["By: {0}", themeEntry.Extension.Manifest.Author]</small><br />
 #: OrchardCore.Themes\Views\Admin\Index.cshtml:22
 msgctxt "OrchardCore.Themes.Views.Admin.Index"
-msgid "By: ***REMOVED***0***REMOVED***"
-msgstr "由: ***REMOVED***0***REMOVED***"
+msgid "By: {0}"
+msgstr "由: {0}"
 
-#. <small>@T["Tags: ***REMOVED***0***REMOVED***", string.Join(", ", themeEntry.Extension.Manifest.Tags.ToArray())]</small><br />
+#. <small>@T["Tags: {0}", string.Join(", ", themeEntry.Extension.Manifest.Tags.ToArray())]</small><br />
 #: OrchardCore.Themes\Views\Admin\Index.cshtml:30
 msgctxt "OrchardCore.Themes.Views.Admin.Index"
-msgid "Tags: ***REMOVED***0***REMOVED***"
+msgid "Tags: {0}"
 msgstr ""
 
-#. <small>@T["Version: ***REMOVED***0***REMOVED***", themeEntry.Extension.Manifest.Version]</small>
+#. <small>@T["Version: {0}", themeEntry.Extension.Manifest.Version]</small>
 #: OrchardCore.Themes\Views\Admin\Index.cshtml:32
 msgctxt "OrchardCore.Themes.Views.Admin.Index"
-msgid "Version: ***REMOVED***0***REMOVED***"
-msgstr "版本: ***REMOVED***0***REMOVED***"
+msgid "Version: {0}"
+msgstr "版本: {0}"
 
 #. <button type="submit" class="btn btn-sm btn-primary">@T["Make Current"]</button>
 #: OrchardCore.Themes\Views\Admin\Index.cshtml:40

@@ -178,10 +178,10 @@
     <!--CHAT BUBBLE	-->
     <script src="js/czm-chat-support.min.js"></script>
     <script type="text/javascript">
-        $('#helpCenter').czmChatSupport(***REMOVED***
+        $('#helpCenter').czmChatSupport({
 
             /* Button Settings */
-            button: ***REMOVED***
+            button: {
                 position: "right", /* left, right or false. "position:false" does not pin to the left or right */
                 style: 3, /* Button style. Number between 1 and 7 */
                 src: '<i class="material-icons md-22">help</i>', /* Image, Icon or SVG */
@@ -190,117 +190,117 @@
                 notificationNumber: false, /* Custom text or false. To remove, (notificationNumber:false) */
                 speechBubble: false, /* To remove, (speechBubble:false) */
                 pulseEffect: false, /* To remove, (pulseEffect:false) */
-                text: ***REMOVED*** /* For Button style larger than 1 */
+                text: { /* For Button style larger than 1 */
                     title: "¿Preguntas?", /* Writing is required */
                     description: false, /* To remove, (description:false) */
                     online: false, /* To remove, (online:false) */
                     offline: false /* To remove, (offline:false) */
-            ***REMOVED***
-          ***REMOVED***
+                }
+            },
 
             /* Popup Settings */
-            popup: ***REMOVED***
+            popup: {
                 automaticOpen: false, /* true or false (Open popup automatically when the page is loaded) */
                 outsideClickClosePopup: true, /* true or false (Clicking anywhere on the page will close the popup) */
                 effect: 3, /* Popup opening effect. Number between 1 and 15 */
-                header: ***REMOVED***
+                header: {
                     backgroundColor: "#00A8FF", /* Html color code */
                     title: "¿Preguntas?", /* Writing is required */
                     description: "Consulte nuestro centro de ayuda para obtener mayor información de esta plataforma" /* To remove, (description:false) */
-              ***REMOVED***
+                },
 
                 /* Representative Settings */
                 persons: [
 
                     /* Copy for more representatives [::Start Copy::] */
-                    ***REMOVED***
-                        avatar: ***REMOVED***
+                    {
+                        avatar: {
                             src: '<i class="material-icons md-22">arrow-right</i>', /* Image, Icon or SVG */
                             backgroundColor: "#00A8FF", /* Html color code */
                             onlineCircle: false /* Avatar online circle. To remove, (onlineCircle:false) */
-                      ***REMOVED***
-                        text: ***REMOVED***
+                        },
+                        text: {
                             title: "¿Cómo funciona este sitio?", /* Writing is required */
                             description: false, /* To remove, (description:false) */
                             online: false, /* To remove, (online:false) */
                             offline: false /* To remove, (offline:false) */
-                      ***REMOVED***
-                        link: ***REMOVED***
+                        },
+                        link: {
                             desktop: "#!", /* Writing is required */
                             mobile: false /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
-                      ***REMOVED***
+                        },
 
-                  ***REMOVED***
+                    },
                     /* [::End Copy::] */
 
                     /* Copy for more representatives [::Start Copy::] */
-                    ***REMOVED***
-                        avatar: ***REMOVED***
+                    {
+                        avatar: {
                             src: '<i class="material-icons md-22">arrow-right</i>', /* Image, Icon or SVG */
                             backgroundColor: "#00A8FF", /* Html color code */
                             onlineCircle: false /* Avatar online circle. To remove, (onlineCircle:false) */
-                      ***REMOVED***
-                        text: ***REMOVED***
+                        },
+                        text: {
                             title: "¿Porqué no se ha publicado mi comentario?", /* Writing is required */
                             description: false, /* To remove, (description:false) */
                             online: false, /* To remove, (online:false) */
                             offline: false /* To remove, (offline:false) */
-                      ***REMOVED***
-                        link: ***REMOVED***
+                        },
+                        link: {
                             desktop: "#!", /* Writing is required */
                             mobile: false /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
-                      ***REMOVED***
+                        },
 
-                  ***REMOVED***
+                    },
                     /* [::End Copy::] */
 
                     /* Copy for more representatives [::Start Copy::] */
-                    ***REMOVED***
-                        avatar: ***REMOVED***
+                    {
+                        avatar: {
                             src: '<i class="material-icons md-22">arrow-right</i>', /* Image, Icon or SVG */
                             backgroundColor: "#00A8FF", /* Html color code */
                             onlineCircle: false /* Avatar online circle. To remove, (onlineCircle:false) */
-                      ***REMOVED***
-                        text: ***REMOVED***
+                        },
+                        text: {
                             title: "¿Qué es PND?", /* Writing is required */
                             description: false, /* To remove, (description:false) */
                             online: false, /* To remove, (online:false) */
                             offline: false /* To remove, (offline:false) */
-                      ***REMOVED***
-                        link: ***REMOVED***
+                        },
+                        link: {
                             desktop: "#!", /* Writing is required */
                             mobile: false /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
-                      ***REMOVED***
+                        },
 
-                  ***REMOVED***
+                    },
                     /* [::End Copy::] */
                     /* Copy for more representatives [::Start Copy::] */
-                    ***REMOVED***
-                        avatar: ***REMOVED***
+                    {
+                        avatar: {
                             src: '<i class="material-icons md-22">arrow-right</i>', /* Image, Icon or SVG */
                             backgroundColor: "#00A8FF", /* Html color code */
                             onlineCircle: false /* Avatar online circle. To remove, (onlineCircle:false) */
-                      ***REMOVED***
-                        text: ***REMOVED***
+                        },
+                        text: {
                             title: "Ir al centro de ayuda", /* Writing is required */
                             description: false, /* To remove, (description:false) */
                             online: false, /* To remove, (online:false) */
                             offline: false /* To remove, (offline:false) */
-                      ***REMOVED***
-                        link: ***REMOVED***
+                        },
+                        link: {
                             desktop: "#!", /* Writing is required */
                             mobile: false /* If it is hidden desktop link will be valid. To remove, (mobile:false) */
-                      ***REMOVED***
+                        },
 
-                  ***REMOVED***
+                    },
                     /* [::End Copy::] */
 
 
                 ]
-          ***REMOVED***
+            },
 
 
-    ***REMOVED***);
+        });
 
     </script>
 </body>

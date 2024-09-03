@@ -1,9 +1,9 @@
 ﻿@page
 
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 
 <!--MAIN BANNER-->
 <section class="banner-main mb-0">
@@ -69,37 +69,37 @@
     <div class="container">
         <section class="sect-tab preguntas" id="preguntas">
             <div class="row">
-                @***REMOVED***
+                @{
                     var preguntas = await Orchard.GetContentItemByHandleAsync("alias:Preguntas");
                     List<string> categorias = new List<string>();
-            ***REMOVED***
+                }
                 <!--LEFT COLUMN-->
                 <div class="col-lg-3">
                     @foreach (var pregunta in preguntas.Content.BagPart.ContentItems)
-                    ***REMOVED***
+                    {
                         @foreach (var termId in pregunta.Pregunta.Categoria.TermContentItemIds)
-                        ***REMOVED***
+                        {
                             string term = termId + "";
                             string taxonomy = pregunta.Pregunta.Categoria.TaxonomyContentItemId + "";
                             var display = await Orchard.GetTaxonomyTermAsync(taxonomy, term);
                             if (!categorias.Contains(term))
-                            ***REMOVED***
+                            {
                                 categorias.Add(term);
                                 <div class="categoriapregunta" id="@term">
                                     <span class="h5">@display</span>
                                 </div>
-                        ***REMOVED***
-                    ***REMOVED***
-                ***REMOVED***
+                            }
+                        }
+                    }
                 </div>
                 <!--RIGHT COLUMN-->
                 <div class="col-lg-8">
                     <aside>
 
                         @foreach (var pregunta in preguntas.Content.BagPart.ContentItems)
-                        ***REMOVED***
+                        {
                             @foreach (var termId in pregunta.Pregunta.Categoria.TermContentItemIds)
-                            ***REMOVED***
+                            {
                                 string term = termId + "";
                                 string taxonomy = pregunta.Pregunta.Categoria.TaxonomyContentItemId + "";
                                 var display = await Orchard.GetTaxonomyTermAsync(taxonomy, term);
@@ -110,8 +110,8 @@
                             <div>@Html.Raw(pregunta.HtmlBodyPart.Html)</div>
                         </div>
 
-                        ***REMOVED***
-                    ***REMOVED***
+                            }
+                        }
                     </aside>
 
                 </div>
@@ -125,25 +125,25 @@
                 <div class="col-lg-8">
 
                     @for (char c = 'A'; c < 'Z'; c++)
-                    ***REMOVED***
+                    {
                         <div class="indice" id="@c" style="display:block; float:left">
                             @c  &nbsp; &nbsp;
                         </div>
 
-                ***REMOVED***
+                    }
                 </div>
             </div>
             <div class="row">
-                @***REMOVED***
+                @{
                     var glosario = await Orchard.GetContentItemByHandleAsync("alias:PalabrasGlosario");
-            ***REMOVED***
+                }
                 <!--LEFT COLUMN-->
                 <div class="col-lg-2">
                 </div>
                 <!--RIGHT COLUMN-->
                 <div class="col-lg-8">
                     @foreach (var palabra in glosario.Content.BagPart.ContentItems)
-                    ***REMOVED***
+                    {
                         string p = @palabra.DisplayText.ToString().Substring(0, 1);
                     <div class="palabra @p" id="">
                         <br />
@@ -155,7 +155,7 @@
 
 
 
-                ***REMOVED***
+                    }
 
 
                 </div>
@@ -224,7 +224,7 @@
 @*<script type="text/javascript" src="../../js/centroayuda_aux.js"></script>*@
 <script type="text/javascript">
 
-    $(document).ready(function () ***REMOVED***
+    $(document).ready(function () {
 
         //Muestra las preguntas de la primera categoria
         var c = document.getElementsByClassName("categoriapregunta");
@@ -232,36 +232,36 @@
         Mostrar("pregunta", id)
         //Muestra las palabras del glosario de la primera letra
         Mostrar("palabra", "palabra A")
-***REMOVED***);
+    });
 
-    $(document).on('click', '.categoriapregunta', function (e) ***REMOVED***
+    $(document).on('click', '.categoriapregunta', function (e) {
         id = "pregunta " + this.id;
         Mostrar('pregunta', id);
 
-***REMOVED***);
+    });
 
-    $(document).on('click', '.btn-section', function (e) ***REMOVED***
+    $(document).on('click', '.btn-section', function (e) {
         id = "sect-tab " + this.id;
         Mostrar('sect-tab', id);
 
-***REMOVED***);
+    });
 
 
-    $(document).on('click', '.indice', function (e) ***REMOVED***
+    $(document).on('click', '.indice', function (e) {
         id = "palabra " + this.id;
         Mostrar('palabra', id);
 
-***REMOVED***);
-    function Mostrar(ocultar, mostrar) ***REMOVED***
+    });
+    function Mostrar(ocultar, mostrar) {
         var y = document.getElementsByClassName(ocultar);
         var i;
-        for (i = 0; i < y.length; i++) ***REMOVED***
+        for (i = 0; i < y.length; i++) {
             y[i].style.display = "none";
-    ***REMOVED***
+        }
         var x = document.getElementsByClassName(mostrar);
         var i;
-        for (i = 0; i < x.length; i++) ***REMOVED***
+        for (i = 0; i < x.length; i++) {
             x[i].style.display = "block";
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 </script>

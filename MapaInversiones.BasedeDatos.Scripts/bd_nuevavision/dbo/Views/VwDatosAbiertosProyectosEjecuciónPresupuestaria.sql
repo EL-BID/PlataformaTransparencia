@@ -1,7 +1,7 @@
 ﻿CREATE VIEW dbo.VwDatosAbiertosProyectosEjecuciónPresupuestaria
 AS
 SELECT proy.CodigoBPIN AS CodigoSNIP, SeguimientoFinanciacionProyecto.IdTipoEntidad AS IdOrganismoFinanciador, dbo.Fuente.NombreEntidad AS OrganismoFinanciador, SeguimientoFinanciacionProyecto.IdTipoRecurso AS IdFuenteFinanciacion, dbo.Fuente.NombreTipoRecurso AS FuenteFinanciacion, SeguimientoFinanciacionProyecto.Anio AS Vigencia, SeguimientoFinanciacionProyecto.PresupuestoVigente AS Presupuestado, 
-         SeguimientoFinanciacionProyecto.PresupuestoPagado AS Ejecutado, dbo.FuenteDeLosRecursos.FechaActualizacionFuente AS FechaCargueArchivo, ***REMOVED*** fn CONCAT(dbo.FuenteDeLosRecursos.Descripcion, ' - Ministerio de Hacienda') ***REMOVED*** AS FuenteDatos
+         SeguimientoFinanciacionProyecto.PresupuestoPagado AS Ejecutado, dbo.FuenteDeLosRecursos.FechaActualizacionFuente AS FechaCargueArchivo, { fn CONCAT(dbo.FuenteDeLosRecursos.Descripcion, ' - Ministerio de Hacienda') } AS FuenteDatos
 FROM  dbo.Proyecto AS proy INNER JOIN
          dbo.SeguimientoEsquemaFinanciacionProyecto AS SeguimientoFinanciacionProyecto ON proy.IdProyecto = SeguimientoFinanciacionProyecto.idProyecto INNER JOIN
          dbo.Fuente ON SeguimientoFinanciacionProyecto.IdTipoRecurso = dbo.Fuente.IdTipoRecurso AND SeguimientoFinanciacionProyecto.IdTipoEntidad = dbo.Fuente.IdTipoEntidad AND SeguimientoFinanciacionProyecto.IdEntidad = dbo.Fuente.IdEntidad INNER JOIN

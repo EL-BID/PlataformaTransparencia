@@ -110,12 +110,12 @@ msgstr "لم يتم ضبط إعدادات أداة التحقق البشري (re
 
 #: OrchardCore.ReCaptcha\Views\Items\ReCaptchaPart.Fields.Edit.cshtml:0
 msgctxt "OrchardCore.ReCaptcha.Views.Items.ReCaptchaPart.Fields.Edit"
-msgid "<a ***REMOVED***0***REMOVED***>ReCaptcha settings</a> are configured."
+msgid "<a {0}>ReCaptcha settings</a> are configured."
 msgstr ""
 
 #: OrchardCore.ReCaptcha\Views\Items\ReCaptchaPart.Fields.Edit.cshtml:0
 msgctxt "OrchardCore.ReCaptcha.Views.Items.ReCaptchaPart.Fields.Edit"
-msgid "<a ***REMOVED***0***REMOVED***>ReCaptcha settings</a> are not configured. The captcha will not be displayed."
+msgid "<a {0}>ReCaptcha settings</a> are not configured. The captcha will not be displayed."
 msgstr ""
 
 #. <h4><i class="fa fa-shield-alt"></i>@Model.Activity.GetTitleOrDefault(() => T["Validate ReCaptcha"])</h4>

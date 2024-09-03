@@ -30,22 +30,22 @@ msgctxt "OrchardCore.Features.Controllers.AdminController"
 msgid "Please select one or more features."
 msgstr "Välj en eller flera funktioner."
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was ***REMOVED***1***REMOVED***", feature.Name ?? feature.Id, enabled ? "enabled" : "disabled"]);
+#. _notifier.Success(H["{0} was {1}", feature.Name ?? feature.Id, enabled ? "enabled" : "disabled"]);
 #: OrchardCore.Features\Controllers\AdminController.cs:194
 msgctxt "OrchardCore.Features.Controllers.AdminController"
-msgid "***REMOVED***0***REMOVED*** was ***REMOVED***1***REMOVED***"
+msgid "{0} was {1}"
 msgstr ""
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was enabled", enabledFeature.Name]);
+#. _notifier.Success(H["{0} was enabled", enabledFeature.Name]);
 #: OrchardCore.Features\Services\ModuleService.cs:71
 msgctxt "OrchardCore.Features.Services.ModuleService"
-msgid "***REMOVED***0***REMOVED*** was enabled"
+msgid "{0} was enabled"
 msgstr ""
 
-#. _notifier.Success(H["***REMOVED***0***REMOVED*** was disabled", feature.Name]);
+#. _notifier.Success(H["{0} was disabled", feature.Name]);
 #: OrchardCore.Features\Services\ModuleService.cs:98
 msgctxt "OrchardCore.Features.Services.ModuleService"
-msgid "***REMOVED***0***REMOVED*** was disabled"
+msgid "{0} was disabled"
 msgstr ""
 
 #. <span class="icon"><i class="fa fa-gear" aria-hidden="true"></i></span><span class="title">@T["Configuration"]</span>
@@ -107,12 +107,12 @@ msgstr ""
 
 #: OrchardCore.Features\Views\Admin\Features.cshtml:0
 msgctxt "OrchardCore.Features.Views.Admin.Features"
-msgid "Are you sure you want to disable the ***REMOVED***0***REMOVED*** feature? Continue?"
+msgid "Are you sure you want to disable the {0} feature? Continue?"
 msgstr ""
 
 #: OrchardCore.Features\Views\Admin\Features.cshtml:0
 msgctxt "OrchardCore.Features.Views.Admin.Features"
-msgid "Disabling the ***REMOVED***0***REMOVED*** feature will also disable the following dependent features:***REMOVED***1***REMOVED***Continue?"
+msgid "Disabling the {0} feature will also disable the following dependent features:{1}Continue?"
 msgstr ""
 
 #. <a asp-action="Disable" asp-route-id="@feature.Descriptor.Id" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" itemprop="UnsafeUrl RemoveUrl">@T["Disable"]</a>

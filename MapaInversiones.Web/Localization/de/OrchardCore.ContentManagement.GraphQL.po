@@ -22,17 +22,17 @@ msgctxt "OrchardCore.ContentManagement.GraphQL.Queries.ContentItemQuery"
 msgid "Content item id"
 msgstr "Inhaltselement-Id"
 
-#. Description = S["Represents a ***REMOVED***0***REMOVED***.", typeDefinition.DisplayName]
-#. Description = S["Represents a ***REMOVED***0***REMOVED***.", typeDefinition.DisplayName],
+#. Description = S["Represents a {0}.", typeDefinition.DisplayName]
+#. Description = S["Represents a {0}.", typeDefinition.DisplayName],
 #: OrchardCore.ContentManagement.GraphQL\Queries\ContentTypeQuery.cs:54
 #: OrchardCore.ContentManagement.GraphQL\Queries\ContentTypeQuery.cs:60
 msgctxt "OrchardCore.ContentManagement.GraphQL.Queries.ContentTypeQuery"
-msgid "Represents a ***REMOVED***0***REMOVED***."
-msgstr "Stellt ein/e/n ***REMOVED***0***REMOVED*** dar."
+msgid "Represents a {0}."
+msgstr "Stellt ein/e/n {0} dar."
 
-#. description: S["Represents a ***REMOVED***0***REMOVED***.", part.PartDefinition.Name],
+#. description: S["Represents a {0}.", part.PartDefinition.Name],
 #: OrchardCore.ContentManagement.GraphQL\Queries\Types\DynamicContentTypeBuilder.cs:77
 msgctxt "OrchardCore.ContentManagement.GraphQL.Queries.Types.DynamicContentTypeBuilder"
-msgid "Represents a ***REMOVED***0***REMOVED***."
-msgstr "Stellt ein/e/n ***REMOVED***0***REMOVED*** dar."
+msgid "Represents a {0}."
+msgstr "Stellt ein/e/n {0} dar."
 

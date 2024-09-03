@@ -40,16 +40,16 @@ msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "Package Import"
 msgstr "Импорт пакета"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"], Value = nameof(DeploymentPlansBulkAction.Delete) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(DeploymentPlansBulkAction.Delete) }
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:112
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Delete"
 msgstr ""
 
-#. _notifier.Success(H["Deployment plan ***REMOVED***0***REMOVED*** successfully deleted.", item.Name]);
+#. _notifier.Success(H["Deployment plan {0} successfully deleted.", item.Name]);
 #: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:143
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
-msgid "Deployment plan ***REMOVED***0***REMOVED*** successfully deleted."
+msgid "Deployment plan {0} successfully deleted."
 msgstr ""
 
 #. ModelState.AddModelError(nameof(CreateDeploymentPlanViewModel.Name), S["The name is mandatory."]);
@@ -280,27 +280,27 @@ msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
 msgid "Select All"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Index.cshtml:36
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Index.cshtml:36
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
 msgstr ""
 
-#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.DeploymentPlans.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Index.cshtml:36
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
 msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
@@ -312,16 +312,16 @@ msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
 msgid "Actions"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Index.cshtml:48
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
 msgid "Bulk Action"
 msgstr ""
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Index.cshtml:48
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** these items?"
+msgid "Are you sure you want to {0} these items?"
 msgstr ""
 
 #. <a asp-action="Edit" asp-route-id="@entry.DeploymentPlan.Id" class="btn btn-primary btn-sm">@T["Edit"]</a>

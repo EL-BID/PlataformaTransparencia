@@ -1,12 +1,12 @@
-***REMOVED***
+{
   "version": 1,
   "isRoot": true,
-  "tools": ***REMOVED***
-    "dotnet-ef": ***REMOVED***
+  "tools": {
+    "dotnet-ef": {
       "version": "5.0.7",
       "commands": [
         "dotnet-ef"
       ]
-***REMOVED***
-  ***REMOVED***
-***REMOVED***
+    }
+  }
+}

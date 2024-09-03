@@ -24,49 +24,49 @@ msgctxt "OrchardCore.Tenants.AdminMenu"
 msgid "Tenants"
 msgstr "Ενοικιαστές"
 
-#. new SelectListItem() ***REMOVED*** Text = S["All states"], Value = nameof(TenantsFilter.All) ***REMOVED***,
+#. new SelectListItem() { Text = S["All states"], Value = nameof(TenantsFilter.All) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:173
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "All states"
 msgstr "Όλες οι καταστάσεις"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Running"], Value = nameof(TenantsFilter.Running) ***REMOVED***,
+#. new SelectListItem() { Text = S["Running"], Value = nameof(TenantsFilter.Running) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:174
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Running"
 msgstr "Σε εκτέλεση"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Disabled"], Value = nameof(TenantsFilter.Disabled) ***REMOVED***,
+#. new SelectListItem() { Text = S["Disabled"], Value = nameof(TenantsFilter.Disabled) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:175
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Disabled"
 msgstr "Απενεργοποιημένο"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Uninitialized"], Value = nameof(TenantsFilter.Uninitialized) ***REMOVED***
+#. new SelectListItem() { Text = S["Uninitialized"], Value = nameof(TenantsFilter.Uninitialized) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:176
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Uninitialized"
 msgstr "Μη αρχικοποιημένο"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Name"], Value = nameof(TenantsOrder.Name) ***REMOVED***,
+#. new SelectListItem() { Text = S["Name"], Value = nameof(TenantsOrder.Name) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:180
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Name"
 msgstr "Όνομα"
 
-#. new SelectListItem() ***REMOVED*** Text = S["State"], Value = nameof(TenantsOrder.State) ***REMOVED***
+#. new SelectListItem() { Text = S["State"], Value = nameof(TenantsOrder.State) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:181
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "State"
 msgstr "Κατάσταση"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Disable"], Value = nameof(TenantsBulkAction.Disable) ***REMOVED***,
+#. new SelectListItem() { Text = S["Disable"], Value = nameof(TenantsBulkAction.Disable) },
 #: OrchardCore.Tenants\Controllers\AdminController.cs:185
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Disable"
 msgstr "Απενεργοποίηση"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Enable"], Value = nameof(TenantsBulkAction.Enable) ***REMOVED***
+#. new SelectListItem() { Text = S["Enable"], Value = nameof(TenantsBulkAction.Enable) }
 #: OrchardCore.Tenants\Controllers\AdminController.cs:186
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "Enable"
@@ -80,17 +80,17 @@ msgctxt "OrchardCore.Tenants.Controllers.AdminController"
 msgid "You cannot disable the default tenant."
 msgstr "Δεν μπορείτε να απενεργοποιήσετε τον προεπιλεγμένο ενοικιαστή."
 
-#. _notifier.Warning(H["The tenant '***REMOVED***0***REMOVED***' is already disabled.", shellSettings.Name]);
+#. _notifier.Warning(H["The tenant '{0}' is already disabled.", shellSettings.Name]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:240
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
-msgid "The tenant '***REMOVED***0***REMOVED***' is already disabled."
-msgstr "Ο ενοικιαστής '***REMOVED***0***REMOVED***' είναι ήδη απενεργοποιημένος."
+msgid "The tenant '{0}' is already disabled."
+msgstr "Ο ενοικιαστής '{0}' είναι ήδη απενεργοποιημένος."
 
-#. _notifier.Warning(H["The tenant '***REMOVED***0***REMOVED***' is already enabled.", shellSettings.Name]);
+#. _notifier.Warning(H["The tenant '{0}' is already enabled.", shellSettings.Name]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:253
 msgctxt "OrchardCore.Tenants.Controllers.AdminController"
-msgid "The tenant '***REMOVED***0***REMOVED***' is already enabled."
-msgstr "Ο ενοικιαστής '***REMOVED***0***REMOVED***' είναι ήδη εργοποιημένος."
+msgid "The tenant '{0}' is already enabled."
+msgstr "Ο ενοικιαστής '{0}' είναι ήδη εργοποιημένος."
 
 #. _notifier.Error(H["You can only disable an Enabled tenant."]);
 #: OrchardCore.Tenants\Controllers\AdminController.cs:498
@@ -170,11 +170,11 @@ msgctxt "OrchardCore.Tenants.Controllers.ApiController"
 msgid "Invalid email."
 msgstr ""
 
-#. ModelState.AddModelError(nameof(SetupApiViewModel.Name), S["Tenant not found: '***REMOVED***0***REMOVED***'", model.Name]);
+#. ModelState.AddModelError(nameof(SetupApiViewModel.Name), S["Tenant not found: '{0}'", model.Name]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:172
 msgctxt "OrchardCore.Tenants.Controllers.ApiController"
-msgid "Tenant not found: '***REMOVED***0***REMOVED***'"
-msgstr "Ο ενοικιαστής δεν βρέθηκε: '***REMOVED***0***REMOVED***'"
+msgid "Tenant not found: '{0}'"
+msgstr "Ο ενοικιαστής δεν βρέθηκε: '{0}'"
 
 #. return BadRequest(S["The tenant can't be setup."]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:182
@@ -200,11 +200,11 @@ msgctxt "OrchardCore.Tenants.Controllers.ApiController"
 msgid "Either 'Recipe' or 'RecipeName' is required."
 msgstr "Απαιτείται είτε το \"Recipe\" είτε το \"RecipeName\"."
 
-#. return BadRequest(S["Recipe '***REMOVED***0***REMOVED***' not found.", recipeName]);
+#. return BadRequest(S["Recipe '{0}' not found.", recipeName]);
 #: OrchardCore.Tenants\Controllers\ApiController.cs:257
 msgctxt "OrchardCore.Tenants.Controllers.ApiController"
-msgid "Recipe '***REMOVED***0***REMOVED***' not found."
-msgstr "Η συνταγή ***REMOVED***0***REMOVED*** δεν βρέθηκε."
+msgid "Recipe '{0}' not found."
+msgstr "Η συνταγή {0} δεν βρέθηκε."
 
 #. public override LocalizedString Category => S["Tenant"];
 #: OrchardCore.Tenants\Workflows\Activities\CreateTenantTask.cs:24
@@ -412,11 +412,11 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Create"
 msgid "None"
 msgstr "Κανένα"
 
-#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString.ToString().ToLower()" data-table-prefix="@provider.HasTablePrefix.ToString().ToLower()" data-connection-string-sample="@T["The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***", provider.SampleConnectionString]">@provider.Name</option>
+#. <option value="@provider.Value" data-connection-string="@provider.HasConnectionString.ToString().ToLower()" data-table-prefix="@provider.HasTablePrefix.ToString().ToLower()" data-connection-string-sample="@T["The connection string to your database instance. e.g., {0}", provider.SampleConnectionString]">@provider.Name</option>
 #: OrchardCore.Tenants\Views\Admin\Create.cshtml:69
 msgctxt "OrchardCore.Tenants.Views.Admin.Create"
-msgid "The connection string to your database instance. e.g., ***REMOVED***0***REMOVED***"
-msgstr "Η συμβολοσειρά σύνδεσης στην εμφάνιση βάσης δεδομένων. π.χ., ***REMOVED***0***REMOVED***"
+msgid "The connection string to your database instance. e.g., {0}"
+msgstr "Η συμβολοσειρά σύνδεσης στην εμφάνιση βάσης δεδομένων. π.χ., {0}"
 
 #. <label asp-for="TablePrefix">@T["Table Prefix"]</label>
 #: OrchardCore.Tenants\Views\Admin\Create.cshtml:74
@@ -612,27 +612,27 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Select All"
 msgstr "Επιλογή Όλων"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
+msgid_plural "{0} items"
 msgstr[0] "1 αντικείμενο"
-msgstr[1] "***REMOVED***0***REMOVED*** αντικείμενα"
+msgstr[1] "{0} αντικείμενα"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
-msgstr "Αντικειμένα ***REMOVED***0***REMOVED*** έως ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
+msgstr "Αντικειμένα {0} έως {1}"
 
-#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.ShellSettingsEntries.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:111
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
-msgstr[0] " / ***REMOVED***0***REMOVED*** αντικείμενο συνολικά"
-msgstr[1] " / ***REMOVED***0***REMOVED*** αντικείμενα συνολικά"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
+msgstr[0] " / {0} αντικείμενο συνολικά"
+msgstr[1] " / {0} αντικείμενα συνολικά"
 
 #. @T["Actions"]
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:118
@@ -640,17 +640,17 @@ msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Actions"
 msgstr "Ενέργειες"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:123
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
 msgid "Bulk Action"
 msgstr "Μαζικές Ενέργειες"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} this/these item(s)?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:123
 msgctxt "OrchardCore.Tenants.Views.Admin.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** this/these item(s)?"
-msgstr "Είστε βέβαιος(α) ότι θέλεις να ***REMOVED***0***REMOVED*** αυτό/αυτά τα στοιχεία;"
+msgid "Are you sure you want to {0} this/these item(s)?"
+msgstr "Είστε βέβαιος(α) ότι θέλεις να {0} αυτό/αυτά τα στοιχεία;"
 
 #. <select asp-for="Options.Filter" asp-items="@Model.Options.TenantsStates" class="selectpicker show-tick mr-2" data-header="@T["Filter by state"]" data-width="fit" data-selected-text-format="static" data-dropdown-align-right="true" title="@T["State"]" data-style="btn-sm"></select>
 #: OrchardCore.Tenants\Views\Admin\Index.cshtml:130

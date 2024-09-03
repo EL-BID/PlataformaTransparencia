@@ -1,9 +1,9 @@
 ﻿@page
 
 @inject OrchardCore.IOrchardHelper Orchard
-@***REMOVED***
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-***REMOVED***
+}
 
 <!--MAIN BANNER-->
 <section class="banner-main-asc mb-0">
@@ -145,7 +145,7 @@
 @*<script type="text/javascript" src="../../js/centroayuda_aux.js"></script>*@
 <script type="text/javascript">
 
-    $(document).ready(function () ***REMOVED***
+    $(document).ready(function () {
 
         //Muestra las preguntas de la primera categoria
         var c = document.getElementsByClassName("categoriapregunta");
@@ -153,36 +153,36 @@
         Mostrar("pregunta", id)
         //Muestra las palabras del glosario de la primera letra
         Mostrar("palabra", "palabra A")
-***REMOVED***);
+    });
 
-    $(document).on('click', '.categoriapregunta', function (e) ***REMOVED***
+    $(document).on('click', '.categoriapregunta', function (e) {
         id = "pregunta " + this.id;
         Mostrar('pregunta', id);
 
-***REMOVED***);
+    });
 
-    $(document).on('click', '.btn-section', function (e) ***REMOVED***
+    $(document).on('click', '.btn-section', function (e) {
         id = "sect-tab " + this.id;
         Mostrar('sect-tab', id);
 
-***REMOVED***);
+    });
 
 
-    $(document).on('click', '.indice', function (e) ***REMOVED***
+    $(document).on('click', '.indice', function (e) {
         id = "palabra " + this.id;
         Mostrar('palabra', id);
 
-***REMOVED***);
-    function Mostrar(ocultar, mostrar) ***REMOVED***
+    });
+    function Mostrar(ocultar, mostrar) {
         var y = document.getElementsByClassName(ocultar);
         var i;
-        for (i = 0; i < y.length; i++) ***REMOVED***
+        for (i = 0; i < y.length; i++) {
             y[i].style.display = "none";
-    ***REMOVED***
+        }
         var x = document.getElementsByClassName(mostrar);
         var i;
-        for (i = 0; i < x.length; i++) ***REMOVED***
+        for (i = 0; i < x.length; i++) {
             x[i].style.display = "block";
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 </script>

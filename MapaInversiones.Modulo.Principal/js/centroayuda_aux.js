@@ -1,4 +1,4 @@
-﻿$(document).ready(function () ***REMOVED***
+﻿$(document).ready(function () {
 
     alert("listo");
-***REMOVED***);
+});

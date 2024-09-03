@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
     public class SearchResultParamModel
-    ***REMOVED***
-            public int Id ***REMOVED*** get; set; ***REMOVED*** // int
-            public string Hierarchy ***REMOVED*** get; set; ***REMOVED*** // varchar(100)
-            public string Type ***REMOVED*** get; set; ***REMOVED*** // varchar(50)
-            public string Url ***REMOVED*** get; set; ***REMOVED*** // varchar(250)
-            public string Param ***REMOVED*** get; set; ***REMOVED*** // varchar(250)
-***REMOVED***
-***REMOVED***
+    {
+            public int Id { get; set; } // int
+            public string Hierarchy { get; set; } // varchar(100)
+            public string Type { get; set; } // varchar(50)
+            public string Url { get; set; } // varchar(250)
+            public string Param { get; set; } // varchar(250)
+    }
+}

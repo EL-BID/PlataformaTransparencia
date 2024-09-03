@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 
 namespace PlataformaTransparencia.Modulo.Noticias.Controllers
-***REMOVED***
+{
     public class NoticiasController : Controller
-    ***REMOVED***
+    {
         public IActionResult Index()
-        ***REMOVED***
+        {
             return View();
-    ***REMOVED***
+        }
 
-        [Route("Noticia/***REMOVED***id***REMOVED***")]
+        [Route("Noticia/{id}")]
         public IActionResult Noticia(string id)
-        ***REMOVED***
-            var noticia = new Modelos.NoticiaModel() ***REMOVED*** Id = id ***REMOVED***;
+        {
+            var noticia = new Modelos.NoticiaModel() { Id = id };
             return View(noticia);
-    ***REMOVED***
-***REMOVED***
+        }
+    }
 
-***REMOVED***
+}

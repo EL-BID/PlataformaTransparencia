@@ -42,11 +42,11 @@ msgctxt "OrchardCore.Email.Services.SmtpService"
 msgid "SMTP settings must be configured before an email can be sent."
 msgstr "Los ajustes SMTP deben configurarse antes de que se pueda enviar un correo electrónico."
 
-#. return SmtpResult.Failed(S["An error occurred while sending an email: '***REMOVED***0***REMOVED***'", ex.Message]);
+#. return SmtpResult.Failed(S["An error occurred while sending an email: '{0}'", ex.Message]);
 #: OrchardCore.Email\Services\SmtpService.cs:69
 msgctxt "OrchardCore.Email.Services.SmtpService"
-msgid "An error occurred while sending an email: '***REMOVED***0***REMOVED***'"
-msgstr "Se produjo un error al enviar el correo electrónico: '***REMOVED***0***REMOVED***'"
+msgid "An error occurred while sending an email: '{0}'"
+msgstr "Se produjo un error al enviar el correo electrónico: '{0}'"
 
 #. public override LocalizedString DisplayText => S["Email Task"];
 #: OrchardCore.Email\Workflows\Activities\EmailTask.cs:30
@@ -270,7 +270,7 @@ msgctxt "OrchardCore.Email.Views.SmtpSettings.Edit"
 msgid "E.g. <i>C:\\Path\\To\\This\\Site\\PickedUpEmail</i> to place emails in a <i>PickedUpEmail</i> directory on the C drive."
 msgstr "E.g. <i>C:\\Path\\To\\Tsu\\Sitio\\PickedUpEmail</i> para colocar correos electrónicos en un directorio de <i>PickedUpEmail</i> en la unidad C."
 
-#. <a href="@Url.Action("Index", "Admin", new ***REMOVED*** area = "OrchardCore.Email" ***REMOVED***)" class="btn btn-secondary">@T["Test settings"]</a>
+#. <a href="@Url.Action("Index", "Admin", new { area = "OrchardCore.Email" })" class="btn btn-secondary">@T["Test settings"]</a>
 #: OrchardCore.Email\Views\SmtpSettings.TestButton.cshtml:1
 msgctxt "OrchardCore.Email.Views.SmtpSettings.TestButton"
 msgid "Test settings"

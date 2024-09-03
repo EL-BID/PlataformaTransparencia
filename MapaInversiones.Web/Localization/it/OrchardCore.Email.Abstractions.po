@@ -10,17 +10,17 @@ msgstr ""
 "Language: it_IT\n"
 "PO-Revision-Date: 2020-03-31 13:43\n"
 
-#. yield return new ValidationResult(S["The ***REMOVED***0***REMOVED*** field is required.", "Host name"], new[] ***REMOVED*** nameof(Host) ***REMOVED***);
-#. yield return new ValidationResult(S["The ***REMOVED***0***REMOVED*** field is required.", "Pickup directory location"], new[] ***REMOVED*** nameof(PickupDirectoryLocation) ***REMOVED***);
+#. yield return new ValidationResult(S["The {0} field is required.", "Host name"], new[] { nameof(Host) });
+#. yield return new ValidationResult(S["The {0} field is required.", "Pickup directory location"], new[] { nameof(PickupDirectoryLocation) });
 #: OrchardCore.Email.Abstractions\SmtpSettings.cs:81
 #: OrchardCore.Email.Abstractions\SmtpSettings.cs:87
 msgctxt "OrchardCore.Email.SmtpSettings"
-msgid "The ***REMOVED***0***REMOVED*** field is required."
-msgstr "Il campo ***REMOVED***0***REMOVED*** è obbligatorio."
+msgid "The {0} field is required."
+msgstr "Il campo {0} è obbligatorio."
 
-#. throw new NotSupportedException(S["The '***REMOVED***0***REMOVED***' delivery method is not supported.", DeliveryMethod]);
+#. throw new NotSupportedException(S["The '{0}' delivery method is not supported.", DeliveryMethod]);
 #: OrchardCore.Email.Abstractions\SmtpSettings.cs:91
 msgctxt "OrchardCore.Email.SmtpSettings"
-msgid "The '***REMOVED***0***REMOVED***' delivery method is not supported."
-msgstr "Il metodo di invio '***REMOVED***0***REMOVED***' non è supportato."
+msgid "The '{0}' delivery method is not supported."
+msgstr "Il metodo di invio '{0}' non è supportato."
 

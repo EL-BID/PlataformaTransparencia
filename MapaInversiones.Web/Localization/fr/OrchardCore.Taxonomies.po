@@ -16,17 +16,17 @@ msgctxt "OrchardCore.Taxonomies.Controllers.AdminController"
 msgid "Taxonomy item deleted successfully"
 msgstr "Élément de taxonomie supprimé avec succès"
 
-#. S["A value is required for '***REMOVED***0***REMOVED***'", context.PartFieldDefinition.Name]);
+#. S["A value is required for '{0}'", context.PartFieldDefinition.Name]);
 #: OrchardCore.Taxonomies\Drivers\TaxonomyFieldDriver.cs:85
 msgctxt "OrchardCore.Taxonomies.Drivers.TaxonomyFieldDisplayDriver"
-msgid "A value is required for '***REMOVED***0***REMOVED***'"
-msgstr "Une valeur est requise pour '***REMOVED***0***REMOVED***'"
+msgid "A value is required for '{0}'"
+msgstr "Une valeur est requise pour '{0}'"
 
-#. S["A value is required for '***REMOVED***0***REMOVED***'", context.PartFieldDefinition.Name]);
+#. S["A value is required for '{0}'", context.PartFieldDefinition.Name]);
 #: OrchardCore.Taxonomies\Drivers\TaxonomyFieldTagsDriver.cs:78
 msgctxt "OrchardCore.Taxonomies.Drivers.TaxonomyFieldTagsDisplayDriver"
-msgid "A value is required for '***REMOVED***0***REMOVED***'"
-msgstr "Une valeur est requise pour '***REMOVED***0***REMOVED***'"
+msgid "A value is required for '{0}'"
+msgstr "Une valeur est requise pour '{0}'"
 
 #. @T["Edit"]
 #: OrchardCore.Taxonomies\Views\Content.TermAdmin.cshtml:30
@@ -192,11 +192,11 @@ msgctxt "OrchardCore.Taxonomies.Views.TaxonomyPart.Edit"
 msgid "Term Content Type"
 msgstr "Type de contenu terme"
 
-#. @T["Add ***REMOVED***0***REMOVED***", termContentType.DisplayName]
+#. @T["Add {0}", termContentType.DisplayName]
 #: OrchardCore.Taxonomies\Views\TaxonomyPart.Edit.cshtml:40
 msgctxt "OrchardCore.Taxonomies.Views.TaxonomyPart.Edit"
-msgid "Add ***REMOVED***0***REMOVED***"
-msgstr "Ajouter ***REMOVED***0***REMOVED***"
+msgid "Add {0}"
+msgstr "Ajouter {0}"
 
 #. <div id="msg-leave" style="display:none" data>@T["You have reordered the taxonomy."]</div>
 #: OrchardCore.Taxonomies\Views\TaxonomyPart.Edit.cshtml:57
@@ -204,15 +204,15 @@ msgctxt "OrchardCore.Taxonomies.Views.TaxonomyPart.Edit"
 msgid "You have reordered the taxonomy."
 msgstr "Vous avez réorganisé la taxonomie."
 
-#. <h1>@RenderTitleSegments(T["New ***REMOVED***0***REMOVED***", typeDisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["New {0}", typeDisplayName])</h1>
 #: OrchardCore.Taxonomies\Views\Admin\Create.cshtml:13
 msgctxt "OrchardCore.Taxonomies.Views.Admin.Create"
-msgid "New ***REMOVED***0***REMOVED***"
-msgstr "Nouveau(lle) ***REMOVED***0***REMOVED***"
+msgid "New {0}"
+msgstr "Nouveau(lle) {0}"
 
-#. <h1>@RenderTitleSegments(T["Edit ***REMOVED***0***REMOVED***", typeDisplayName])</h1>
+#. <h1>@RenderTitleSegments(T["Edit {0}", typeDisplayName])</h1>
 #: OrchardCore.Taxonomies\Views\Admin\Edit.cshtml:13
 msgctxt "OrchardCore.Taxonomies.Views.Admin.Edit"
-msgid "Edit ***REMOVED***0***REMOVED***"
-msgstr "Modifier ***REMOVED***0***REMOVED***"
+msgid "Edit {0}"
+msgstr "Modifier {0}"
 

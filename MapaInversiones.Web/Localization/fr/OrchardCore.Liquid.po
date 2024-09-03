@@ -10,11 +10,11 @@ msgstr ""
 "Language: fr_FR\n"
 "PO-Revision-Date: 2020-03-31 13:52\n"
 
-#. updater.ModelState.AddModelError(nameof(model.Liquid), S["The Liquid Body doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***", string.Join(" ", errors)]);
+#. updater.ModelState.AddModelError(nameof(model.Liquid), S["The Liquid Body doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
 #: OrchardCore.Liquid\Drivers\LiquidPartDisplay.cs:45
 msgctxt "OrchardCore.Liquid.Drivers.LiquidPartDisplay"
-msgid "The Liquid Body doesn't contain a valid Liquid expression. Details: ***REMOVED***0***REMOVED***"
-msgstr "Le Liquid Body ne contient pas une expression Liquid valide. Détails: ***REMOVED***0***REMOVED***"
+msgid "The Liquid Body doesn't contain a valid Liquid expression. Details: {0}"
+msgstr "Le Liquid Body ne contient pas une expression Liquid valide. Détails: {0}"
 
 #. <label asp-for="Liquid">@T["Body"]</label>
 #: OrchardCore.Liquid\Views\LiquidPart.Edit.cshtml:13

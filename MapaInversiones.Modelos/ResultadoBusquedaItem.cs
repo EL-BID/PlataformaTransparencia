@@ -4,26 +4,26 @@ using System.Text;
 using SolrNet.Attributes;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
     public class ResultadoBusquedaItem
-    ***REMOVED***
+    {
         [SolrUniqueKey("id")]
-        public int Id ***REMOVED*** get; set; ***REMOVED***
+        public int Id { get; set; }
         [SolrField("CodigoBPIN")]
-        public List<string> CodigoBPIN ***REMOVED*** get; set; ***REMOVED***
+        public List<string> CodigoBPIN { get; set; }
         [SolrField("NombreProyecto")]
-        public string NombreProyecto ***REMOVED*** get; set; ***REMOVED***
+        public string NombreProyecto { get; set; }
         [SolrField("IdSector")]
-        public int IdSector ***REMOVED*** get; set; ***REMOVED***
+        public int IdSector { get; set; }
         [SolrField("Sector")]
-        public string Sector ***REMOVED*** get; set; ***REMOVED***
+        public string Sector { get; set; }
         [SolrField("Url")]
-        public string Url ***REMOVED*** get; set; ***REMOVED***
+        public string Url { get; set; }
         [SolrField("Type")]
-        public string Type ***REMOVED*** get; set; ***REMOVED***
+        public string Type { get; set; }
         [SolrField("numFound")]
-        public int numFound ***REMOVED*** get; set; ***REMOVED***
+        public int numFound { get; set; }
 
 
-***REMOVED***
-***REMOVED***
+    }
+}

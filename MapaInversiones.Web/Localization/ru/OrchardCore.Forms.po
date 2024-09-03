@@ -136,10 +136,10 @@ msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design
 msgid "Add Form Validation Error"
 msgstr "Добавить ошибку проверки формы"
 
-#. <span>@T["<em>***REMOVED***0***REMOVED***</em>: <em>***REMOVED***1***REMOVED***</em>", Model.Activity.Key, Model.Activity.ErrorMessage]</span>
+#. <span>@T["<em>{0}</em>: <em>{1}</em>", Model.Activity.Key, Model.Activity.ErrorMessage]</span>
 #: OrchardCore.Forms\Views\Items\AddModelValidationErrorTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.AddModelValidationErrorTask.Fields.Design"
-msgid "<em>***REMOVED***0***REMOVED***</em>: <em>***REMOVED***1***REMOVED***</em>"
+msgid "<em>{0}</em>: <em>{1}</em>"
 msgstr ""
 
 #. <label asp-for="Key">@T["Key"]</label>
@@ -520,11 +520,11 @@ msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Design"
 msgid "Validate Form Field"
 msgstr "Проверить поле формы"
 
-#. <span>@T["Validate <em>***REMOVED***0***REMOVED***</em>", Model.Activity.FieldName]</span>
+#. <span>@T["Validate <em>{0}</em>", Model.Activity.FieldName]</span>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Design.cshtml:6
 msgctxt "OrchardCore.Forms.Views.Items.ValidateFormFieldTask.Fields.Design"
-msgid "Validate <em>***REMOVED***0***REMOVED***</em>"
-msgstr "Проверка <em>***REMOVED***0***REMOVED***</em>"
+msgid "Validate <em>{0}</em>"
+msgstr "Проверка <em>{0}</em>"
 
 #. <label asp-for="FieldName">@T["Field Name"]</label>
 #: OrchardCore.Forms\Views\Items\ValidateFormFieldTask.Fields.Edit.cshtml:5

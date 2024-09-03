@@ -5,89 +5,89 @@ using PlataformaTransparencia.Modelos.Entidad;
 using PlataformaTransparencia.Modelos.Plan;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
   public class ModelEntidadData : RespuestaContratoBase
-  ***REMOVED***
-    public string Mision ***REMOVED*** get; set; ***REMOVED***
-    public string Vision ***REMOVED*** get; set; ***REMOVED***
-    public string NombreEntidad ***REMOVED*** get; set; ***REMOVED***
-    public string CodigoEntidad ***REMOVED*** get; set; ***REMOVED***
+  {
+    public string Mision { get; set; }
+    public string Vision { get; set; }
+    public string NombreEntidad { get; set; }
+    public string CodigoEntidad { get; set; }
 
-    public List<RelacionEmisiorReceptor> RelacionEntidadObjetivos ***REMOVED*** get; set; ***REMOVED***
+    public List<RelacionEmisiorReceptor> RelacionEntidadObjetivos { get; set; }
 
-   public List<InfoEntidad> Entidades ***REMOVED*** get; set; ***REMOVED***
-    public List<ProyectosPerfilEntidad> ProyectosHaciendaCentral ***REMOVED*** get; set; ***REMOVED***
-    public List<ProyectosPerfilEntidad> ProyectosHaciendaNoAsignable ***REMOVED*** get; set; ***REMOVED***
-    public List<ProyectosProgramas> ProyectosHaciendaSustantivo ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
+   public List<InfoEntidad> Entidades { get; set; }
+    public List<ProyectosPerfilEntidad> ProyectosHaciendaCentral { get; set; }
+    public List<ProyectosPerfilEntidad> ProyectosHaciendaNoAsignable { get; set; }
+    public List<ProyectosProgramas> ProyectosHaciendaSustantivo { get; set; }
+  }
 
   public class ProyectosPerfilEntidad
-  ***REMOVED***
-    public string NombreProyectoActividad ***REMOVED*** get; set; ***REMOVED***
-    public string Descripcion ***REMOVED*** get; set; ***REMOVED***
-    public string Clasificacion ***REMOVED*** get; set; ***REMOVED***
-    public decimal PresupuestoVigente ***REMOVED*** get; set; ***REMOVED***
-    public decimal PresupuestoAvance ***REMOVED*** get; set; ***REMOVED***
+  {
+    public string NombreProyectoActividad { get; set; }
+    public string Descripcion { get; set; }
+    public string Clasificacion { get; set; }
+    public decimal PresupuestoVigente { get; set; }
+    public decimal PresupuestoAvance { get; set; }
 
-    public List<IndicadorProyecto> Indicadores ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
+    public List<IndicadorProyecto> Indicadores { get; set; }
+  }
 
   public class IndicadorProyecto
-  ***REMOVED***
-    public int Codigo ***REMOVED*** get; set; ***REMOVED***
-    public string Nombre ***REMOVED*** get; set; ***REMOVED***
-    public string Descripcion ***REMOVED*** get; set; ***REMOVED***
-    public string UnidadMedidaAnioBase ***REMOVED*** get; set; ***REMOVED***
-    public string UnidadMedidaTotal ***REMOVED*** get; set; ***REMOVED***
-    public string UnidadIndicador ***REMOVED*** get; set; ***REMOVED***
-    public decimal Avance ***REMOVED*** get; set; ***REMOVED***
-    public string Frecuencia ***REMOVED*** get; set; ***REMOVED***
-    public string Fuente ***REMOVED*** get; set; ***REMOVED***
-    public string Formula ***REMOVED*** get; set; ***REMOVED***
+  {
+    public int Codigo { get; set; }
+    public string Nombre { get; set; }
+    public string Descripcion { get; set; }
+    public string UnidadMedidaAnioBase { get; set; }
+    public string UnidadMedidaTotal { get; set; }
+    public string UnidadIndicador { get; set; }
+    public decimal Avance { get; set; }
+    public string Frecuencia { get; set; }
+    public string Fuente { get; set; }
+    public string Formula { get; set; }
 
-    public string ind_frecuen ***REMOVED*** get; set; ***REMOVED***
+    public string ind_frecuen { get; set; }
 
-    public string tipoIndicador ***REMOVED*** get; set; ***REMOVED***
+    public string tipoIndicador { get; set; }
 
-    public string nivel ***REMOVED*** get; set; ***REMOVED***
+    public string nivel { get; set; }
 
-    public string DescripcionPoblTotal ***REMOVED*** get; set; ***REMOVED***
+    public string DescripcionPoblTotal { get; set; }
 
-    public decimal? indAnioBase ***REMOVED*** get; set; ***REMOVED***
+    public decimal? indAnioBase { get; set; }
 
-***REMOVED***
+    }
 
   public class TableIndicadorGraphics
-  ***REMOVED***
-    public int anio ***REMOVED*** get; set; ***REMOVED***
+  {
+    public int anio { get; set; }
 
-    public string meta_numerador ***REMOVED*** get; set; ***REMOVED***
+    public string meta_numerador { get; set; }
 
-    public decimal? denominador ***REMOVED*** get; set; ***REMOVED***
+    public decimal? denominador { get; set; }
 
-    public decimal? avance_numerador ***REMOVED*** get; set; ***REMOVED***
+    public decimal? avance_numerador { get; set; }
 
-    public double? porc_meta ***REMOVED*** get; set; ***REMOVED***
+    public double? porc_meta { get; set; }
 
-    public double? porc_avance ***REMOVED*** get; set; ***REMOVED***
+    public double? porc_avance { get; set; }
 
 
-  ***REMOVED***
+  }
 
   public class ProyectosProgramas
-  ***REMOVED***
-    public string NombrePrograma ***REMOVED*** get; set; ***REMOVED***
-    public string ResultadoInmediato ***REMOVED*** get; set; ***REMOVED***
-    public string ResultadoIntermedio ***REMOVED*** get; set; ***REMOVED***
-    public string Problematica ***REMOVED*** get; set; ***REMOVED***
-    public decimal PresupuestoAsignado ***REMOVED*** get; set; ***REMOVED***
-    public List<ProyectosPerfilEntidad> Proyectos ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
+  {
+    public string NombrePrograma { get; set; }
+    public string ResultadoInmediato { get; set; }
+    public string ResultadoIntermedio { get; set; }
+    public string Problematica { get; set; }
+    public decimal PresupuestoAsignado { get; set; }
+    public List<ProyectosPerfilEntidad> Proyectos { get; set; }
+  }
 
   public class ConsolidadoProgramasEntidad
-  ***REMOVED***
-    public int TotalActividadesProgramaCentral ***REMOVED*** get; set; ***REMOVED***
-    public int TotalProgramasSustantivos ***REMOVED*** get; set; ***REMOVED***
-    public int TotalActividadesProgramasNoAsignables ***REMOVED*** get; set; ***REMOVED***
-  ***REMOVED***
-***REMOVED***
+  {
+    public int TotalActividadesProgramaCentral { get; set; }
+    public int TotalProgramasSustantivos { get; set; }
+    public int TotalActividadesProgramasNoAsignables { get; set; }
+  }
+}

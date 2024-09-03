@@ -3,26 +3,26 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos
-***REMOVED***
+{
     public class PresupuestoXSectorMinHacienda
-    ***REMOVED***
+    {
 
-            public string IdNegocioProyecto ***REMOVED*** get; set; ***REMOVED*** // varchar(23)
-            public string IdNegocioProducto ***REMOVED*** get; set; ***REMOVED*** // varchar(27)
-            public int AnioPresupuesto ***REMOVED*** get; set; ***REMOVED*** // int
-            public string Nivel ***REMOVED*** get; set; ***REMOVED*** // varchar(60)
-            public string NombreEntidad ***REMOVED*** get; set; ***REMOVED*** // varchar(60)
-            public string Sectores ***REMOVED*** get; set; ***REMOVED*** // varchar(150)
-            public string Clasificacion ***REMOVED*** get; set; ***REMOVED*** // varchar(30)
-            public string NombrePrograma ***REMOVED*** get; set; ***REMOVED*** // nvarchar(60)
-            public string NombreSubPrograma ***REMOVED*** get; set; ***REMOVED*** // nvarchar(60)
-            public string NombreProyectoActividad ***REMOVED*** get; set; ***REMOVED*** // nvarchar(60)
-            public string NombreProducto ***REMOVED*** get; set; ***REMOVED*** // nvarchar(100)
-            public int? CodigoVersion ***REMOVED*** get; set; ***REMOVED*** // int
-            public string NombreVersion ***REMOVED*** get; set; ***REMOVED*** // varchar(60)
-            public decimal? Meta ***REMOVED*** get; set; ***REMOVED*** // numeric(28, 2)
-            public decimal? Presupuesto ***REMOVED*** get; set; ***REMOVED*** // numeric(28, 2)
-            public decimal? Avance ***REMOVED*** get; set; ***REMOVED*** // numeric(28, 2)
+            public string IdNegocioProyecto { get; set; } // varchar(23)
+            public string IdNegocioProducto { get; set; } // varchar(27)
+            public int AnioPresupuesto { get; set; } // int
+            public string Nivel { get; set; } // varchar(60)
+            public string NombreEntidad { get; set; } // varchar(60)
+            public string Sectores { get; set; } // varchar(150)
+            public string Clasificacion { get; set; } // varchar(30)
+            public string NombrePrograma { get; set; } // nvarchar(60)
+            public string NombreSubPrograma { get; set; } // nvarchar(60)
+            public string NombreProyectoActividad { get; set; } // nvarchar(60)
+            public string NombreProducto { get; set; } // nvarchar(100)
+            public int? CodigoVersion { get; set; } // int
+            public string NombreVersion { get; set; } // varchar(60)
+            public decimal? Meta { get; set; } // numeric(28, 2)
+            public decimal? Presupuesto { get; set; } // numeric(28, 2)
+            public decimal? Avance { get; set; } // numeric(28, 2)
 
-***REMOVED***
-***REMOVED***
+    }
+}

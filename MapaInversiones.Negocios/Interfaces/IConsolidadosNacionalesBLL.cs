@@ -5,9 +5,9 @@ using PlataformaTransparencia.Modelos;
 using PlataformaTransparencia.Modelos.Plan;
 
 namespace PlataformaTransparencia.Negocios.Home
-***REMOVED***
+{
     public interface IConsolidadosNacionalesBLL
-    ***REMOVED***
+    {
         public ModelHomeData ObtenerDatosModeloInicio(bool esHome = true);
         public List<InfoRecAsignadosPlan> GetRecursosAsigByObjEstrategico(int id);
 
@@ -21,5 +21,5 @@ namespace PlataformaTransparencia.Negocios.Home
 
         public List<HierarchyModel> GetSearchHierarchyModel();
     List<ModelAvanceIndicador> GetHistoricoAvanceIndicador(int indicadorId);
-  ***REMOVED***
-***REMOVED***
+  }
+}

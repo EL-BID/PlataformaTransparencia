@@ -10,9 +10,9 @@ msgstr ""
 "Language: zh_TW\n"
 "PO-Revision-Date: 2020-05-03 21:03\n"
 
-#. context.Errors.Add("DatabaseProvider", S["An error occurred while initializing the datastore: ***REMOVED***0***REMOVED***", e.Message]);
+#. context.Errors.Add("DatabaseProvider", S["An error occurred while initializing the datastore: {0}", e.Message]);
 #: OrchardCore.Setup.Core\SetupService.cs:168
 msgctxt "OrchardCore.Setup.Services.SetupService"
-msgid "An error occurred while initializing the datastore: ***REMOVED***0***REMOVED***"
-msgstr "初始化資料庫的時候發生錯誤：***REMOVED***0***REMOVED***"
+msgid "An error occurred while initializing the datastore: {0}"
+msgstr "初始化資料庫的時候發生錯誤：{0}"
 

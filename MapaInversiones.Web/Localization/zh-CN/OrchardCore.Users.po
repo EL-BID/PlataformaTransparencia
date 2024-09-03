@@ -140,79 +140,79 @@ msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Site does not allow user registration."
 msgstr "站点不允许用户注册。"
 
-#. ***REMOVED***, S["Confirm your account"], _logger);
-#. user = await this.RegisterUser(new RegisterViewModel() ***REMOVED*** UserName = model.UserName, Email = model.Email, Password = model.Password, ConfirmPassword = model.ConfirmPassword ***REMOVED***, S["Confirm your account"], _logger);
+#. }, S["Confirm your account"], _logger);
+#. user = await this.RegisterUser(new RegisterViewModel() { UserName = model.UserName, Email = model.Email, Password = model.Password, ConfirmPassword = model.ConfirmPassword }, S["Confirm your account"], _logger);
 #: OrchardCore.Users\Controllers\AccountController.cs:458
 #: OrchardCore.Users\Controllers\AccountController.cs:540
 msgctxt "OrchardCore.Users.Controllers.AccountController"
 msgid "Confirm your account"
 msgstr "确认您的帐户"
 
-#. new SelectListItem() ***REMOVED*** Text = S["All"], Value = nameof(UsersFilter.All) ***REMOVED***,
+#. new SelectListItem() { Text = S["All"], Value = nameof(UsersFilter.All) },
 #: OrchardCore.Users\Controllers\AdminController.cs:159
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "All"
 msgstr "全部"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Name"], Value = nameof(UsersOrder.Name) ***REMOVED***,
+#. new SelectListItem() { Text = S["Name"], Value = nameof(UsersOrder.Name) },
 #: OrchardCore.Users\Controllers\AdminController.cs:166
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Name"
 msgstr "名称"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Email"], Value = nameof(UsersOrder.Email) ***REMOVED***,
+#. new SelectListItem() { Text = S["Email"], Value = nameof(UsersOrder.Email) },
 #: OrchardCore.Users\Controllers\AdminController.cs:167
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Email"
 msgstr "电子邮箱"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Approve"], Value = nameof(UsersBulkAction.Approve) ***REMOVED***,
+#. new SelectListItem() { Text = S["Approve"], Value = nameof(UsersBulkAction.Approve) },
 #: OrchardCore.Users\Controllers\AdminController.cs:173
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Approve"
 msgstr "批准"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Enable"], Value = nameof(UsersBulkAction.Enable) ***REMOVED***,
+#. new SelectListItem() { Text = S["Enable"], Value = nameof(UsersBulkAction.Enable) },
 #: OrchardCore.Users\Controllers\AdminController.cs:174
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Enable"
 msgstr "启用"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Disable"], Value = nameof(UsersBulkAction.Disable) ***REMOVED***,
+#. new SelectListItem() { Text = S["Disable"], Value = nameof(UsersBulkAction.Disable) },
 #: OrchardCore.Users\Controllers\AdminController.cs:175
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Disable"
 msgstr "禁用"
 
-#. new SelectListItem() ***REMOVED*** Text = S["Delete"], Value = nameof(UsersBulkAction.Delete) ***REMOVED***
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(UsersBulkAction.Delete) }
 #: OrchardCore.Users\Controllers\AdminController.cs:176
 msgctxt "OrchardCore.Users.Controllers.AdminController"
 msgid "Delete"
 msgstr "删除"
 
-#. _notifier.Success(H["User ***REMOVED***0***REMOVED*** successfully approved.", item.UserName]);
+#. _notifier.Success(H["User {0} successfully approved.", item.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:209
 msgctxt "OrchardCore.Users.Controllers.AdminController"
-msgid "User ***REMOVED***0***REMOVED*** successfully approved."
-msgstr "用户 ***REMOVED***0***REMOVED*** 已审核通过。"
+msgid "User {0} successfully approved."
+msgstr "用户 {0} 已审核通过。"
 
-#. _notifier.Success(H["User ***REMOVED***0***REMOVED*** successfully deleted.", item.UserName]);
+#. _notifier.Success(H["User {0} successfully deleted.", item.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:216
 msgctxt "OrchardCore.Users.Controllers.AdminController"
-msgid "User ***REMOVED***0***REMOVED*** successfully deleted."
-msgstr "用户 ***REMOVED***0***REMOVED*** 已删除。"
+msgid "User {0} successfully deleted."
+msgstr "用户 {0} 已删除。"
 
-#. _notifier.Success(H["User ***REMOVED***0***REMOVED*** successfully disabled.", item.UserName]);
+#. _notifier.Success(H["User {0} successfully disabled.", item.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:224
 msgctxt "OrchardCore.Users.Controllers.AdminController"
-msgid "User ***REMOVED***0***REMOVED*** successfully disabled."
-msgstr "用户 ***REMOVED***0***REMOVED*** 已禁用。"
+msgid "User {0} successfully disabled."
+msgstr "用户 {0} 已禁用。"
 
-#. _notifier.Success(H["User ***REMOVED***0***REMOVED*** successfully enabled.", item.UserName]);
+#. _notifier.Success(H["User {0} successfully enabled.", item.UserName]);
 #: OrchardCore.Users\Controllers\AdminController.cs:232
 msgctxt "OrchardCore.Users.Controllers.AdminController"
-msgid "User ***REMOVED***0***REMOVED*** successfully enabled."
-msgstr "用户 ***REMOVED***0***REMOVED*** 已启用。"
+msgid "User {0} successfully enabled."
+msgstr "用户 {0} 已启用。"
 
 #. _notifier.Success(H["User created successfully"]);
 #: OrchardCore.Users\Controllers\AdminController.cs:279
@@ -282,7 +282,7 @@ msgctxt "OrchardCore.Users.Controllers.RegistrationController"
 msgid "Verification email sent."
 msgstr "已发送验证电子邮件。"
 
-#. await this.SendEmailAsync(user.Email, S["Reset your password"], new LostPasswordViewModel() ***REMOVED*** User = user, LostPasswordUrl = resetPasswordUrl ***REMOVED***);
+#. await this.SendEmailAsync(user.Email, S["Reset your password"], new LostPasswordViewModel() { User = user, LostPasswordUrl = resetPasswordUrl });
 #: OrchardCore.Users\Controllers\ResetPasswordController.cs:85
 msgctxt "OrchardCore.Users.Controllers.ResetPasswordController"
 msgid "Reset your password"
@@ -312,145 +312,145 @@ msgctxt "OrchardCore.Users.Drivers.UserDisplayDriver"
 msgid "The email is already used."
 msgstr "此电邮地址已被使用"
 
-#. yield return new ValidationResult(S["Email is required."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Email is required."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\ChangeEmailViewModel.cs:20
 msgctxt "OrchardCore.Users.ViewModels.ChangeEmailViewModel"
 msgid "Email is required."
 msgstr "电子邮件是必需的。"
 
-#. yield return new ValidationResult(S["Invalid Email."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Invalid Email."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\ChangeEmailViewModel.cs:24
 msgctxt "OrchardCore.Users.ViewModels.ChangeEmailViewModel"
 msgid "Invalid Email."
 msgstr "电子信箱无效。"
 
-#. yield return new ValidationResult(S["Current password is required."], new[] ***REMOVED*** nameof(CurrentPassword) ***REMOVED***);
+#. yield return new ValidationResult(S["Current password is required."], new[] { nameof(CurrentPassword) });
 #: OrchardCore.Users\ViewModels\ChangePasswordViewModel.cs:24
 msgctxt "OrchardCore.Users.ViewModels.ChangePasswordViewModel"
 msgid "Current password is required."
 msgstr "当前密码是必需的。"
 
-#. yield return new ValidationResult(S["Password is required."], new[] ***REMOVED*** nameof(Password) ***REMOVED***);
+#. yield return new ValidationResult(S["Password is required."], new[] { nameof(Password) });
 #: OrchardCore.Users\ViewModels\ChangePasswordViewModel.cs:29
 msgctxt "OrchardCore.Users.ViewModels.ChangePasswordViewModel"
 msgid "Password is required."
 msgstr "密码是必需的。"
 
-#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] ***REMOVED*** nameof(PasswordConfirmation) ***REMOVED***);
+#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] { nameof(PasswordConfirmation) });
 #: OrchardCore.Users\ViewModels\ChangePasswordViewModel.cs:34
 msgctxt "OrchardCore.Users.ViewModels.ChangePasswordViewModel"
 msgid "The new password and confirmation password do not match."
 msgstr "两次输入密码不一致。"
 
-#. yield return new ValidationResult(S["Invalid Email."], new[] ***REMOVED*** "Email" ***REMOVED***);
+#. yield return new ValidationResult(S["Invalid Email."], new[] { "Email" });
 #: OrchardCore.Users\ViewModels\EditUserViewModel.cs:39
 msgctxt "OrchardCore.Users.ViewModels.EditUserViewModel"
 msgid "Invalid Email."
 msgstr "电子邮箱无效。"
 
-#. yield return new ValidationResult(S["Password is required"], new[] ***REMOVED*** nameof(Password) ***REMOVED***);
+#. yield return new ValidationResult(S["Password is required"], new[] { nameof(Password) });
 #: OrchardCore.Users\ViewModels\LinkExternalLoginViewModel.cs:18
 msgctxt "OrchardCore.Users.ViewModels.LinkExternalLoginViewModel"
 msgid "Password is required"
 msgstr "密码是必需的"
 
-#. yield return new ValidationResult(S["Username is required."], new[] ***REMOVED*** "UserName" ***REMOVED***);
+#. yield return new ValidationResult(S["Username is required."], new[] { "UserName" });
 #: OrchardCore.Users\ViewModels\LoginViewModel.cs:22
 msgctxt "OrchardCore.Users.ViewModels.LoginViewModel"
 msgid "Username is required."
 msgstr "用户名是必需的。"
 
-#. yield return new ValidationResult(S["Password is required."], new[] ***REMOVED*** "Password" ***REMOVED***);
+#. yield return new ValidationResult(S["Password is required."], new[] { "Password" });
 #: OrchardCore.Users\ViewModels\LoginViewModel.cs:27
 msgctxt "OrchardCore.Users.ViewModels.LoginViewModel"
 msgid "Password is required."
 msgstr "密码是必需的。"
 
-#. yield return new ValidationResult(S["Email is required!"], new[] ***REMOVED*** "Email" ***REMOVED***);
+#. yield return new ValidationResult(S["Email is required!"], new[] { "Email" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:37
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
 msgid "Email is required!"
 msgstr "电子邮箱是必需的！"
 
-#. yield return new ValidationResult(S["Invalid Email."], new[] ***REMOVED*** "Email" ***REMOVED***);
+#. yield return new ValidationResult(S["Invalid Email."], new[] { "Email" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:42
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
 msgid "Invalid Email."
 msgstr "电子邮箱无效。"
 
-#. yield return new ValidationResult(S["Username is required!"], new[] ***REMOVED*** "UserName" ***REMOVED***);
+#. yield return new ValidationResult(S["Username is required!"], new[] { "UserName" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:47
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
 msgid "Username is required!"
 msgstr "用户名是必需的 ！"
 
-#. yield return new ValidationResult(S["Password is required!"], new[] ***REMOVED*** "Password" ***REMOVED***);
+#. yield return new ValidationResult(S["Password is required!"], new[] { "Password" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:52
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
 msgid "Password is required!"
 msgstr "密码是必需的 ！"
 
-#. yield return new ValidationResult(S["Confirm Password do not match"], new[] ***REMOVED*** "ConfirmPassword" ***REMOVED***);
+#. yield return new ValidationResult(S["Confirm Password do not match"], new[] { "ConfirmPassword" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:57
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
 msgid "Confirm Password do not match"
 msgstr "确认密码不匹配"
 
-#. yield return new ValidationResult(string.Format(S["Password must be between ***REMOVED***0***REMOVED*** and ***REMOVED***1***REMOVED*** characters"], 6, 100), new[] ***REMOVED*** "Password" ***REMOVED***);
+#. yield return new ValidationResult(string.Format(S["Password must be between {0} and {1} characters"], 6, 100), new[] { "Password" });
 #: OrchardCore.Users\ViewModels\RegisterExternalLoginViewModel.cs:62
 msgctxt "OrchardCore.Users.ViewModels.RegisterExternalLoginViewModel"
-msgid "Password must be between ***REMOVED***0***REMOVED*** and ***REMOVED***1***REMOVED*** characters"
-msgstr "密码必须介于 ***REMOVED***0***REMOVED*** 和 ***REMOVED***1***REMOVED*** 个字符之间"
+msgid "Password must be between {0} and {1} characters"
+msgstr "密码必须介于 {0} 和 {1} 个字符之间"
 
-#. yield return new ValidationResult(S["Username is required."], new[] ***REMOVED*** nameof(UserName) ***REMOVED***);
+#. yield return new ValidationResult(S["Username is required."], new[] { nameof(UserName) });
 #: OrchardCore.Users\ViewModels\RegisterViewModel.cs:26
 msgctxt "OrchardCore.Users.ViewModels.RegisterViewModel"
 msgid "Username is required."
 msgstr "用户名是必需的。"
 
-#. yield return new ValidationResult(S["Email is required."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Email is required."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\RegisterViewModel.cs:31
 msgctxt "OrchardCore.Users.ViewModels.RegisterViewModel"
 msgid "Email is required."
 msgstr "电子邮箱是必需的。"
 
-#. yield return new ValidationResult(S["Invalid Email."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Invalid Email."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\RegisterViewModel.cs:35
 msgctxt "OrchardCore.Users.ViewModels.RegisterViewModel"
 msgid "Invalid Email."
 msgstr "电子邮箱无效。"
 
-#. yield return new ValidationResult(S["Password is required."], new[] ***REMOVED*** nameof(Password) ***REMOVED***);
+#. yield return new ValidationResult(S["Password is required."], new[] { nameof(Password) });
 #: OrchardCore.Users\ViewModels\RegisterViewModel.cs:40
 msgctxt "OrchardCore.Users.ViewModels.RegisterViewModel"
 msgid "Password is required."
 msgstr "密码是必需的。"
 
-#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] ***REMOVED*** nameof(ConfirmPassword) ***REMOVED***);
+#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] { nameof(ConfirmPassword) });
 #: OrchardCore.Users\ViewModels\RegisterViewModel.cs:45
 msgctxt "OrchardCore.Users.ViewModels.RegisterViewModel"
 msgid "The new password and confirmation password do not match."
 msgstr "两次输入密码不一致。"
 
-#. yield return new ValidationResult(S["Email is required."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Email is required."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\ResetPasswordViewModel.cs:26
 msgctxt "OrchardCore.Users.ViewModels.ResetPasswordViewModel"
 msgid "Email is required."
 msgstr "电子邮箱是必需的。"
 
-#. yield return new ValidationResult(S["Invalid Email."], new[] ***REMOVED*** nameof(Email) ***REMOVED***);
+#. yield return new ValidationResult(S["Invalid Email."], new[] { nameof(Email) });
 #: OrchardCore.Users\ViewModels\ResetPasswordViewModel.cs:30
 msgctxt "OrchardCore.Users.ViewModels.ResetPasswordViewModel"
 msgid "Invalid Email."
 msgstr "电子邮箱无效。"
 
-#. yield return new ValidationResult(S["New password is required."], new[] ***REMOVED*** nameof(NewPassword) ***REMOVED***);
+#. yield return new ValidationResult(S["New password is required."], new[] { nameof(NewPassword) });
 #: OrchardCore.Users\ViewModels\ResetPasswordViewModel.cs:35
 msgctxt "OrchardCore.Users.ViewModels.ResetPasswordViewModel"
 msgid "New password is required."
 msgstr "新密码不能为空。"
 
-#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] ***REMOVED*** nameof(PasswordConfirmation) ***REMOVED***);
+#. yield return new ValidationResult(S["The new password and confirmation password do not match."], new[] { nameof(PasswordConfirmation) });
 #: OrchardCore.Users\ViewModels\ResetPasswordViewModel.cs:40
 msgctxt "OrchardCore.Users.ViewModels.ResetPasswordViewModel"
 msgid "The new password and confirmation password do not match."
@@ -762,17 +762,17 @@ msgctxt "OrchardCore.Users.Views.ResetPasswordSettings.Edit"
 msgid "Requires an active site theme."
 msgstr "需要一个活动的网站主题。"
 
-#. @T["Dear ***REMOVED***0***REMOVED***,", Model.User.UserName]
+#. @T["Dear {0},", Model.User.UserName]
 #: OrchardCore.Users\Views\TemplateUserConfirmEmail.cshtml:8
 msgctxt "OrchardCore.Users.Views.TemplateUserConfirmEmail"
-msgid "Dear ***REMOVED***0***REMOVED***,"
-msgstr "您好 ***REMOVED***0***REMOVED***，"
+msgid "Dear {0},"
+msgstr "您好 {0}，"
 
-#. <p>@T["Please <a href=\"***REMOVED***0***REMOVED***\">click here</a> to confirm your account.", Model.ConfirmEmailUrl]</p>
+#. <p>@T["Please <a href=\"{0}\">click here</a> to confirm your account.", Model.ConfirmEmailUrl]</p>
 #: OrchardCore.Users\Views\TemplateUserConfirmEmail.cshtml:11
 msgctxt "OrchardCore.Users.Views.TemplateUserConfirmEmail"
-msgid "Please <a href=\"***REMOVED***0***REMOVED***\">click here</a> to confirm your account."
-msgstr "请 <a href=\"***REMOVED***0***REMOVED***\">点击这里</a> 确认您的帐户。"
+msgid "Please <a href=\"{0}\">click here</a> to confirm your account."
+msgstr "请 <a href=\"{0}\">点击这里</a> 确认您的帐户。"
 
 #. <p>@T["Thank you"]</p>
 #: OrchardCore.Users\Views\TemplateUserConfirmEmail.cshtml:13
@@ -780,17 +780,17 @@ msgctxt "OrchardCore.Users.Views.TemplateUserConfirmEmail"
 msgid "Thank you"
 msgstr "谢谢"
 
-#. @T["Dear ***REMOVED***0***REMOVED***,", Model.User.UserName]
+#. @T["Dear {0},", Model.User.UserName]
 #: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:8
 msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
-msgid "Dear ***REMOVED***0***REMOVED***,"
-msgstr "您好 ***REMOVED***0***REMOVED***，"
+msgid "Dear {0},"
+msgstr "您好 {0}，"
 
-#. <p>@T["Please <a href=\"***REMOVED***0***REMOVED***\">click here</a> to change your password.", Model.LostPasswordUrl]</p>
+#. <p>@T["Please <a href=\"{0}\">click here</a> to change your password.", Model.LostPasswordUrl]</p>
 #: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:11
 msgctxt "OrchardCore.Users.Views.TemplateUserLostPassword"
-msgid "Please <a href=\"***REMOVED***0***REMOVED***\">click here</a> to change your password."
-msgstr "请 <a href=\"***REMOVED***0***REMOVED***\">点击这里</a> 更改您的密码。"
+msgid "Please <a href=\"{0}\">click here</a> to change your password."
+msgstr "请 <a href=\"{0}\">点击这里</a> 更改您的密码。"
 
 #. <p>@T["Thank you"]</p>
 #: OrchardCore.Users\Views\TemplateUserLostPassword.cshtml:13
@@ -952,11 +952,11 @@ msgctxt "OrchardCore.Users.Views.Account.LinkExternalLogin"
 msgid "Link your account."
 msgstr "关联您的帐户"
 
-#. @T["You've successfully authenticated with <strong>***REMOVED***0***REMOVED***</strong>. You already have an account with this email address. Enter your local account password and click the Register button to link the accounts and finish logging in.", ViewData["LoginProvider"]]
+#. @T["You've successfully authenticated with <strong>{0}</strong>. You already have an account with this email address. Enter your local account password and click the Register button to link the accounts and finish logging in.", ViewData["LoginProvider"]]
 #: OrchardCore.Users\Views\Account\LinkExternalLogin.cshtml:10
 msgctxt "OrchardCore.Users.Views.Account.LinkExternalLogin"
-msgid "You've successfully authenticated with <strong>***REMOVED***0***REMOVED***</strong>. You already have an account with this email address. Enter your local account password and click the Register button to link the accounts and finish logging in."
-msgstr "您已成功通过 <strong>***REMOVED***0***REMOVED***</strong>身份验证。您已经有了此电子邮件地址。 输入您的本地账户密码，然后点击注册按钮链接账户并完成登录。"
+msgid "You've successfully authenticated with <strong>{0}</strong>. You already have an account with this email address. Enter your local account password and click the Register button to link the accounts and finish logging in."
+msgstr "您已成功通过 <strong>{0}</strong>身份验证。您已经有了此电子邮件地址。 输入您的本地账户密码，然后点击注册按钮链接账户并完成登录。"
 
 #. <label for="UserName" class="col-md-3 control-label">@T["Username"]</label>
 #: OrchardCore.Users\Views\Account\LinkExternalLogin.cshtml:16
@@ -1036,11 +1036,11 @@ msgctxt "OrchardCore.Users.Views.Account.RegisterExternalLogin"
 msgid "Create a new account."
 msgstr "创建一个新帐户。"
 
-#. @T["You've successfully authenticated with <strong>***REMOVED***0***REMOVED***</strong>. Please fill the form below and click the Register button to complete the registration.", ViewData["LoginProvider"]]
+#. @T["You've successfully authenticated with <strong>{0}</strong>. Please fill the form below and click the Register button to complete the registration.", ViewData["LoginProvider"]]
 #: OrchardCore.Users\Views\Account\RegisterExternalLogin.cshtml:10
 msgctxt "OrchardCore.Users.Views.Account.RegisterExternalLogin"
-msgid "You've successfully authenticated with <strong>***REMOVED***0***REMOVED***</strong>. Please fill the form below and click the Register button to complete the registration."
-msgstr "您已成功验证 <strong>***REMOVED***0***REMOVED***</strong>。请填写下面的表单，然后点击注册按钮来完成注册。"
+msgid "You've successfully authenticated with <strong>{0}</strong>. Please fill the form below and click the Register button to complete the registration."
+msgstr "您已成功验证 <strong>{0}</strong>。请填写下面的表单，然后点击注册按钮来完成注册。"
 
 #. <label asp-for="UserName" class="col-md-3 control-label">@T["Username"]</label>
 #: OrchardCore.Users\Views\Account\RegisterExternalLogin.cshtml:18
@@ -1138,25 +1138,25 @@ msgctxt "OrchardCore.Users.Views.Admin.Index"
 msgid "Select All"
 msgstr "选择全部"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Users\Views\Admin\Index.cshtml:36
 msgctxt "OrchardCore.Users.Views.Admin.Index"
 msgid "1 item"
-msgid_plural "***REMOVED***0***REMOVED*** items"
-msgstr[0] "***REMOVED***0***REMOVED*** 项"
+msgid_plural "{0} items"
+msgstr[0] "{0} 项"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Users\Views\Admin\Index.cshtml:36
 msgctxt "OrchardCore.Users.Views.Admin.Index"
-msgid "Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***"
-msgstr "项目 ***REMOVED***0***REMOVED*** 到 ***REMOVED***1***REMOVED***"
+msgid "Items {0} to {1}"
+msgstr "项目 {0} 到 {1}"
 
-#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "***REMOVED***0***REMOVED*** items")<span class="text-muted" title="@T["Items ***REMOVED***0***REMOVED*** to ***REMOVED***1***REMOVED***", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / ***REMOVED***0***REMOVED*** item in total", " / ***REMOVED***0***REMOVED*** items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural(Model.Users.Count, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", startIndex, endIndex]">@T.Plural((int)Model.Pager.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Users\Views\Admin\Index.cshtml:36
 msgctxt "OrchardCore.Users.Views.Admin.Index"
-msgid " / ***REMOVED***0***REMOVED*** item in total"
-msgid_plural " / ***REMOVED***0***REMOVED*** items in total"
-msgstr[0] " / 总计 ***REMOVED***0***REMOVED*** 个项目"
+msgid " / {0} item in total"
+msgid_plural " / {0} items in total"
+msgstr[0] " / 总计 {0} 个项目"
 
 #. @T["Actions"]
 #: OrchardCore.Users\Views\Admin\Index.cshtml:43
@@ -1164,17 +1164,17 @@ msgctxt "OrchardCore.Users.Views.Admin.Index"
 msgid "Actions"
 msgstr "操作"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Users\Views\Admin\Index.cshtml:48
 msgctxt "OrchardCore.Users.Views.Admin.Index"
 msgid "Bulk Action"
 msgstr "批量操作"
 
-#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to ***REMOVED***0***REMOVED*** these items?", @item.Text.ToLower()]">@item.Text</a>
+#. <a class="dropdown-item" href="javascript:void(0)" data-action="@item.Value" data-title="@T["Bulk Action"]" data-message="@T["Are you sure you want to {0} these items?", @item.Text.ToLower()]">@item.Text</a>
 #: OrchardCore.Users\Views\Admin\Index.cshtml:48
 msgctxt "OrchardCore.Users.Views.Admin.Index"
-msgid "Are you sure you want to ***REMOVED***0***REMOVED*** these items?"
-msgstr "您确定要***REMOVED***0***REMOVED***这些项目吗？"
+msgid "Are you sure you want to {0} these items?"
+msgstr "您确定要{0}这些项目吗？"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
 #: OrchardCore.Users\Views\Admin\Index.cshtml:83
@@ -1226,11 +1226,11 @@ msgctxt "OrchardCore.Users.Views.Items.AssignUserRoleTask.Fields.Design"
 msgid "Assign user to role"
 msgstr "分配用户到角色"
 
-#. <em>@T["***REMOVED***0***REMOVED*** to role ***REMOVED***1***REMOVED***", Model.Activity.UserName, Model.Activity.RoleName]</em>
+#. <em>@T["{0} to role {1}", Model.Activity.UserName, Model.Activity.RoleName]</em>
 #: OrchardCore.Users\Views\Items\AssignUserRoleTask.Fields.Design.cshtml:7
 msgctxt "OrchardCore.Users.Views.Items.AssignUserRoleTask.Fields.Design"
-msgid "***REMOVED***0***REMOVED*** to role ***REMOVED***1***REMOVED***"
-msgstr "***REMOVED***0***REMOVED*** 角色 ***REMOVED***1***REMOVED***"
+msgid "{0} to role {1}"
+msgstr "{0} 角色 {1}"
 
 #. <label asp-for="UserName">@T["UserName"]</label>
 #: OrchardCore.Users\Views\Items\AssignUserRoleTask.Fields.Edit.cshtml:5

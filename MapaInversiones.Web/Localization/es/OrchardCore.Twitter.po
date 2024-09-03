@@ -46,25 +46,25 @@ msgctxt "OrchardCore.Twitter.AdminMenuSignin"
 msgid "Sign in with Twitter"
 msgstr "Iniciar sesión con Twitter"
 
-#. yield return new ValidationResult(S["ConsumerKey is required"], new string[] ***REMOVED*** nameof(settings.ConsumerKey) ***REMOVED***);
+#. yield return new ValidationResult(S["ConsumerKey is required"], new string[] { nameof(settings.ConsumerKey) });
 #: OrchardCore.Twitter\Services\TwitterSettingsService.cs:57
 msgctxt "OrchardCore.Twitter.Services.TwitterSettingsService"
 msgid "ConsumerKey is required"
 msgstr "Se requiere ConsumerKey"
 
-#. yield return new ValidationResult(S["ConsumerSecret is required"], new string[] ***REMOVED*** nameof(settings.ConsumerSecret) ***REMOVED***);
+#. yield return new ValidationResult(S["ConsumerSecret is required"], new string[] { nameof(settings.ConsumerSecret) });
 #: OrchardCore.Twitter\Services\TwitterSettingsService.cs:62
 msgctxt "OrchardCore.Twitter.Services.TwitterSettingsService"
 msgid "ConsumerSecret is required"
 msgstr "Se requiere ConsumerSecret"
 
-#. yield return new ValidationResult(S["Access Token is required"], new string[] ***REMOVED*** nameof(settings.AccessToken) ***REMOVED***);
+#. yield return new ValidationResult(S["Access Token is required"], new string[] { nameof(settings.AccessToken) });
 #: OrchardCore.Twitter\Services\TwitterSettingsService.cs:67
 msgctxt "OrchardCore.Twitter.Services.TwitterSettingsService"
 msgid "Access Token is required"
 msgstr "Token de acceso es obligatorio"
 
-#. yield return new ValidationResult(S["Access Token Secret is required"], new string[] ***REMOVED*** nameof(settings.AccessTokenSecret) ***REMOVED***);
+#. yield return new ValidationResult(S["Access Token Secret is required"], new string[] { nameof(settings.AccessTokenSecret) });
 #: OrchardCore.Twitter\Services\TwitterSettingsService.cs:72
 msgctxt "OrchardCore.Twitter.Services.TwitterSettingsService"
 msgid "Access Token Secret is required"

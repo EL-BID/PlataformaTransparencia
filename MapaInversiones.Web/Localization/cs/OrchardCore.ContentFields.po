@@ -10,107 +10,107 @@ msgstr ""
 "Language: cs_CZ\n"
 "PO-Revision-Date: 2020-05-21 17:41\n"
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field is required.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:91
 msgctxt "OrchardCore.ContentFields.Drivers.ContentPickerFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field is required."
-msgstr "Pole ***REMOVED***0***REMOVED*** je povinné."
+msgid "The {0} field is required."
+msgstr "Pole {0} je povinné."
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\ContentPickerFieldDisplayDriver.cs:96
 msgctxt "OrchardCore.ContentFields.Drivers.ContentPickerFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field cannot contain multiple items."
-msgstr "Pole ***REMOVED***0***REMOVED*** nemůže obsahovat více položek."
+msgid "The {0} field cannot contain multiple items."
+msgstr "Pole {0} nemůže obsahovat více položek."
 
-#. context.Updater.ModelState.AddModelError(nameof(field.Html), S["***REMOVED***0***REMOVED*** doesn't contain a valid Liquid expression. Details: ***REMOVED***1***REMOVED***", fieldName, string.Join(" ", errors)]);
+#. context.Updater.ModelState.AddModelError(nameof(field.Html), S["{0} doesn't contain a valid Liquid expression. Details: {1}", fieldName, string.Join(" ", errors)]);
 #: OrchardCore.ContentFields\Drivers\HtmlFieldDisplayDriver.cs:84
 msgctxt "OrchardCore.ContentFields.Drivers.HtmlFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED*** doesn't contain a valid Liquid expression. Details: ***REMOVED***1***REMOVED***"
+msgid "{0} doesn't contain a valid Liquid expression. Details: {1}"
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The url is required for ***REMOVED***0***REMOVED***.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The url is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:69
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
-msgid "The url is required for ***REMOVED***0***REMOVED***."
+msgid "The url is required for {0}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["***REMOVED***0***REMOVED*** is an invalid url.", field.Url]);
+#. updater.ModelState.AddModelError(Prefix, S["{0} is an invalid url.", field.Url]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:73
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED*** is an invalid url."
-msgstr "***REMOVED***0***REMOVED*** je neplatné URL."
+msgid "{0} is an invalid url."
+msgstr "{0} je neplatné URL."
 
-#. updater.ModelState.AddModelError(Prefix, S["The link text is required for ***REMOVED***0***REMOVED***.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The link text is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:77
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
-msgid "The link text is required for ***REMOVED***0***REMOVED***."
+msgid "The link text is required for {0}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The text default value is required for ***REMOVED***0***REMOVED***.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The text default value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LinkFieldDisplayDriver.cs:81
 msgctxt "OrchardCore.ContentFields.Drivers.LinkFieldDisplayDriver"
-msgid "The text default value is required for ***REMOVED***0***REMOVED***."
+msgid "The text default value is required for {0}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field is required.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LocalizationSetContentPickerFieldDisplayDriver.cs:97
 msgctxt "OrchardCore.ContentFields.Drivers.LocalizationSetContentPickerFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field is required."
+msgid "The {0} field is required."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field cannot contain multiple items.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\LocalizationSetContentPickerFieldDisplayDriver.cs:102
 msgctxt "OrchardCore.ContentFields.Drivers.LocalizationSetContentPickerFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field cannot contain multiple items."
+msgid "The {0} field cannot contain multiple items."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field is required.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field is required.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:68
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field is required."
+msgid "The {0} field is required."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["***REMOVED***0***REMOVED*** is an invalid number.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["{0} is an invalid number.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:73
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "***REMOVED***0***REMOVED*** is an invalid number."
-msgstr "***REMOVED***0***REMOVED*** je neplatné URL."
+msgid "{0} is an invalid number."
+msgstr "{0} je neplatné URL."
 
-#. updater.ModelState.AddModelError(Prefix, S["The value must be greater than ***REMOVED***0***REMOVED***.", settings.Minimum.Value]);
+#. updater.ModelState.AddModelError(Prefix, S["The value must be greater than {0}.", settings.Minimum.Value]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:81
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "The value must be greater than ***REMOVED***0***REMOVED***."
+msgid "The value must be greater than {0}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The value must be less than ***REMOVED***0***REMOVED***.", settings.Maximum.Value]);
+#. updater.ModelState.AddModelError(Prefix, S["The value must be less than {0}.", settings.Maximum.Value]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:86
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "The value must be less than ***REMOVED***0***REMOVED***."
+msgid "The value must be less than {0}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["The ***REMOVED***0***REMOVED*** field must be an integer.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["The {0} field must be an integer.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:94
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "The ***REMOVED***0***REMOVED*** field must be an integer."
+msgid "The {0} field must be an integer."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["Invalid number of digits for ***REMOVED***0***REMOVED***, max allowed: ***REMOVED***1***REMOVED***.", context.PartFieldDefinition.DisplayName(), settings.Scale]);
+#. updater.ModelState.AddModelError(Prefix, S["Invalid number of digits for {0}, max allowed: {1}.", context.PartFieldDefinition.DisplayName(), settings.Scale]);
 #: OrchardCore.ContentFields\Drivers\NumericFieldDisplayDriver.cs:98
 msgctxt "OrchardCore.ContentFields.Drivers.NumericFieldDisplayDriver"
-msgid "Invalid number of digits for ***REMOVED***0***REMOVED***, max allowed: ***REMOVED***1***REMOVED***."
+msgid "Invalid number of digits for {0}, max allowed: {1}."
 msgstr ""
 
-#. updater.ModelState.AddModelError(Prefix, S["A value is required for ***REMOVED***0***REMOVED***.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["A value is required for {0}.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\TextFieldDisplayDriver.cs:54
 msgctxt "OrchardCore.ContentFields.Drivers.TextFieldDisplayDriver"
-msgid "A value is required for ***REMOVED***0***REMOVED***."
-msgstr "Pole ***REMOVED***0***REMOVED*** je povinné."
+msgid "A value is required for {0}."
+msgstr "Pole {0} je povinné."
 
-#. updater.ModelState.AddModelError(Prefix, S["A value is required for '***REMOVED***0***REMOVED***'.", context.PartFieldDefinition.DisplayName()]);
+#. updater.ModelState.AddModelError(Prefix, S["A value is required for '{0}'.", context.PartFieldDefinition.DisplayName()]);
 #: OrchardCore.ContentFields\Drivers\YoutubeFieldDisplayDriver.cs:58
 msgctxt "OrchardCore.ContentFields.Drivers.YoutubeFieldDisplayDriver"
-msgid "A value is required for '***REMOVED***0***REMOVED***'."
-msgstr "Pole ***REMOVED***0***REMOVED*** je povinné."
+msgid "A value is required for '{0}'."
+msgstr "Pole {0} je povinné."
 
 #. updater.ModelState.AddModelError(Prefix + "." + nameof(model.RawAddress), S["The format of the url is invalid"]);
 #: OrchardCore.ContentFields\Drivers\YoutubeFieldDisplayDriver.cs:76
@@ -202,8 +202,8 @@ msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.DisplayOption"
 msgid "Standard"
 msgstr "Standardní"
 
-#. <div class="align-items-center align-self-center"><span>***REMOVED******REMOVED*** item.displayText ***REMOVED******REMOVED***</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
-#. <div v-cloak><span>***REMOVED******REMOVED*** props.option.displayText ***REMOVED******REMOVED***</span><span class="small ml-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
+#. <div class="align-items-center align-self-center"><span>{{ item.displayText }}</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
+#. <div v-cloak><span>{{ props.option.displayText }}</span><span class="small ml-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
 #: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:28
 #: OrchardCore.ContentFields\Views\ContentPickerField.Edit.cshtml:49
 msgctxt "OrchardCore.ContentFields.Views.ContentPickerField.Edit"
@@ -600,8 +600,8 @@ msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Displ
 msgid "Standard"
 msgstr ""
 
-#. <div class="align-items-center align-self-center"><span>***REMOVED******REMOVED*** item.displayText ***REMOVED******REMOVED***</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
-#. <div v-cloak><span>***REMOVED******REMOVED*** props.option.displayText ***REMOVED******REMOVED***</span><span class="small ml-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
+#. <div class="align-items-center align-self-center"><span>{{ item.displayText }}</span> <span v-show="!item.hasPublished" class="text-muted small">(@T["Not published"])</span></div>
+#. <div v-cloak><span>{{ props.option.displayText }}</span><span class="small ml-2" v-show="!props.option.hasPublished">(@T["Not published"])</span></div>
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:31
 #: OrchardCore.ContentFields\Views\LocalizationSetContentPickerField.Edit.cshtml:52
 msgctxt "OrchardCore.ContentFields.Views.LocalizationSetContentPickerField.Edit"
@@ -990,11 +990,11 @@ msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.E
 msgid "Options"
 msgstr "Volby"
 
-#. <span class="hint">@T["A JSON representation of the allowed values, e.g. ***REMOVED***0***REMOVED***", "[ ***REMOVED*** name: 'First option', value: 'option1' ***REMOVED***, ***REMOVED*** name: 'Second option', value: 'option2' ***REMOVED*** ]"]</span>
+#. <span class="hint">@T["A JSON representation of the allowed values, e.g. {0}", "[ { name: 'First option', value: 'option1' }, { name: 'Second option', value: 'option2' } ]"]</span>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:67
 msgctxt "OrchardCore.ContentFields.Views.TextFieldPredefinedListEditorSettings.Edit"
-msgid "A JSON representation of the allowed values, e.g. ***REMOVED***0***REMOVED***"
-msgstr "JSON reprezentace povolených hodnot, např. ***REMOVED***0***REMOVED***"
+msgid "A JSON representation of the allowed values, e.g. {0}"
+msgstr "JSON reprezentace povolených hodnot, např. {0}"
 
 #. <label for="options-defaultvalue">@T["Default value"]</label>
 #: OrchardCore.ContentFields\Views\TextFieldPredefinedListEditorSettings.Edit.cshtml:70

@@ -80,17 +80,17 @@ msgctxt "OrchardCore.Users.Services.UserService"
 msgid "Passwords must have at least one non letter or digit character."
 msgstr "Mật khẩu phải chứa ít nhất 1 kí tự đặc biệt, không phải số, không phải chữ."
 
-#. reportError("Password", S["Passwords must be at least ***REMOVED***0***REMOVED*** characters.", _identityOptions.Value.Password.RequiredLength]);
+#. reportError("Password", S["Passwords must be at least {0} characters.", _identityOptions.Value.Password.RequiredLength]);
 #: OrchardCore.Users.Core\Services\UserService.cs:234
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Passwords must be at least ***REMOVED***0***REMOVED*** characters."
-msgstr "Mật khẩu phải có ít nhất ***REMOVED***0***REMOVED*** kí tự."
+msgid "Passwords must be at least {0} characters."
+msgstr "Mật khẩu phải có ít nhất {0} kí tự."
 
-#. reportError("Password", S["Passwords must contain at least ***REMOVED***0***REMOVED*** unique characters.", _identityOptions.Value.Password.RequiredUniqueChars]);
+#. reportError("Password", S["Passwords must contain at least {0} unique characters.", _identityOptions.Value.Password.RequiredUniqueChars]);
 #: OrchardCore.Users.Core\Services\UserService.cs:237
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Passwords must contain at least ***REMOVED***0***REMOVED*** unique characters."
-msgstr "Mật khẩu phải chứa ít nhất ***REMOVED***0***REMOVED*** kí tự duy nhất."
+msgid "Passwords must contain at least {0} unique characters."
+msgstr "Mật khẩu phải chứa ít nhất {0} kí tự duy nhất."
 
 #. reportError("CurrentPassword", S["Incorrect password."]);
 #: OrchardCore.Users.Core\Services\UserService.cs:242
@@ -98,33 +98,33 @@ msgctxt "OrchardCore.Users.Services.UserService"
 msgid "Incorrect password."
 msgstr "Mật khẩu không đúng."
 
-#. reportError("UserName", S["User name '***REMOVED***0***REMOVED***' is invalid, can only contain letters or digits.", user.UserName]);
+#. reportError("UserName", S["User name '{0}' is invalid, can only contain letters or digits.", user.UserName]);
 #: OrchardCore.Users.Core\Services\UserService.cs:247
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "User name '***REMOVED***0***REMOVED***' is invalid, can only contain letters or digits."
-msgstr "Tên đăng nhập '***REMOVED***0***REMOVED***' không hợp lệ, chỉ có thể chứa chữ cái hoặc chữ số."
+msgid "User name '{0}' is invalid, can only contain letters or digits."
+msgstr "Tên đăng nhập '{0}' không hợp lệ, chỉ có thể chứa chữ cái hoặc chữ số."
 
-#. reportError("UserName", S["User name '***REMOVED***0***REMOVED***' is already used.", user.UserName]);
+#. reportError("UserName", S["User name '{0}' is already used.", user.UserName]);
 #: OrchardCore.Users.Core\Services\UserService.cs:250
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "User name '***REMOVED***0***REMOVED***' is already used."
-msgstr "Tên đăng nhập '***REMOVED***0***REMOVED***' đã được sử dụng."
+msgid "User name '{0}' is already used."
+msgstr "Tên đăng nhập '{0}' đã được sử dụng."
 
-#. reportError("Email", S["Email '***REMOVED***0***REMOVED***' is already used.", user.Email]);
+#. reportError("Email", S["Email '{0}' is already used.", user.Email]);
 #: OrchardCore.Users.Core\Services\UserService.cs:255
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Email '***REMOVED***0***REMOVED***' is already used."
-msgstr "Địa chỉ email '***REMOVED***0***REMOVED***' đã được sử dụng."
+msgid "Email '{0}' is already used."
+msgstr "Địa chỉ email '{0}' đã được sử dụng."
 
-#. reportError("Email", S["Email '***REMOVED***0***REMOVED***' is invalid.", user.Email]);
+#. reportError("Email", S["Email '{0}' is invalid.", user.Email]);
 #: OrchardCore.Users.Core\Services\UserService.cs:258
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Email '***REMOVED***0***REMOVED***' is invalid."
-msgstr "Email '***REMOVED***0***REMOVED***' không hợp lệ."
+msgid "Email '{0}' is invalid."
+msgstr "Email '{0}' không hợp lệ."
 
-#. reportError(string.Empty, S["Unexpected error: '***REMOVED***0***REMOVED***'.", error.Code]);
+#. reportError(string.Empty, S["Unexpected error: '{0}'.", error.Code]);
 #: OrchardCore.Users.Core\Services\UserService.cs:261
 msgctxt "OrchardCore.Users.Services.UserService"
-msgid "Unexpected error: '***REMOVED***0***REMOVED***'."
-msgstr "Lỗi bất ngờ: '***REMOVED***0***REMOVED*** '."
+msgid "Unexpected error: '{0}'."
+msgstr "Lỗi bất ngờ: '{0} '."
 

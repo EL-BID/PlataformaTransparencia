@@ -42,8 +42,8 @@ msgstr "Vloženo uživatelem"
 
 #: TheBlogTheme\Views\Content-BlogPost.liquid:0
 msgctxt "TheBlogTheme.Views.Content-BlogPost"
-msgid "on ***REMOVED***0***REMOVED***"
-msgstr "***REMOVED***0***REMOVED***"
+msgid "on {0}"
+msgstr "{0}"
 
 #: TheBlogTheme\Views\Content-BlogPost.Summary.liquid:0
 msgctxt "TheBlogTheme.Views.Content-BlogPost.Summary"
@@ -57,8 +57,8 @@ msgstr "Vloženo uživatelem"
 
 #: TheBlogTheme\Views\Content-BlogPost.Summary.liquid:0
 msgctxt "TheBlogTheme.Views.Content-BlogPost.Summary"
-msgid "on ***REMOVED***0***REMOVED***"
-msgstr "***REMOVED***0***REMOVED***"
+msgid "on {0}"
+msgstr "{0}"
 
 #: TheBlogTheme\Views\Layout.liquid:0
 msgctxt "TheBlogTheme.Views.Layout"

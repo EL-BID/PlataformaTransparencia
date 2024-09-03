@@ -33,58 +33,58 @@
                         <!-- End company info -->
 
                     </div>
-                    @***REMOVED***
+                    @{
                         var menu = await Orchard.GetContentItemByHandleAsync("alias:second-menu");
                         @foreach (var menuitem in menu.Content.MenuItemsListPart.MenuItems)
-                        ***REMOVED***
+                        {
 
                             @if (@menuitem.LinkMenuItemPart.Name != null)
-                            ***REMOVED***
+                            {
                                 var enlace = @menuitem.LinkMenuItemPart.Url;
                                 var enlace_aux = "#!";
                                 if (enlace != "")
-                                ***REMOVED***
+                                {
                                     enlace_aux = enlace;
-                            ***REMOVED***
+                                }
                                 <div class="col-xl-2 col-lg-2 col-md-3 col-7 item">
                                     <div class="footer-item">
                                         <h4 class="footer-item-heading"><a href="@menuitem.LinkMenuItemPart.Url">@menuitem.LinkMenuItemPart.Name</a></h4>
                                         <nav class="footer-nav">
                                             @if (menuitem.MenuItemsListPart != null)
-                                            ***REMOVED***
+                                            {
 
                                                 var cant = @menuitem.MenuItemsListPart.MenuItems.Count;
                                                 <ul class="footer-mnu">
                                                     @foreach (var submenu in menuitem.MenuItemsListPart.MenuItems)
-                                                    ***REMOVED***
+                                                    {
                                                         @if (@submenu.LinkMenuItemPart.Name != null)
-                                                        ***REMOVED***
+                                                        {
                                                             var enlace_sub = @submenu.LinkMenuItemPart.Url;
                                                             var enlace_sub_aux = "#!";
                                                             if (enlace_sub != "")
-                                                            ***REMOVED***
+                                                            {
                                                                 enlace_sub_aux = enlace_sub;
-                                                        ***REMOVED***
+                                                            }
                                                             <li>
                                                                 <a href="@enlace_sub_aux" class="hover-link" data-title="@submenu.LinkMenuItemPart.Name">
                                                                     <span>@submenu.LinkMenuItemPart.Name</span>
                                                                 </a>
                                                             </li>
-                                                    ***REMOVED***
-                                                ***REMOVED***
+                                                        }
+                                                    }
                                                 </ul>
 
-                                        ***REMOVED***
+                                            }
 
 
                                         </nav>
                                     </div>
                                 </div>
 
-                        ***REMOVED***
+                            }
 
-                    ***REMOVED***
-                ***REMOVED***
+                        }
+                    }
                 </div>
                 
             </div>

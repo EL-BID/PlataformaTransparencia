@@ -3,28 +3,28 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PlataformaTransparencia.Modelos.Plan
-***REMOVED***
+{
     public class PND2030
-    ***REMOVED***
-        public int? IdPlan ***REMOVED*** get; set; ***REMOVED*** // int
-        public string NombrePlan ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public string DescripcionPlan ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public int? IdEjeEstrategico ***REMOVED*** get; set; ***REMOVED*** // int
-        public string EjeEstrategicoNombre ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public string EjeEstrategicoDescripcion ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public int? LineaTransversalId ***REMOVED*** get; set; ***REMOVED*** // int
-        public string LineaTransversalNombre ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public int? EstrategiaId ***REMOVED*** get; set; ***REMOVED*** // int
-        public string EstrategiaNombre ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public string Estrategiadescripcion ***REMOVED*** get; set; ***REMOVED*** // varchar(max)
-        public int? IdObjetivo ***REMOVED*** get; set; ***REMOVED*** // int
-        public string ObjetivoNombre ***REMOVED*** get; set; ***REMOVED*** // nvarchar(max)
-        public int? Nivel ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? Entidad ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? TipoPresupuesto ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? Programa ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? Subprograma ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? Proyecto ***REMOVED*** get; set; ***REMOVED*** // int
-        public int? Producto ***REMOVED*** get; set; ***REMOVED*** // int
-***REMOVED***
-***REMOVED***
+    {
+        public int? IdPlan { get; set; } // int
+        public string NombrePlan { get; set; } // varchar(max)
+        public string DescripcionPlan { get; set; } // varchar(max)
+        public int? IdEjeEstrategico { get; set; } // int
+        public string EjeEstrategicoNombre { get; set; } // varchar(max)
+        public string EjeEstrategicoDescripcion { get; set; } // varchar(max)
+        public int? LineaTransversalId { get; set; } // int
+        public string LineaTransversalNombre { get; set; } // varchar(max)
+        public int? EstrategiaId { get; set; } // int
+        public string EstrategiaNombre { get; set; } // varchar(max)
+        public string Estrategiadescripcion { get; set; } // varchar(max)
+        public int? IdObjetivo { get; set; } // int
+        public string ObjetivoNombre { get; set; } // nvarchar(max)
+        public int? Nivel { get; set; } // int
+        public int? Entidad { get; set; } // int
+        public int? TipoPresupuesto { get; set; } // int
+        public int? Programa { get; set; } // int
+        public int? Subprograma { get; set; } // int
+        public int? Proyecto { get; set; } // int
+        public int? Producto { get; set; } // int
+    }
+}
